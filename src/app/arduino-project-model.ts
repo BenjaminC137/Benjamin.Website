@@ -4,4 +4,5 @@ export class ArduinoProjectModel {
 	description: string;
 	dateCreated: string;
 	dateCompleted: string;
+	imagePath: string;
 }
