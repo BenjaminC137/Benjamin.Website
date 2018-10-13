@@ -1,15 +1,14 @@
-<p>
+<div>
 	ID: {{arduino.id}}
 	<br>
-	Project: {{arduino.title}}
+	<h3>{{arduino.title | uppercase}}</h3>
+		<a href="{{arduino.imagePath}}"><img src="{{arduino.imagePath}}" class="rounded-image"></a>
 	<br>
-	Description: {{arduino.description}}
+	{{arduino.description}}
 	<br>
 	Created: {{arduino.dateCreated | date}}
 	<br>
 	Completed: {{arduino.dateCompleted | date}}
 	<br>
-
-	<img src="{{arduino.imagePath}}" class="rounded-image">
-
-</p>
+</div>
+<img src="/src/assets/ArduinoGeneral/Arduino-nano-complex-IMG_8173.png"

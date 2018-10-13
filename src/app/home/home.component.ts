@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
 		description: 'A car that roams around the house for companionship so people don\'t feel lonely.',
 		dateCreated: '2016/01/01',
 		dateCompleted: '2016/01/02',
-		imagePath: "assets/Buddy/buddy-full-IMG_0423.png"
+		imagePath: "assets/ArduinoBuddy/buddy-full-IMG_0423.png"
 		},
 		{
 		id: 3,
@@ -55,16 +55,41 @@ export class HomeComponent implements OnInit {
 		description: 'Analyzes surroundings and chooses where to go.',
 		dateCreated: '2017/01/01',
 		dateCompleted: '2017/01/01',
-		imagePath: "assets/images/ArduinoNeechiFeeder/IMG_7441.png"
+		imagePath: "assets/ArduinoSmartTank/smartTank-hot-art-IMG_3017.jpeg"
 		},
 		{
 		id: 7,
 		title: 'Security System',
+		description: 'Security System to fend off intruders.',
+		dateCreated: '2017/01/01',
+		dateCompleted: '2017/01/01',
+		imagePath: "assets/ArduinoNeechiFeeder/IMG_7441.png"
+		}
+		{
+		id: 8,
+		title: 'Heater Control',
+		description: 'Modified a space heater to be able to turn on at given time.',
+		dateCreated: '2017/01/01',
+		dateCompleted: '2017/01/01',
+		imagePath: "assets/ArduinoHeaterControl/ArduinoHeaterControl-BoardAndCables1%20-%20IMG_2368%20copy.jpeg"
+		}
+		{
+		id: 9,
+		title: 'Temperature Alarm',
+		description: 'Alarm that sounds when the temperature drops below a designated temperature to be set in the baby\s room by the crib to alert us if the temperature is too cold for the newborn.',
+		dateCreated: '2017/01/01',
+		dateCompleted: '2017/01/01',
+		imagePath: "assets/ArduinoTemperatureAlarm/TemperatureAlarm-Full-IMG_7909.jpeg"
+		}
+		{
+		id: 10,
+		title: 'fart System',
 		description: 'Security System.',
 		dateCreated: '2017/01/01',
 		dateCompleted: '2017/01/01',
 		imagePath: "assets/images/ArduinoNeechiFeeder/IMG_7441.png"
 		}
+
 	];
 
 
