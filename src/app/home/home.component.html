@@ -7,4 +7,10 @@
 </p>
 
 
-<app-arduino></app-arduino>
+<!--<app-arduino *ngFor="let a of homeGems" [gem]="g"></app-arduino>-->
+
+<div class="card-deck">
+<app-arduino class="card rounded-image" style="min-width: 18rem"
+*ngFor="let arduino of arduinoProjects" [arduino]="arduino"></app-arduino>
+</div>
+<img src="/src/assets/Buddy/buddy-full-IMG_0423.png">

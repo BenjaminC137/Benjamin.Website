@@ -76,6 +76,11 @@ body p{
 	box-shadow: 2px 2px 10px rgba(0,0,0, .04);
 	font-size: 14px;
 }
+/*
+.card{
+	margin-bottom: 15px;
+}
+*/
 .custom-toggler.navbar-toggler {
     border-color: #E5AD24;
 }
@@ -92,7 +97,7 @@ body p{
 }
 
 div img{
-    width: 40%;
+    width: 100%;
     height: auto;}
 
 .navColors {
@@ -218,7 +223,7 @@ footer{
 .rounded-image{
 	border-style: hidden;
 /*	border-width: 15px;*/
-	border-radius: 20px;
+	border-radius: 0px;
 }
 
 @include media-breakpoint-up(sm) {
