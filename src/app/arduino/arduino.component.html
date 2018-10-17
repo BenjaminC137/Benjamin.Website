@@ -1,3 +1,28 @@
+<h2> Arduino Projects</h2>
+
+
+<app-arduino-detail [arduino]="selectedArduino"></app-arduino-detail>
+<div class="card-deck">
+
+	<div class="card rounded-image arduino-cards"
+		*ngFor="let arduino of arduinoProjects"     [class.selected]="arduino === selectedArduino" (click)="onSelect(arduino)"><h6>{{arduino.title}}</h6>
+		<img src="{{arduino.imagePath}}">
+	</div>
+
+</div>
+
+<!--
+
+<ul class="rounded-image">
+  <li *ngFor="let arduino of arduinoProjects"
+    [class.selected]="arduino === selectedArduino"
+    (click)="onSelect(arduino)">
+    <span class="">{{arduino.id}}</span> {{arduino.title}}
+  </li>
+</ul>
+-->
+
+<!--
 <div>
 	ID: {{arduino.id}}
 	<br>
@@ -10,5 +35,7 @@
 	<br>
 	Completed: {{arduino.dateCompleted | date}}
 	<br>
-</div>
-<img src="/src/assets/ArduinoGeneral/Arduino-nano-complex-IMG_8173.png"
+-->
+
+
+<!--<img src="/src/assets/ArduinoSecuritySystem/SecuritySystem-inside-IMG_4506.jpeg"-->

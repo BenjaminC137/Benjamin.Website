@@ -17,6 +17,9 @@
 	max-width: 50%;
 	height: 10%;
 }
+.arduino-cards{
+	min-width: 18rem; padding: 15px; margin: 15px; box-shadow: 15px 15px 15px; max-width: 50%;
+}
 html{
     background-color:#ffffff;
     color: #8C7965;
@@ -45,9 +48,7 @@ a:hover{
 	color: #00878F;
 	text-decoration: none;
 }
-.container{
-/*	padding-right: 500px;*/
-}
+
 body{
 	background-color: #ECF1F1;
     margin: 10px;
@@ -87,7 +88,9 @@ body p{
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#E5AD24' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
+.container{
+/*	padding-right: 500px;*/
+}
 .custom-toggler.navbar-toggler:hover {
     border-color: #E47128;
 }
@@ -105,10 +108,8 @@ div img{
 	margin: auto;
 /*	background-color: rgba(0, 135, 143, .9);*/
 	background-color: rgba(236, 241, 241, .9);
-		border-radius: 15px;
-
-
-background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);
+	border-radius: 15px;
+	background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);
 }
 .sticky-nav{
 	position: sticky;

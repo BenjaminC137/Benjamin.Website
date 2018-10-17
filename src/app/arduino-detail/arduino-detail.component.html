@@ -1,0 +1,42 @@
+<!--
+<div *ngIf="arduino">
+  <h2>{{arduino.title | uppercase}} Details</h2>
+  <div><span>id: </span>{{arduino.id}}</div>
+  <div>
+    <label>title:
+      <input [(ngModel)]="arduino.title" placeholder="title"/>
+    </label>
+  </div>
+-->
+
+<div class="">
+	<h3>{{arduino.title | uppercase}}</h3>
+	<br>
+	<p>{{arduino.description}}</p>
+	<br>
+	Created: {{arduino.dateCreated | date}}
+	<br>
+	Completed: {{arduino.dateCompleted | date}}
+	<br>
+	ID: {{arduino.id}}
+	<br>
+
+		<a href="{{arduino.imagePath}}"><img src="{{arduino.imagePath}}" class="rounded-image arduino-cards"></a>
+	<br>
+
+
+	More images:
+
+		<div class="arduino-cards" *ngFor="let image of arduino.moreImagesPath"><img src={{image}}></div>
+
+
+<!--	<div *ngFor="let arduino of " ></div>-->
+
+<!--
+		<div class="card rounded-image arduino-cards"
+		*ngFor="let arduino of arduinoProjects"     [class.selected]="arduino === selectedArduino" (click)="onSelect(arduino)"><h6>{{arduino.title}}</h6>
+		<img src="{{arduino.imagePath}}">
+	</div>
+-->
+
+</div>
