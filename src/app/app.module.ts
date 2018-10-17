@@ -6,7 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { ArduinoComponent } from './arduino/arduino.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ArduinoDetailComponent } from './arduino-detail/arduino-detail.component';
-import { FormsModule } '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [

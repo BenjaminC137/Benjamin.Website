@@ -9,27 +9,25 @@
   </div>
 -->
 
-<div class="">
+<div class="project">
 	<h3>{{arduino.title | uppercase}}</h3>
 	<br>
-	<p>{{arduino.description}}</p>
+	<p>{{arduino.description}}
 	<br>
 	Created: {{arduino.dateCreated | date}}
 	<br>
 	Completed: {{arduino.dateCompleted | date}}
 	<br>
-	ID: {{arduino.id}}
+		</p>
+<div class="">
+		<a href="{{arduino.imagePath}}"><img class="arduino-cards img-scale" src="{{arduino.imagePath}}"></a>
+	</div>
 	<br>
 
-		<a href="{{arduino.imagePath}}"><img src="{{arduino.imagePath}}" class="rounded-image arduino-cards"></a>
-	<br>
-
-
-	More images:
-
-		<div class="arduino-cards" *ngFor="let image of arduino.moreImagesPath"><img src={{image}}></div>
-
-
+	<h3>More images: </h3>
+<div class="container">
+	<div class="arduino-cards" *ngFor="let image of arduino.moreImagesPath"><a href="{{image}}"><img class="img-scale" src={{image}}></a></div>
+</div>
 <!--	<div *ngFor="let arduino of " ></div>-->
 
 <!--
@@ -38,5 +36,4 @@
 		<img src="{{arduino.imagePath}}">
 	</div>
 -->
-
 </div>

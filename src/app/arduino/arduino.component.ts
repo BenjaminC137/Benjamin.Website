@@ -11,10 +11,18 @@ import { ArduinoProjects } from '../arduino-projects';
 export class ArduinoComponent implements OnInit {
 	@Input() arduino: ArduinoProjectModel;
 
+	public show: boolean = false;
+	public buttonName:any = 'show';
+
   constructor() { }
 
   ngOnInit() {
   }
+
+	toggle(){
+		this.show = !this.show;
+	}
+
   arduinoProjects = ArduinoProjects;
 
   selectedArduino: ArduinoProjectModel;

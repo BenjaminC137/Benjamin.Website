@@ -1,41 +1,12 @@
 <h2> Arduino Projects</h2>
-
-
-<app-arduino-detail [arduino]="selectedArduino"></app-arduino-detail>
+  <div  *ngIf="show">
+	  	<a href="#" (click)="toggle()" class="btn">Back/Close</a>
+		<app-arduino-detail [arduino]="selectedArduino"></app-arduino-detail>
+   </div>
+<br>
 <div class="card-deck">
-
-	<div class="card rounded-image arduino-cards"
-		*ngFor="let arduino of arduinoProjects"     [class.selected]="arduino === selectedArduino" (click)="onSelect(arduino)"><h6>{{arduino.title}}</h6>
-		<img src="{{arduino.imagePath}}">
+	<div class="card arduino-cards"
+		*ngFor="let arduino of arduinoProjects"     [class.selected]="arduino === selectedArduino" (click)="onSelect(arduino); toggle()"><h6>{{arduino.title}}</h6>
+		<img style="" src="{{arduino.imagePath}}">
 	</div>
-
 </div>
-
-<!--
-
-<ul class="rounded-image">
-  <li *ngFor="let arduino of arduinoProjects"
-    [class.selected]="arduino === selectedArduino"
-    (click)="onSelect(arduino)">
-    <span class="">{{arduino.id}}</span> {{arduino.title}}
-  </li>
-</ul>
--->
-
-<!--
-<div>
-	ID: {{arduino.id}}
-	<br>
-	<h3>{{arduino.title | uppercase}}</h3>
-		<a href="{{arduino.imagePath}}"><img src="{{arduino.imagePath}}" class="rounded-image"></a>
-	<br>
-	{{arduino.description}}
-	<br>
-	Created: {{arduino.dateCreated | date}}
-	<br>
-	Completed: {{arduino.dateCompleted | date}}
-	<br>
--->
-
-
-<!--<img src="/src/assets/ArduinoSecuritySystem/SecuritySystem-inside-IMG_4506.jpeg"-->

@@ -7,9 +7,21 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: 'I designed a dog feeder and built the entire machine using a stepper motor, a servo motor, an LCD screen, an RTC module, custom home-made metal frame and agitator, arduino nano and everything else I used...',
 		dateCreated: '2018/03/21',
 		dateCompleted: '2018/04/18',
-		imagePath: "assets/ArduinoNeechiFeeder/Neechi-full-IMG_8278.png"
-			,
-		moreImagesPath: ["assets/ArduinoNeechiFeeder/Neechi-full-IMG_8278.png", "assets/ArduinoBuddy/buddy-full-IMG_0423.png"]
+		imagePath: "assets/ArduinoNeechiFeeder/Neechi-full-IMG_8278.png",
+		moreImagesPath: ["assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png", "assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png","assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png"
+		,"assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png"
+		,"assets/ArduinoNeechiFeeder/Neechi-door-not-cut-IMG_6596.png"
+		,"assets/ArduinoNeechiFeeder/Neechi-electronics-and-machine-IMG_7498.png"
+		,"assets/ArduinoNeechiFeeder/Neechi-electronics-dark-IMG_7545.png"
+		,"assets/ArduinoNeechiFeeder/Neechi-full-room-IMG_8273.png"
+		,"assets/ArduinoNeechiFeeder/Neechi-motor-mount-back-IMG_8192.png"
+		,"assets/ArduinoNeechiFeeder/Neechi-motor-mount-IMG_8181.png"
+		,"assets/ArduinoNeechiFeeder/Neechi-motor-mount-on-motor-IMG_8174.png"
+		,"assets/ArduinoNeechiFeeder/Neechi-motor-mounted-IMG_6585.png"
+		,"assets/ArduinoNeechiFeeder/Neechi-mounted-old-stepper-IMG_7465.png"
+		,"assets/ArduinoNeechiFeeder/Neechi-room-IMG_8230.png"
+		,"assets/ArduinoNeechiFeeder/Neechi-workbench-IMG_7441.png"
+		]
 		},
 		{
 		id: 2,
