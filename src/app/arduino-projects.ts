@@ -7,21 +7,16 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: 'I designed a dog feeder and built the entire machine using a stepper motor, a servo motor, an LCD screen, an RTC module, custom home-made metal frame and agitator, arduino nano and everything else I used...',
 		dateCreated: '2018/03/21',
 		dateCompleted: '2018/04/18',
-		imagePath: "assets/ArduinoNeechiFeeder/Neechi-full-IMG_8278.png"
-			,
-		moreImagesPath: ["assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png", "assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png","assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png"
-		,"assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png"
-		,"assets/ArduinoNeechiFeeder/Neechi-door-not-cut-IMG_6596.png"
-		,"assets/ArduinoNeechiFeeder/Neechi-electronics-and-machine-IMG_7498.png"
-		,"assets/ArduinoNeechiFeeder/Neechi-electronics-dark-IMG_7545.png"
-		,"assets/ArduinoNeechiFeeder/Neechi-full-room-IMG_8273.png"
-		,"assets/ArduinoNeechiFeeder/Neechi-motor-mount-back-IMG_8192.png"
-		,"assets/ArduinoNeechiFeeder/Neechi-motor-mount-IMG_8181.png"
-		,"assets/ArduinoNeechiFeeder/Neechi-motor-mount-on-motor-IMG_8174.png"
-		,"assets/ArduinoNeechiFeeder/Neechi-motor-mounted-IMG_6585.png"
-		,"assets/ArduinoNeechiFeeder/Neechi-mounted-old-stepper-IMG_7465.png"
-		,"assets/ArduinoNeechiFeeder/Neechi-room-IMG_8230.png"
-		,"assets/ArduinoNeechiFeeder/Neechi-workbench-IMG_7441.png"
+		imagePath: "assets/ArduinoNeechiFeeder/Neechi-full-IMG_8278.png",
+		moreImagesPath: [
+			"assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png", "assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png","assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png", "assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png", "assets/ArduinoNeechiFeeder/Neechi-door-not-cut-IMG_6596.png", "assets/ArduinoNeechiFeeder/Neechi-electronics-and-machine-IMG_7498.png", "assets/ArduinoNeechiFeeder/Neechi-electronics-dark-IMG_7545.png", "assets/ArduinoNeechiFeeder/Neechi-full-room-IMG_8273.png", "assets/ArduinoNeechiFeeder/Neechi-motor-mount-back-IMG_8192.png", "assets/ArduinoNeechiFeeder/Neechi-motor-mount-IMG_8181.png", "assets/ArduinoNeechiFeeder/Neechi-motor-mount-on-motor-IMG_8174.png", "assets/ArduinoNeechiFeeder/Neechi-motor-mounted-IMG_6585.png", "assets/ArduinoNeechiFeeder/Neechi-mounted-old-stepper-IMG_7465.png", "assets/ArduinoNeechiFeeder/Neechi-room-IMG_8230.png", "assets/ArduinoNeechiFeeder/Neechi-workbench-IMG_7441.png"
+		],
+		videoUrl: "https://www.youtube.com/embed/lyI5C47GDH0",
+		components: [
+			"Arduino nano", "LCD 16X2", "servo motor", "stepper motor"
+		],
+		libraries: [
+		"DS1302RTC.h", "Time.h", "Wire.h", "Servo.h", "LCD.h", "LiquidCrystal_I2C.h", "Stepper.h"
 		]
 		},
 		{
@@ -30,7 +25,10 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: 'A car that roams around the house for companionship so people don\'t feel lonely.',
 		dateCreated: '2016/01/01',
 		dateCompleted: '2016/01/02',
-		imagePath: "assets/ArduinoBuddy/buddy-full-IMG_0423.png"
+		imagePath: "assets/ArduinoBuddy/buddy-full-IMG_0423.png",
+		components: [
+			"Arduino nano", "Ultrasonic sensor", "car chasis", "DC motor", "wheel", "accelerometer"
+		]
 		},
 		{
 		id: 3,

@@ -24,17 +24,26 @@ html{
     background-color:#ffffff;
     color: #8C7965;
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 h1,h2,h3,h4 {
         color: #00878F;
         text-align: right;
 }
+h1{
+	text-align: center;
+}
 h2{
     color: #E47128;
 	padding: 10px;
     text-transform: uppercase;
+}
+h3{
+	text-align: center;
+}
+h4{
+	text-align: left;
 }
 
 a{
@@ -50,7 +59,7 @@ body{
 	background-color: #ECF1F1;
     margin: 10px;
 	padding: 15px;
-    font-size: 12px;
+    font-size: 18px;
 	color: #8C7965;
     border: 12px hidden;
     border-radius: 25px;
@@ -66,7 +75,7 @@ body p{
 }
 .box{
 	box-sizing: border-box;
-	text-align: center;
+/*	text-align: center;*/
 	background-color: rgba(255,255,255, .3);
 	padding: 5px;
 	border-style: hidden;
@@ -81,8 +90,11 @@ body p{
 	color: aliceblue;
 }
 .btn-primary {
-	background-color: #00878F;
-	color: #E5AD24;
+	background-color: #E5AD24;
+	color: white;
+	font-size: 20px;
+	padding: 5px;
+	margin: 0px;
 	border: none;
 }
 .btn{
