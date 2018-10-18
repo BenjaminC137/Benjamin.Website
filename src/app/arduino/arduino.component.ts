@@ -30,3 +30,4 @@ export class ArduinoComponent implements OnInit {
   onSelect(arduino: ArduinoProjectModel): void {
   this.selectedArduino = arduino;
 }
+}

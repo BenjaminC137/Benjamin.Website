@@ -1,4 +1,4 @@
-import { ArduinoProjectModel } from './arduino-projects';
+import { ArduinoProjectModel } from './arduino-project-model';
 
 export const ArduinoProjects : ArduinoProjectModel[] = [
 		{
@@ -7,7 +7,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: 'I designed a dog feeder and built the entire machine using a stepper motor, a servo motor, an LCD screen, an RTC module, custom home-made metal frame and agitator, arduino nano and everything else I used...',
 		dateCreated: '2018/03/21',
 		dateCompleted: '2018/04/18',
-		imagePath: "assets/ArduinoNeechiFeeder/Neechi-full-IMG_8278.png",
+		imagePath: "assets/ArduinoNeechiFeeder/Neechi-full-IMG_8278.png"
+			,
 		moreImagesPath: ["assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png", "assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png","assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png"
 		,"assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png"
 		,"assets/ArduinoNeechiFeeder/Neechi-door-not-cut-IMG_6596.png"
@@ -37,7 +38,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: 'Counts crunches while I exercise so I can watch TV and not have to count. I lose track when I count anyway because I start thinking about other things.',
 		dateCreated: '2018/10/05',
 		dateCompleted: '2018/10/08',
-		imagePath: "assets/images/ArduinoNeechiFeeder/IMG_7441.png"
+		imagePath: "assets/ArduinoCrunchCounter/crunchCounter-beta-IMG_4616.jpg"
 		},
 		{
 		id: 4,
@@ -45,7 +46,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: 'Box on fridge buzzes and flashes when open too long or it doesn\'t fully close.',
 		dateCreated: '2017/01/01',
 		dateCompleted: '2017/01/01',
-		imagePath: "assets/ArduinoTemperatureAlarm/temperature-alarm-IMG_7652.png"
+		imagePath: "assets/ArduinoFridgeAlarm/FridgeAlarm-box-IMG_4612.jpg"
 		},
 		{
 		id: 5,
@@ -93,7 +94,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: '50 Gram scale using a .001 accuracy load cell. Includes a tare.',
 		dateCreated: '2017/01/01',
 		dateCompleted: '2017/01/01',
-		imagePath: "assets/"
+		imagePath: "assets/ArduinoScale/scale-calibrating-IMG_4610.jpg"
 		}
 
 	];

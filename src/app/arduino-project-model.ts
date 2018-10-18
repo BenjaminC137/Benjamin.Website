@@ -5,5 +5,5 @@ export class ArduinoProjectModel {
 	dateCreated: string;
 	dateCompleted: string;
 	imagePath: string;
-	moreImagesPath: string[];
+	moreImagesPath?: string[];
 }
