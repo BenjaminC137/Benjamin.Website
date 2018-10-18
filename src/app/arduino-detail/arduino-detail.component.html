@@ -20,15 +20,15 @@
 		<br>
 		Completed: {{arduino.dateCompleted | date}}
 		<br>
-		</div>
+	</div>
 	<br>
-<div class="box">
+	<div class="box">
 		<h4>Components: </h4>
 		<ul>
 			<li *ngFor="let component of arduino.components">{{component}}</li>
 		</ul>
 	</div>
-		<br>
+	<br>
 	<div class="box">
 		<h4>Libraries: </h4>
 		<ul>
@@ -36,28 +36,26 @@
 		</ul>
 	</div>
 	<br>
-<div class="arduino-cards">
-	<img class="img-scale" src="{{arduino.imagePath}}">
-		<a href="{{arduino.imagePath}}">View hi-res</a>
+	<div class="arduino-cards">
+		<img class="img-scale" src="{{arduino.imagePath}}">
+		<a href="{{arduino.imagePath}}">View hi-res
+		</a>
 	</div>
 	<br>
-
-<h4>Video: </h4>
-	<p>{{arduino.videoUrl}}</p>
 <!--
 	<div class="box"><iframe class="box" width="560" height="315" src="{{arduino.videoUrl}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 -->
-
 	<h4>More images: </h4>
-<div class="container">
-	<div class="arduino-cards" *ngFor="let image of arduino.moreImagesPath"><img class="img-scale" src={{image}}><a href="{{image}}">View hi-res</a></div>
-</div>
-<!--	<div *ngFor="let arduino of " ></div>-->
-
-<!--
-		<div class="card rounded-image arduino-cards"
-		*ngFor="let arduino of arduinoProjects"     [class.selected]="arduino === selectedArduino" (click)="onSelect(arduino)"><h6>{{arduino.title}}</h6>
-		<img src="{{arduino.imagePath}}">
+	<div class="container">
+		<div class="row">
+			<div class="col arduino-cards" *ngFor="let image of arduino.moreImagesPath">
+				<img class="img-scale" src={{image}}>
+				<a href="{{image}}">View hi-res</a>
+			</div>
+		</div>
 	</div>
--->
+		<h4>Video: </h4>
+		<p>{{arduino.videoUrl}}</p>
 </div>
+<br>
+<br>
