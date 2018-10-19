@@ -5,8 +5,10 @@
    </div>
 <br>
 <div class="card-deck">
-	<div class="card arduino-cards"
-		*ngFor="let arduino of arduinoProjects"     [class.selected]="arduino === selectedArduino" (click)="onSelect(arduino); toggle()"><h6>{{arduino.title}}</h6>
+	<div class="card arduino-cards" *ngFor="let arduino of arduinoProjects" [class.selected]="arduino === selectedArduino" (click)="onSelect(arduino); toggle()"><h6>{{arduino.title}}</h6>
 		<img style="" src="{{arduino.imagePath}}">
+		<div class="card-footer">
+		  <small class="text-muted">{{arduino.dateCompleted}}</small>
+		</div>
 	</div>
 </div>

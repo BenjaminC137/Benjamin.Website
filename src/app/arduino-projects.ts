@@ -136,7 +136,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"DC motor",
 			"led",
 			"RF receiver",
-			"RF transmitter"
+			"RF transmitter",
 			"button",
 			"led",
 			"servo motor",

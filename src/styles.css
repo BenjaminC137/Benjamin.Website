@@ -18,7 +18,11 @@
 	height: 10%;
 }
 .arduino-cards{
-	min-width: 18rem; padding: 15px; margin: 15px; box-shadow: 15px 15px 15px; max-width: 50%;
+	min-width: 18rem;
+	padding: 15px;
+	margin: 15px;
+	box-shadow: 5px 5px 25px rgba(0,0,0,.2);
+	max-width: 50%;
 }
 html{
     background-color:#ffffff;
@@ -57,12 +61,14 @@ a:hover{
 
 body{
 	background-color: #ECF1F1;
-    margin: 10px;
+/*    margin: 10px;*/
 	padding: 15px;
     font-size: 18px;
 	color: #8C7965;
+/*
     border: 12px hidden;
     border-radius: 25px;
+*/
     font-family: 'Helvetica Neue', 'Helvetica', 'Open Sans';
 }
 body p{
@@ -170,9 +176,16 @@ footer{
 	color: #E5AD24;
 	margin: auto;
 /*	background-color: rgba(0, 135, 143, .9);*/
-	background-color: rgba(236, 241, 241, .9);
-	border-radius: 15px;
+	background-color: rgba(236, 241, 241, .95);
+	border-radius: 0px;
 	background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);
+	min-width: 18rem;
+	padding: 15px;
+	margin: auto;
+	box-shadow: 5px 5px 25px rgba(0,0,0,.2);
+	max-width: 500px;
+
+/*	max-width: 50%;*/
 }
 .sticky-nav{
 	position: sticky;
@@ -231,7 +244,7 @@ footer{
 .project{
 /*	border-style: hidden;*/
 	background-color: rgba(236, 241, 241, .2);
-	box-shadow: 15px 15px 15px;
+	box-shadow: 5px 5px 35px;
 }
 .resume{
 	display: inline-block;
