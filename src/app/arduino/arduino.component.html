@@ -1,13 +1,20 @@
+<br>
 <h2> Arduino Projects</h2>
   <div  *ngIf="show">
 	  	<a href="#" (click)="toggle()" class="btn-primary">Back/Close</a>
 		<app-arduino-detail [arduino]="selectedArduino"></app-arduino-detail>
    </div>
-<br>
 <div class="card-deck">
-	<div class="card arduino-cards" *ngFor="let arduino of arduinoProjects" [class.selected]="arduino === selectedArduino" (click)="onSelect(arduino); toggle()"><h6>{{arduino.title}}</h6>
-		<img style="" src="{{arduino.imagePath}}">
-		<div class="card-footer">
+	<div class="card arduino-cards" *ngFor="let arduino of arduinoProjects" [class.selected]="arduino === selectedArduino" (click)="onSelect(arduino); toggle()"><h6 class="card-title" >{{arduino.title}}</h6>
+		<img class="card-img-top" style="" src="{{arduino.imagePath}}">
+		<div class="card-body">
+<!--
+			<div class="card-text">
+				<p> a</p>
+			</div>
+-->
+		</div>
+		<div class="card-footer" style="margin: 0px">
 		  <small class="text-muted">{{arduino.dateCompleted}}</small>
 		</div>
 	</div>
