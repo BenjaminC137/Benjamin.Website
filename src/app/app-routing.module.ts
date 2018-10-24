@@ -7,11 +7,12 @@ import { PersonalComponent } from 	   './personal/personal.component';
 import { ProfessionalComponent } from 	   './professional/professional.component';
 
 const routes: Routes = [
-	{path: 'home', component: HomeComponent },
-	{path: 'arduino', component: ArduinoComponent },
-	{path: 'arduino-detail', component: ArduinoDetailComponent },
-	{path: 'personal', component: PersonalComponent },
-	{path: 'professional', component: ProfessionalComponent }
+	{ path: '', redirectTo: '/home', pathMatch: 'full' }
+	{ path: 'home', component: HomeComponent },
+	{ path: 'arduino', component: ArduinoComponent },
+	{ path: 'arduino-detail/:id', component: ArduinoDetailComponent },
+	{ path: 'personal', component: PersonalComponent },
+	{ path: 'professional', component: ProfessionalComponent }
 ]
 
 @NgModule({

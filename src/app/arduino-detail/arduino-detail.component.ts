@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ArduinoProjectModel } from '../arduino-project-model';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { ArduinoService } from '../arduino.service';
 
 @Component({
   selector: 'app-arduino-detail',
@@ -9,9 +12,17 @@ import { ArduinoProjectModel } from '../arduino-project-model';
 export class ArduinoDetailComponent implements OnInit {
 	@Input() arduino: ArduinoProjectModel;
 
-  constructor() { }
+  constructor(
+	  private route: ActivatedRoute,
+	  private heroService: ArduinoService,
+	  private location: Location
+  ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+	  this.getArduinoProjects();
   }
-
+	getArduinoProjects(): void {
+		const id = +this.route.snapshot.paramMap.get('id');
+		this.arduinoService.getArduinoProjects(id).subscribe(arduinoProject => this.arduinoProject = arduinoProject);
+	}
 }
