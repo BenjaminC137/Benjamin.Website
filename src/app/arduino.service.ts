@@ -14,10 +14,11 @@ export class ArduinoService {
 //	getArduinoProjects(): ArduinoProjectModel[]{
 //	return ArduinoProjects;
 //	}
-//	getArduinoProjects(id: number): Observable<ArduinoProjectModel[]>{
-//		return of(ArduinoProjects.find(arduino => arduino.id === id));
-//	}
+
 	getArduinoProjects(): Observable<ArduinoProjectModel[]>{
 		return of(ArduinoProjects);
+	}
+	getArduino(id: number): Observable<ArduinoProjectModel>{
+		return of(ArduinoProjects.find(arduino => arduino.id === id));
 	}
 }

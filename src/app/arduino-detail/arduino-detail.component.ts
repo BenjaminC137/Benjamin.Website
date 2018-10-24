@@ -10,19 +10,23 @@ import { ArduinoService } from '../arduino.service';
   styleUrls: ['./arduino-detail.component.css']
 })
 export class ArduinoDetailComponent implements OnInit {
-	@Input() arduino: ArduinoProjectModel;
+//	@Input() arduino: ArduinoProjectModel;
+	arduino: ArduinoProjectModel;
 
   constructor(
 	  private route: ActivatedRoute,
-	  private heroService: ArduinoService,
+	  private arduinoService: ArduinoService,
 	  private location: Location
   ) { }
 
   ngOnInit(): void {
-	  this.getArduinoProjects();
+	  this.getArduino();
   }
-	getArduinoProjects(): void {
+	getArduino(): void {
 		const id = +this.route.snapshot.paramMap.get('id');
-		this.arduinoService.getArduinoProjects(id).subscribe(arduinoProject => this.arduinoProject = arduinoProject);
+		this.arduinoService.getArduino(id).subscribe(arduino => this.arduino = arduino);
+	}
+	goBack(): void{
+		this.location.back();
 	}
 }

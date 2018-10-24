@@ -7,7 +7,7 @@ import { PersonalComponent } from 	   './personal/personal.component';
 import { ProfessionalComponent } from 	   './professional/professional.component';
 
 const routes: Routes = [
-	{ path: '', redirectTo: '/home', pathMatch: 'full' }
+	{ path: '', redirectTo: '/home', pathMatch: 'full' },
 	{ path: 'home', component: HomeComponent },
 	{ path: 'arduino', component: ArduinoComponent },
 	{ path: 'arduino-detail/:id', component: ArduinoDetailComponent },
