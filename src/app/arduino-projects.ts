@@ -7,9 +7,9 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: 'I designed a dog feeder and built the entire machine using a stepper motor, a servo motor, an LCD screen, an RTC module, custom home-made metal frame and agitator, arduino nano and everything else I used...',
 		dateCreated: '2018/03/21',
 		dateCompleted: '2018/04/18',
-		imagePath: "assets/ArduinoNeechiFeeder/Neechi-full-IMG_8278.png",
+		imagePath: "assets/ArduinoNeechiFeeder/Neechi-full-IMG_8273.jpeg",
 		moreImagesPath: [
-			"assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png", "assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png","assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png", "assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png", "assets/ArduinoNeechiFeeder/Neechi-door-not-cut-IMG_6596.png", "assets/ArduinoNeechiFeeder/Neechi-electronics-and-machine-IMG_7498.png", "assets/ArduinoNeechiFeeder/Neechi-electronics-dark-IMG_7545.png", "assets/ArduinoNeechiFeeder/Neechi-full-room-IMG_8273.png", "assets/ArduinoNeechiFeeder/Neechi-motor-mount-back-IMG_8192.png", "assets/ArduinoNeechiFeeder/Neechi-motor-mount-IMG_8181.png", "assets/ArduinoNeechiFeeder/Neechi-motor-mount-on-motor-IMG_8174.png", "assets/ArduinoNeechiFeeder/Neechi-motor-mounted-IMG_6585.png", "assets/ArduinoNeechiFeeder/Neechi-mounted-old-stepper-IMG_7465.png", "assets/ArduinoNeechiFeeder/Neechi-room-IMG_8230.png", "assets/ArduinoNeechiFeeder/Neechi-workbench-IMG_7441.png"
+			"assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png", "assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png", "assets/ArduinoNeechiFeeder/Neechi-door-not-cut-IMG_6596.png", "assets/ArduinoNeechiFeeder/Neechi-electronics-and-machine-IMG_7498.png", "assets/ArduinoNeechiFeeder/Neechi-electronics-dark-IMG_7545.png", "assets/ArduinoNeechiFeeder/Neechi-full-room-IMG_8273.png", "assets/ArduinoNeechiFeeder/Neechi-motor-mount-back-IMG_8192.png", "assets/ArduinoNeechiFeeder/Neechi-motor-mount-IMG_8181.png", "assets/ArduinoNeechiFeeder/Neechi-motor-mount-on-motor-IMG_8174.png", "assets/ArduinoNeechiFeeder/Neechi-motor-mounted-IMG_6585.png", "assets/ArduinoNeechiFeeder/Neechi-mounted-old-stepper-IMG_7465.png", "assets/ArduinoNeechiFeeder/Neechi-room-IMG_8230.png", "assets/ArduinoNeechiFeeder/Neechi-workbench-IMG_7441.png"
 		],
 		videoUrl: "https://www.youtube.com/embed/lyI5C47GDH0",
 		components: [
@@ -35,9 +35,9 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: 'A car that roams around the house for companionship so people don\'t feel lonely.',
 		dateCreated: '2016/01/01',
 		dateCompleted: '2016/01/02',
-		imagePath: "assets/ArduinoBuddy/buddy-full-IMG_0423.png",
+		imagePath: "assets/ArduinoBuddy/buddy-full-top-IMG_0541.jpeg",
 		moreImagesPath: [
-			"assets/coming-soon.png"
+			"assets/ArduinoBuddy/buddy-full-front-IMG_0542.jpeg", "assets/ArduinoBuddy/buddy-full-old-IMG_0423.png"
 		],
 		videoUrl: "coming soon",
 		components: [
@@ -82,8 +82,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		id: 4,
 		title: 'Fridge Alarm',
 		description: 'Box on fridge buzzes and flashes when open too long or it doesn\'t fully close.',
-		dateCreated: '2017/01/01',
-		dateCompleted: '2017/01/01',
+		dateCreated: '2017/09/01',
+		dateCompleted: '2017/09/02',
 		imagePath: "assets/ArduinoFridgeAlarm/FridgeAlarm-box-IMG_4612.jpg",
 		moreImagesPath: [
 			"assets/ArduinoFridgeAlarm/FridgeAlarm-button-IMG_4614.jpg"
@@ -104,7 +104,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		title: 'Home Box',
 		description: 'Automatically turns on lights when you walk by. Uses the unused buttons on the TV remote to turn on or off. Has manual buttons.',
 		dateCreated: '2017/01/01',
-		dateCompleted: '2017/01/01',
+		dateCompleted: '2017/12/08',
 		imagePath: "assets/ArduinoHomeBox/Homebox-complete-IMG_8136.png",
 		moreImagesPath: [
 			"assets/coming-soon.png"
@@ -124,8 +124,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		id: 6,
 		title: 'Smart-tank',
 		description: 'Analyzes surroundings and chooses where to go.',
-		dateCreated: '2017/01/01',
-		dateCompleted: '2017/01/01',
+		dateCreated: '2018/01/07',
+		dateCompleted: '2018/01/21',
 		imagePath: "assets/ArduinoSmartTank/smartTank-hot-art-IMG_3017.jpeg",
 		moreImagesPath: [
 			"assets/coming-soon.png"
@@ -155,9 +155,9 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		{
 		id: 7,
 		title: 'Security System',
-		description: 'Security System to fend off intruders.',
-		dateCreated: '2017/01/01',
-		dateCompleted: '2017/01/01',
+		description: 'Security System to fend off intruders. Exact dates unknown',
+		dateCreated: '2018/07/01',
+		dateCompleted: '2018/07/02',
 		imagePath: "assets/ArduinoSecuritySystem/SecuritySystem-inside-IMG_4506.jpeg",
 		moreImagesPath: [
 			"assets/coming-soon.png"
@@ -177,7 +177,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		title: 'Heater Control',
 		description: 'Modified a space heater to be able to turn on at given time.',
 		dateCreated: '2017/01/01',
-		dateCompleted: '2017/01/01',
+		dateCompleted: '2017/12/10',
 		imagePath: "assets/ArduinoHeaterControl/ArduinoHeaterControl-BoardAndCables1%20-%20IMG_2368%20copy.jpeg",
 		moreImagesPath: [
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-board-bottom-partial - IMG_2343 copy.jpeg",
