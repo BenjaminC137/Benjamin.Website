@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ArduinoProjectModel } from '../arduino-project-model';
-import { ArduinoProjects } from '../arduino-projects'
+import { ArduinoProjects } from '../arduino-projects';
+import { ArduinoService } from '../arduino.service';
 
 @Component({
   selector: 'app-home',
@@ -93,7 +94,7 @@ export class HomeComponent implements OnInit {
 //
 //	];
 
-  constructor() { }
+  constructor(private arduinoService: ArduinoService) { }
 
   ngOnInit() {
   }
