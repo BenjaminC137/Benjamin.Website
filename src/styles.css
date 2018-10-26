@@ -215,6 +215,9 @@ footer{
 .sticky-top{
 	top: 10px;
 }
+.navbar{
+	padding: 3px 5px;
+}
 .navColors a:hover{
 	color: #E47128 !important;
 	cursor: pointer;
