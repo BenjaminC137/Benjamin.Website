@@ -18,11 +18,21 @@
 	height: 10%;
 }
 .arduino-cards{
-	min-width: 18rem;
+	min-width: 14rem;
 /*	padding: 15px;*/
 	margin: 15px;
 	box-shadow: 5px 5px 25px rgba(0,0,0,.2);
 	max-width: 50%;
+}
+.arduino-images{
+	min-width: 14rem;
+	padding: 0px;
+	margin: 15px;
+	box-shadow: 5px 5px 25px rgba(0,0,0,.2);
+	max-width: 50%;
+}
+.arduino-card-hover:hover{
+	cursor: pointer;
 }
 html{
     background-color:#ffffff;
@@ -92,8 +102,8 @@ body p{
 .boxBack{
 	background-color: black;
 }
-.button a:hover:{
-	color: aliceblue;
+.button:hover:{
+cursor: pointer;
 }
 .btn-primary {
 	background-color: #E5AD24;
@@ -120,6 +130,7 @@ body p{
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
 	background-color: #00878F;
+	cursor: pointer;
 }
 .btn-primary:active{
 	background-color: #62AEB2;
@@ -129,12 +140,19 @@ body p{
 	outline color: #E5AD24;
 }
 
-/*
 .card{
-	margin-bottom: 15px;
-background-color: black;
+	padding: 0px;
+	background-color: #ECF1F1;
+	background-image: url(assets/PortalBenjaminLight.png);
+	background-size: 1000px;
 }
+.card-body{
+	padding: 0px;
+/*
+	background-image: url(assets/PortalBenjaminLight.png);
+	background-size: 500px;
 */
+}
 .card-title{
 	padding: 7px;
 }
@@ -172,6 +190,9 @@ footer{
     max-height: 50vh;
 	object-fit: contain;
 }
+.limitText {
+    display:flow-root; text-overflow:ellipsis; white-space:nowrap; overflow: hidden;
+}
 .navColors {
 	color: #E5AD24;
 	margin: auto;
@@ -195,7 +216,9 @@ footer{
 	top: 10px;
 }
 .navColors a:hover{
-	color: #E47128 !important; }
+	color: #E47128 !important;
+	cursor: pointer;
+}
 :focus{
 	outline-color: #E5AD24;
 		outline-width: 3px;

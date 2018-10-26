@@ -1,25 +1,14 @@
 <br>
 <h2> Arduino Projects</h2>
-<!--
-<div>
-	<img src="/assets/PortalBenjaminDark.png">
-</div>
--->
-<!--
-  <div  *ngIf="show">
-	  	<a href="#" (click)="toggle()" class="btn-primary">Back/Close</a>
-		<app-arduino-detail [arduino]="selectedArduino"></app-arduino-detail>
-   </div>
--->
+
 <div class="card-deck">
 <!--	<div class="card arduino-cards" *ngFor="let arduino of arduinoProjects" [class.selected]="arduino === selectedArduino" (click)="onSelect(arduino); toggle()">-->
-	<div class="card arduino-cards" *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}">
+	<div class="card arduino-cards arduino-card-hover" *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}">
 		<h6 class="card-title" >{{arduino.title}}</h6>
 		<img class="card-img-top" style="" src="{{arduino.imagePath}}">
 		<div class="card-body">
-
 			<div class="card-text">
-				<p> a space for text</p>
+<!--				<p class="limitText" >{{arduino.description}}</p>-->
 			</div>
 		</div>
 		<div class="card-footer" style="margin: 0px">

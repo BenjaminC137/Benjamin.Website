@@ -37,7 +37,7 @@
 		</ul>
 	</div>
 	<br>
-	<div class="arduino-cards">
+	<div class="card arduino-images">
 		<img class="img-scale" src="{{arduino.imagePath}}">
 		<a href="{{arduino.imagePath}}">View hi-res
 		</a>
@@ -49,14 +49,15 @@
 	<h4>More images: </h4>
 	<div class="container">
 		<div class="row">
-			<div class="col arduino-cards" *ngFor="let image of arduino.moreImagesPath">
+			<div class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; index as i">
 				<img class="img-scale" src={{image}}>
-				<a href="{{image}}">View hi-res</a>
+				<div class="card-body">
+					<p class="card-text">{{arduino.imageCaption[i]}}</p>
+				</div>
+				<div class="card-footer" ><a class="" href="{{image}}">View hi-res</a></div>
 			</div>
 		</div>
 	</div>
 		<h4>Video: </h4>
 		<p>{{arduino.videoUrl}}</p>
 </div>
-<br>
-<br>
