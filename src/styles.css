@@ -31,6 +31,17 @@
 	box-shadow: 5px 5px 25px rgba(0,0,0,.2);
 	max-width: 50%;
 }
+.arduino-logo{
+	display: inline;
+	width: 70px;
+	float: left;
+}
+.arduino-logo-details{
+	display: inline;
+	width: 70px;
+	float: right;
+	padding: 5px;
+}
 .arduino-card-hover:hover{
 	cursor: pointer;
 }
@@ -82,7 +93,7 @@ body{
     font-family: 'Helvetica Neue', 'Helvetica', 'Open Sans';
 }
 body p{
-	background-color: rgba(255,255,255, .3);
+	background-color: rgba(255,255,255, .7);
 	padding: 5px;
 	border-style: hidden;
 	border-radius: 5px;
@@ -139,7 +150,19 @@ cursor: pointer;
 	outline-width: 3px;
 	outline color: #E5AD24;
 }
-
+.carousel-image{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.carousel-div{
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+}
+.carousel-item{
+	transition: transform 8s linear, opacity 8s ease-out;
+}
 .card{
 	padding: 0px;
 	background-color: #ECF1F1;
@@ -159,7 +182,14 @@ cursor: pointer;
 .carousel-indicators{
 	margin-bottom: 0px;
 }
-
+.carousel-caption{
+	color: black;
+	background-color: rgba(255,255,255,.5);
+	padding: 0px;
+	margin: 0px;
+	background-position: left;
+/*	text-shadow: 5px 5px 0px white;	*/
+}
 .custom-toggler.navbar-toggler {
     border-color: #E5AD24;
 }
@@ -189,6 +219,10 @@ footer{
 	max-width: 50vw;
     max-height: 50vh;
 	object-fit: contain;
+}
+.image-big{
+	width: 20vw;
+		box-shadow: 5px 5px 25px rgba(0,0,0,.5);
 }
 .limitText {
     display:flow-root; text-overflow:ellipsis; white-space:nowrap; overflow: hidden;

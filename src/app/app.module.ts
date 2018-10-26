@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { ProfessionalComponent } from './professional/professional.component';
 import { PersonalComponent } from './personal/personal.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 //import { ArduinoProjects } from './arduino-projects';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { AppRoutingModule } from './/app-routing.module';
     NavBarComponent,
     ArduinoDetailComponent,
     ProfessionalComponent,
-    PersonalComponent
+    PersonalComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

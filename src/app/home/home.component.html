@@ -1,30 +1,110 @@
-<h3>Welcome to my website!</h3>
-<!--
-	{{now | date}}
+<div style="background-image: url(assets/PortalBenjaminLight.png); background-size: cover">
+	<h3>Welcome to my website!</h3>
 	<br>
--->
-<p>
-	You have reached the website of Benjamin Salasek. I am unable to take your request right now, so please make an observation, and I'll get back to you as soon as I can't.
-	<br>
-	<br>
-	Thank you,
-	<br>
-	Benjamin Salasek.
-</p>
+	<!--
+		{{now | date}}
+		<br>
+	-->
+	<p>
+		Hello, I am Benjamin Salasek. For those of you who do not know, I am a software developer, artist and Arduino enthusiest. Please browse this site as you wish, and don't forget to check out all of my cool Arduino projects!
+		<br>
+		<br>
+		Thank you,
+		<br>
+		Benjamin Salasek.
+	</p>
 
-<p>
-	<a routerLink="/arduino">Arduino</a>
+	<p style="font-size: 1em">
+		<a routerLink="/arduino">Arduino</a>
+		<br>
+		<a routerLink="/personal">Personal</a>
+		<br>
+		<a routerLink="/professional">Professional</a>
+	</p>
 	<br>
-	<a routerLink="/personal">Personal</a>
-	<br>
-	<a routerLink="/professional">Professional</a>
-</p>
-<div>
-<!--	leading dot and slash:-->
-	<img src="./assets/PortalBenjaminDark.png">
-<!--
-	no leading slash:
-	<br>
-	<img src="assets/PortalBenjaminDark.png">
--->
+
+	<div class="carousel-div">
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1" data-wrap="true" direction="left" data-pause="false">
+		  <div class="carousel-inner">
+			 <div class="carousel-item active">
+			  <img class="d-block w-100 carousel-image" src="assets/PortalBenjaminDark.png" alt="first slide">
+				<div class="carousel-caption">
+					Benjamin Salasek
+				</div>
+			</div>
+			<div class="carousel-item">
+			  <img class="d-block w-100 carousel-image" src="assets/El-Horse-forweb1000.png">
+				<div class="carousel-caption">
+					El Horse
+				</div>
+			</div>
+			<div class="carousel-item">
+			  <img class="d-block w-100 carousel-image" src="assets/biker_boys.png">
+				<div class="carousel-caption">
+					Biker Boys
+				</div>
+			</div>
+			<div *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}" class="carousel-item">
+			  <img class="d-block w-100 carousel-image" src="{{arduino.imagePath}}" alt="second slide">
+				<div class="carousel-caption">
+					{{arduino.title}}
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+
+
+
+	<div class="carousel-div">
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1" data-wrap="true" direction="left" data-pause="false">
+		  <div class="carousel-inner">
+			 <div class="carousel-item active">
+			  <img class="d-block w-100 carousel-image" src="assets/PortalBenjaminDark.png" alt="first slide">
+				<div class="carousel-caption">
+					Benjamin Salasek
+				</div>
+			</div>
+			<div class="carousel-item">
+			  <img class="d-block w-100 carousel-image" src="assets/biker_boys.png">
+				<div class="carousel-caption">
+					Biker Boys
+				</div>
+			</div>
+			<div *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}" class="carousel-item">
+			  <img class="d-block w-100 carousel-image" src="{{arduino.imagePath}}" alt="second slide">
+				<div class="carousel-caption">
+					{{arduino.title}}
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="carousel-div">
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1" data-wrap="true" direction="left" data-pause="false">
+		  <div class="carousel-inner">
+			 <div class="carousel-item active">
+			  <img class="d-block w-100 carousel-image" src="assets/PortalBenjaminDark.png" alt="first slide">
+				<div class="carousel-caption">
+					Benjamin Salasek
+				</div>
+			</div>
+			<div *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}" class="carousel-item">
+			  <img class="d-block w-100 carousel-image" src="{{arduino.imagePath}}" alt="second slide">
+				<div class="carousel-caption">
+					{{arduino.title}}
+				</div>
+			</div>
+			<div class="carousel-item">
+			  <img class="d-block w-100 carousel-image" src="assets/biker_boys.png">
+				<div class="carousel-caption">
+					Biker Boys
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+
 </div>
