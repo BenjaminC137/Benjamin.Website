@@ -13,9 +13,9 @@ const routes: Routes = [
 	{ path: 'arduino', component: ArduinoComponent },
 	{ path: 'arduino-detail/:id', component: ArduinoDetailComponent },
 	{ path: 'personal', component: PersonalComponent },
-	{ path: 'professional', component: ProfessionalComponent }
-	,
-	{ path: '**', component: NotFoundComponent }
+	{ path: 'professional', component: ProfessionalComponent },
+	{ path: '**', component: NotFoundComponent },
+	{ path: 'Neechi%20Feeder.html', redirectTo: '/Neechi%20Feeder.html', pathMatch: 'full '}
 ]
 
 @NgModule({
