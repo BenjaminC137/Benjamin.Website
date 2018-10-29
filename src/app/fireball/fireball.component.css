@@ -1,0 +1,33 @@
+.box{
+	position: absolute;
+	top: 128px;
+	left: 256px;
+	height: 64px;
+	width: 64px;
+	background-blend-mode:difference;
+	background-image: url(/assets/fireball/walker.png);
+	background-position-x: 256px;
+	background-position-y: 128px;
+	border-radius: 35px;
+}
+.game{
+	 background-color: black;
+	 cursor: cell;
+	display: inline-block;
+	width: 100vw;
+	height: 100vh;
+}
+.boxBack{
+	background-color: black;
+
+}
+.fireball{
+	position: absolute;
+	top: 0px;
+	left: -40px;
+	height: 32px;
+	width: 32px;
+	background-image: url(/assets/fireball/fireball.png);
+	background-position-x: 0;
+	background-position-y: 0;
+}

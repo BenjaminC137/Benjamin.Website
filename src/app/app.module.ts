@@ -11,6 +11,7 @@ import { ProfessionalComponent } from './professional/professional.component';
 import { PersonalComponent } from './personal/personal.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FireballComponent } from './fireball/fireball.component';
 //import { ArduinoProjects } from './arduino-projects';
 
 @NgModule({
@@ -22,7 +23,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ArduinoDetailComponent,
     ProfessionalComponent,
     PersonalComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FireballComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,8 @@ import { ArduinoComponent } from 	   './arduino/arduino.component';
 import { ArduinoDetailComponent } from './arduino-detail/arduino-detail.component';
 import { PersonalComponent } from 	   './personal/personal.component';
 import { ProfessionalComponent } from 	   './professional/professional.component';
-import { NotFoundComponent } from './not-found/not-found.component'
+import { NotFoundComponent } from './not-found/not-found.component';
+import { FireballComponent } from './fireball/fireball.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,7 +15,8 @@ const routes: Routes = [
 	{ path: 'arduino-detail/:id', component: ArduinoDetailComponent },
 	{ path: 'personal', component: PersonalComponent },
 	{ path: 'professional', component: ProfessionalComponent },
-	{ path: 'Neechi%20Feeder.html', redirectTo: '/Neechi%20Feeder', pathMatch: 'full'},
+	{ path: 'fireball', component: FireballComponent },
+//	{ path: 'Neechi%20Feeder.html', redirectTo: '/Neechi%20Feeder', pathMatch: 'full'},
 	{ path: '**', component: NotFoundComponent }
 ]
 

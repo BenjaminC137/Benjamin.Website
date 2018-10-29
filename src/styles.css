@@ -54,32 +54,6 @@
 .arduino-card-hover:hover{
 	cursor: pointer;
 }
-html{
-    background-color:#ffffff;
-    color: #8C7965;
-    font-family: sans-serif;
-    font-size: 18px;
-}
-
-h1,h2,h3,h4 {
-        color: #00878F;
-        text-align: right;
-}
-h1{
-	text-align: center;
-}
-h2{
-    color: #E47128;
-	padding: 10px;
-    text-transform: uppercase;
-}
-h3{
-	text-align: center;
-}
-h4{
-	text-align: left;
-}
-
 a{
     text-decoration: none;
     color: #E5AD24;
@@ -101,21 +75,14 @@ body{
 */
     font-family: 'Helvetica Neue', 'Helvetica', 'Open Sans';
 }
-body p{
-	background-color: rgba(255,255,255, .7);
-	padding: 5px;
-	border-style: hidden;
-	border-radius: 5px;
-	box-shadow: 2px 2px 10px rgba(0,0,0, .04);
-	font-size: 14px;
-}
+
 .box{
 	box-sizing: border-box;
 /*	text-align: center;*/
 	background-color: rgba(255,255,255, .3);
 	padding: 5px;
 	border-style: hidden;
-	border-radius: 5px;
+	border-radius: 2px;
 	box-shadow: 2px 2px 10px rgba(0,0,0, .04);
 	font-size: 14px;
 }
@@ -208,6 +175,9 @@ cursor: pointer;
 .container{
 /*	padding-right: 500px;*/
 }
+.cursor-finger{
+	cursor: pointer;
+}
 .custom-toggler.navbar-toggler:hover {
     border-color: #E47128;
 }
@@ -223,6 +193,31 @@ div img{
 footer{
 /*	text-align: center;*/
 /*	text-shadow: 0px 1px .25px white;*/
+}
+html{
+    background-color:#ffffff;
+    color: #8C7965;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+h1,h2,h3,h4 {
+        color: #00878F;
+        text-align: right;
+}
+h1{
+	text-align: center;
+}
+h2{
+    color: #E47128;
+	padding: 10px;
+    text-transform: uppercase;
+}
+h3{
+	text-align: center;
+}
+h4{
+	text-align: left;
 }
 .img-scale{
 	max-width: 50vw;
@@ -250,6 +245,25 @@ footer{
 	max-width: 500px;
 
 /*	max-width: 50%;*/
+}
+p{
+	background-color: rgba(255,255,255, .7);
+	padding: 5px;
+	border-style: hidden;
+	border-radius: 3px;
+	box-shadow: 2px 2px 10px rgba(0,0,0, .04);
+	font-size: 14px;
+}
+.professional-title{
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: rgba(255,255,255, .3);
+	padding: 5px;
+	margin: 0px;
+	border-style: hidden;
+	border-radius: 2px;
+	text-shadow: 2px 2px 10px rgba(0,0,0, .04);
+/*	font-size: 14px;*/
 }
 .sticky-nav{
 	position: sticky;
