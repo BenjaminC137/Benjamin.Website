@@ -64,7 +64,7 @@ export class ArduinoDetailComponent implements OnInit{
 		this.show = !this.show
 		this.selectedIdx = null;
 		}
-		else if (this.show == false{
+		else if (this.show == false){
 		this.selectedIdx = index;
 		console.log(index);
 		this.show = !this.show
