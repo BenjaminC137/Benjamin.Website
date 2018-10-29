@@ -148,7 +148,7 @@ cursor: pointer;
 }
 .btn-primary:focus{
 	outline-width: 3px;
-	outline color: #E5AD24;
+/*	outline-color: #E5AD24;*/
 }
 .carousel-image{
     width: 400px;
@@ -233,7 +233,7 @@ footer{
 /*	background-color: rgba(0, 135, 143, .9);*/
 	background-color: rgba(236, 241, 241, .95);
 	border-radius: 0px;
-	background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);
+/*	background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);*/
 	min-width: 18rem;
 	padding: 15px;
 	margin: auto;
@@ -332,8 +332,7 @@ footer{
 @include media-breakpoint-up(sm) {
 }
 @include media-breakpoint-up(md) {
-	.top{
-	}
+
 }
 @include media-breakpoint-up(lg) {
 }
