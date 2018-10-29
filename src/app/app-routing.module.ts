@@ -14,7 +14,7 @@ const routes: Routes = [
 	{ path: 'arduino-detail/:id', component: ArduinoDetailComponent },
 	{ path: 'personal', component: PersonalComponent },
 	{ path: 'professional', component: ProfessionalComponent },
-	{ path: 'Neechi%20Feeder.html', redirectTo: '/Neechi%20Feeder.html', pathMatch: 'full '},
+	{ path: 'Neechi%20Feeder.html', redirectTo: '/Neechi%20Feeder', pathMatch: 'full'},
 	{ path: '**', component: NotFoundComponent }
 ]
 
