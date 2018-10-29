@@ -8,7 +8,7 @@
     </label>
   </div>
 -->
-<button class="btn-primary" (click)="goBack()">Back/Close</button>
+<div class="sticky-top"><button class="btn-primary sticky-top" (click)="goBack()">Back</button></div>
 <div class="project">
 	<h3>{{arduino.title | uppercase}} <img class="arduino-logo-details" src="assets/2000px-Arduino_Logo.svg.png"></h3>
 	<br>
@@ -49,28 +49,30 @@
 	<h4>More images: </h4>
 	<div class="container">
 		<div class="row">
-			<div class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; index as i">
-				<img class="img-scale" src={{image}}>
+			<div class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; let i = index">
+
+				<div><button class="btn-primary" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i" class="sticky-top" style="z-index: 51">Close</button></div>
+
+				<img (click)="ViewHiRes(i)" [class.view-hi-res]="selectedIdx === i" src={{image}}>
 				<div class="card-body">
 					<p class="card-text">{{arduino.imageCaption[i]}}</p>
 				</div>
-				<div class="card-footer" ><a class="" href="{{image}}">View hi-res</a></div>
+				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(i)">View hi-res</button></div>
 			</div>
 		</div>
 	</div>
 		<h4>Video: </h4>
-
 <!--
 		<p>{{arduino.videoUrl}}</p>
 		<p [innerHtml]="arduino.videoUrl"></p>
-
-
 -->
-		<a [href]="goPlay">Go to Video</a> (coming soon)
+		 <div style="padding-left: 5px" class="box"><a [href]="goPlay">Go to Video</a> (coming soon)
+			 </div>
+	<br>
+	<br>
 <!--
 	<br>
 		<a [href]="safeUrl">Go to Video</a>
-
 
 	<div class="box col">
 		<iframe [src]="trustedDashboardUrl" class="box" width="560" height="315" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
