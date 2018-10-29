@@ -1,19 +1,9 @@
-<!--
-<div *ngIf="arduino">
-  <h2>{{arduino.title | uppercase}} Details</h2>
-  <div><span>id: </span>{{arduino.id}}</div>
-  <div>
-    <label>title:
-      <input [(ngModel)]="arduino.title" placeholder="title"/>
-    </label>
-  </div>
--->
 <div class="sticky-top"><button class="btn-primary sticky-top" (click)="goBack()">Back</button></div>
 <div class="project">
 	<h3>{{arduino.title | uppercase}} <img class="arduino-logo-details" src="assets/2000px-Arduino_Logo.svg.png"></h3>
 	<br>
 	<div class="box">
-		<h4>Introduction: </h4>
+		<h4>Introduction </h4>
 		{{arduino.description}}
 		<br>
 		<br>
@@ -24,51 +14,62 @@
 	</div>
 	<br>
 	<div class="box">
-		<h4>Components: </h4>
+		<h4>Components </h4>
 		<ul>
 			<li *ngFor="let component of arduino.components">{{component}}</li>
 		</ul>
 	</div>
 	<br>
 	<div class="box">
-		<h4>Libraries: </h4>
+		<h4>Libraries </h4>
 		<ul>
 			<li *ngFor="let library of arduino.libraries">{{library}}</li>
 		</ul>
 	</div>
 	<br>
-	<div class="card arduino-images">
-		<img class="img-scale" src="{{arduino.imagePath}}">
-		<a href="{{arduino.imagePath}}">View hi-res
-		</a>
-	</div>
-	<br>
 <!--
 	<div class="box"><iframe class="box" width="560" height="315" src="{{arduino.videoUrl}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 -->
-	<h4>More images: </h4>
+<div class="box">
+	<h4>Images </h4>
 	<div class="container">
 		<div class="row">
+
+
+			<div class="col card arduino-images">
+				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === 100" style="z-index: 51">Close</button></div>
+
+				<img (click)="ViewHiRes(100)" [class.view-hi-res]="selectedIdx === 100" src="{{arduino.imagePath}}">
+				<div class="card-body">
+					<p class="card-text">Project photo</p>
+				</div>
+<!--				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(100)">View hi-res</button></div>				-->
+			</div>
+
+
 			<div class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; let i = index">
 
-				<div><button class="btn-primary" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i" class="sticky-top" style="z-index: 51">Close</button></div>
+				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i" style="z-index: 51">Close</button></div>
 
 				<img (click)="ViewHiRes(i)" [class.view-hi-res]="selectedIdx === i" src={{image}}>
 				<div class="card-body">
 					<p class="card-text">{{arduino.imageCaption[i]}}</p>
 				</div>
-				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(i)">View hi-res</button></div>
+<!--				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(i)">View hi-res</button></div>-->
 			</div>
 		</div>
 	</div>
-		<h4>Video: </h4>
+</div>
+		<br>
+
 <!--
 		<p>{{arduino.videoUrl}}</p>
 		<p [innerHtml]="arduino.videoUrl"></p>
 -->
-		 <div style="padding-left: 5px" class="box"><a [href]="goPlay">Go to Video</a> (coming soon)
+		 <div class="box">
+			 <h4>Video </h4>
+			 <a [href]="goPlay">Go to Video</a> (coming soon)
 			 </div>
-	<br>
 	<br>
 <!--
 	<br>

@@ -159,6 +159,12 @@ cursor: pointer;
 .carousel-indicators{
 	margin-bottom: 0px;
 }
+.close-button{
+	position: fixed;
+	top: 10px;
+	left: 15px;
+	z-index: 100;
+}
 .carousel-caption{
 	color: black;
 	background-color: rgba(255,255,255,.5);
@@ -262,7 +268,7 @@ h4{
 	border-radius: 0px;
 /*	background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);*/
 	min-width: 18rem;
-	padding: 15px;
+/*	padding: 15px;*/
 	margin: auto;
 	box-shadow: 5px 5px 25px rgba(0,0,0,.2);
 	max-width: 500px;
@@ -302,6 +308,7 @@ p{
 	position: -webkit-sticky;
 	position: sticky;
 	top: 10px;
+	z-index: 51;
 }
 /*
 .top{
