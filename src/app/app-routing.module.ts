@@ -14,8 +14,8 @@ const routes: Routes = [
 	{ path: 'arduino-detail/:id', component: ArduinoDetailComponent },
 	{ path: 'personal', component: PersonalComponent },
 	{ path: 'professional', component: ProfessionalComponent }
-//	,
-//	{ path: '**', component: NotFoundComponent }
+	,
+	{ path: '**', component: NotFoundComponent }
 ]
 
 @NgModule({
