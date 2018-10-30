@@ -4,7 +4,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		{
 		id: 1,
 		title: 'Neechi (dog) Feeder',
-		description: 'I designed a dog feeder and built the entire contraption. It automatically releases a designated amount of food twice per day based on a predetermined feeding schedule. An Led display shows the current time, the quantity of times fed per day and the time in which the last feeding was released including manual feedings. A button allows for manual feeding.',
+		description: 'I designed a dog feeder and built the entire contraption. It automatically releases a designated amount of food twice per day based on a predetermined feeding schedule. An Led display shows the current time, the quantity of times fed per day and the time in which the last feeding was released including manual feedings. A button allows for manual feeding. This is my favorite project as it is the most useful, most advanced and most fun to develop and build.',
 		dateCreated: '2018/03/21',
 		dateCompleted: '2018/04/18',
 		imagePath: "assets/ArduinoNeechiFeeder/Neechi-full-IMG_8273.jpeg",
@@ -27,25 +27,41 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Agitator rod: Folded sheet steel and twisted to create an agitator that will spiral and thus push food out so food doesn't get stuck.", //2
 			"Hatch door mounted to hatch mount before cutting the opening hole", //3
 			"Electronics in the dark. Often times, uncompleted electronics are quite astheticly pleasing.", //4
-			"", //5
-			"", //6
-			"", //7
-			"", //8
-			"", //9
-			"", //10
-			"", //11
-			"Creating and constructing the agitator assemply", //12
-			"", //13
-			"", //14
-			"" //15
+			"All of the electronic components and wires before building the board.", //5
+			"Top of the stepper motor mount with universal mounting hub", //6
+			"Underside of the stepper motor mount with universal mounting hub", //7
+			"Stepper motor mount with universal mounting hub and stepper motor", //8
+			"Stepper motor mounted to the bracket mount", //9
+			"Original 5 Volt stepper motor mount assembly mounted on storage compartment. I later upgraded to a significantly more powerful motor.", //10
+			"Workspace during construction. I actually cleaned everything up every day after working on it.", //11
+			"Creating and constructing the agitator assemply" //12
 		],
 		videoUrl: "https://www.youtube.com/embed/lyI5C47GDH0",
 		components: [
+			"5 Volt 1 amp power adapter",
+			"5 Volt 55g servo motor",
+			"5 Volt relay module",
+			"9 Volt 1 amp power adapter",
+			"12 Volt 3 amp power adapter",
+			"agitator",
+			"acryllic hatch door",
 			"Arduino nano",
+			"button",
+			"chain",
 			"IIC/I2C/TWI 1602 Serial LCD Display",
 			"IIC/I2C/TWI 1602 Serial Interface module",
-			"servo motor",
-			"stepper motor"
+			"L298 motor driver",
+			"Nema 17 stepper motor",
+			"on/off switch",
+			"project box",
+			"PVC pipe",
+			"power strip",
+			"power port",
+			"stepper motor mount",
+			"servo motor mount",
+			"storage compartment",
+			"tripod",
+			"universal mounting hub"
 		],
 		libraries: [
 			"DS1302RTC.h",
@@ -60,9 +76,9 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		{
 		id: 2,
 		title: 'Buddy (Smart Car)',
-		description: 'A car that roams around the house for companionship so people don\'t feel lonely.',
-		dateCreated: '2016/01/01',
-		dateCompleted: '2016/01/02',
+		description: 'A car that roams around the house for companionship so people don\'t feel lonely. It roams arount on the floor and calculates it\'s proximety to objects and turns slowly to avoid obstacles and walls. If it gets too close to a wall or object suddenly, it will quickly pull a sharp turn. It\'s cute and fun!',
+		dateCreated: '2017/10/14',
+		dateCompleted: '2017/11/11',
 		imagePath: "assets/ArduinoBuddy/buddy-full-top-IMG_0541.jpeg",
 		moreImagesPath: [
 			"assets/ArduinoBuddy/buddy-full-front-IMG_0542.jpeg", //1
@@ -79,21 +95,20 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"", //8
 			"", //9
 			"", //10
-			"", //11
-			"", //12
-			"", //13
-			"", //14
-			"" //15
 		],
 		videoUrl: "coming soon",
 		components: [
+			"accelerometer",
 			"Arduino nano",
-			"Ultrasonic sensor",
+			"battery compartment X8 AA",
 			"car chasis",
 			"DC motor",
-			"wheel",
-			"accelerometer",
-			"led"
+			"led",
+			"on/off switch",
+			"L298 motor driver",
+			"popsicle stick",
+			"ultrasonic sensor",
+			"wheel"
 		],
 		libraries: [
 			"none"
@@ -102,7 +117,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		{
 		id: 3,
 		title: 'Crunch Counter',
-		description: 'Counts crunches while I exercise so I can watch TV and not have to count. I lose track when I count anyway because I start thinking about other things.',
+		description: 'Counts crunches while I exercise, so I can watch TV and not have to count. I lose track when I count anyway because I start thinking about other things. It beeps with crunches and displays total on an LCD display. Another actually super useful device',
 		dateCreated: '2018/10/05',
 		dateCompleted: '2018/10/08',
 		imagePath: "assets/ArduinoCrunchCounter/crunchCounter-beta-IMG_4616.jpg",
@@ -119,21 +134,20 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"", //7
 			"", //8
 			"", //9
-			"", //10
-			"", //11
-			"", //12
-			"", //13
-			"", //14
-			"" //15
+			"" //10
 		],
 		videoUrl: "cooming soon",
 		components: [
 			"Arduino nano",
+			"button",
 			"photoresistor",
 			"led",
 			"IIC/I2C/TWI 1602 Serial LCD Display",
 			"IIC/I2C/TWI 1602 Serial Interface module",
-			"buzzer"
+			"buzzer",
+			"on/off switch",
+			"project box",
+			"5 Volt 1 amp power adapter"
 		],
 		libraries: [
 			"Wire.h",
@@ -145,8 +159,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		id: 4,
 		title: 'Fridge Alarm',
 		description: 'Box on fridge buzzes and flashes when open too long or it doesn\'t fully close.',
-		dateCreated: '2017/09/01',
-		dateCompleted: '2017/09/02',
+		dateCreated: '2017/10/11',
+		dateCompleted: '2017/10/12',
 		imagePath: "assets/ArduinoFridgeAlarm/FridgeAlarm-box-IMG_4612.jpg",
 		moreImagesPath: [
 			"assets/ArduinoFridgeAlarm/FridgeAlarm-button-IMG_4614.jpg" //1
@@ -173,7 +187,10 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Arduino nano",
 			"button",
 			"led",
-			"buzzer"
+			"buzzer",
+			"project box",
+			"5 Volt 1 amp power adapter",
+			"power port"
 		],
 		libraries: [
 			"none"
@@ -211,7 +228,11 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Arduino nano",
 			"button",
 			"IR receiver",
-			"5V relay module"
+			"PIR sensor",
+			"5 Volt relay module",
+			"5 Volt 1 amp power adapter",
+			"project box",
+			"power port"
 		],
 		libraries: [
 			"IRremote.h"
@@ -236,13 +257,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"", //6
 			"", //7
 			"", //8
-			"", //9
-			"", //10
-			"", //11
-			"", //12
-			"", //13
-			"", //14
-			"" //15
+			"" //9
 		],
 		videoUrl: "coming soon",
 		components: [
@@ -258,7 +273,9 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"wheel",
 			"treads",
 			"triangle vehicle chasis",
-			"potentiometer"
+			"potentiometer",
+			"battery compartment X8 AA",
+			"battery compartment X4 AA"
 		],
 		libraries: [
 			"SPI.h",
@@ -295,6 +312,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		],
 		videoUrl: "coming soon",
 		components: [
+			"5 Volt 1 amp power adapter",
 			"Arduino nano",
 			"common cathode RGB led",
 			"PIR proximety sensor"
@@ -344,10 +362,13 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		],
 		videoUrl: "coming soon",
 		components: [
+			"5 Volt 1 amp power adapter",
 			"Arduino nano",
 			"led",
 			"IC 4066 quad bilateral switch",
-			"button"
+			"button",
+			"project box",
+			"space heater"
 		],
 		libraries: [
 			"none"
