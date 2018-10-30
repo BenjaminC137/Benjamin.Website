@@ -11,7 +11,6 @@ import { ArduinoProjects } from '../arduino-projects';
 //  providers: [arduinoService],
 //  exports: [CommonModule],
 //  imports: [CommonModule]
-
 })
 
 @Component({

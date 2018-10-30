@@ -3,7 +3,7 @@ import { ArduinoProjectModel } from './arduino-project-model';
 export const ArduinoProjects : ArduinoProjectModel[] = [
 		{
 		id: 1,
-		title: 'Neechi Feeder',
+		title: 'Neechi (dog) Feeder',
 		description: 'I designed a dog feeder and built the entire contraption. It automatically releases a designated amount of food twice per day based on a predetermined feeding schedule. An Led display shows the current time, the quantity of times fed per day and the time in which the last feeding was released including manual feedings. A button allows for manual feeding.',
 		dateCreated: '2018/03/21',
 		dateCompleted: '2018/04/18',
