@@ -1,9 +1,9 @@
-<div class="sticky-top"><button class="btn-primary sticky-top" (click)="goBack()">Back</button></div>
+<div class="back-button"><button class="btn-primary back-button" (click)="goBack()">Back</button></div>
 <div class="project">
 	<h3>{{arduino.title | uppercase}} <img class="arduino-logo-details" src="assets/2000px-Arduino_Logo.svg.png"></h3>
 	<br>
 	<div class="box">
-		<h4>Introduction </h4>
+		<h4 style="padding-left: 0px">Introduction </h4>
 		{{arduino.description}}
 		<br>
 		<br>
@@ -14,14 +14,20 @@
 	</div>
 	<br>
 	<div class="box">
-		<h4>Components</h4>
+		<h4 style="padding-left: 0px">Components</h4>
+		These are the main components I used for the project. Obviously I haven't mentioned every resistor, wire, connector etc., but the relevant components are listed here.
+		<br>
+		<br>
 		<ul>
 			<li *ngFor="let component of arduino.components">{{component}}</li>
 		</ul>
 	</div>
 	<br>
 	<div class="box">
-		<h4>Code Libraries</h4>
+		<h4 style="padding-left: 0px">Code Libraries</h4>
+		These are the code libraries that I've implemented in order to allow some advanced hardware components to communicate with my software.
+		<br>
+		<br>
 		<ul>
 			<li *ngFor="let library of arduino.libraries">{{library}}</li>
 		</ul>
@@ -31,13 +37,16 @@
 	<div class="box"><iframe class="box" width="560" height="315" src="{{arduino.videoUrl}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 -->
 <div class="box">
-	<h4>Images </h4>
+	<h4 style="padding-left: 0px">Images </h4>
+	I believe that the images are not only informative but sometimes provide for beautiful photography and imagery. Please take a closer look by clicking on any photo.
+	<br>
+	<br>
 	<div class="container">
-		<div class="row">
+		<div class="row" style="text-align: center">
 
 
-			<div class="col card arduino-images">
-				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === 100" style="z-index: 51">Close</button></div>
+			<div class="col card arduino-images" style="display: inline">
+				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === 100">Close</button></div>
 
 				<img (click)="ViewHiRes(100)" [class.view-hi-res]="selectedIdx === 100" src="{{arduino.imagePath}}">
 				<div class="card-body">
@@ -47,9 +56,9 @@
 			</div>
 
 
-			<div class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; let i = index">
+			<div class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; let i = index" style="display: inline">
 
-				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i" style="z-index: 51">Close</button></div>
+				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>
 
 				<img (click)="ViewHiRes(i)" [class.view-hi-res]="selectedIdx === i" src={{image}}>
 				<div class="card-body">
@@ -60,16 +69,19 @@
 		</div>
 	</div>
 </div>
-		<br>
+	<br>
 
 <!--
 		<p>{{arduino.videoUrl}}</p>
 		<p [innerHtml]="arduino.videoUrl"></p>
 -->
-		 <div class="box">
-			 <h4>Video </h4>
-			 <a [href]="goPlay">Go to Video</a> (coming soon)
-			 </div>
+	 <div class="box">
+		 <h4 style="padding-left: 0px">Video </h4>
+		 I am currently in the process of recording videos for these projects. In the meantime, please check out a 10 second clip of my <a href="/arduino-detail/1">Neechi (dog) feeder</a> at the bottom of it's details page.
+		 <br>
+		 <br>
+		 <a class="btn-primary" [href]="goPlay">Go to Video</a> (coming soon)
+		 </div>
 	<br>
 <!--
 	<br>
@@ -85,6 +97,4 @@
 		</iframe>
 	</div>
 -->
-
 </div>
-
