@@ -7,7 +7,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: 'I designed a dog feeder and built the entire contraption. It automatically releases a designated amount of food twice per day based on a predetermined feeding schedule. An Led display shows the current time, the quantity of times fed per day and the time in which the last feeding was released including manual feedings. A button allows for manual feeding. This is my favorite project as it is the most useful, most advanced and most fun to develop and build.',
 		dateCreated: '2018/03/21',
 		dateCompleted: '2018/04/18',
-		imagePath: "assets/ArduinoNeechiFeeder/Neechi-full-IMG_8273.jpeg",
+		imagePath: "assets/ArduinoNeechiFeeder/Neechi-hanging-closeup-IMG_5184.jpeg",
 		moreImagesPath: [
 			"assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png", //1
 			"assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png", //2
@@ -20,7 +20,17 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"assets/ArduinoNeechiFeeder/Neechi-motor-mounted-IMG_6585.png", //9
 			"assets/ArduinoNeechiFeeder/Neechi-mounted-old-stepper-IMG_7465.png", //10
 			"assets/ArduinoNeechiFeeder/Neechi-room-IMG_8230.png", //11
-			"assets/ArduinoNeechiFeeder/Neechi-workbench-IMG_7441.png" //12
+			"assets/ArduinoNeechiFeeder/Neechi-workbench-IMG_7441.png", //12
+			"assets/ArduinoNeechiFeeder/Neechi-hanging-downward-angle-IMG_5188.jpeg", //13
+			"assets/ArduinoNeechiFeeder/Neechi-broken-power-adapter-IMG_5150.jpeg", //14
+			"assets/ArduinoNeechiFeeder/Neechi-custom-power-adapter-IMG_5190.jpeg", //15
+			"assets/ArduinoNeechiFeeder/Neechi-hanging-medium-shot-IMG_5186.jpeg", //16
+			"assets/ArduinoNeechiFeeder/Neechi-hanging-wide-shot-IMG_5189.jpeg", //17
+			"assets/ArduinoNeechiFeeder/Neechi-power-adapters-IMG_5161.jpeg", //18
+			"assets/ArduinoNeechiFeeder/Neechi-power-adapters-in-case-IMG_5162.jpeg", //19
+			"assets/ArduinoNeechiFeeder/Neechi-power-adapters-taped-IMG_5164.jpeg", //20
+			"assets/ArduinoNeechiFeeder/Neechi-full-IMG_8273.jpeg" //21
+
 		],
 		imageCaption: [
 			"Agitator assembly including agitator rod, stepper motor and motor housing", //1
@@ -120,9 +130,15 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: 'Counts crunches while I exercise, so I can watch TV and not have to count. I lose track when I count anyway because I start thinking about other things. It beeps with crunches and displays total on an LCD display. Another actually super useful device',
 		dateCreated: '2018/10/05',
 		dateCompleted: '2018/10/08',
-		imagePath: "assets/ArduinoCrunchCounter/crunchCounter-beta-IMG_4616.jpg",
+		imagePath: "assets/ArduinoCrunchCounter/crunchCounter-box-and-bar-beta-IMG_5132.jpeg",
 		moreImagesPath: [
-			"assets/coming-soon.png" //1
+			"assets/ArduinoCrunchCounter/crunchCounter-terminal-blocks-IMG_4789.jpeg", //1
+			"assets/ArduinoCrunchCounter/crunchCounter-installing-board-into-box-IMG_5110.jpeg", //2
+			"assets/ArduinoCrunchCounter/crunchCounter-beta-IMG_4616.jpg", //3
+			"assets/ArduinoCrunchCounter/crunchCounter-closeup-bottom-of-board-IMG_5064.jpeg", //4
+			"assets/ArduinoCrunchCounter/crunchCounter-completed-board-with-wires-IMG_5066.jpeg", //5
+			"assets/ArduinoCrunchCounter/crunchCounter-quadhands-bottom-of-boardIMG_5062.jpeg", //6
+			"assets/ArduinoCrunchCounter/crunchCounter-quadhands-solder-station-IMG_5061.jpeg" //7
 		],
 		imageCaption: [
 			"", //1
