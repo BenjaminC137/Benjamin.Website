@@ -60,11 +60,11 @@
 				</div>
 			</div>
 -->
-			<div class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; let i = index" style="display: inline">
+			<div (click)="ViewHiRes(i)" class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; let i = index" style="display: inline">
 
-				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>
-
-				<img (click)="ViewHiRes(i)" [class.view-hi-res]="selectedIdx === i" src={{image}}>
+<!--				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>-->
+				<div><button class="btn-primary close-button" *ngIf="show && selectedIdx === i">Close</button></div>
+				<img  [class.view-hi-res]="selectedIdx === i" src={{image}}>
 				<div class="card-body" [class.view-hi-caption]="selectedIdx === i">
 					<p [class.no-background]="selectedIdx === i"><span [class.card-text]="selectedIdx === i">{{arduino.imageCaption[i]}}</span></p>
 <!--					<div (keydown)="onKeydown($event)"></div>-->

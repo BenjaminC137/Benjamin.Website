@@ -194,7 +194,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		title: 'Fridge Alarm',
 		description: "This is a box on my fridge that buzzes and flashes red when it has been open for too long or did not fully close. If the door is closed, the led illuminates blue. If it is open, it is solid red. After 30 seconds, it flashes red and buzzes! This also helps with reminding me not to leave the door open for too long to preserve electricity.\n\nThe reason:\nOne day, I did not realize that the fridge hadn't fully closed. Something was blocking it just a little bit. The next morning, I saw the fridge was open just a little bit. Some food was ruined, so I saw to it that it would never happen again!",
 		dateCreated: '2017/10/11',
-		dateCompleted: '2017/10/12',
+		dateCompleted: '2017/10/13',
 		imagePath: "assets/ArduinoFridgeAlarm/FridgeAlarm-box-IMG_4612.jpg",
 		moreImagesPath: [
 			"assets/ArduinoFridgeAlarm/FridgeAlarm-box-IMG_4612.jpg", //0
@@ -366,8 +366,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		id: 8,
 		title: 'Heater Control',
 		description: "I Modified a space heater to be able to power on after a given time. You can set a timer for the heater to power on. I use it for the morning so that I can get out of bed more easily in the winter. I Connected 4 wires to the heater's circuit board for the control panel. 2 wires to Power button on heater, 2 wires to Oscillation control button on heater. I fed them out through a hole I drilled.\n\nDetails:\nPress the button to add one hour to the timer. If you press it again, it will add another hour. Adding does not restart the timer. It starts when you press the button the first time and the first led turns illuminates. The LED indicators will illuminate based on how much time is left until the unit powers on. Manually power it on by holding the button down. Automatically powers off after two hours for safety. While on, press the button to turn it off manually and force it into safety mode. Hold the button until all the LED indicators illuminate, and it turns to 'on' status. If you press it again, the timer resumes. Press and hold when it's in safety mode until you see a bright blue light to bring it back to regular mode.Details: Press the button to add one hour to the timer. If you press it again, it will add another hour. Adding does not restart the timer. It starts when you press the button the first time and the first led turns illuminates. The LED indicators will illuminate based on how much time is left until the unit powers on. Manually power it on by holding the button down. Automatically powers off after two hours for safety. While on, press the button to turn it off manually and force it into safety mode. Press and hold when it's in safety mode until you see a bright blue light to bring it back to regular mode.",
-		dateCreated: '2017/01/01',
-		dateCompleted: '2017/12/10',
+		dateCreated: '2017/12/09',
+		dateCompleted: '2017/12/28',
 		imagePath: "assets/ArduinoHeaterControl/ArduinoHeaterControl-BoardAndCables1%20-%20IMG_2368%20copy.jpeg",
 		moreImagesPath: [
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-BoardAndCables1%20-%20IMG_2368%20copy.jpeg", //0
@@ -421,8 +421,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		id: 9,
 		title: 'Temperature Alarm',
 		description: 'Alarm that sounds when the temperature drops below a designated temperature to be set in the baby\s room by the crib to alert us if the temperature is too cold for the newborn.',
-		dateCreated: '2017/01/01',
-		dateCompleted: '2017/01/01',
+		dateCreated: '2017/03/01',
+		dateCompleted: '2017/03/13',
 		imagePath: "assets/ArduinoTemperatureAlarm/TemperatureAlarm-Full-IMG_7909.jpeg",
 		moreImagesPath: [
 			"assets/ArduinoTemperatureAlarm/TemperatureAlarm-Full-IMG_7909.jpeg", //0
@@ -464,8 +464,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		id: 10,
 		title: 'Scale',
 		description: '50 Gram scale using a .001 accuracy load cell. Includes a tare feature.',
-		dateCreated: '2017/01/01',
-		dateCompleted: '2017/01/01',
+		dateCreated: '2018/04/27',
+		dateCompleted: '2018/04/30',
 		imagePath: "assets/ArduinoScale/scale-calibrating-IMG_4610.jpg",
 		moreImagesPath: [
 			"assets/ArduinoScale/scale-calibrating-IMG_4610.jpg" //0

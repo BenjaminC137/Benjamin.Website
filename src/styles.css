@@ -47,9 +47,21 @@
 	padding: 0px;
 	margin: 15px;
 	box-shadow: 5px 5px 25px rgba(0,0,0,.2);
-/*	max-width: 100%;*/
-/*	max-height: 90vh;*/
-/*	object-fit: scale-down;*/
+/*	transition: all 1s ease-in-out;*/
+
+	background-color: #ECF1F1;
+	background-image: url(assets/PortalBenjaminLight.png);
+	background-size: 1000px;
+
+	transition: padding 10s ease-in-out, margin 10s ease-in-out, background-size 10s ease-in-out, box-shadow 5s;
+
+}
+.arduino-images:hover {
+	padding: 15px;
+	margin: 0px;
+	box-shadow: 5px 5px 100px rgba(0,0,0,.9);
+	background-size: 500px;
+	transition: padding 500ms ease-in-out, margin 500ms ease-in-out, background-size 10s ease-in-out, box-shadow 2s;
 }
 .arduino-logo{
 	display: inline;
@@ -153,6 +165,16 @@ cursor: pointer;
 	background-color: #ECF1F1;
 	background-image: url(assets/PortalBenjaminLight.png);
 	background-size: 1000px;
+/*
+	background-repeat: no-repeat;
+	transition: background-size 2s ease;
+*/
+}
+.card:hover{
+/*
+	background-size: 500px;
+	transition: background-size 2s ease;
+*/
 }
 .card-body{
 	padding: 0px;
@@ -162,16 +184,12 @@ cursor: pointer;
 */
 }
 .card-text{
-/*
-	color: #ECF1F1;
-	background-color: #00878F;
-*/
 	font-size: 1rem;
 	margin-bottom: 5px;
-
 	color: white;
 	background-color: #E47128;
-
+	transition: 1s;
+	-webkit-transition:  1s;
 }
 .card-title{
 	padding: 7px;
@@ -411,6 +429,10 @@ p{
 	padding: 3px;
 	box-shadow: 2px 2px 10px rgba(0,0,0, .08);
 	z-index: 52;
+/*
+	transition: background-color 500ms;
+	-webkit-transition: background-color 500ms;
+*/
 }
 .view-hi-caption{
 	position: fixed;
@@ -421,7 +443,6 @@ p{
 	padding: 0px 5px;
 	margin-bottom: 0px;
 	width: 100vw;
-
 
 /*
     margin-right: auto;
