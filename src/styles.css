@@ -161,6 +161,18 @@ cursor: pointer;
 	background-size: 500px;
 */
 }
+.card-text{
+/*
+	color: #ECF1F1;
+	background-color: #00878F;
+*/
+	font-size: 1rem;
+	margin-bottom: 5px;
+
+	color: white;
+	background-color: #E47128;
+
+}
 .card-title{
 	padding: 7px;
 }
@@ -294,6 +306,16 @@ h4{
 .nav-z{
 	z-index: 49;
 }
+.no-background{
+	background: none;
+	margin-bottom: 0px;
+	padding: 0px;
+	line-height: 1;
+}
+.no-background span{
+	padding-left: 5px;
+	padding-right: 5px;
+}
 p{
 	background-color: rgba(255,255,255, .7);
 	padding: 5px;
@@ -390,6 +412,27 @@ p{
 	box-shadow: 2px 2px 10px rgba(0,0,0, .08);
 	z-index: 52;
 }
+.view-hi-caption{
+	position: fixed;
+	right: 0;
+    left: 0;
+	bottom: 0px;
+	z-index: 53;
+	padding: 0px 5px;
+	margin-bottom: 0px;
+	width: 100vw;
+
+
+/*
+    margin-right: auto;
+    margin-left: auto;
+*/
+/*
+	padding-left: auto;
+	padding-right: auto;
+*/
+
+}
 /*
 .rounded-image{
 	border-style: hidden;
@@ -457,6 +500,10 @@ p{
 	}
 	.view-hi-res{
 /*	top: 40vw;*/
+	}
+	.view-hi-caption{
+		bottom: inherit;
+		top: 10vh;
 	}
 	.arduino-cards{
 		min-width: 14rem;

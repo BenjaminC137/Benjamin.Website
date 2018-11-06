@@ -25,7 +25,7 @@
 <!--	<div class="card arduino-cards" *ngFor="let arduino of arduinoProjects" [class.selected]="arduino === selectedArduino" (click)="onSelect(arduino); toggle()">-->
 	<div class="card arduino-cards arduino-card-hover" *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}">
 		<h5 class="card-title" >{{arduino.title}}</h5>
-		<img class="card-img-top" style="" src="{{arduino.imagePath}}">
+		<img class="card-img-top" style="" src="{{arduino.moreImagesPath[0]}}">
 		<div class="card-body">
 			<div class="card-text">
 <!--				<p class="limitText" >{{arduino.description}}</p>-->

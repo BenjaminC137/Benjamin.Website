@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild, ElementRef, AfterViewInit, NgModule } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef, AfterViewInit, NgModule, HostListener } from '@angular/core';
 import { ArduinoProjectModel } from '../arduino-project-model';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
@@ -20,6 +20,28 @@ import { ArduinoProjects } from '../arduino-projects';
 })
 
 export class ArduinoDetailComponent implements OnInit{
+	@HostListener('document:keydown', ['$event'])
+	 handleKeyboardEvent(event: KeyboardEvent) {
+		this.key = event.key;
+		if(this.key === 'ArrowRight'){
+			this.selectedIdx ++;
+			console.log("right");
+		}
+		if(this.key === 'ArrowLeft'){
+			this.selectedIdx --;
+			console.log("left");
+		}
+		if(this.key === 'Escape'){
+			this.show = !this.show
+			this.selectedIdx = null;
+			console.log("escape");
+		}
+  }
+//onKeydown(event) {
+//  if (event.key === "Enter") {
+//    console.log(event);
+//  }
+//}
 // @ViewChild('i') i: ElementRef;
 //	@Input() arduino: ArduinoProjectModel;
 //	@Input() show: boolean;
@@ -30,7 +52,8 @@ export class ArduinoDetailComponent implements OnInit{
 	trustedDashboardUrl : SafeUrl;
 	zoomState:boolean = false;
 	selectedIdx: number = null;
-	 show: boolean = false;
+	show: boolean = false;
+	key: string;
 
 	constructor(
 	  private route: ActivatedRoute,

@@ -1,7 +1,7 @@
 import { ArduinoProjectModel } from './arduino-project-model';
 
 export const ArduinoProjects : ArduinoProjectModel[] = [
-		{
+	{
 		id: 1,
 		title: 'Neechi (dog) Feeder',
 		description: 'I designed a dog feeder and built the entire contraption. It automatically releases a designated amount of food twice per day based on a predetermined feeding schedule. An Led display shows the current time, the quantity of times fed per day and the time in which the last feeding was released including manual feedings. A button allows for manual feeding. This is my favorite project as it is the most useful, most advanced and most fun to develop and build.',
@@ -9,6 +9,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		dateCompleted: '2018/04/18',
 		imagePath: "assets/ArduinoNeechiFeeder/Neechi-hanging-closeup-IMG_5184.jpeg",
 		moreImagesPath: [
+			"assets/ArduinoNeechiFeeder/Neechi-hanging-closeup-IMG_5184.jpeg", //0
 			"assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png", //1
 			"assets/ArduinoNeechiFeeder/Neechi-agitator-rod-IMG_8261-2.png", //2
 			"assets/ArduinoNeechiFeeder/Neechi-door-not-cut-IMG_6596.png", //3
@@ -29,10 +30,11 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"assets/ArduinoNeechiFeeder/Neechi-power-adapters-IMG_5161.jpeg", //18
 			"assets/ArduinoNeechiFeeder/Neechi-power-adapters-in-case-IMG_5162.jpeg", //19
 			"assets/ArduinoNeechiFeeder/Neechi-power-adapters-taped-IMG_5164.jpeg", //20
-			"assets/ArduinoNeechiFeeder/Neechi-full-IMG_8273.jpeg" //21
-
+			"assets/ArduinoNeechiFeeder/Neechi-full-IMG_8273.jpeg", //21
+			"assets/ArduinoNeechiFeeder/Neechi-PCB-screenshot-Screen Shot 2018-11-05 at 4.23.47 PM.png" //22
 		],
 		imageCaption: [
+			"Neechi Feeder electronics enclosure", //0
 			"Agitator assembly including agitator rod, stepper motor and motor housing", //1
 			"Agitator rod: Folded sheet steel and twisted to create an agitator that will spiral and thus push food out so food doesn't get stuck.", //2
 			"Hatch door mounted to hatch mount before cutting the opening hole", //3
@@ -44,10 +46,21 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Stepper motor mounted to the bracket mount", //9
 			"Original 5 Volt stepper motor mount assembly mounted on storage compartment. I later upgraded to a significantly more powerful motor.", //10
 			"Workspace during construction. I actually cleaned everything up every day after working on it.", //11
-			"Creating and constructing the agitator assemply" //12
+			"Creating and constructing the agitator assemply", //12
+			"Electronics enclosure with food compartment and machine hanging below", //13
+			"I had to break off tiny pieces of this computer charger in order to open it without damaging it.", //14
+			"Completed power adapter housing for all 3 components requiring power.", //15
+			"Electronics enclosure, food compartment and machine mounted on wall", //16
+			"Electronics enclosure, food compartment and machine hanging from hook with bowl beneath. power assembly on the right behind the drawers.", //17
+			"3 power adapters stripped from their enclosures, ready for installation into the metal housing", //18
+			"3 power adapters, in the metal housing before securing", //19
+			"Secured power adapters with kapton tape and electrical tape in a heat dissapating metal enclosure.", //20
+			"Assembl being tested on a tripod", //21
+			"Early on PCB schematic for board", //22
 		],
 		videoUrl: "https://www.youtube.com/embed/lyI5C47GDH0",
 		components: [
+			"120 Volt outlet plug",
 			"5 Volt 1 amp power adapter",
 			"5 Volt 55g servo motor",
 			"5 Volt relay module",
@@ -64,6 +77,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Nema 17 stepper motor",
 			"on/off switch",
 			"project box",
+			"project box -metal",
 			"PVC pipe",
 			"power strip",
 			"power port",
@@ -82,8 +96,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"LiquidCrystal_I2C.h",
 			"Stepper.h"
 		]
-		},
-		{
+	},
+	{
 		id: 2,
 		title: 'Buddy (Smart Car)',
 		description: 'A car that roams around the house for companionship so people don\'t feel lonely. It roams arount on the floor and calculates it\'s proximety to objects and turns slowly to avoid obstacles and walls. If it gets too close to a wall or object suddenly, it will quickly pull a sharp turn. It\'s cute and fun!',
@@ -91,10 +105,12 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		dateCompleted: '2017/11/11',
 		imagePath: "assets/ArduinoBuddy/buddy-full-top-IMG_0541.jpeg",
 		moreImagesPath: [
+			"assets/ArduinoBuddy/buddy-full-top-IMG_0541.jpeg", //0
 			"assets/ArduinoBuddy/buddy-full-front-IMG_0542.jpeg", //1
 			"assets/ArduinoBuddy/buddy-full-old-IMG_0423.png" //2
 		],
 		imageCaption: [
+			"Beautiful shot of my little Buddy, ready to go!", //0
 			"3 pairs - Ultrasonic sensors", //1
 			"First iteration with single ultrasonic sensor", //2
 			"", //3
@@ -123,15 +139,16 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		libraries: [
 			"none"
 		]
-		},
-		{
+	},
+	{
 		id: 3,
 		title: 'Crunch Counter',
-		description: 'Counts crunches while I exercise, so I can watch TV and not have to count. I lose track when I count anyway because I start thinking about other things. It beeps with crunches and displays total on an LCD display. Another actually super useful device',
+		description: 'Counts crunches while I exercise, so I can watch TV and not have to count. I lose track when I count anyway because I start thinking about other things. It beeps with crunches and displays total on an LCD display. Another actually super useful device. I began with a tilt sensor which ended up being unstable. Then, I tried using an ultrasonic sensor which ended up proving unreliable due to varying object angles for return echos',
 		dateCreated: '2018/10/05',
-		dateCompleted: '2018/10/08',
+		dateCompleted: '2018/10/029',
 		imagePath: "assets/ArduinoCrunchCounter/crunchCounter-box-and-bar-beta-IMG_5132.jpeg",
 		moreImagesPath: [
+			"assets/ArduinoCrunchCounter/crunchCounter-box-and-bar-beta-IMG_5132.jpeg", //0
 			"assets/ArduinoCrunchCounter/crunchCounter-terminal-blocks-IMG_4789.jpeg", //1
 			"assets/ArduinoCrunchCounter/crunchCounter-installing-board-into-box-IMG_5110.jpeg", //2
 			"assets/ArduinoCrunchCounter/crunchCounter-beta-IMG_4616.jpg", //3
@@ -141,13 +158,14 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"assets/ArduinoCrunchCounter/crunchCounter-quadhands-solder-station-IMG_5061.jpeg" //7
 		],
 		imageCaption: [
-			"", //1
-			"", //2
-			"", //3
-			"", //4
-			"", //5
-			"", //6
-			"", //7
+			"Trial run with completed board installed in box", //0
+			"Terminal Blocks attached and labeled. Gr for Ground, A0 for analog pin 0 etc.", //1
+			"Installing completed board into housing", //2
+			"Preliminary photoresistor testing", //3
+			"Closeup bottom of board with solder points and connection wires", //4
+			"Completed board with wires attached", //5
+			"Bottom of board with wires connected to top with housing below", //6
+			"Soldering station with the incredible QuadHands solder assistant! If anybody reading this ever solders, please look into these. I cannot recommend them enough.", //7
 			"", //8
 			"", //9
 			"" //10
@@ -170,8 +188,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"LCD.h",
 			"LiquidCrystal_I2C.h"
 		]
-		},
-		{
+	},
+	{
 		id: 4,
 		title: 'Fridge Alarm',
 		description: 'Box on fridge buzzes and flashes when open too long or it doesn\'t fully close.',
@@ -179,9 +197,11 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		dateCompleted: '2017/10/12',
 		imagePath: "assets/ArduinoFridgeAlarm/FridgeAlarm-box-IMG_4612.jpg",
 		moreImagesPath: [
+			"assets/ArduinoFridgeAlarm/FridgeAlarm-box-IMG_4612.jpg", //0
 			"assets/ArduinoFridgeAlarm/FridgeAlarm-button-IMG_4614.jpg" //1
 		],
 		imageCaption: [
+			"", //0
 			"Button that gets pushed when the door closes", //1
 			"", //2
 			"", //3
@@ -211,8 +231,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		libraries: [
 			"none"
 		]
-		},
-		{
+	},
+	{
 		id: 5,
 		title: 'Home Box',
 		description: 'Automatically turns on lights when you walk by. Uses the unused buttons on the TV remote to turn on or off. Has manual buttons.',
@@ -220,9 +240,11 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		dateCompleted: '2017/12/08',
 		imagePath: "assets/ArduinoHomeBox/Homebox-complete-IMG_8136.png",
 		moreImagesPath: [
-			"assets/ArduinoHomeBox/HomeBox-breadboardPrep-IMG_1757.jpeg"
+			"assets/ArduinoHomeBox/Homebox-complete-IMG_8136.png", //0
+			"assets/ArduinoHomeBox/HomeBox-breadboardPrep-IMG_1757.jpeg" //1
 		],
 		imageCaption: [
+			"", //0
 			"Electrical tapes hold the wires to the breadboards while the prototype is tested", //1
 			"", //2
 			"", //3
@@ -253,8 +275,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		libraries: [
 			"IRremote.h"
 		]
-		},
-		{
+	},
+	{
 		id: 6,
 		title: 'Smart-tank',
 		description: 'Analyzes surroundings and chooses where to go.',
@@ -262,10 +284,11 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		dateCompleted: '2018/01/21',
 		imagePath: "assets/ArduinoSmartTank/smartTank-hot-art-IMG_3017.jpeg",
 		moreImagesPath: [
-			"assets/coming-soon.png" //1
+			"assets/ArduinoSmartTank/smartTank-hot-art-IMG_3017.jpeg" //0
 		],
 		imageCaption: [
-			"image placeholder", //1
+			"Beautiful shot of my smart tank!", //0
+			"", //1
 			"", //2
 			"", //3
 			"", //4
@@ -298,8 +321,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"RH_ASK.h",
 			"Servo.h",
 		]
-		},
-		{
+	},
+	{
 		id: 7,
 		title: 'Security System',
 		description: 'Security System to fend off intruders. Exact dates unknown',
@@ -307,10 +330,12 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		dateCompleted: '2018/07/02',
 		imagePath: "assets/ArduinoSecuritySystem/SecuritySystem-inside-IMG_4506.jpeg",
 		moreImagesPath: [
-			"assets/coming-soon.png" //1
+			"assets/ArduinoSecuritySystem/SecuritySystem-inside-IMG_4506.jpeg", //0
+			"assets/ArduinoSecuritySystem/SecuritySystem-outside-IMG_4508.jpeg" ///1
 		],
 		imageCaption: [
-			"image placeholder", //1
+			"Inside view of setup", //0
+			"The passive infrared sensor on the right stick out just outside of the storm door. The cables come from over the door from the left.", //1
 			"", //2
 			"", //3
 			"", //4
@@ -326,7 +351,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"", //14
 			"" //15
 		],
-		videoUrl: "coming soon",
+		videoUrl: "https://www.youtube.com/embed/2wkwj9x5P24",
 		components: [
 			"5 Volt 1 amp power adapter",
 			"Arduino nano",
@@ -336,15 +361,16 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		libraries: [
 			"none"
 		]
-		},
-		{
+	},
+	{
 		id: 8,
 		title: 'Heater Control',
-		description: 'Modified a space heater to be able to turn on at given time.',
+		description: "I Modified a space heater to be able to power on after a given time. You can set a timer for the heater to power on. I use it for the morning so that I can get out of bed more easily in the winter. I Connected 4 wires to the heater's circuit board for the control panel. 2 wires to Power button on heater, 2 wires to Oscillation control button on heater. I fed them out through a hole I drilled.\n\nDetails:\nPress the button to add one hour to the timer. If you press it again, it will add another hour. Adding does not restart the timer. It starts when you press the button the first time and the first led turns illuminates. The LED indicators will illuminate based on how much time is left until the unit powers on. Manually power it on by holding the button down. Automatically powers off after two hours for safety. While on, press the button to turn it off manually and force it into safety mode. Hold the button until all the LED indicators illuminate, and it turns to 'on' status. If you press it again, the timer resumes. Press and hold when it's in safety mode until you see a bright blue light to bring it back to regular mode.Details: Press the button to add one hour to the timer. If you press it again, it will add another hour. Adding does not restart the timer. It starts when you press the button the first time and the first led turns illuminates. The LED indicators will illuminate based on how much time is left until the unit powers on. Manually power it on by holding the button down. Automatically powers off after two hours for safety. While on, press the button to turn it off manually and force it into safety mode. Press and hold when it's in safety mode until you see a bright blue light to bring it back to regular mode.",
 		dateCreated: '2017/01/01',
 		dateCompleted: '2017/12/10',
 		imagePath: "assets/ArduinoHeaterControl/ArduinoHeaterControl-BoardAndCables1%20-%20IMG_2368%20copy.jpeg",
 		moreImagesPath: [
+			"assets/ArduinoHeaterControl/ArduinoHeaterControl-BoardAndCables1%20-%20IMG_2368%20copy.jpeg", //0
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-board-bottom-partial - IMG_2343 copy.jpeg", //1
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-board-bottom-partial-withBackground - IMG_2342 copy.jpeg", //2
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-board-top - IMG_2363 copy.jpeg", //3
@@ -360,6 +386,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-CablesSolderedToController2 - IMG_1753 copy.jpeg" //13
 		],
 		imageCaption: [
+			"", //0
 			"Bottom of the circuit board I made for condensing the wiring.", //1
 			"By condensing the electronics by creating this board, it will allow me to fit all of the components into the tiny project-box/housing.", //2
 			"Top view of the board (This is very cool).", //3
@@ -389,8 +416,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		libraries: [
 			"none"
 		]
-		},
-		{
+	},
+	{
 		id: 9,
 		title: 'Temperature Alarm',
 		description: 'Alarm that sounds when the temperature drops below a designated temperature to be set in the baby\s room by the crib to alert us if the temperature is too cold for the newborn.',
@@ -398,10 +425,12 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		dateCompleted: '2017/01/01',
 		imagePath: "assets/ArduinoTemperatureAlarm/TemperatureAlarm-Full-IMG_7909.jpeg",
 		moreImagesPath: [
-			"assets/ArduinoTemperatureAlarm/temperature-alarm-pano-IMG_7720.png",
-			"assets/ArduinoTemperatureAlarm/temperature-alarm-workspace-MG_7652.png"
+			"assets/ArduinoTemperatureAlarm/TemperatureAlarm-Full-IMG_7909.jpeg", //0
+			"assets/ArduinoTemperatureAlarm/temperature-alarm-pano-IMG_7720.png", //1
+			"assets/ArduinoTemperatureAlarm/temperature-alarm-workspace-MG_7652.png" //2
 		],
 		imageCaption: [
+			"Box with coiled up extension and sensor", //0
 			"", //1
 			"", //2
 			"", //3
@@ -430,8 +459,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"LCD.h",
 			"LiquidCrystal_I2C.h"
 		]
-		},
-		{
+	},
+	{
 		id: 10,
 		title: 'Scale',
 		description: '50 Gram scale using a .001 accuracy load cell. Includes a tare feature.',
@@ -439,9 +468,10 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		dateCompleted: '2017/01/01',
 		imagePath: "assets/ArduinoScale/scale-calibrating-IMG_4610.jpg",
 		moreImagesPath: [
-			"assets/coming-soon.png"
+			"assets/ArduinoScale/scale-calibrating-IMG_4610.jpg" //0
 		],
 		imageCaption: [
+			"", //0
 			"", //1
 			"", //2
 			"", //3

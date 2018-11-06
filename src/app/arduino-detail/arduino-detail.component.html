@@ -3,7 +3,7 @@
 	<h3>{{arduino.title | uppercase}} <img class="arduino-logo-details" src="assets/2000px-Arduino_Logo.svg.png"></h3>
 	<br>
 	<h4>Introduction </h4>
-	<div class="box">
+	<div class="box" style="white-space: pre-line">
 <!--		<h4 style="padding-left: 0px">Introduction </h4>-->
 		{{arduino.description}}
 		<br>
@@ -42,16 +42,15 @@
 	<div class="box"><iframe class="box" width="560" height="315" src="{{arduino.videoUrl}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 -->
 
-<h4>Images </h4>
+<h4>Photos </h4>
 <div class="box">
 <!--	<h4 style="padding-left: 0px">Images </h4>-->
-	I believe that the images are not only informative but sometimes provide for beautiful photography and imagery. Please take a closer look by clicking on any photo.
+	I believe that the images are not only informative but sometimes provide for beautiful photography and imagery. Please take a closer look by clicking/tapping on any photo.
 	<br>
 	<br>
 	<div class="container">
 		<div class="row" style="text-align: center">
-
-
+<!--
 			<div class="col card arduino-images" style="display: inline">
 				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === 100">Close</button></div>
 
@@ -59,17 +58,16 @@
 				<div class="card-body">
 					<p class="card-text">Project photo</p>
 				</div>
-<!--				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(100)">View hi-res</button></div>				-->
 			</div>
-
-
+-->
 			<div class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; let i = index" style="display: inline">
 
 				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>
 
 				<img (click)="ViewHiRes(i)" [class.view-hi-res]="selectedIdx === i" src={{image}}>
-				<div class="card-body">
-					<p class="card-text">{{arduino.imageCaption[i]}}</p>
+				<div class="card-body" [class.view-hi-caption]="selectedIdx === i">
+					<p [class.no-background]="selectedIdx === i"><span [class.card-text]="selectedIdx === i">{{arduino.imageCaption[i]}}</span></p>
+<!--					<div (keydown)="onKeydown($event)"></div>-->
 				</div>
 <!--				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(i)">View hi-res</button></div>-->
 			</div>
