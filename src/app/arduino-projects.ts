@@ -192,7 +192,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 	{
 		id: 4,
 		title: 'Fridge Alarm',
-		description: "This is a box on my fridge that buzzes and flashes red when it has been open for too long or did not fully close. If the door is closed, the led illuminates blue. If it is open, it is solid red. After 30 seconds, it flashes red and buzzes! This also helps with reminding me not to leave the door open for too long to preserve electricity.\n\nThe reason:\nOne day, I did not realize that the fridge hadn't fully closed. Something was blocking it just a little bit. The next morning, I saw the fridge was open just a little bit. Some food was ruined, so I saw to it that it would never happen again!"
+		description: "This is a box on my fridge that buzzes and flashes red when it has been open for too long or did not fully close. If the door is closed, the led illuminates blue. If it is open, it is solid red. After 30 seconds, it flashes red and buzzes! This also helps with reminding me not to leave the door open for too long to preserve electricity.\n\nThe reason:\nOne day, I did not realize that the fridge hadn't fully closed. Something was blocking it just a little bit. The next morning, I saw the fridge was open just a little bit. Some food was ruined, so I saw to it that it would never happen again!",
 		dateCreated: '2017/10/11',
 		dateCompleted: '2017/10/12',
 		imagePath: "assets/ArduinoFridgeAlarm/FridgeAlarm-box-IMG_4612.jpg",
