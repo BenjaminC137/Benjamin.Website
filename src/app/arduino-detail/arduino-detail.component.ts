@@ -24,11 +24,15 @@ export class ArduinoDetailComponent implements OnInit{
 	 handleKeyboardEvent(event: KeyboardEvent) {
 		this.key = event.key;
 		if(this.key === 'ArrowRight'){
+			if(this.selectedIdx < (this.arduino.moreImagesPath.length - 1)){
 			this.selectedIdx ++;
+			}
 			console.log("right");
 		}
 		if(this.key === 'ArrowLeft'){
+			if(this.selectedIdx >0){
 			this.selectedIdx --;
+			}
 			console.log("left");
 		}
 		if(this.key === 'Escape'){
@@ -37,17 +41,7 @@ export class ArduinoDetailComponent implements OnInit{
 			console.log("escape");
 		}
   }
-//onKeydown(event) {
-//  if (event.key === "Enter") {
-//    console.log(event);
-//  }
-//}
-// @ViewChild('i') i: ElementRef;
-//	@Input() arduino: ArduinoProjectModel;
-//	@Input() show: boolean;
-
 	arduino: ArduinoProjectModel;
-//	selectedIdx: number;
 	goPlay: string;
 	trustedDashboardUrl : SafeUrl;
 	zoomState:boolean = false;
