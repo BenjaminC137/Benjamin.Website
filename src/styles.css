@@ -54,7 +54,7 @@
 	background-size: 1000px;
 
 	transition: padding 10s ease-in-out, margin 10s ease-in-out, background-size 10s ease-in-out, box-shadow 5s;
-
+	-webkit-transition: padding 10s ease-in-out, margin 10s ease-in-out, background-size 10s ease-in-out, box-shadow 5s;
 }
 .arduino-images:hover {
 	padding: 15px;
@@ -62,6 +62,7 @@
 	box-shadow: 5px 5px 100px rgba(0,0,0,.9);
 	background-size: 500px;
 	transition: padding 500ms ease-in-out, margin 500ms ease-in-out, background-size 10s ease-in-out, box-shadow 2s;
+	-webkit-transition: padding 500ms ease-in-out, margin 500ms ease-in-out, background-size 10s ease-in-out, box-shadow 2s;
 }
 .arduino-logo{
 	display: inline;
@@ -543,12 +544,21 @@ p{
 	.arduino-images{
 		min-width: 14rem;
 		padding: 0px;
-		margin: 15px 0px;
+		margin: 15px;
 		box-shadow: 5px 5px 25px rgba(0,0,0,.2);
 		max-width: 100%;
+/*
+		transition:none;
+		-webkit-transition: none;
+*/
+	}
+	.arduino-images:hover {
+/*
+		transition: none;
+		-webkit-transition: none;
+*/
 	}
 }
-
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
 	#hide-carousel-one{
