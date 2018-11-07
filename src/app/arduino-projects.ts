@@ -238,21 +238,30 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: "A small box that automatically turns on a light when you walk by. I also programmed the unused buttons on my TV remotes to turn the lights on or off. It has manual on/off buttons as well. The light turns off shortly after it turns on if it detects motion. If you press the on button on the box or on the TV remote, it will stay on longer. If you press the off button on the box or TV remote, it will stay off for a much longer time. You can reset the the time with the stop button.\n\nI have several of these installed in my home with different configurations. For example, a secondary lamp in my living room turns on when I enter my front door but only for a minute. When I manually turn on the main lamp in my living room, it will stay on for several hours. It doesn't have a proximity sensor as I don't always want it on. The bathroom light box is installed inside the ceiling lamp compartment by modifying a light outlet-to-power adapter to feed power to the arduino and let the light bulb screw into it directly. This one is set to stay on for several minutes as not to suddenly make the bathroom pitch black on guests if they're not moving much. The hallway lamp also doesn't have buttons as it is in a bulb adapter on the ceiling. The wall switch can completely turn it off. The bedroom lamp goes off quickly but when manually pressing the power on button, it stays on long enough to read books to the kids.\n\nYou get the gist of it. There are many different configurations, but there is only one sketch (program) written. I simplly uncomment(enable) a line of code for whichever device I am configuring before uploading to the board.",
 		dateCreated: '2017/01/01',
 		dateCompleted: '2017/12/08',
-		imagePath: "assets/ArduinoHomeBox/Homebox-complete-IMG_8136.png",
+		imagePath: "assets/ArduinoHomeBox/Homebox-on-couch-IMG_8139.jpeg",
 		moreImagesPath: [
-			"assets/ArduinoHomeBox/Homebox-complete-IMG_8136.png", //0
-			"assets/ArduinoHomeBox/HomeBox-breadboardPrep-IMG_1757.jpeg" //1
+			"assets/ArduinoHomeBox/Homebox-on-couch-IMG_8139.jpeg", //0
+			"assets/ArduinoHomeBox/Homebox-complete-IMG_8136.png", //1
+			"assets/ArduinoHomeBox/HomeBox-breadboardPrep-IMG_1757.jpeg", //2
+			"assets/ArduinoHomeBox/Homebox-closeup-solder-IMG_1731.jpeg",  //3
+			"assets/ArduinoHomeBox/Homebox-inside-box-big-IMG_1732.jpeg", //4
+			"assets/ArduinoHomeBox/Homebox-inside-box-IMG_1492.jpeg", //5
+			"assets/ArduinoHomeBox/Homebox-relay-IMG_1441.jpeg", //6
+			"assets/ArduinoHomeBox/Homebox-relay-in-box-IMG_1635.jpeg", //7
+			"assets/ArduinoHomeBox/Homebox-stuffed-box-IMG_1717.jpeg", //8
+			"assets/ArduinoHomeBox/Homebox-workstation-IMG_1730.jpeg" //9
 		],
 		imageCaption: [
-			"Welcome-home box with separate relay box behind it", //0
-			"Electrical tape holds the wires to the breadboards while the prototype is tested", //1
-			"", //2
-			"", //3
-			"", //4
-			"", //5
-			"", //6
-			"", //7
-			"", //8
+			"Homebox on couch", //0
+			"Welcome-home box with separate relay box behind it", //1
+			"Electrical tape holds the wires to the breadboards while the prototype is tested", //2
+			"Soldering 5 ground wires to 1 wire to save space.", //2
+			"Installing components into the bedroom's Home Box which includes the relay module.", //3
+			"Early beta testing the first prototype.", //4
+			"5 Volt relay module (with the red LED on it) which allows cutting of power source.", //5
+			"5 Volt relay module connected to an extension cable installed in it's own housing - separate from the Home Box primary unit.", //6
+			"Attempted to squeeze everything into one tiny box including the live AC cord. DO NOT DO THIS! It started smoking during mid testing. I abandoned and rebuild from scratch.", //7
+			"Installed buttons, power port and IR sensor", //8
 			"", //9
 			"", //10
 			"", //11
