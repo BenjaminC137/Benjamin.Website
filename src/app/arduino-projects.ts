@@ -100,7 +100,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 	{
 		id: 2,
 		title: 'Buddy (Smart Car)',
-		description: 'A car that roams around the house for companionship so people don\'t feel lonely. It roams arount on the floor and calculates it\'s proximety to objects and turns slowly to avoid obstacles and walls. If it gets too close to a wall or object suddenly, it will quickly pull a sharp turn. It\'s cute and fun!',
+		description: 'A car that roams around the house for companionship so people don\'t feel lonely. It roams arount on the floor and calculates it\'s proximety to objects and turns slowly to avoid obstacles and walls. If it gets too close to a wall or object suddenly, it will quickly pull a sharp turn. It\'s cute & fun and has a little personality!',
 		dateCreated: '2017/10/14',
 		dateCompleted: '2017/11/11',
 		imagePath: "assets/ArduinoBuddy/buddy-full-top-IMG_0541.jpeg",
@@ -235,7 +235,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 	{
 		id: 5,
 		title: 'Home Box',
-		description: 'Automatically turns on lights when you walk by. Uses the unused buttons on the TV remote to turn on or off. Has manual buttons.',
+		description: "A small box that automatically turns on a light when you walk by. I also programmed the unused buttons on my TV remotes to turn the lights on or off. It has manual on/off buttons as well. The light turns off shortly after it turns on if it detects motion. If you press the on button on the box or on the TV remote, it will stay on longer. If you press the off button on the box or TV remote, it will stay off for a much longer time. You can reset the the time with the stop button.\n\nI have several of these installed in my home with different configurations. For example, a secondary lamp in my living room turns on when I enter my front door but only for a minute. When I manually turn on the main lamp in my living room, it will stay on for several hours. It doesn't have a proximity sensor as I don't always want it on. The bathroom light box is installed inside the ceiling lamp compartment by modifying a light outlet-to-power adapter to feed power to the arduino and let the light bulb screw into it directly. This one is set to stay on for several minutes as not to suddenly make the bathroom pitch black on guests if they're not moving much. The hallway lamp also doesn't have buttons as it is in a bulb adapter on the ceiling. The wall switch can completely turn it off. The bedroom lamp goes off quickly but when manually pressing the power on button, it stays on long enough to read books to the kids.\n\nYou get the gist of it. There are many different configurations, but there is only one sketch (program) written. I simplly uncomment(enable) a line of code for whichever device I am configuring before uploading to the board.",
 		dateCreated: '2017/01/01',
 		dateCompleted: '2017/12/08',
 		imagePath: "assets/ArduinoHomeBox/Homebox-complete-IMG_8136.png",
@@ -244,8 +244,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"assets/ArduinoHomeBox/HomeBox-breadboardPrep-IMG_1757.jpeg" //1
 		],
 		imageCaption: [
-			"", //0
-			"Electrical tapes hold the wires to the breadboards while the prototype is tested", //1
+			"Welcome-home box with separate relay box behind it", //0
+			"Electrical tape holds the wires to the breadboards while the prototype is tested", //1
 			"", //2
 			"", //3
 			"", //4
@@ -270,6 +270,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"5 Volt relay module",
 			"5 Volt 1 amp power adapter",
 			"project box",
+			"lightbulb adapter",
 			"power port"
 		],
 		libraries: [
@@ -279,7 +280,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 	{
 		id: 6,
 		title: 'Smart-tank',
-		description: 'Analyzes surroundings and chooses where to go.',
+		description: "This is a little tank that has had multiple configurations.\n\n•Smart Tank: analyzes surroundings by looking around with a servo motor controlling an ultrasonic sensor and chooses where to go.\n•Wired Remote Controlled Tank: remote controlled movement with a cable that runs to a controller.\n•Wireless RF Remote Controlled Tank: uses two arduino boards. One in the controller and one in the tank\n•Grabber Tank: variation on the Wireless RF Remote Controlled Tank that also has a grabber arm to pick up and move objects.",
 		dateCreated: '2018/01/07',
 		dateCompleted: '2018/01/21',
 		imagePath: "assets/ArduinoSmartTank/smartTank-hot-art-IMG_3017.jpeg",
@@ -325,7 +326,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 	{
 		id: 7,
 		title: 'Security System',
-		description: 'Security System to fend off intruders. Exact dates unknown',
+		description: "This is a home security system which fends off intruders. Normally, the LED slowly cycles green and blue. When a potential intruder is detected, it flashes bright red quickly until verifying the situation is safe.\n\nDetails:\nEssentially, a passive infrared sensor detects movement outside the door and flashes a red LED. I believe that this is enough to fend off intruders. If I were theoretically going to rob somebody and saw an LED start flashing red as I approached, I'd certainly flee the scene. Especially if it seems to be a home made security system. Who knows what kind of booby traps I could have laid out for them!",
 		dateCreated: '2018/07/01',
 		dateCompleted: '2018/07/02',
 		imagePath: "assets/ArduinoSecuritySystem/SecuritySystem-inside-IMG_4506.jpeg",
@@ -335,7 +336,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		],
 		imageCaption: [
 			"Inside view of setup", //0
-			"The passive infrared sensor on the right stick out just outside of the storm door. The cables come from over the door from the left.", //1
+			"The passive infrared sensor on the right sticks out just outside of the storm door. The cables come from over the door from the left.", //1
 			"", //2
 			"", //3
 			"", //4
@@ -386,7 +387,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-CablesSolderedToController2 - IMG_1753 copy.jpeg" //13
 		],
 		imageCaption: [
-			"", //0
+			"Board connected to the wires; ready to be installed in the housing", //0
 			"Bottom of the circuit board I made for condensing the wiring.", //1
 			"By condensing the electronics by creating this board, it will allow me to fit all of the components into the tiny project-box/housing.", //2
 			"Top view of the board (This is very cool).", //3
@@ -396,10 +397,10 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Side shot of the board with test LEDs to show board's thickness", //7
 			"Jumper wires soldered to the existing space heater's controller board", //8
 			"Wires are fed through a hole I drilled to connect to the arduino externally", //9
-			"", //10
-			"", //11
-			"", //12
-			"", //13
+			"Wires connected to the existing controller board coming out of the side of the unit", //10
+			"Wires sticking out where the box will be mounted", //11
+			"Glued the soldered wires down to prevent flexing the sensitive solder joints", //12
+			"The controller panel is ready to be reinstalled.", //13
 			"", //14
 			"" //15
 		],
@@ -420,7 +421,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 	{
 		id: 9,
 		title: 'Temperature Alarm',
-		description: 'Alarm that sounds when the temperature drops below a designated temperature to be set in the baby\s room by the crib to alert us if the temperature is too cold for the newborn.',
+		description: "A box that has an alarm for when the temperature drops below a predetermined temperature. The temperature sensor is on a long wire so that it may reach around to the next room. I created this so that I could monitor the temperature in the nursery when my second son, Gabriel was a newborn. The sensor was set in the baby's room by the crib to alert us when the temperature is too cold for the newborn.",
 		dateCreated: '2017/03/01',
 		dateCompleted: '2017/03/13',
 		imagePath: "assets/ArduinoTemperatureAlarm/TemperatureAlarm-Full-IMG_7909.jpeg",
@@ -431,8 +432,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		],
 		imageCaption: [
 			"Box with coiled up extension and sensor", //0
-			"", //1
-			"", //2
+			"Soldering wires directly to the board. Not ideal, but I did not have access to small enough terminal blocks.", //1
+			"Solder station during early beta testing", //2
 			"", //3
 			"", //4
 			"", //5
@@ -463,7 +464,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 	{
 		id: 10,
 		title: 'Scale',
-		description: '50 Gram scale using a .001 accuracy load cell. Includes a tare feature.',
+		description: '50 Gram scale using a .001 accuracy load cell. Includes a tare feature. Perfect for measuring chemicals for science experiments with the kids.',
 		dateCreated: '2018/04/27',
 		dateCompleted: '2018/04/30',
 		imagePath: "assets/ArduinoScale/scale-calibrating-IMG_4610.jpg",
@@ -471,7 +472,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"assets/ArduinoScale/scale-calibrating-IMG_4610.jpg" //0
 		],
 		imageCaption: [
-			"", //0
+			"Full view of unit during the automatic calibrating phase I developed", //0
 			"", //1
 			"", //2
 			"", //3

@@ -48,6 +48,24 @@ export class ArduinoDetailComponent implements OnInit{
 	selectedIdx: number = null;
 	show: boolean = false;
 	key: string;
+	dateComplete: Date;
+	duration: number;
+
+
+//	dateCompletes: Date = Date.now();
+//    today: number = Date.now();
+
+//	dateCompletedFormatted = new Date(this.arduino.dateCompleted);
+//	dateCreatedFormatted = new Date(this.arduino.dateCreated);
+
+//	dateComplete = new Date(Date.parse(this.arduino.dateCompleted));
+
+
+//	duration = dateCompletedFormatted - dateCreatedFormatted;
+//	console.log(this.dateComplete);
+
+//	this.duration = this.arduino.dateCompleted - this.arduino.dateCreated
+
 
 	constructor(
 	  private route: ActivatedRoute,
@@ -79,6 +97,8 @@ export class ArduinoDetailComponent implements OnInit{
 		if(this.show == true){
 		this.show = !this.show
 		this.selectedIdx = null;
+				console.log(this.arduino.dateCompleted);
+
 		}
 		else if (this.show == false){
 		this.selectedIdx = index;

@@ -10,4 +10,9 @@ export class ArduinoProjectModel {
 	videoUrl?: string;
 	components: string[];
 	libraries: string[];
+	duration: number;
+//
+//	constructor(){
+//		this.duration: Date = this.dateCompleted;
+//	}
 }

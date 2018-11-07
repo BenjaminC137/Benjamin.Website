@@ -186,8 +186,9 @@ cursor: pointer;
 .card-text{
 	font-size: 1rem;
 	margin-bottom: 5px;
-	color: white;
-	background-color: #E47128;
+	color: #00878F;
+	font-weight: 500;
+	background-color: #ECF1F1;
 	transition: 1s;
 	-webkit-transition:  1s;
 }
@@ -328,7 +329,7 @@ h4{
 	background: none;
 	margin-bottom: 0px;
 	padding: 0px;
-	line-height: 1;
+	line-height: 1.25;
 }
 .no-background span{
 	padding-left: 5px;
@@ -487,6 +488,12 @@ p{
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
+/*
+	.arduino-images:hover {
+	padding: 15px;
+	margin: 5px;
+}
+*/
 	.back-button{
 /*		top: 52px;*/
 		top: inherit;
@@ -524,7 +531,7 @@ p{
 	}
 	.view-hi-caption{
 		bottom: inherit;
-		top: 10vh;
+		top: 1vh;
 	}
 	.arduino-cards{
 		min-width: 14rem;
