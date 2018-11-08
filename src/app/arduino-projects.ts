@@ -68,6 +68,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"12 Volt 3 amp power adapter",
 			"agitator",
 			"acryllic hatch door",
+			"aluminum c-channel",
 			"Arduino nano",
 			"button",
 			"chain",
@@ -83,6 +84,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"power port",
 			"stepper motor mount",
 			"servo motor mount",
+			"steel sheet",
 			"storage compartment",
 			"tripod",
 			"universal mounting hub"
@@ -170,7 +172,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"", //9
 			"" //10
 		],
-		videoUrl: "cooming soon",
+		videoUrl: "https://www.youtube.com/embed/qrBSsBUHHKc",
 		components: [
 			"Arduino nano",
 			"button",
