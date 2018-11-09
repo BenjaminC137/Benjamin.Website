@@ -16,6 +16,8 @@ const routes: Routes = [
 	{ path: 'personal', component: PersonalComponent },
 	{ path: 'professional', component: ProfessionalComponent },
 	{ path: 'fireball', component: FireballComponent },
+	{ path: 'neechifeeder', redirectTo: '/arduino-detail/1', pathMatch: 'full' },
+//	{ path: 'arduino-detail/:title', redirectTo: 'arduino-detail/:id'},
 //	{ path: 'Neechi%20Feeder.html', redirectTo: '/Neechi%20Feeder', pathMatch: 'full'},
 	{ path: '**', component: NotFoundComponent }
 ]

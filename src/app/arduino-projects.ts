@@ -58,7 +58,14 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Assembl being tested on a tripod", //21
 			"Early on PCB schematic for board", //22
 		],
-		videoUrl: "https://www.youtube.com/embed/lyI5C47GDH0",
+		videoUrl: "https://www.youtube.com/embed/v8osIfH_B1c",
+
+
+
+
+
+
+
 		components: [
 			"120 Volt outlet plug",
 			"5 Volt 1 amp power adapter",
