@@ -12,7 +12,10 @@
 		<br>
 		Completed: {{arduino.dateCompleted | date}}
 		<br>
-<!--
+		<button class="btn-primary" (click)="scroll(photos)">Photos</button> &nbsp;
+		<button class="btn-primary" (click)="scroll(video)">Video</button>
+
+		<!--
 		Duration: {{arduino.duration}}
 		<br>
 -->
@@ -37,6 +40,7 @@
 		These are the code libraries that I've implemented in order to allow some advanced hardware components to communicate with my software.
 		<br>
 		<br>
+		 <div #photos></div>
 		<ul>
 			<li *ngFor="let library of arduino.libraries">{{library}}</li>
 		</ul>
@@ -64,14 +68,16 @@
 				</div>
 			</div>
 -->
-			<div (click)="ViewHiRes(i)" class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; let i = index" style="display: inline">
+			<div class="" (click)="ViewHiRes(i)" class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; let i = index" style="display: inline">
 
 <!--				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>-->
 				<div><button class="btn-primary close-button" *ngIf="show && selectedIdx === i">Close</button></div>
 				<img  [class.view-hi-res]="selectedIdx === i" src={{image}}>
-				<div class="card-body" [class.view-hi-caption]="selectedIdx === i">
-					<p [class.no-background]="selectedIdx === i"><span [class.card-text]="selectedIdx === i">{{arduino.imageCaption[i]}}</span></p>
-<!--					<div (keydown)="onKeydown($event)"></div>-->
+				<div class="hidden-div" [class.view-hi-caption]="selectedIdx === i">
+					<p style="margin-bottom: 0px"><span>{{arduino.imageCaption[i]}}</span></p>
+				</div>
+				<div class="div-footer" [class.view-hi-caption]="selectedIdx === i">
+					<p style="margin-bottom: 0px" [class.no-background]="selectedIdx === i"><span [class.card-text]="selectedIdx === i">{{arduino.imageCaption[i]}}</span></p>
 				</div>
 <!--				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(i)">View hi-res</button></div>-->
 			</div>
@@ -84,7 +90,7 @@
 		<p>{{arduino.videoUrl}}</p>
 		<p [innerHtml]="arduino.videoUrl"></p>
 -->
-	<h4>Video </h4>
+	<h4 #video >Video </h4>
 	<div class="box">
 <!--		 <h4 style="padding-left: 0px">Video </h4>-->
 		 I am currently in the process of recording videos for these projects. In the meantime, please check out a 10 second clip of my <a href="/arduino-detail/1">Neechi (dog) feeder</a> at the bottom of it's details page. <a href="arduino-detail/7">Security System Video</a> is also available.

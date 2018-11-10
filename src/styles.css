@@ -1,3 +1,10 @@
+
+/*	Teal 		#00878F  rgba(0, 135, 143, .9)
+	Light Teal	#62AEB2
+	Orange	 	#E47128
+	Yellow		#E5AD24	 rgba(229, 173, 36, .9)
+	Brown 		#8C7965
+	other 		#ECF1F1  rgba(236, 241, 241, .9)   */
 :focus{
 	outline-color: #E5AD24;
 		outline-width: 3px;
@@ -7,20 +14,31 @@
 	background-color: blueviolet;
 */
 }
-/*	Teal 		#00878F
-	Light Teal	#62AEB2
-	Orange	 	#E47128
-	Yellow		#E5AD24	 rgba(229, 173, 36, .9)
-	Brown 		#8C7965
-	other 		#ECF1F1  rgba(236, 241, 241, .9)   */
+button:active{
+	background-color: #62AEB2 !important;
+}
+a{
+    text-decoration: none;
+/*    color: #E47128;*/
+	color: #00878F;
 
+}
+a:hover{
+/*	color: #00878F;*/
+    color: #E47128;
+	text-decoration: none;
+}
+a:active{
+	color: #E5AD24 !important;
+
+}
+.a2{
+	text-decoration: none;
+    color: #E5AD24;
+}
 /*
-.not-found-portal-image{
-	margin: 15px;
-	padding: 15px;
-	width: 200px;
-	display: inline;
-	text-align: center;
+.a2:hover{
+
 }
 */
 .alert{
@@ -39,14 +57,14 @@
 	min-width: 14rem;
 /*	padding: 15px;*/
 	margin: 15px;
-	box-shadow: 5px 5px 25px rgba(0,0,0,.2);
+	box-shadow: 2px 2px 5px rgba(0,0,0,.1);
 	max-width: 50%;
 }
 .arduino-images{
 	min-width: 14rem;
 	padding: 0px;
 	margin: 15px;
-	box-shadow: 5px 5px 25px rgba(0,0,0,.2);
+	box-shadow: 2px 2px 5px rgba(0,0,0,.1);
 /*	transition: all 1s ease-in-out;*/
 
 	background-color: #ECF1F1;
@@ -59,8 +77,8 @@
 .arduino-images:hover {
 	padding: 15px;
 	margin: 0px;
-	box-shadow: 5px 5px 100px rgba(0,0,0,.9);
-	background-size: 500px;
+	box-shadow: 5px 5px 25px rgba(0,0,0,.5);
+	background-size: 400px;
 	transition: padding 500ms ease-in-out, margin 500ms ease-in-out, background-size 10s ease-in-out, box-shadow 2s;
 	-webkit-transition: padding 500ms ease-in-out, margin 500ms ease-in-out, background-size 10s ease-in-out, box-shadow 2s;
 }
@@ -77,14 +95,6 @@
 }
 .arduino-card-hover:hover{
 	cursor: pointer;
-}
-a{
-    text-decoration: none;
-    color: #E5AD24;
-}
-a:hover{
-	color: #00878F;
-	text-decoration: none;
 }
 .back-button{
 	position: fixed;
@@ -121,6 +131,10 @@ cursor: pointer;
 	padding: 5px;
 	margin: 0px;
 	border: none;
+	font-weight:800;
+}
+.btn-primary:active {
+	background-color: black;
 }
 .btn{
 	color: #E5AD24;
@@ -163,9 +177,12 @@ cursor: pointer;
 }
 .card{
 	padding: 0px;
-	background-color: #ECF1F1;
+/*	background-color: #ECF1F1;*/
+	background-color: rgba(255,255,255, .7);
+
 	background-image: url(assets/PortalBenjaminLight.png);
 	background-size: 1000px;
+	border: none;
 /*
 	background-repeat: no-repeat;
 	transition: background-size 2s ease;
@@ -206,24 +223,27 @@ cursor: pointer;
 	z-index: 100;
 }
 .carousel-caption{
-	color: black;
-	background-color: rgba(236, 241, 241, .9);
+	color: white;
+	background-color: rgba(0, 135, 143, .9);
 	padding: 0px;
 	margin: 0px;
 /*	background-position: left;*/
 /*	text-shadow: 5px 5px 0px white;	*/
 }
 .custom-toggler.navbar-toggler {
-    border-color: #E5AD24;
+    border-color: #00878F;
 }
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#E5AD24' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+/*  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#E5AD24' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");*/
 }
 .container{
 /*	padding-right: 500px;*/
 }
 .cursor-finger{
 	cursor: pointer;
+}
+.custom-toggler{
+	border-radius: 50px;
 }
 .custom-toggler.navbar-toggler:hover {
     border-color: #E47128;
@@ -232,17 +252,22 @@ cursor: pointer;
     outline-color: #E5AD24;
 	outline-width: 3px;
 }
+.div-footer{
+    position: absolute;
+	bottom: 0px;
+
+}
+/*
+.div-footer span{
+	position: absolute;
+	bottom: 0;
+   	right: 0;
+}
+*/
+
 div img{
     width: 100%;
     height: auto;
-/*	object-fit:cover;*/
-}
-footer{
-/*	text-align: center;*/
-/*	text-shadow: 0px 1px .25px white;*/
-}
-.fixed-top{
-/*	z-index: inherit;*/
 }
 html{
     background-color:#ffffff;
@@ -250,7 +275,6 @@ html{
     font-family: sans-serif;
     font-size: 18px;
 }
-
 h1,h2,h3,h4 {
         color: #00878F;
         text-align: right;
@@ -270,6 +294,10 @@ h3{
 h4{
 	text-align: left;
 }
+.hidden-div{
+	position: relative;
+	z-index: -100;
+}
 .img-scale{
 	max-width: 50vw;
     max-height: 50vh;
@@ -277,7 +305,7 @@ h4{
 }
 .image-big{
 	width: 35vw;
-	box-shadow: 5px 5px 25px rgba(0,0,0,.5);
+	box-shadow: 5px 5px 25px rgba(0,0,0,.1);
 }
 /*
 .image-lock{
@@ -299,12 +327,8 @@ h4{
 .navbar{
 	padding: 3px 5px;
 }
-.navColors a:hover{
-	color: #E47128 !important;
-	cursor: pointer;
-}
 .navColors {
-	color: #E5AD24;
+	color: #00878F;
 	margin: auto;
 /*	background-color: rgba(0, 135, 143, .9);*/
 	background-color: rgba(236, 241, 241, .95);
@@ -313,8 +337,12 @@ h4{
 	min-width: 18rem;
 /*	padding: 15px;*/
 	margin: auto;
-	box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+	box-shadow: 0px 0px 5px rgba(0,0,0,.1);
 	max-width: 500px;
+}
+.navColors a:hover{
+	color: #E5AD24 !important;
+	cursor: pointer;
 }
 .nav-link{
 	font-size: 1.25rem;
@@ -346,7 +374,7 @@ p{
 }
 .project{
 	background-color: rgba(236, 241, 241, .2);
-	box-shadow: 5px 5px 35px;
+	box-shadow: 2px 2px 10px rgba(0,0,0, .1);
 }
 /*
 .professional-title{
@@ -364,7 +392,7 @@ p{
 	padding: 0;
 }
 .shadow-box{
-	box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+	box-shadow: 5px 5px 15px rgba(0,0,0,.1);
 }
 .sticky-nav{
 	position: sticky;
@@ -538,14 +566,14 @@ p{
 		min-width: 14rem;
 	/*	padding: 15px;*/
 		margin: 0px;
-		box-shadow: 5px 5px 25px rgba(0,0,0,.2);
+		box-shadow: 2px 2px 5px rgba(0,0,0,.1);
 		max-width: 100%;
 	}
 	.arduino-images{
 		min-width: 14rem;
 		padding: 0px;
 		margin: 15px;
-		box-shadow: 5px 5px 25px rgba(0,0,0,.2);
+		box-shadow: 2px 2px 5px rgba(0,0,0,.1);
 		max-width: 100%;
 /*
 		transition:none;

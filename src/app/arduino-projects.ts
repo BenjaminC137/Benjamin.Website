@@ -47,7 +47,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Original 5 Volt stepper motor mount assembly mounted on storage compartment. I later upgraded to a significantly more powerful motor.", //10
 			"Workspace during construction. I actually cleaned everything up every day after working on it.", //11
 			"Creating and constructing the agitator assemply", //12
-			"Electronics enclosure with food compartment and machine hanging below", //13
+			"Displays the current time, the last time food was released and how many times food has been released per day", //13
 			"I had to break off tiny pieces of this computer charger in order to open it without damaging it.", //14
 			"Completed power adapter housing for all 3 components requiring power.", //15
 			"Electronics enclosure, food compartment and machine mounted on wall", //16

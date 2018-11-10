@@ -92,7 +92,9 @@ export class ArduinoDetailComponent implements OnInit{
 //	 ngAfterViewInit() {
 //      console.log(this.myId.nativeElement);
 //		this.selectedIdx: int = 0;
-
+	scroll(el) {
+		el.scrollIntoView();
+	}
 	ViewHiRes(index: number){
 		if(this.show == true){
 		this.show = !this.show
