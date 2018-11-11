@@ -10,7 +10,13 @@ import { ArduinoService } from '../arduino.service';
 })
 
 export class ArduinoComponent implements OnInit {
-	filterargs = {title: 'Scale'};
+//	filterargs = {title: 'Scale'};
+//   	searchText = searchText.toLowerCase();
+//	filterargs = {title: 'Scale'};
+
+//	searchText = {title: searchText};
+	searchText = '';
+	filterargs = {title: this.searchText};
 
 //	@Input() arduino: ArduinoProjectModel;
 	arduinoProjects: ArduinoProjectModel[];
@@ -31,6 +37,13 @@ export class ArduinoComponent implements OnInit {
 
 	toggle(){
 		this.show = !this.show;
+	}
+	submitClicked(){
+//		this.gem.reviews.push(this.newReview);
+//		//TODO: This does not save reviews! I should figure out a way to send my new review to a "persisted data store"
+//		this.ngOnInit();
+		this.filterargs = {title: this.searchText};
+
 	}
 
 

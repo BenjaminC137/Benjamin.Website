@@ -8,6 +8,8 @@ import { Observable, of } from 'rxjs';
 })
 
 export class ArduinoService {
+//	searchText: string;
+//	filterargs = {title: this.searchText};
 
     constructor() { }
 
@@ -21,4 +23,5 @@ export class ArduinoService {
 	getArduino(id: number): Observable<ArduinoProjectModel>{
 		return of(ArduinoProjects.find(arduino => arduino.id === id));
 	}
+
 }

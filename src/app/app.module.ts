@@ -14,7 +14,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { FireballComponent } from './fireball/fireball.component';
 import { PhotographyComponent } from './photography/photography.component';
 import { FilterPipe } from './filter.pipe';
-//import { ArduinoProjects } from './arduino-projects';
 
 @NgModule({
   declarations: [
@@ -32,8 +31,8 @@ import { FilterPipe } from './filter.pipe';
   ],
   imports: [
     BrowserModule,
-	  FormsModule,
-	  AppRoutingModule
+	FormsModule,
+	AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

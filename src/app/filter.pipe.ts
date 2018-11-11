@@ -14,11 +14,11 @@ export class FilterPipe implements PipeTransform {
         if (!ArduinoProjects || !filter) {
             return ArduinoProjects;
         }
+//		   if(!searchText){
+//			   return ArduinoProjects;
+//		   }
         // filter items array, items which match and return true will be
         // kept, false will be filtered out
         return ArduinoProjects.filter(ArduinoProjects => ArduinoProjects.title.indexOf(filter.title) !== -1);
-
-
-//	  return null;
   }
 }
