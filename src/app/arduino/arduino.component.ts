@@ -10,6 +10,8 @@ import { ArduinoService } from '../arduino.service';
 })
 
 export class ArduinoComponent implements OnInit {
+	filterargs = {title: 'Scale'};
+
 //	@Input() arduino: ArduinoProjectModel;
 	arduinoProjects: ArduinoProjectModel[];
 
@@ -19,6 +21,7 @@ export class ArduinoComponent implements OnInit {
   constructor(private arduinoService: ArduinoService) { }
 
   ngOnInit() {
+
 	  this.getArduinoProjects();
   }
 
@@ -29,6 +32,8 @@ export class ArduinoComponent implements OnInit {
 	toggle(){
 		this.show = !this.show;
 	}
+
+
 
 //  arduinoProjects = ArduinoProjects;
 

@@ -96,6 +96,11 @@ a:active{
 .arduino-card-hover:hover{
 	cursor: pointer;
 }
+.arduino-small-square{
+    height: 150px;
+	width: auto;
+	margin-right: 15px;
+}
 .back-button{
 	position: fixed;
 	top: 28px;
@@ -123,6 +128,9 @@ body{
 }
 .button:hover:{
 cursor: pointer;
+}
+.button-spacing{
+	margin-bottom: inherit;
 }
 .btn-primary {
 	background-color: #E5AD24;
@@ -207,8 +215,8 @@ cursor: pointer;
 	color: #00878F;
 	font-weight: 500;
 	background-color: #ECF1F1;
-	transition: 1s;
-	-webkit-transition:  1s;
+	transition: 250ms;
+	-webkit-transition: 250ms;
 }
 .card-title{
 	padding: 7px;
@@ -296,7 +304,7 @@ h4{
 }
 .hidden-div{
 	position: relative;
-	z-index: -100;
+	z-index: -1000;
 }
 .img-scale{
 	max-width: 50vw;
@@ -485,6 +493,12 @@ p{
 
 }
 /*
+.width-100{
+	display: inherit;
+	width: inherit;
+}
+*/
+/*
 .rounded-image{
 	border-style: hidden;
 	border-radius: 0px;
@@ -516,17 +530,32 @@ p{
 
 
 /*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
+@media (max-width: 320.98px) {
+	.arduino-small-square{
+		height: 75px;
+		width: auto;
+		margin-right: 0px;
+	}
 /*
 	.arduino-images:hover {
 	padding: 15px;
 	margin: 5px;
 }
 */
+/*
+.arduino-small-square{
+    height: 75px;
+	width: auto;
+	margin-right: 0px;
+}
+*/
 	.back-button{
 /*		top: 52px;*/
 		top: inherit;
 		bottom: 15px;
+	}
+	.button-spacing{
+		margin-bottom: 10px;
 	}
 	.close-button{
 /*		top: 52px;*/
@@ -585,6 +614,10 @@ p{
 		transition: none;
 		-webkit-transition: none;
 */
+	}
+	.width-100{
+		display: inline-block;
+		width: 100%;
 	}
 }
 /* Small devices (landscape phones, 576px and up)*/

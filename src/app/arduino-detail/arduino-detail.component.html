@@ -1,20 +1,26 @@
 <div class="back-button"><button class="btn-primary back-button" (click)="goBack()">Back</button></div>
 <div class="project">
 	<h3>{{arduino.title | uppercase}} <img class="arduino-logo-details" src="assets/2000px-Arduino_Logo.svg.png"></h3>
-	<br>
 	<h4>Introduction </h4>
 	<div class="box" style="white-space: pre-line">
 <!--		<h4 style="padding-left: 0px">Introduction </h4>-->
 		{{arduino.description}}
 		<br>
-		<br>
-		Created: {{arduino.dateCreated | date}}
-		<br>
-		Completed: {{arduino.dateCompleted | date}}
-		<br>
-		<br>
-		<button class="btn-primary" (click)="scroll(photos)">Photos</button> &nbsp;
-		<button class="btn-primary" (click)="scroll(video)">Video</button>
+		<div class="row">
+			<div class="col"><br>
+
+				<button class="btn-primary button-spacing" (click)="scroll(photos)">Photos</button> &nbsp;
+				<button class="btn-primary" (click)="scroll(video)">Video</button>
+				<br>
+				<br>
+				Created: {{arduino.dateCreated | date}}
+				<br>
+				Completed: {{arduino.dateCompleted | date}}
+			</div>
+			<div class="">
+				<img class="arduino-small-square shadow-box" src="{{arduino.moreImagesPath[0]}}">
+			</div>
+		</div>
 
 		<!--
 		Duration: {{arduino.duration}}
@@ -74,7 +80,7 @@
 <!--				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>-->
 				<div><button class="btn-primary close-button" *ngIf="show && selectedIdx === i">Close</button></div>
 				<img  [class.view-hi-res]="selectedIdx === i" src={{image}}>
-				<div class="hidden-div" [class.view-hi-caption]="selectedIdx === i">
+				<div class="hidden-div" >
 					<p style="margin-bottom: 0px"><span>{{arduino.imageCaption[i]}}</span></p>
 				</div>
 				<div class="div-footer" [class.view-hi-caption]="selectedIdx === i">
