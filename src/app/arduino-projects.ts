@@ -58,13 +58,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Assembl being tested on a tripod", //21
 			"Early on PCB schematic for board", //22
 		],
-		videoUrl: "https://www.youtube.com/embed/v8osIfH_B1c",
-
-
-
-
-
-
+		videoUrl: "https://www.youtube.com/embed/cQlMx21N6_M",
 
 		components: [
 			"120 Volt outlet plug",
@@ -227,7 +221,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"", //14
 			"" //15
 		],
-		videoUrl: "coming soon",
+		videoUrl: "https://www.youtube.com/embed/NcZDf70oZJY",
 		components: [
 			"Arduino nano",
 			"button",
@@ -279,7 +273,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"", //14
 			"" //15
 		],
-		videoUrl: "coming soon",
+		videoUrl: "https://www.youtube.com/embed/R0kMBlphMrM",
 		components: [
 			"Arduino nano",
 			"button",
@@ -370,7 +364,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"", //14
 			"" //15
 		],
-		videoUrl: "https://www.youtube.com/embed/2wkwj9x5P24",
+		videoUrl: "https://www.youtube.com/embed/NbznV_-Ivl8",
 		components: [
 			"5 Volt 1 amp power adapter",
 			"Arduino nano",
@@ -384,7 +378,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 	{
 		id: 8,
 		title: 'Heater Control',
-		description: "I Modified a space heater to be able to power on after a given time. You can set a timer for the heater to power on. I use it for the morning so that I can get out of bed more easily in the winter. I Connected 4 wires to the heater's circuit board for the control panel. 2 wires to Power button on heater, 2 wires to Oscillation control button on heater. I fed them out through a hole I drilled.\n\nDetails:\nPress the button to add one hour to the timer. If you press it again, it will add another hour. Adding does not restart the timer. It starts when you press the button the first time and the first led turns illuminates. The LED indicators will illuminate based on how much time is left until the unit powers on. Manually power it on by holding the button down. Automatically powers off after two hours for safety. While on, press the button to turn it off manually and force it into safety mode. Hold the button until all the LED indicators illuminate, and it turns to 'on' status. If you press it again, the timer resumes. Press and hold when it's in safety mode until you see a bright blue light to bring it back to regular mode.Details: Press the button to add one hour to the timer. If you press it again, it will add another hour. Adding does not restart the timer. It starts when you press the button the first time and the first led turns illuminates. The LED indicators will illuminate based on how much time is left until the unit powers on. Manually power it on by holding the button down. Automatically powers off after two hours for safety. While on, press the button to turn it off manually and force it into safety mode. Press and hold when it's in safety mode until you see a bright blue light to bring it back to regular mode.",
+		description: "I Modified a space heater to be able to power on after a given time. You can set a timer for the heater to power on. I use it for the morning so that I can get out of bed more easily in the winter. I Connected 4 wires to the heater's circuit board for the control panel. 2 wires to Power button on heater, 2 wires to Oscillation control button on heater. I fed them out through a hole I drilled.\n\nDetails:\nPress the button to add one hour to the timer. If you press it again, it will add another hour. Adding does not restart the timer. It starts when you press the button the first time and the first led turns illuminates. The LED indicators will illuminate based on how much time is left until the unit powers on. Manually power it on by holding the button down. Automatically powers off after two hours for safety. While on, press the button to turn it off manually and force it into safety mode. Press and hold when it's in safety mode until you see a bright blue light to bring it back to regular mode.",
 		dateCreated: '2017/12/09',
 		dateCompleted: '2017/12/28',
 		imagePath: "assets/ArduinoHeaterControl/ArduinoHeaterControl-BoardAndCables1%20-%20IMG_2368%20copy.jpeg",
@@ -422,7 +416,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"", //14
 			"" //15
 		],
-		videoUrl: "coming soon",
+		videoUrl: "https://www.youtube.com/embed/HvHQfiEPeb8",
 		components: [
 			"5 Volt 1 amp power adapter",
 			"Arduino nano",

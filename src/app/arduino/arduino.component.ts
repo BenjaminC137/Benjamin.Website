@@ -30,11 +30,9 @@ export class ArduinoComponent implements OnInit {
 
 	  this.getArduinoProjects();
   }
-
   getArduinoProjects(): void {
 		this.arduinoService.getArduinoProjects().subscribe(arduinoProjects => this.arduinoProjects = arduinoProjects);
 	}
-
 	toggle(){
 		this.show = !this.show;
 	}
@@ -43,10 +41,7 @@ export class ArduinoComponent implements OnInit {
 //		//TODO: This does not save reviews! I should figure out a way to send my new review to a "persisted data store"
 //		this.ngOnInit();
 		this.filterargs = {title: this.searchText};
-
 	}
-
-
 
 //  arduinoProjects = ArduinoProjects;
 

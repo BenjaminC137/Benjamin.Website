@@ -1,8 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { ArduinoService } from './arduino.service';
 import { ArduinoProjectModel } from './arduino-project-model';
-import {Observable} from "rxjs";
-
+import { Observable } from "rxjs";
 
 @Pipe({
   name: 'filter',

@@ -1,4 +1,3 @@
-
 /*	Teal 		#00878F  rgba(0, 135, 143, .9)
 	Light Teal	#62AEB2
 	Orange	 	#E47128
@@ -528,9 +527,12 @@ p{
 */
 }
 
+@media (max-width: 320.98px){
 
+}
+/*	 320.98px*/
 /*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 320.98px) {
+@media (max-width:575.98px) {
 	.arduino-small-square{
 		height: 75px;
 		width: auto;
