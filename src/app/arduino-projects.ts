@@ -173,7 +173,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"", //9
 			"" //10
 		],
-		videoUrl: "https://www.youtube.com/embed/qrBSsBUHHKc",
+		videoUrl: "https://www.youtube.com/embed/F4fxYeKbnTA",
 		components: [
 			"Arduino nano",
 			"button",
