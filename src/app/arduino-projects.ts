@@ -149,19 +149,20 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: 'Counts crunches while I exercise, so I can watch TV and not have to count. I lose track when I count anyway because I start thinking about other things. It beeps with crunches and displays total on an LCD display. Another actually super useful device. I began with a tilt sensor which ended up being unstable. Then, I tried using an ultrasonic sensor which ended up proving unreliable due to varying object angles for return echos',
 		dateCreated: '2018/10/05',
 		dateCompleted: '2018/10/029',
-		imagePath: "assets/ArduinoCrunchCounter/crunchCounter-box-and-bar-beta-IMG_5132.jpeg",
+		imagePath: "assets/ArduinoCrunchCounter/crunchCounter-final-product-IMG_5563.jpeg",
 		moreImagesPath: [
-			"assets/ArduinoCrunchCounter/crunchCounter-box-and-bar-beta-IMG_5132.jpeg", //0
+			"assets/ArduinoCrunchCounter/crunchCounter-final-product-IMG_5563.jpeg", //0
 			"assets/ArduinoCrunchCounter/crunchCounter-terminal-blocks-IMG_4789.jpeg", //1
 			"assets/ArduinoCrunchCounter/crunchCounter-installing-board-into-box-IMG_5110.jpeg", //2
 			"assets/ArduinoCrunchCounter/crunchCounter-beta-IMG_4616.jpg", //3
 			"assets/ArduinoCrunchCounter/crunchCounter-closeup-bottom-of-board-IMG_5064.jpeg", //4
 			"assets/ArduinoCrunchCounter/crunchCounter-completed-board-with-wires-IMG_5066.jpeg", //5
 			"assets/ArduinoCrunchCounter/crunchCounter-quadhands-bottom-of-boardIMG_5062.jpeg", //6
-			"assets/ArduinoCrunchCounter/crunchCounter-quadhands-solder-station-IMG_5061.jpeg" //7
+			"assets/ArduinoCrunchCounter/crunchCounter-quadhands-solder-station-IMG_5061.jpeg", //7
+			"assets/ArduinoCrunchCounter/crunchCounter-box-and-bar-beta-IMG_5132.jpeg" //8
 		],
 		imageCaption: [
-			"Trial run with completed board installed in box", //0
+			"Complete", //0
 			"Terminal Blocks attached and labeled. Gr for Ground, A0 for analog pin 0 etc.", //1
 			"Installing completed board into housing", //2
 			"Preliminary photoresistor testing", //3
@@ -169,7 +170,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Completed board with wires attached", //5
 			"Bottom of board with wires connected to top with housing below", //6
 			"Soldering station with the incredible QuadHands solder assistant! If anybody reading this ever solders, please look into these. I cannot recommend them enough.", //7
-			"", //8
+			"Trial run with completed board installed in box", //8
 			"", //9
 			"" //10
 		],
@@ -252,26 +253,35 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"assets/ArduinoHomeBox/Homebox-relay-IMG_1441.jpeg", //6
 			"assets/ArduinoHomeBox/Homebox-relay-in-box-IMG_1635.jpeg", //7
 			"assets/ArduinoHomeBox/Homebox-stuffed-box-IMG_1717.jpeg", //8
-			"assets/ArduinoHomeBox/Homebox-workstation-IMG_1730.jpeg" //9
+			"assets/ArduinoHomeBox/Homebox-workstation-IMG_1730.jpeg", //9
+			"assets/ArduinoHomeBox/Homebox-bathroom-danger-wires-IMG_5517.jpeg", //10
+			"assets/ArduinoHomeBox/Homebox-bathroom-far-away-IMG_5520.jpeg", //11
+			"assets/ArduinoHomeBox/Homebox-bathroom-fixture-IMG_5513.jpeg", //12
+			"assets/ArduinoHomeBox/Homebox-bathroom-hanging-IMG_5511.jpeg", //13
+			"assets/ArduinoHomeBox/Homebox-bathroom-hanging-pir-IMG_5519.jpeg", //14
+			"assets/ArduinoHomeBox/Homebox-bedroom-colseup-IMG_5543.jpeg", //15
+			"assets/ArduinoHomeBox/Homebox-bedroom-straight-on-IMG_5544.jpeg", //16
+			"assets/ArduinoHomeBox/Homebox-window-closeup-IMG_5542.jpeg", //17
 		],
 		imageCaption: [
 			"Homebox on couch", //0
 			"Welcome-home box with separate relay box behind it", //1
 			"Electrical tape holds the wires to the breadboards while the prototype is tested", //2
-			"Soldering 5 ground wires to 1 wire to save space.", //2
-			"Installing components into the bedroom's Home Box which includes the relay module.", //3
-			"Early beta testing the first prototype.", //4
-			"5 Volt relay module (with the red LED on it) which allows cutting of power source.", //5
-			"5 Volt relay module connected to an extension cable installed in it's own housing - separate from the Home Box primary unit.", //6
-			"Attempted to squeeze everything into one tiny box including the live AC cord. DO NOT DO THIS! It started smoking during mid testing. I abandoned and rebuild from scratch.", //7
-			"Installed buttons, power port and IR sensor", //8
-			"", //9
-			"", //10
-			"", //11
-			"", //12
-			"", //13
-			"", //14
-			"" //15
+			"Soldering 5 ground wires to 1 wire to save space.", //3
+			"Installing components into the bedroom's Home Box which includes the relay module.", //4
+			"Early beta testing the first prototype.", //5
+			"5 Volt relay module (with the red LED on it) which allows cutting of power source.", //6
+			"5 Volt relay module connected to an extension cable installed in it's own housing - separate from the Home Box primary unit.", //7
+			"Attempted to squeeze everything into one tiny box including the live AC cord. DO NOT DO THIS! It started smoking during mid testing. I abandoned and rebuild from scratch.", //8
+			"Installed buttons, power port and IR sensor", //9
+			"Modified bulb adapter - very dangerous. I drilled holes in it to feed the wires in and had the wires stick out where the bulb will contact them.", //10
+			"Unobtrusive hanging PIR sensor", //11
+			"Adapter fixture with 5 Volt relay (blue)", //12
+			"Full assembly hanging before instaling cover", //13
+			"PIR sensor hangs just below the cover", //14
+			"Bedroom Box", //15
+			"Cables tucked away", //16
+			"Second Living room lamp without PIR which would not be good for it's location" //17
 		],
 		videoUrl: "https://www.youtube.com/embed/R0kMBlphMrM",
 		components: [
@@ -381,9 +391,9 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: "I Modified a space heater to be able to power on after a given time. You can set a timer for the heater to power on. I use it for the morning so that I can get out of bed more easily in the winter. I Connected 4 wires to the heater's circuit board for the control panel. 2 wires to Power button on heater, 2 wires to Oscillation control button on heater. I fed them out through a hole I drilled.\n\nDetails:\nPress the button to add one hour to the timer. If you press it again, it will add another hour. Adding does not restart the timer. It starts when you press the button the first time and the first led turns illuminates. The LED indicators will illuminate based on how much time is left until the unit powers on. Manually power it on by holding the button down. Automatically powers off after two hours for safety. While on, press the button to turn it off manually and force it into safety mode. Press and hold when it's in safety mode until you see a bright blue light to bring it back to regular mode.",
 		dateCreated: '2017/12/09',
 		dateCompleted: '2017/12/28',
-		imagePath: "assets/ArduinoHeaterControl/ArduinoHeaterControl-BoardAndCables1%20-%20IMG_2368%20copy.jpeg",
+		imagePath: "assets/ArduinoHeaterControl/ArduinoHeaterControl-box-attached-closeup-IMG_5549.jpeg",
 		moreImagesPath: [
-			"assets/ArduinoHeaterControl/ArduinoHeaterControl-BoardAndCables1%20-%20IMG_2368%20copy.jpeg", //0
+			"assets/ArduinoHeaterControl/ArduinoHeaterControl-box-attached-closeup-IMG_5549.jpeg", //0
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-board-bottom-partial - IMG_2343 copy.jpeg", //1
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-board-bottom-partial-withBackground - IMG_2342 copy.jpeg", //2
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-board-top - IMG_2363 copy.jpeg", //3
@@ -396,10 +406,12 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-cableExit - IMG_1742 copy.jpeg", //10
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-CableExit2 - IMG_1754 copy.jpeg", //11
 			"assets/ArduinoHeaterControl/ArduinoHeaterControl-CablesSolderedToController1 - IMG_1747 copy.jpeg", //12
-			"assets/ArduinoHeaterControl/ArduinoHeaterControl-CablesSolderedToController2 - IMG_1753 copy.jpeg" //13
+			"assets/ArduinoHeaterControl/ArduinoHeaterControl-CablesSolderedToController2 - IMG_1753 copy.jpeg", //13
+			"assets/ArduinoHeaterControl/ArduinoHeaterControl-wide-angle-IMG_5551.jpeg", //14
+			"assets/ArduinoHeaterControl/ArduinoHeaterControl-BoardAndCables1%20-%20IMG_2368%20copy.jpeg" //15
 		],
 		imageCaption: [
-			"Board connected to the wires; ready to be installed in the housing", //0
+			"Completed Box attached to space heater", //0
 			"Bottom of the circuit board I made for condensing the wiring.", //1
 			"By condensing the electronics by creating this board, it will allow me to fit all of the components into the tiny project-box/housing.", //2
 			"Top view of the board (This is very cool).", //3
@@ -413,8 +425,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Wires sticking out where the box will be mounted", //11
 			"Glued the soldered wires down to prevent flexing the sensitive solder joints", //12
 			"The controller panel is ready to be reinstalled.", //13
-			"", //14
-			"" //15
+			"Space heater with Heater Control box", //14
+			"Board connected to the wires; ready to be installed in the housing" //15
 		],
 		videoUrl: "https://www.youtube.com/embed/HvHQfiEPeb8",
 		components: [
