@@ -125,7 +125,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"", //9
 			"", //10
 		],
-		videoUrl: "coming soon",
+		videoUrl: "https://www.youtube.com/embed/HLsO73FKvso",
 		components: [
 			"accelerometer",
 			"Arduino nano",
