@@ -80,6 +80,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"on/off switch",
 			"project box",
 			"project box -metal",
+			"PCB",
+			"terminal block",
 			"PVC pipe",
 			"power strip",
 			"power port",
@@ -130,6 +132,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"accelerometer",
 			"Arduino nano",
 			"battery compartment X8 AA",
+			"battery AA",
+			"breadboard"
 			"car chasis",
 			"DC motor",
 			"led",
@@ -185,7 +189,9 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"buzzer",
 			"on/off switch",
 			"project box",
-			"5 Volt 1 amp power adapter"
+			"5 Volt 1 amp power adapter",
+			"PCB",
+			"Terminal block"
 		],
 		libraries: [
 			"Wire.h",
@@ -226,6 +232,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		components: [
 			"Arduino nano",
 			"button",
+			"breadboard",
 			"led",
 			"buzzer",
 			"project box",
@@ -287,13 +294,15 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		components: [
 			"Arduino nano",
 			"button",
+			"breadboard",
 			"IR receiver",
 			"PIR sensor",
 			"5 Volt relay module",
 			"5 Volt 1 amp power adapter",
 			"project box",
 			"lightbulb adapter",
-			"power port"
+			"power port",
+			"PCB"
 		],
 		libraries: [
 			"IRremote.h"
@@ -324,6 +333,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		videoUrl: "coming soon",
 		components: [
 			"Arduino nano",
+			"breadboard",
 			"DC motor",
 			"led",
 			"RF receiver",
@@ -337,7 +347,9 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"triangle vehicle chasis",
 			"potentiometer",
 			"battery compartment X8 AA",
-			"battery compartment X4 AA"
+			"battery compartment X4 AA",
+			"battery AA",
+			"battery 9V"
 		],
 		libraries: [
 			"SPI.h",
@@ -436,7 +448,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"IC 4066 quad bilateral switch",
 			"button",
 			"project box",
-			"space heater"
+			"space heater",
+			"PCB"
 		],
 		libraries: [
 			"none"
@@ -474,10 +487,11 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		],
 		videoUrl: "https://www.youtube.com/embed/iLcNTzUM5V4",
 		components: [
-			"Arduino nano",
+			"Arduino Uno",
 			"button",
 			"IIC/I2C/TWI 1602 Serial LCD Display",
-			"IIC/I2C/TWI 1602 Serial Interface module"
+			"IIC/I2C/TWI 1602 Serial Interface module",
+			"PCB"
 		],
 		libraries: [
 			"Wire.h",
@@ -491,9 +505,14 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		description: '50 Gram scale using a .001 accuracy load cell. Includes a tare feature. Perfect for measuring chemicals for science experiments with the kids.',
 		dateCreated: '2018/04/27',
 		dateCompleted: '2018/04/30',
-		imagePath: "assets/ArduinoScale/scale-calibrating-IMG_4610.jpg",
+		imagePath: "assets/ArduinoScale/scale-dimes-IMG_5594.jpeg",
 		moreImagesPath: [
-			"assets/ArduinoScale/scale-calibrating-IMG_4610.jpg" //0
+			"assets/ArduinoScale/scale-dimes-IMG_5594.jpeg", // 0
+			"assets/ArduinoScale/scale-50-grams-IMG_9161.jpeg", // 1
+			"assets/ArduinoScale/scale-too-heavy-IMG_5643.jpeg" // 2
+			"assets/ArduinoScale/scale-beta-testing-IMG_9090.jpeg", // 3
+			"assets/ArduinoScale/scale-fragile-taped-IMG_9075.jpeg", // 4
+			"assets/ArduinoScale/scale-inside-box-IMG_5590.jpeg", // 5
 		],
 		imageCaption: [
 			"Full view of unit during the automatic calibrating phase I developed", //0
@@ -513,14 +532,16 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"", //14
 			"" //15
 		],
-		videoUrl: "coming soon",
+		videoUrl: "https://www.youtube.com/embed/QkKUQQRAAVE",
 		components: [
 			"Arduino nano",
 			"button",
 			"HX711 Load Cell Amplifier",
 			"load cell",
 			"IIC/I2C/TWI 1602 Serial LCD Display",
-			"IIC/I2C/TWI 1602 Serial Interface module"
+			"IIC/I2C/TWI 1602 Serial Interface module",
+			"PCB",
+			"Terminal block"
 		],
 		libraries: [
 			"hx711.h",

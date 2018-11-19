@@ -8,6 +8,7 @@ export class ArduinoProjectModel {
 	moreImagesPath?: string[];
 	imageCaption?: string[];
 	videoUrl?: string;
+	videoImage?: string;
 	components: string[];
 	libraries: string[];
 	duration?: number;

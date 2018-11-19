@@ -1,5 +1,5 @@
 /*	Teal 		#00878F  rgba(0, 135, 143, .9)
-	Light Teal	#62AEB2
+	Light Teal	#62AEB2 rgba((98,174,178), .9)
 	Orange	 	#E47128
 	Yellow		#E5AD24	 rgba(229, 173, 36, .9)
 	Brown 		#8C7965
@@ -142,6 +142,10 @@ cursor: pointer;
 }
 .btn-primary:active {
 	background-color: black;
+}
+.btn-primary:disabled {
+	background-color: rgba(98,174,178, .4);
+
 }
 .btn{
 	color: #E5AD24;

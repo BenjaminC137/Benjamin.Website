@@ -12,10 +12,11 @@
 	Over the last 5 years, I've been researching and taking online classes on Arduino (based on C/C++) and C#. Working with the Arduino prototyping platform has been my passion. You can view some of my favorite projects on this site. I've designed, coded and physically built electronics and machines. <a href="mailto:benjaminsalasek@icloud.com">Ask me</a> about this if you're intrigued! After ten years of various IT support/HelpDesk positions, I decided that I wanted to take my coding to the next level. I retired from my IT support career that I completely lost passion for in pursuit of a new exciting and rewarding career in software development.
 	<br>
 	<br>
-	I enrolled in and completed a twelve week intensive full time coding course in downtown Chicago, called Coding Temple, focusing on designing .Net Core web applications and related technologies. I not only majorly improved my C# skills, but I learned about and developed a skillset. Here, you will find a portfolio of projects that I've created. Apart from that, I have skills such as Graphic Design with Photoshop, Woodworking, Office foosball champion.
+	I enrolled in and completed a twelve week intensive full time coding course in downtown Chicago, called Coding Temple, focusing on designing .Net Core web applications and related technologies. I not only majorly improved my C# skills, but I developed a skillset for creating web applications. Here, you will find a portfolio of projects that I've created. Apart from that, I have skills such as Graphic Design with Photoshop, Woodworking and becoming the Office Foosball Champion.
 	<br>
 	<br>
-	<a href="https://www.icloud.com/pages/02Q6cENiP-dmRToRaGIZyyZNg#Benjamin_Salasek_Resume_Live">Current Resume </a> (enter any name; click the wrench icon to download)
+<!--	<a href="https://www.icloud.com/pages/02Q6cENiP-dmRToRaGIZyyZNg#Benjamin_Salasek_Resume_Live">Current Resume </a> (enter any name; click the wrench icon to download)-->
+<!--	<a href="/src/assets/Benjamin%20Salasek%20Resume.pdf">Current Resume</a>-->
 	<br>
 	<br>
 	<h6>Skills</h6>
@@ -39,6 +40,24 @@
 		<li>TypeScript</li>
 		<li>Visual Studio</li>
 	</ul>
+</div>
+<br>
+<br>
+<br>
+<h4>Resume</h4>
+<div class="box">
+
+<div *ngIf="isLoaded" style="text-align: center;">
+  <button class="btn-primary" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
+  <button class="btn-primary" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
+</div>		<pdf-viewer src="assets/Benjamin%20Salasek%20Resume.pdf"
+					[show-all]="false"
+            		[page]="page"
+					(after-load-complete)="afterLoadComplete($event)"
+					style="display: block"
+					[original-size]="false"
+					[autoresize]="true">
+		</pdf-viewer>
 </div>
 <br>
 <h4>Contact and Profiles</h4>

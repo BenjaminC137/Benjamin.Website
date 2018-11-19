@@ -14,6 +14,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { FireballComponent } from './fireball/fireball.component';
 import { PhotographyComponent } from './photography/photography.component';
 import { FilterPipe } from './filter.pipe';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FilterPipe } from './filter.pipe';
   imports: [
     BrowserModule,
 	FormsModule,
-	AppRoutingModule
+	AppRoutingModule,
+	PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
