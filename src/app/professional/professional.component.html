@@ -43,18 +43,22 @@
 <br>
 <h4>Resume</h4>
 <div class="box">
-
-<div *ngIf="isLoaded" style="text-align: center;">
-  <button class="btn-primary" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
-  <button class="btn-primary" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
-</div>		<pdf-viewer src="assets/Benjamin%20Salasek%20Resume.pdf"
-					[show-all]="false"
-            		[page]="page"
-					(after-load-complete)="afterLoadComplete($event)"
-					style="display: block"
-					[original-size]="false"
-					[autoresize]="true">
-		</pdf-viewer>
+	<div *ngIf="isLoaded" style="text-align: center;">
+	  <button class="btn-primary" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
+	  <button class="btn-primary" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
+	</div>
+	<pdf-viewer src="assets/Benjamin%20Salasek%20Resume.pdf"
+				[show-all]="false"
+				[page]="page"
+				(after-load-complete)="afterLoadComplete($event)"
+				style="display: block"
+				[original-size]="false"
+				[autoresize]="true">
+	</pdf-viewer>
+	<div *ngIf="isLoaded" style="text-align: center;">
+	  <button class="btn-primary" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
+	  <button class="btn-primary" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
+	</div>
 </div>
 <br>
 <h4>Contact and Profiles</h4>
@@ -67,7 +71,6 @@
 		<li>Youtube: <a href="https://www.youtube.com/channel/UCOTXE8pDT-_mEq53IJTQ7-A?view_as=subscriber">Arduino Project Videos</a></li>
 	</ul>
 	</div>
-<br>
 <br>
 <br>
 <h3>Projects</h3>
