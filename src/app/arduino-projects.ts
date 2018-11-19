@@ -77,7 +77,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"IIC/I2C/TWI 1602 Serial Interface module",
 			"L298 motor driver",
 			"Nema 17 stepper motor",
-			"on/off switch",
+			"power switch",
 			"project box",
 			"project box -metal",
 			"PCB",
@@ -133,11 +133,11 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Arduino nano",
 			"battery compartment X8 AA",
 			"battery AA",
-			"breadboard"
+			"breadboard",
 			"car chasis",
 			"DC motor",
 			"led",
-			"on/off switch",
+			"power switch",
 			"L298 motor driver",
 			"popsicle stick",
 			"ultrasonic sensor",
@@ -187,7 +187,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"IIC/I2C/TWI 1602 Serial LCD Display",
 			"IIC/I2C/TWI 1602 Serial Interface module",
 			"buzzer",
-			"on/off switch",
+			"power switch",
 			"project box",
 			"5 Volt 1 amp power adapter",
 			"PCB",
@@ -509,18 +509,18 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		moreImagesPath: [
 			"assets/ArduinoScale/scale-dimes-IMG_5594.jpeg", // 0
 			"assets/ArduinoScale/scale-50-grams-IMG_9161.jpeg", // 1
-			"assets/ArduinoScale/scale-too-heavy-IMG_5643.jpeg" // 2
-			"assets/ArduinoScale/scale-beta-testing-IMG_9090.jpeg", // 3
-			"assets/ArduinoScale/scale-fragile-taped-IMG_9075.jpeg", // 4
-			"assets/ArduinoScale/scale-inside-box-IMG_5590.jpeg", // 5
+			"assets/ArduinoScale/scale-too-heavy-IMG_5643.jpeg", // 2
+			"assets/ArduinoScale/scale-inside-box-IMG_5590.jpeg", // 3
+			"assets/ArduinoScale/scale-beta-testing-IMG_9090.jpeg", // 4
+			"assets/ArduinoScale/scale-fragile-taped-IMG_9075.jpeg" // 5
 		],
 		imageCaption: [
-			"Full view of unit during the automatic calibrating phase I developed", //0
-			"", //1
-			"", //2
-			"", //3
-			"", //4
-			"", //5
+			"Measuring dimes without using the tare function (included weight of tray)", //0
+			"Calibration with 50 gram weight", //1
+			"Too heavy function. Above 50 grams, the readings will be unreliable with this load cell.", //2
+			"Awesome internal view after installation is complete", //3
+			"Alpha testing", //4
+			"Sensitive wires taped down during modular construction", //5
 			"", //6
 			"", //7
 			"", //8
@@ -541,7 +541,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"IIC/I2C/TWI 1602 Serial LCD Display",
 			"IIC/I2C/TWI 1602 Serial Interface module",
 			"PCB",
-			"Terminal block"
+			"power switch",
+			"terminal block"
 		],
 		libraries: [
 			"hx711.h",
