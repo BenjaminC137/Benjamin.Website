@@ -310,7 +310,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 	},
 	{
 		id: 6,
-		title: 'Smart-tank',
+		title: 'Remote Control Tank',
 		description: "This is a little tank that has had multiple configurations.\n\n•Smart Tank: analyzes surroundings by looking around with a servo motor controlling an ultrasonic sensor and chooses where to go.\n•Wired Remote Controlled Tank: remote controlled movement with a cable that runs to a controller.\n•Wireless RF Remote Controlled Tank: uses two arduino boards. One in the controller and one in the tank\n•Grabber Tank: variation on the Wireless RF Remote Controlled Tank that also has a grabber arm to pick up and move objects.",
 		dateCreated: '2018/01/07',
 		dateCompleted: '2018/01/21',

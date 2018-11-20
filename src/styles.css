@@ -67,7 +67,7 @@ a:active{
 /*	transition: all 1s ease-in-out;*/
 
 	background-color: #ECF1F1;
-	background-image: url(assets/PortalBenjaminLight.png);
+	background-image: url(assets/PortalVectorLight.svg);
 	background-size: 1000px;
 
 	transition: padding 10s ease-in-out, margin 10s ease-in-out, background-size 10s ease-in-out, box-shadow 5s;
@@ -111,7 +111,11 @@ body{
 	padding: 15px;
     font-size: 18px;
 	color: #8C7965;
-    font-family: 'Helvetica Neue', 'Helvetica', 'Open Sans';
+/*    font-family: 'Helvetica Neue', 'Helvetica', 'Open Sans';*/
+
+font-family: ocr-a-std, monospace;
+font-style: normal;
+font-weight: 500;
 }
 .box{
 	box-sizing: border-box;
@@ -191,7 +195,7 @@ cursor: pointer;
 /*	background-color: #ECF1F1;*/
 	background-color: rgba(255,255,255, .7);
 
-	background-image: url(assets/PortalBenjaminLight.png);
+	background-image: url(assets/PortalVectorLight.svg);
 	background-size: 1000px;
 	border: none;
 /*
@@ -208,7 +212,7 @@ cursor: pointer;
 .card-body{
 	padding: 0px;
 /*
-	background-image: url(assets/PortalBenjaminLight.png);
+	background-image: url(assets/PortalVectorLight.svg);
 	background-size: 500px;
 */
 }
@@ -283,7 +287,11 @@ div img{
 html{
     background-color:#ffffff;
     color: #8C7965;
-    font-family: sans-serif;
+/*    font-family: sans-serif;*/
+
+font-family: ocr-a-std, monospace;
+font-style: normal;
+font-weight: 500;
     font-size: 18px;
 }
 h1,h2,h3,h4 {
