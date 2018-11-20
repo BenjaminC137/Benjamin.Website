@@ -91,6 +91,9 @@ a:active{
 	width: 70px;
 	float: right;
 	padding: 5px;
+	position: relative;
+	top:-5px;
+/*	margin-bottom: 2px;*/
 }
 .arduino-card-hover:hover{
 	cursor: pointer;
@@ -295,8 +298,8 @@ font-weight: 500;
     font-size: 18px;
 }
 h1,h2,h3,h4 {
-        color: #00878F;
-        text-align: right;
+	color: #00878F;
+	text-align: right;
 	padding: 5px;
 }
 h1{
@@ -366,6 +369,10 @@ h4{
 .nav-link{
 	font-size: 1.25rem;
 	padding-left: 45px;
+}
+.navtitle{
+	font-size: 1.5rem;
+	padding-left: 10px;
 }
 .navbar-nav{
 	padding-left: 45px
@@ -540,7 +547,15 @@ p{
 }
 
 @media (max-width: 320.98px){
-
+	body{
+/*		font-size: 8px;*/
+	}
+	.navtitle{
+		font-size: 1.3rem;
+	}
+	h1, h2, h3, h4, h5, h6{
+		font-size: 1.3rem !important;
+	}
 }
 /*	 320.98px*/
 /*Extra small devices (portrait phones, less than 576px)*/
@@ -593,7 +608,7 @@ p{
 		display: none;
 	}
 	h3{
-		font-size: 1.2rem;
+		font-size: 1.5em;
 	}
 	.image-big{
 		width: 100%;
