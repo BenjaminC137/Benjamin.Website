@@ -100,10 +100,14 @@
 	<h4 #video >Video </h4>
 	<div class="box">
 <!--		 <h4 style="padding-left: 0px">Video </h4>-->
-		 Attention: Please note that the Tank Project does not yet have a video and will bring you to the 404 page. Video is coming soon!
+		I've recorded a quick video to show you my {{arduino.title}} in action.
+		<br>
+		<br>
+		<b>Attention:</b> Please note that the Tank Project does not yet have a video yet.
 		 <br>
 		 <br>
-		 <a class="btn-primary" [href]="goPlay">Play {{arduino.title}} Video</a>
+		 <a *ngIf="arduino.id != 6" disabled class="btn-primary" [href]="goPlay">Play {{arduino.title}} Video</a>
+		 <a *ngIf="arduino.id === 6" disabled class="btn-primary" [href]="">{{arduino.title}} Video coming soon!</a>
 		 </div>
 	<br>
 <!--

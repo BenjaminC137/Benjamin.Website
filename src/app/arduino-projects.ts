@@ -70,7 +70,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"agitator",
 			"acryllic hatch door",
 			"aluminum c-channel",
-			"Arduino nano",
+			"Arduino Nano",
 			"button",
 			"chain",
 			"IIC/I2C/TWI 1602 Serial LCD Display",
@@ -130,7 +130,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		videoUrl: "https://www.youtube.com/embed/HLsO73FKvso",
 		components: [
 			"accelerometer",
-			"Arduino nano",
+			"Arduino Nano",
 			"battery compartment X8 AA",
 			"battery AA",
 			"breadboard",
@@ -180,7 +180,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		],
 		videoUrl: "https://www.youtube.com/embed/F4fxYeKbnTA",
 		components: [
-			"Arduino nano",
+			"Arduino Nano",
 			"button",
 			"photoresistor",
 			"common cathode RGB led",
@@ -230,7 +230,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		],
 		videoUrl: "https://www.youtube.com/embed/NcZDf70oZJY",
 		components: [
-			"Arduino nano",
+			"Arduino Nano",
 			"button",
 			"breadboard",
 			"led",
@@ -292,7 +292,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		],
 		videoUrl: "https://www.youtube.com/embed/R0kMBlphMrM",
 		components: [
-			"Arduino nano",
+			"Arduino Nano",
 			"button",
 			"breadboard",
 			"IR receiver",
@@ -311,7 +311,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 	{
 		id: 6,
 		title: 'Remote Control Tank',
-		description: "This is a little tank that has had multiple configurations.\n\n•Smart Tank: analyzes surroundings by looking around with a servo motor controlling an ultrasonic sensor and chooses where to go.\n•Wired Remote Controlled Tank: remote controlled movement with a cable that runs to a controller.\n•Wireless RF Remote Controlled Tank: uses two arduino boards. One in the controller and one in the tank\n•Grabber Tank: variation on the Wireless RF Remote Controlled Tank that also has a grabber arm to pick up and move objects.",
+		description: "This is a little tank that has had multiple configurations. It was by far the most challenging project I've done because I had to get two Arduinos to communicate. It was also made difficult by using low quality products. I ended up having to use an Arduino Mega instead of Nano for the receiver because the Nano was not performing up to my expectations for speed. I had to switch out the 315 Mhz transmitter and receiver with two 2.4Ghz tranceivers because the interferance, stability and range was absolutely terrible. I had to attach capacitors to the tranceivers to increase range.\n\n•Smart Tank: analyzes surroundings by looking around with a servo motor controlling an ultrasonic sensor and chooses where to go.\n•Wired Remote Controlled Tank: remote controlled movement with a cable that runs to a controller.\n•Wireless RF Remote Controlled Tank: uses two arduino boards. One in the controller and one in the tank\n•Grabber Tank: variation on the Wireless RF Remote Controlled Tank that also has a grabber arm to pick up and move objects.",
 		dateCreated: '2018/01/07',
 		dateCompleted: '2018/01/21',
 		imagePath: "assets/ArduinoSmartTank/smartTank-hot-art-IMG_3017.jpeg",
@@ -332,29 +332,36 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		],
 		videoUrl: "coming soon",
 		components: [
-			"Arduino nano",
+			"Arduino Nano",
+			"Arduino Mega",
+			"10 µF capacitor",
 			"breadboard",
 			"DC motor",
 			"led",
-			"RF receiver",
-			"RF transmitter",
 			"button",
+			"battery compartment X8 AA",
+			"battery compartment X4 AA",
+			"battery AA",
+			"battery 9V",
 			"led",
 			"servo motor",
-			"ultrasonic sensor",
 			"wheel",
 			"treads",
 			"triangle vehicle chasis",
 			"potentiometer",
-			"battery compartment X8 AA",
-			"battery compartment X4 AA",
-			"battery AA",
-			"battery 9V"
+			"ultrasonic sensor",
+			"NRF24L01+ 2.4GHz Wireless RF Transceiver Module",
+			"XY-MK-5V 315Mhz RF receiver",
+			"XY-FST 315Mhz RF transmitter"
 		],
 		libraries: [
 			"SPI.h",
 			"RH_ASK.h",
 			"Servo.h",
+			"printf.h",
+			"nRF24L01.h",
+			"RF24_config.h",
+			"RF24.h"
 		]
 	},
 	{
@@ -389,7 +396,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		videoUrl: "https://www.youtube.com/embed/NbznV_-Ivl8",
 		components: [
 			"5 Volt 1 amp power adapter",
-			"Arduino nano",
+			"Arduino Nano",
 			"common cathode RGB led",
 			"PIR proximety sensor"
 		],
@@ -443,7 +450,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		videoUrl: "https://www.youtube.com/embed/HvHQfiEPeb8",
 		components: [
 			"5 Volt 1 amp power adapter",
-			"Arduino nano",
+			"Arduino Nano",
 			"led",
 			"IC 4066 quad bilateral switch",
 			"button",
@@ -534,7 +541,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		],
 		videoUrl: "https://www.youtube.com/embed/QkKUQQRAAVE",
 		components: [
-			"Arduino nano",
+			"Arduino Nano",
 			"button",
 			"HX711 Load Cell Amplifier",
 			"load cell",
