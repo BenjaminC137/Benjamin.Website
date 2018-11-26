@@ -7,6 +7,8 @@ import { PersonalComponent } from 	   './personal/personal.component';
 import { ProfessionalComponent } from './professional/professional.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FireballComponent } from './fireball/fireball.component';
+import { PhotographyComponent } from './photography/photography.component';
+
 
 const routes: Routes = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,7 +17,8 @@ const routes: Routes = [
 	{ path: 'arduino-detail/:id', component: ArduinoDetailComponent },
 	{ path: 'personal', component: PersonalComponent },
 	{ path: 'professional', component: ProfessionalComponent },
-//	{ path: 'fireball', component: FireballComponent },
+	{ path: 'photography', component: PhotographyComponent },
+	//	{ path: 'fireball', component: FireballComponent },
 	{ path: 'neechifeeder', redirectTo: '/arduino-detail/1', pathMatch: 'full' },
 	{ path: '**', component: NotFoundComponent }
 ]

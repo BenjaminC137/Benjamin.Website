@@ -1,3 +1,18 @@
-<p>
-  photography works!
-</p>
+<h2>Photography</h2>
+<div class="box">
+	<img src="assets/Photography/Canadian_murals-50percent-IMG_9447.png">
+</div>
+<br>
+<div class="" *ngFor="let photo of photographs" style="	text-align: center">
+	<div class="img-frame arduino-card-hover">
+		<h4>{{photo.title}}</h4>
+		<img class="img-full" src="{{photo.imagePath}}">
+		<br>
+		<div style="text-align: left; padding: 15px;" >
+			{{photo.description}} |
+			{{photo.date}}
+		</div>
+	</div>
+	<br>
+	<br>
+</div>
