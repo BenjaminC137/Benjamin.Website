@@ -3,10 +3,10 @@
 	<img src="assets/Photography/Canadian_murals-50percent-IMG_9447.png">
 </div>
 <br>
-<div class="" *ngFor="let photo of photographs" style="	text-align: center">
+<div class="" (click)="ViewHiRes(i)" *ngFor="let photo of photographs; let i = index" style="	text-align: center">
 	<div class="img-frame arduino-card-hover">
 		<h4>{{photo.title}}</h4>
-		<img class="img-full" src="{{photo.imagePath}}">
+		<img [class.view-hi-res]="selectedIdx === i" class="img-full" src="{{photo.imagePath}}">
 		<br>
 		<div style="text-align: left; padding: 15px;" >
 			{{photo.description}} |

@@ -103,9 +103,9 @@ export class ArduinoDetailComponent implements OnInit{
 
 		}
 		else if (this.show == false){
-		this.selectedIdx = index;
-		console.log(index);
-		this.show = !this.show
+			this.selectedIdx = index;
+			console.log(index);
+			this.show = !this.show
 		}
 //			this.zoomState[i] = !this.zoomState[i];
 //			if(this.zoom == false){
