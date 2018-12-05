@@ -13,6 +13,7 @@ import { PhotographyComponent } from './photography/photography.component';
 const routes: Routes = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full' },
 	{ path: 'home', component: HomeComponent },
+	{ path: 'com', component: HomeComponent },
 	{ path: 'arduino', component: ArduinoComponent },
 	{ path: 'arduino-detail/:id', component: ArduinoDetailComponent },
 	{ path: 'personal', component: PersonalComponent },
