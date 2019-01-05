@@ -16,7 +16,9 @@ export class ArduinoComponent implements OnInit {
 
 //	searchText = {title: searchText};
 	searchText = '';
-	filterargs = {title: this.searchText};
+	searchTextComponent = '';
+	filterargs = {title: this.searchText, component: this.searchTextComponent};
+
 
 //	@Input() arduino: ArduinoProjectModel;
 	arduinoProjects: ArduinoProjectModel[];
@@ -40,7 +42,7 @@ export class ArduinoComponent implements OnInit {
 //		this.gem.reviews.push(this.newReview);
 //		//TODO: This does not save reviews! I should figure out a way to send my new review to a "persisted data store"
 //		this.ngOnInit();
-		this.filterargs = {title: this.searchText};
+		this.filterargs = {title: this.searchText, component: this.searchTextComponent};
 	}
 
 //  arduinoProjects = ArduinoProjects;

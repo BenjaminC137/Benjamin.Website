@@ -15,6 +15,7 @@ import { FireballComponent } from './fireball/fireball.component';
 import { PhotographyComponent } from './photography/photography.component';
 import { FilterPipe } from './filter.pipe';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { FilterComponentsPipe } from './filter-components.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     NotFoundComponent,
     FireballComponent,
     PhotographyComponent,
-    FilterPipe
+    FilterPipe,
+    FilterComponentsPipe
   ],
   imports: [
     BrowserModule,

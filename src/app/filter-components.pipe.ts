@@ -4,12 +4,11 @@ import { ArduinoProjectModel } from './arduino-project-model';
 import { Observable } from "rxjs";
 
 @Pipe({
-  name: 'filter',
-  pure: false
+  name: 'filterComponents',
+	  pure: false
 })
-export class FilterPipe implements PipeTransform {
-//  transform(value: any, args?: any): any {
-       transform(ArduinoProjects: any[], filter): any {
+export class FilterComponentsPipe implements PipeTransform {
+      transform(ArduinoProjects: any[], filter): any {
         if (!ArduinoProjects || !filter) {
             return ArduinoProjects;
         }
@@ -21,6 +20,6 @@ export class FilterPipe implements PipeTransform {
 
 //        return ArduinoProjects.filter(ArduinoProjects => ArduinoProjects.title.indexOf(filter.title) !== -1);
 
-        return ArduinoProjects.filter(ArduinoProjects => ArduinoProjects.title.toLowerCase().indexOf(filter.title.toLowerCase()) !== -1);
+        return ArduinoProjects.filter(ArduinoProjects => ArduinoProjects.component.toLowerCase().indexOf(filter.component.toLowerCase()) !== -1);
   }
 }
