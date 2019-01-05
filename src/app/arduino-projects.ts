@@ -233,7 +233,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"Arduino Nano",
 			"button",
 			"breadboard",
-			"led",
+			"common cathode RGB led",
 			"buzzer",
 			"project box",
 			"5 Volt 1 amp power adapter",
@@ -311,7 +311,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 	{
 		id: 6,
 		title: 'Remote Control Tank',
-		description: "This is a little tank that has had multiple configurations. It was by far the most challenging project I've done because I had to get two Arduinos to communicate. It was also made difficult by using low quality products. I ended up having to use an Arduino Mega instead of Nano for the receiver because the Nano was not performing up to my expectations for speed. I had to switch out the 315 Mhz transmitter and receiver with two 2.4Ghz tranceivers because the interferance, stability and range was absolutely terrible. I had to attach capacitors to the tranceivers to increase range.\n\n•Smart Tank: analyzes surroundings by looking around with a servo motor controlling an ultrasonic sensor and chooses where to go.\n•Wired Remote Controlled Tank: remote controlled movement with a cable that runs to a controller.\n•Wireless RF Remote Controlled Tank: uses two arduino boards. One in the controller and one in the tank\n•Grabber Tank: variation on the Wireless RF Remote Controlled Tank that also has a grabber arm to pick up and move objects.",
+		description: "This is a little tank that has had multiple configurations. It was by far the most challenging project I've done because I had to get two Arduinos to communicate. Each had it's own program and Arduino micro controller. It was also made difficult by using low quality products. I ended up having to use an Arduino Mega instead of Nano for the receiver because the Nano was not performing up to my expectations for speed. I had to switch out the 315 Mhz transmitter and receiver with two 2.4Ghz tranceivers because the interferance, stability and range was absolutely terrible. I had to attach capacitors to the tranceivers to increase range.\n\n•Smart Tank: analyzes surroundings by looking around with a servo motor controlling an ultrasonic sensor and chooses where to go.\n•Wired Remote Controlled Tank: remote controlled movement with a cable that runs to a controller.\n•Wireless RF Remote Controlled Tank: uses two arduino boards. One in the controller and one in the tank\n•Grabber Tank: variation on the Wireless RF Remote Controlled Tank that also has a grabber arm to pick up and move objects.",
 		dateCreated: '2018/01/07',
 		dateCompleted: '2018/01/21',
 		imagePath: "assets/ArduinoSmartTank/smartTank-hot-art-IMG_3017.jpeg",
@@ -337,13 +337,13 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"10 µF capacitor",
 			"breadboard",
 			"DC motor",
-			"led",
 			"button",
 			"battery compartment X8 AA",
 			"battery compartment X4 AA",
 			"battery AA",
 			"battery 9V",
-			"led",
+			"common cathode RGB led",
+			"grabber",
 			"servo motor",
 			"wheel",
 			"treads",
@@ -558,5 +558,77 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"LCD.h",
 			"LiquidCrystal_I2C.h"
 		]
-		}
+		},
+	{
+		id: 11,
+		title: 'myFace',
+		description: "A remote controlled vehicle with an iPhone holder to use FaceTime, and a grabber to grab things. Essentially, you can control a car while looking through another device in the house and see where you are going through the iPhone's camera. And, grab things if you'd like. It is actually two projects with two Arduinos and two sketches. One for the vehicle, and one for the remote.",
+		dateCreated: '2018/11/27',
+		dateCompleted: '2018/12/16',
+		imagePath: "assets/ArduinomyFace/myFace-key_photo-IMG_6979.jpeg",
+		moreImagesPath: [
+			"assets/ArduinomyFace/myFace-key_photo-IMG_6979.jpeg", // 0
+			"assets/ArduinomyFace/myFace-side_high_angle-IMG_6965.jpeg", //1
+			"assets/ArduinomyFace/myFace-rear-IMG_6968.jpeg", //2
+			"assets/ArduinomyFace/myFace-profile-IMG_6966.jpeg", //
+			"assets/ArduinomyFace/myFace-workspace-IMG_6071.jpeg", //
+			"assets/ArduinomyFace/myFace-front_view-good_photo_phone_off-IMG_6963.jpeg", //
+			"assets/ArduinomyFace/myFace-front_side_phone_off-IMG_6964.jpeg", //
+			"assets/ArduinomyFace/myFace-front_my_reflection-IMG_6970.jpeg", //
+			"assets/ArduinomyFace/myFace-fail_upsidedown-IMG_6210.jpeg", //
+			"assets/ArduinomyFace/myFace-alpha_with_phone-IMG_6077.jpeg", //
+			"assets/ArduinomyFace/myFace-alpha_holder-IMG_6173.jpeg", //
+			"assets/ArduinomyFace/myFace-alpha_backwards_holder-IMG_6179.jpeg", //
+			"assets/ArduinomyFace/myFace-alpha_with_electronics-IMG_6214.jpeg", //
+			"assets/ArduinomyFace/myFace-frame-IMG_6069.jpeg" //
+		],
+		imageCaption: [
+			"Hey! It's me!", //0
+			"It's not actually hovering, but it sure looks like it!", //1
+			"Rear view. Arduino Mega is upright behind the yellow bread board.", //2
+			"Profile view.", //3
+			"Workspace during alpha assembly.", //4
+			"Completed with phone off.", //5
+			"You can see the back of the Arduino Mega blocking off the electronics from the range of motion of the phone assembly.", //6
+			"Front view - head on. That's me in the reflection!", //7
+			"#nailedit", //8
+			"Alpha stage testing tilting motor for phone.", //9
+			"First iteration of iPhone holder. I later bent sheet steel to make an entire holder from a single piece of steel.", //10
+			"back of the original iPhone holder.", //11
+			"Alpha complete with electronics onboard.", //12
+			"chasis complete. Ready for electronics installation." //13
+		],
+		videoUrl: "https://www.youtube.com/embed/xKGvesFFDMA",
+		components: [
+			"Arduino Nano",
+			"Arduino Mega",
+			"10 µF capacitor",
+			"breadboard",
+			"DC motor",
+			"button",
+			"battery compartment X6 AA",
+			"battery AA",
+			"battery 9V",
+			"common cathode RGB led",
+			"grabber",
+			"servo motor",
+			"wheel",
+			"treads",
+			"vehicle chasis",
+			"potentiometer",
+			"NRF24L01+ 2.4GHz Wireless RF Transceiver Module",
+			"steel sheet",
+			"iPhone mount",
+			"steel pin",
+			"plastic pin cap"
+		],
+		libraries: [
+			"SPI.h",
+			"Servo.h",
+			"printf.h",
+			"nRF24L01.h",
+			"RF24_config.h",
+			"RF24.h"
+		]
+	}
 	];
