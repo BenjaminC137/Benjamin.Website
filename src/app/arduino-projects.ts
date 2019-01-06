@@ -111,35 +111,37 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		imagePath: "assets/ArduinomyFace/myFace-key_photo-IMG_6979.jpeg",
 		moreImagesPath: [
 			"assets/ArduinomyFace/myFace-key_photo-IMG_6979.jpeg", // 0
-			"assets/ArduinomyFace/myFace-side_high_angle-IMG_6965.jpeg", //1
-			"assets/ArduinomyFace/myFace-rear-IMG_6968.jpeg", //2
-			"assets/ArduinomyFace/myFace-profile-IMG_6966.jpeg", //
-			"assets/ArduinomyFace/myFace-workspace-IMG_6071.jpeg", //
-			"assets/ArduinomyFace/myFace-front_view-good_photo_phone_off-IMG_6963.jpeg", //
-			"assets/ArduinomyFace/myFace-front_side_phone_off-IMG_6964.jpeg", //
-			"assets/ArduinomyFace/myFace-front_my_reflection-IMG_6970.jpeg", //
-			"assets/ArduinomyFace/myFace-fail_upsidedown-IMG_6210.jpeg", //
-			"assets/ArduinomyFace/myFace-alpha_with_phone-IMG_6077.jpeg", //
-			"assets/ArduinomyFace/myFace-alpha_holder-IMG_6173.jpeg", //
-			"assets/ArduinomyFace/myFace-alpha_backwards_holder-IMG_6179.jpeg", //
-			"assets/ArduinomyFace/myFace-alpha_with_electronics-IMG_6214.jpeg", //
-			"assets/ArduinomyFace/myFace-frame-IMG_6069.jpeg" //
+			"assets/ArduinomyFace/myFace-remote-IMG_8114.jpeg", //1
+			"assets/ArduinomyFace/myFace-side_high_angle-IMG_6965.jpeg", //2
+			"assets/ArduinomyFace/myFace-rear-IMG_6968.jpeg", //3
+			"assets/ArduinomyFace/myFace-profile-IMG_6966.jpeg", //4
+			"assets/ArduinomyFace/myFace-workspace-IMG_6071.jpeg", //5
+			"assets/ArduinomyFace/myFace-front_view-good_photo_phone_off-IMG_6963.jpeg", //6
+			"assets/ArduinomyFace/myFace-front_side_phone_off-IMG_6964.jpeg", //7
+			"assets/ArduinomyFace/myFace-front_my_reflection-IMG_6970.jpeg", //8
+			"assets/ArduinomyFace/myFace-fail_upsidedown-IMG_6210.jpeg", //9
+			"assets/ArduinomyFace/myFace-alpha_with_phone-IMG_6077.jpeg", //10
+			"assets/ArduinomyFace/myFace-alpha_holder-IMG_6173.jpeg", //11
+			"assets/ArduinomyFace/myFace-alpha_backwards_holder-IMG_6179.jpeg", //12
+			"assets/ArduinomyFace/myFace-alpha_with_electronics-IMG_6214.jpeg", //13
+			"assets/ArduinomyFace/myFace-frame-IMG_6069.jpeg" //14
 		],
 		imageCaption: [
 			"Hey! It's me!", //0
-			"It's not actually hovering, but it sure looks like it!", //1
-			"Rear view. Arduino Mega is upright behind the yellow bread board.", //2
-			"Profile view.", //3
-			"Workspace during alpha assembly.", //4
-			"Completed with phone off.", //5
-			"You can see the back of the Arduino Mega blocking off the electronics from the range of motion of the phone assembly.", //6
-			"Front view - head on. That's me in the reflection!", //7
-			"#nailedit", //8
-			"Alpha stage testing tilting motor for phone.", //9
-			"First iteration of iPhone holder. I later bent sheet steel to make an entire holder from a single piece of steel.", //10
-			"back of the original iPhone holder.", //11
-			"Alpha complete with electronics onboard. Time for phase-beta!", //12
-			"chasis complete. Ready for electronics installation." //13
+			"RF Tranceiver remote. I used an Arduino Nano.", //1
+			"It's not actually hovering, but it sure looks like it!", //2
+			"Rear view. Arduino Mega is upright behind the yellow bread board.", //3
+			"Profile view.", //4
+			"Workspace during alpha assembly.", //5
+			"Completed with phone off.", //6
+			"You can see the back of the Arduino Mega blocking off the electronics from the range of motion of the phone assembly.", //7
+			"Front view - head on. That's me in the reflection!", //8
+			"#nailedit", //9
+			"Alpha stage testing tilting motor for phone.", //10
+			"First iteration of iPhone holder. I later bent sheet steel to make an entire holder from a single piece of steel.", //11
+			"back of the original iPhone holder.", //12
+			"Alpha complete with electronics onboard. Time for phase-beta!", //13
+			"chassis complete. Ready for electronics installation." //14
 		],
 		videoUrl: "https://www.youtube.com/embed/xKGvesFFDMA",
 		components: [
@@ -157,7 +159,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"servo motor",
 			"wheel",
 			"treads",
-			"vehicle chasis",
+			"vehicle chassis",
 			"potentiometer",
 			"NRF24L01+ 2.4GHz Wireless RF Transceiver Module",
 			"steel sheet",
@@ -206,7 +208,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"battery compartment X8 AA",
 			"battery AA",
 			"breadboard",
-			"car chasis",
+			"car chassis",
 			"DC motor",
 			"led",
 			"power switch",
@@ -344,8 +346,8 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 		],
 		imageCaption: [
 			"Homebox on couch", //0
-			"Welcome-home box with separate relay box behind it", //1
-			"Electrical tape holds the wires to the breadboards while the prototype is tested", //2
+			"Welcome-home box with separate relay box behind it.", //1
+			"Electrical tape holds the wires to the breadboards while the prototype is tested.", //2
 			"Soldering 5 ground wires to 1 wire to save space.", //3
 			"Installing components into the bedroom's Home Box which includes the relay module.", //4
 			"Early beta testing the first prototype.", //5
@@ -382,25 +384,44 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 	},
 	{
 		id: 6,
-		title: 'Remote Control Tank',
+		title: 'Tank',
 		description: "This is a little tank that has had multiple configurations. It was by far the most challenging project I've done because I had to get two Arduinos to communicate. Each had it's own program and Arduino micro controller. It was also made difficult by using low quality products. I ended up having to use an Arduino Mega instead of Nano for the receiver because the Nano was not performing up to my expectations for speed. I had to switch out the 315 Mhz transmitter and receiver with two 2.4Ghz tranceivers because the interferance, stability and range was absolutely terrible. I had to attach capacitors to the tranceivers to increase range.\n\n•Smart Tank: analyzes surroundings by looking around with a servo motor controlling an ultrasonic sensor and chooses where to go.\n•Wired Remote Controlled Tank: remote controlled movement with a cable that runs to a controller.\n•Wireless RF Remote Controlled Tank: uses two arduino boards. One in the controller and one in the tank\n•Grabber Tank: variation on the Wireless RF Remote Controlled Tank that also has a grabber arm to pick up and move objects.",
 		dateCreated: '2018/01/07',
 		dateCompleted: '2018/01/21',
-		imagePath: "assets/ArduinoSmartTank/smartTank-hot-art-IMG_3017.jpeg",
+		imagePath: "assets/ArduinoTank/tank-key-photo-IMG_3017 2.jpeg",
 		moreImagesPath: [
-			"assets/ArduinoSmartTank/smartTank-hot-art-IMG_3017.jpeg" //0
+			"assets/ArduinoTank/tank-key-photo-IMG_3017 2.jpeg", // 0
+			"assets/ArduinoTank/tank-black-and-white-IMG_3069.jpeg", // 1
+			"assets/ArduinoTank/tank-grabber-IMG_3061.jpeg", // 2
+			"assets/ArduinoTank/tank-with-grabber-on-floor-IMG_3241.jpeg", // 3
+			"assets/ArduinoTank/tank-battery-compartments-IMG_3472.jpeg", // 4
+			"assets/ArduinoTank/tank-remote-final-iteration-IMG_8114.jpeg", //5
+			"assets/ArduinoTank/tank-remote-IMG_3489.jpeg", // 6
+			"assets/ArduinoTank/tank-wired-remote-IMG_3076.jpeg", // 7
+			"assets/ArduinoTank/tank-remote-board-installation-IMG_3319.jpeg", // 8
+			"assets/ArduinoTank/tank-remote-board-with-wires-IMG_3305.jpeg", // 9
+			"assets/ArduinoTank/tank-remote-open-IMG_3482.jpeg", // 10
+			"assets/ArduinoTank/tank-remote-solder-board-IMG_3299.jpeg", // 11
+			"assets/ArduinoTank/tank-remote-solder-station-IMG_3300.jpeg", // 12
+			"assets/ArduinoTank/tank-smart-on-mat-IMG_3032.jpeg", // 13
+			"assets/ArduinoTank/tank-chassis-IMG_3007.jpeg" // 14
 		],
 		imageCaption: [
 			"Beautiful shot of my smart tank!", //0
-			"", //1
-			"", //2
-			"", //3
-			"", //4
-			"", //5
-			"", //6
-			"", //7
-			"", //8
-			"" //9
+			"This thing takes great photos", //1
+			"Grabber installed", //2
+			"Beta testing", //3
+			"I had to wire up 4 batteries out of 6 in one compartment for the Arduino and the other 2 connected to the second bank", //4
+			"Final iteration of remote after switching to wireless tranceiver.", //5
+			"Completed first iteration of wireless remote using a transmitter.", //6
+			"Wired remote used whilst testing tank movement before creating the wireless remote which was the most difficult project I've done with Arduino.", //7
+			"Installing board into remote.", //8
+			"Bottom of the completed board for the remote. After this board, I started using terminal blocks which allow solderless connections because soldering a wire directly to a board makes it very sensitive to movement.", //9
+			"Doesn't fit when including the battery! I had to enlarge the enclosure for the final remote.", //10
+			"I've become fairly skilled with soldering tiny pins. This is the Arduino Nano on the back of the board. To put it in perspective, the whole board is slightly larger than a 9V battery.", //11
+			"Soldering Station. After this project, I invested in a QuadHands Helper to replace the helping hands device which holds the board and wires in place. You can see the QuadHands in the Crunch Counter project.", //12
+			"First iteration complete!", //13
+			"Chassis I build with pieces kind of like Legos but for robotics." //14
 		],
 		videoUrl: "coming soon",
 		components: [
@@ -419,7 +440,7 @@ export const ArduinoProjects : ArduinoProjectModel[] = [
 			"servo motor",
 			"wheel",
 			"treads",
-			"triangle vehicle chasis",
+			"triangle vehicle chassis",
 			"potentiometer",
 			"ultrasonic sensor",
 			"NRF24L01+ 2.4GHz Wireless RF Transceiver Module",

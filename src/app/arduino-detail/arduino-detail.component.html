@@ -18,7 +18,7 @@
 				Completed: {{arduino.dateCompleted | date}}
 			</div>
 			<div class="">
-				<img class="arduino-small-square shadow-box" src="{{arduino.moreImagesPath[0]}}">
+				<a class="cursor-finger" (click)="scroll(photos)"><img class="arduino-small-square shadow-box" src="{{arduino.moreImagesPath[0]}}"></a>
 			</div>
 		</div>
 
