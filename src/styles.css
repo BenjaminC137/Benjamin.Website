@@ -548,12 +548,13 @@ p{
 */
 
 }
-/*
 .width-100{
+/*
 	display: inherit;
 	width: inherit;
-}
 */
+	margin: 0vh 1vw;
+}
 /*
 .rounded-image{
 	border-style: hidden;
@@ -685,6 +686,7 @@ p{
 	.width-100{
 		display: inline-block;
 		width: 100%;
+		margin: 5px 0px;
 	}
 }
 /* Small devices (landscape phones, 576px and up)*/
