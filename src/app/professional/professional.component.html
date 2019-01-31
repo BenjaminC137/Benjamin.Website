@@ -37,29 +37,6 @@
 	</ul>
 </div>
 <br>
-<h4>Resume</h4>
-<div class="box">
-	<a href='assets/Benjamin%20Salasek%20Resume.pdf' download>Download</a>
-	<div *ngIf="isLoaded" style="text-align: center;">
-	  <button class="btn-primary" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
-	  <button class="btn-primary" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
-	</div>
-	<pdf-viewer src="assets/Benjamin%20Salasek%20Resume.pdf"
-				[show-all]="false"
-				[page]="page"
-				(after-load-complete)="afterLoadComplete($event)"
-				style="display: block"
-				[original-size]="false"
-				[autoresize]="true">
-	</pdf-viewer>
-	<div *ngIf="isLoaded" style="text-align: center;">
-	  <button class="btn-primary" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
-	  <button class="btn-primary" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
-	</div>
-		<a href='assets/Benjamin%20Salasek%20Resume.pdf' download>Download</a>
-
-</div>
-<br>
 <h4>Contact and Profiles</h4>
 <div class="box">
 	<ul>
@@ -88,7 +65,14 @@
 		<br>
 		<br>
 		<a routerLink="/arduino">Arduino</a>
-	</p>
+	</p><br>
+	<a href="https://urldotcom.com/weather.html"><h4>Slider Banana©</h4></a>
+		<p>
+			Please check out Slider Banana©, my amazing cross-platform responsive web app game which uses HTML, CSS, JavaScript, jQuery and nothing else! No assets. No fooling around. Just fun fun fun!
+			<br>
+			<br>
+			<a href="https://benjaminc137.github.io/JavaScript_play/">Slider Banana© Beta</a>
+		</p>
 <!--</div>-->
 <br>
 <!--<div class="box">-->
@@ -112,6 +96,11 @@
 		<br>
 		<a href="https://urldotcom.com/weather.html">Happy Weather</a>
 	</p>
+
+
+
+
+
 <!--</div>-->
 <br>
 <!--<div class="box">-->
@@ -123,3 +112,26 @@
 		<a href="https://benjaminsalasek.com/box.html">Fireball Game</a>
 	</p>
 <!--</div>-->
+<br>
+<h4>Resume</h4>
+<div class="box">
+	<a href='assets/Benjamin%20Salasek%20Resume.pdf' download>Download</a>
+	<div *ngIf="isLoaded" style="text-align: center;">
+	  <button class="btn-primary" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
+	  <button class="btn-primary" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
+	</div>
+	<pdf-viewer src="assets/Benjamin%20Salasek%20Resume.pdf"
+				[show-all]="false"
+				[page]="page"
+				(after-load-complete)="afterLoadComplete($event)"
+				style="display: block"
+				[original-size]="false"
+				[autoresize]="true">
+	</pdf-viewer>
+	<div *ngIf="isLoaded" style="text-align: center;">
+	  <button class="btn-primary" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
+	  <button class="btn-primary" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
+	</div>
+		<a href='assets/Benjamin%20Salasek%20Resume.pdf' download>Download</a>
+
+</div>
