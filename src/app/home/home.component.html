@@ -13,7 +13,7 @@
 -->
 <div class="container">
 	<div class="row">
-	<div class="box col">
+	<div class="box col-sm" style="font-size: 1rem">
 		<h5>Introduction</h5>
 		Hello, I am Benjamin Salasek. For those of you who do not know, I am an Arduino enthusiest, a software developer and an artist. Please browse this site, and don't forget to check out all of my cool Arduino projects!
 		<br>
@@ -39,8 +39,8 @@
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1" data-wrap="true" direction="left" data-pause="false">
 				  <div class="carousel-inner">
 					 <div class="carousel-item active">
-					 	<a href="/home"><img class="d-block w-100 carousel-image" src="assets/PortalVectorTeal.svg" alt="first slide"></a>
-						<a href="http://www.benjamin.website"><div class="carousel-caption" style="text-align: center; font-size: 18px">Benjamin Salasek</div></a>
+					 	<a href="https://benjaminc137.github.io/JavaScript_play/"><img class="d-block w-100 carousel-image" src="assets/SliderBananaScreenshot20190214%20small%20IMG_9741.png" style="object-fit: scale-down"></a>
+						<a href="https://benjaminc137.github.io/JavaScript_play/"><div class="carousel-caption" style="text-align: center; font-size: 18px">Slider Banana©</div></a>
 					</div>
 					<div *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}" class="carousel-item cursor-finger">
 					  <img class="d-block w-100 carousel-image" src="{{arduino.imagePath}}" alt="second slide">
