@@ -4,6 +4,31 @@
 	Yellow		#E5AD24	 rgba(229, 173, 36, .9)
 	Brown 		#8C7965
 	other 		#ECF1F1  rgba(236, 241, 241, .9)   */
+
+
+
+
+
+h1 {
+	font-family: "Open Sans"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+h3 {
+	font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
+p {
+	font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; }
+blockquote {
+	font-family: "Open Sans"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; }
+pre {
+	font-family: "Open Sans"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+
+
+
+
+
+
+
+
+
 :focus{
 	outline-color: #E5AD24;
 		outline-width: 3px;
@@ -111,19 +136,19 @@ a:active{
 	z-index: 99;
 }
 body{
-	background-color: #ECF1F1;
+	background-color: white;
 	padding: 15px;
     font-size: 18px;
-	color: #8C7965;
+	color: white;
 /*    font-family: 'Helvetica Neue', 'Helvetica', 'Open Sans';*/
 
-font-family: ocr-a-std, monospace;
+font-family: "Open Sans";
 font-style: normal;
 font-weight: 500;
 }
 .box{
 	box-sizing: border-box;
-	background-color: rgba(255,255,255, .7);
+	background-color: #00878F;
 	padding: 20px;
 /*	border-style: hidden;*/
 /*	border-radius: 2px;*/
@@ -298,7 +323,7 @@ html{
     color: #8C7965;
 /*    font-family: sans-serif;*/
 
-font-family: ocr-a-std, monospace;
+font-family: "Open Sans";
 font-style: normal;
 font-weight: 500;
     font-size: 18px;

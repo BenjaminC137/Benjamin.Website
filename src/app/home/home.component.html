@@ -1,8 +1,7 @@
-<div style="background-image: url(assets/PortalVectorLight.svg); background-size: cover">
+<!--<div style="background-image: url(assets/PortalVectorLight.svg); background-size: cover">-->
 	<h1>Benjamin Salasek</h1>
+<!--
 		<div style="text-align: center" class="width-100">
-		<a href="https://benjaminc137.github.io/JavaScript_play/" class="btn-primary shadow-box width-100">Slider Banana©</a>
-
 		<button routerLink="/arduino" class="btn-primary shadow-box width-100">Arduino</button>
 
 		<button routerLink="/professional" class="btn-primary shadow-box width-100">Professional</button>
@@ -11,7 +10,10 @@
 		<br>
 		<br>
 	</div>
-	<div class="box">
+-->
+<div class="container">
+	<div class="row">
+	<div class="box col">
 		<h5>Introduction</h5>
 		Hello, I am Benjamin Salasek. For those of you who do not know, I am an Arduino enthusiest, a software developer and an artist. Please browse this site, and don't forget to check out all of my cool Arduino projects!
 		<br>
@@ -29,6 +31,35 @@
 	</div>
 -->
 
+
+
+	<div class="col" style="text-align: center; font-size: 0px">
+		<div class="shadow-box" style="display: inline-block">
+			<div class="carousel-div">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1" data-wrap="true" direction="left" data-pause="false">
+				  <div class="carousel-inner">
+					 <div class="carousel-item active">
+					 	<a href="/home"><img class="d-block w-100 carousel-image" src="assets/PortalVectorTeal.svg" alt="first slide"></a>
+						<a href="http://www.benjamin.website"><div class="carousel-caption" style="text-align: center; font-size: 18px">Benjamin Salasek</div></a>
+					</div>
+					<div *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}" class="carousel-item cursor-finger">
+					  <img class="d-block w-100 carousel-image" src="{{arduino.imagePath}}" alt="second slide">
+						<div class="carousel-caption" style="text-align: center; font-size: 18px">
+							{{arduino.title}}
+						</div>
+					</div>
+				  </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	</div>
+</div>
+
+
+<!--
 
 	<div style="text-align: center; font-size: 0px">
 		<div class="shadow-box" style="display: inline-block">
@@ -111,6 +142,7 @@
 			</div>
 		</div>
 	</div>
+-->
 	<br>
 	<br>
-</div>
+<!--</div>-->
