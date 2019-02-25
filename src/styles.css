@@ -1,19 +1,17 @@
 /*	Teal 		#00878F  rgba(0, 135, 143, .9)
 	Light Teal	#62AEB2 rgba((98,174,178), .9)
+	light light #b2dbdd
 	Orange	 	#E47128
-	Yellow		pink	 rgba(229, 173, 36, .9)
+	Yellow		#e5ad24 rgb(229, 173, 36)	 rgba(229, 173, 36, .9)
 	Brown 		#8C7965
 	other 		#ECF1F1  rgba(236, 241, 241, .9)
-
+rgb(229, 173, 36)
 
 https://www.beautycolorcode.com/00878f
 #8f003f
 
 #8f5000
 */
-
-
-
 
 
 /*
@@ -31,15 +29,8 @@ pre {
 
 
 
-
-
-
-
-
-
-
 :focus{
-	outline-color: pink;
+	outline-color: #b2dbdd;
 		outline-width: 3px;
 /*
 	border-style: solid;
@@ -48,7 +39,7 @@ pre {
 */
 }
 button:active{
-	background-color: #62AEB2 !important;
+	background-color: #b2dbdd !important;
 }
 a{
     text-decoration: none;
@@ -58,16 +49,16 @@ a{
 }
 a:hover{
 /*	color: #00878F;*/
-    color: pink;
+    color: #b2dbdd;
 	text-decoration: none;
 }
 a:active{
-	color: pink !important;
+	color: #b2dbdd !important;
 
 }
 .a2{
 	text-decoration: none;
-    color: pink;
+    color: rgb(229, 173, 36);
 }
 /*
 .a2:hover{
@@ -77,7 +68,7 @@ a:active{
 .alert{
 	font-size: 8 px;
 	background-color: rgb(183, 48, 40);
-	color: pink;
+	color: rgb(229, 173, 36);
 	border-radius: 50px;
 	padding: 1px;
 	text-align: center;
@@ -91,7 +82,28 @@ a:active{
 	padding: 15px;
 	margin: 15px;
 	box-shadow: 2px 2px 5px rgba(0,0,0,.1);
-	max-width: 50%;
+	max-width: 330px;
+}
+#arduinoCommunity{
+	width: 50vw;
+	float: right;
+	margin-right: 15px;
+}
+#arduinoCommunityTitle{
+	display: block;
+	font-size: 4.5vw;
+	background-color: rgba(255,255,255,.9);
+	width: 40vw;
+	white-space: nowrap;
+	font-weight: bolder;
+/*	text-overflow: ellipsis;*/
+}
+.clearfix{
+	overflow: auto;
+}
+#arduino-home-div{
+	color: dimgray;
+	padding: 15px;
 }
 .arduino-images{
 	min-width: 14rem;
@@ -101,8 +113,8 @@ a:active{
 /*	transition: all 1s ease-in-out;*/
 
 	background-color: #ECF1F1;
-	background-image: url(assets/PortalVectorLight.svg);
-	background-size: 1000px;
+/*	background-image: url(assets/PortalVectorTeal.svg);*/
+/*	background-size: 1000px;*/
 
 	transition: padding 10s ease-in-out, margin 10s ease-in-out, background-size 10s ease-in-out, box-shadow 5s;
 	-webkit-transition: padding 10s ease-in-out, margin 10s ease-in-out, background-size 10s ease-in-out, box-shadow 5s;
@@ -111,8 +123,12 @@ a:active{
 	padding: 15px;
 	margin: 0px;
 	box-shadow: 5px 5px 25px rgba(0,0,0,.5);
-	background-size: 400px;
-	transition: padding 500ms ease-in-out, margin 500ms ease-in-out, background-size 10s ease-in-out, box-shadow 2s;
+/*	background-size: 400px;*/
+	transition:
+		padding 500ms ease-in-out,
+		margin 500ms ease-in-out,
+/*		background-size 10s ease-in-out,*/
+		box-shadow 2s;
 	-webkit-transition: padding 500ms ease-in-out, margin 500ms ease-in-out, background-size 10s ease-in-out, box-shadow 2s;
 }
 .arduino-logo{
@@ -132,6 +148,9 @@ a:active{
 .arduino-card-hover:hover{
 	cursor: pointer;
 }
+#arduino-projects{
+	background-image: url(/assets/coding%20background%20reduced%201920.png);
+}
 .arduino-small-square{
     height: 150px;
 	width: auto;
@@ -140,20 +159,43 @@ a:active{
 }
 .back-button{
 	position: fixed;
-	top: 28px;
-	left: 15px;
+	top: 63px;
+/*	left: 15px;*/
+	left: 0px;
 	z-index: 99;
 }
+#bioDiv{
+	background-image: url(/assets/coding%20background%20reduced%201920.png);
+	padding: 0px;
+	text-align: right;
+	margin: 0px;
+}
+#bioInfo{
+	display: inline-block;
+	max-width: calc(100% - 502px);
+	min-width: 250px;
+	text-align: left;
+	padding: 20px;
+	margin: 25px;
+}
+.info-panel{
+	border-style: solid;
+	border-color: #00878F;
+	border-radius: 15px;
+	border-width: 20px;
+	background: white;
+	box-shadow: 2px 2px 2px black;
+}
 body{
-	background-color: white;
+	background-color: #fff;
 	padding: 0px;
     font-size: 18px;
 	color: #00878F;
 /*    font-family: 'Helvetica Neue', 'Helvetica', 'Open Sans';*/
-
-font-family: "Open Sans";
-font-style: normal;
-font-weight: 500;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 500;
+	min-height: 100vh;
 }
 .box{
 	box-sizing: border-box;
@@ -176,8 +218,8 @@ cursor: pointer;
 	margin-bottom: inherit;
 }
 .btn-primary {
-	background-color: #8f003f;
-	color: white;
+	background-color: white;
+	color: #E47128;
 	font-size: 20px;
 	padding: 5px;
 	margin: 0px;
@@ -192,7 +234,7 @@ cursor: pointer;
 
 }
 .btn{
-	color: pink;
+	color: rgb(229, 173, 36);
 	background: none;
 	font-size: 20px;
 	padding: 0px;
@@ -200,22 +242,23 @@ cursor: pointer;
 	border: none;
 }
 .btn:hover{
-	color: pink;
+	color: rgb(229, 173, 36);
 }
 .btn-primary:focus{
-	outline-color: pink;
+	outline-color: #62AEB2;
 		outline-width: 3px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
+	color: white;
 	background-color: #00878F;
 	cursor: pointer;
 }
 .btn-primary:active{
-	background-color: #62AEB2;
+	background-color: #b2dbdd;
 }
 .btn-primary:focus{
 	outline-width: 3px;
-/*	outline-color: pink;*/
+/*	outline-color: rgb(229, 173, 36);*/
 }
 .carousel-image{
     width: 400px;
@@ -231,16 +274,22 @@ cursor: pointer;
 	transition: transform 8s linear, opacity 8s ease-out;
 }
 .card{
-	padding: 0px;
+/*	filter: blur(1px) sepia(1) hue-rotate(125deg) saturate(.75);	*/
+/*	padding: 0px;*/
 /*	background-color: #ECF1F1;*/
-	background-color: white;
+/*	background-color: #E47128;*/
 
-	background-image: url(assets/PortalVectorLight.svg);
-	background-size: 1000px;
-	border: none;
+/*	background-image: url(assets/PortalVectorTeal.svg);*/
+/*	background-size: 1000px;*/
+/*	border: none;*/
 /*
 	background-repeat: no-repeat;
 	transition: background-size 2s ease;
+*/
+/*
+
+	transition: 250ms;
+	-webkit-transition: 250ms;
 */
 }
 .card:hover{
@@ -248,6 +297,7 @@ cursor: pointer;
 	background-size: 500px;
 	transition: background-size 2s ease;
 */
+/*	filter: blur(0px) sepia(0) hue-rotate(0deg) saturate(1);*/
 }
 .card-body{
 	padding: 0px;
@@ -255,6 +305,12 @@ cursor: pointer;
 	background-image: url(assets/PortalVectorLight.svg);
 	background-size: 500px;
 */
+}
+.card-footer{
+	padding: 0px;
+	border: none;
+	background: none;
+	color: inherit;
 }
 .card-text{
 	font-size: 14px;
@@ -278,8 +334,8 @@ cursor: pointer;
 }
 .close-button{
 	position: fixed;
-	top: 28px;
-	left: 15px;
+	top: 63px;
+	left: 0px;
 	z-index: 100;
 }
 .carousel-caption{
@@ -293,8 +349,8 @@ cursor: pointer;
 .custom-toggler.navbar-toggler {
     border-color: #00878F;
 }
-.custom-toggler .navbar-toggler-icon {
-/*  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='pink' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");*/
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .container{
 /*	padding-right: 500px;*/
@@ -306,10 +362,10 @@ cursor: pointer;
 	border-radius: 50px;
 }
 .custom-toggler.navbar-toggler:hover {
-    border-color: pink;
+    border-color: #62AEB2;
 }
 .custom-toggler.navbar-toggler:focus {
-    outline-color: pink;
+    outline-color: #62AEB2;
 	outline-width: 3px;
 }
 .div-footer{
@@ -329,8 +385,19 @@ div img{
     width: 100%;
     height: auto;
 }
+footer{
+	padding-left: 5px;
+	background-color: lightgray;
+	text-align: center;
+}
+.form-control{
+	border: none;
+	margin: 0px;
+	padding: 7px;
+	border-radius: 0px;
+}
 html{
-    background-color:#ffffff;
+    background-color: dimgray;
     color: #8C7965;
 /*    font-family: sans-serif;*/
 
@@ -348,7 +415,7 @@ h1{
 	text-align: center;
 }
 h2{
-    color: #8f5000;
+/*    color: #E47128;*/
 	padding: 10px;
     text-transform: uppercase;
 }
@@ -358,9 +425,29 @@ h3{
 h4{
 	text-align: left;
 }
+h5{
+	background-color: #E47128;
+	color: white;
+	border-radius: 10px;
+	padding: 5px;
+}
 .hidden-div{
 	position: relative;
 	z-index: -1000;
+}
+#homeProjectsDiv{
+	text-align: right;
+	background-image: linear-gradient(to right, rgb(225,225,225) , white);
+}
+#homeProjectsTitle{
+	display: block;
+	font-size: 4.5vw;
+	color: dimgray;
+	font-weight: bolder;
+}
+#homeReference{
+	padding: 20px;
+	background-color: black;
 }
 .img-scale{
 	max-width: 50vw;
@@ -421,25 +508,22 @@ h4{
     display:flow-root; text-overflow:ellipsis; white-space:nowrap; overflow: hidden;
 }
 .navbar{
-	padding: 3px 5px;
+/*	padding: 3px 5px;*/
 }
 .navColors {
 	color: white;
-	margin: auto;
-	background-color: #8f003f;
-	border-radius: 0px;
-	min-width: 100%;
-	margin: auto;
-	box-shadow: 0px 0px 5px rgba(0,0,0,.1);
-	max-width: 500px;
+	background-color: #00878F;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.2);
 }
 .navColors a:hover{
-	color: pink !important;
+	color: #b2dbdd !important;
 	cursor: pointer;
 }
 .nav-link{
+/*
 	font-size: 1.25rem;
 	padding-left: 45px;
+*/
 }
 .navtitle{
 	font-size: 1.5rem;
@@ -468,11 +552,30 @@ p{
 /*	border-radius: 3px;*/
 /*	box-shadow: 2px 2px 10px rgba(0,0,0, .04);*/
 	font-size: 14px;
-	color: #8f003f;
+	color: #00878F;
+}
+.p-yellow{
+	background-color: #e5ad24;
+	color: white;
+	border-radius: 10px;
+	margin: 0px;
+}
+#profilePictureDiv{
+	display: inline-block;
 }
 .project{
 	background-color: rgba(236, 241, 241, .2);
 	box-shadow: 2px 2px 10px rgba(0,0,0, .1);
+}
+.projects-filter{
+	filter: blur(1px) sepia(1) hue-rotate(125deg) saturate(.75);
+
+	transition: 250ms;
+	-webkit-transition: 250ms;
+}
+.projects-filter:hover{
+	filter: blur(0px) sepia(0) hue-rotate(0deg) saturate(1);
+
 }
 /*
 .professional-title{
@@ -654,7 +757,7 @@ p{
 	.back-button{
 /*		top: 52px;*/
 		top: inherit;
-		bottom: 15px;
+		bottom: 0px;
 	}
 	.button-spacing{
 		margin-bottom: 10px;
@@ -662,7 +765,7 @@ p{
 	.close-button{
 /*		top: 52px;*/
 		top: inherit;
-		bottom: 15px;
+		bottom: 0px;
 	}
 	.carousel-image{
 		width: 300px;
@@ -722,6 +825,12 @@ p{
 		width: 100%;
 		margin: 5px 0px;
 	}
+/*
+	#bioInfo{
+		max-width: 100%;
+		min-width: 215px;
+	}
+*/
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -733,6 +842,14 @@ p{
 	}
 	.image-big{
 		width: 100%;
+	}
+	#bioInfo{
+		max-width: 100%;
+	}
+}
+@media (max-width: 767.98px) {
+	#bioInfo{
+		max-width: 100%;
 	}
 }
 /* Medium devices (tablets, 768px and up)*/

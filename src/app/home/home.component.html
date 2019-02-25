@@ -1,16 +1,70 @@
-<!--<div style="background-image: url(assets/PortalVectorLight.svg); background-size: cover">-->
-	<h1>Benjamin Salasek</h1>
-<!--
-		<div style="text-align: center" class="width-100">
-		<button routerLink="/arduino" class="btn-primary shadow-box width-100">Arduino</button>
-
-		<button routerLink="/professional" class="btn-primary shadow-box width-100">Professional</button>
-
-		<button routerLink="/personal" class="btn-primary shadow-box width-100">Personal</button>
-		<br>
-		<br>
+<!--<h1>Benjamin Salasek</h1>-->
+<div id="bioDiv">
+	<div id="bioInfo" class="info-panel">
+		<h5>Introduction</h5>
+		<p class="p-yellow">
+			Greetings,
+			<br>
+			<br>
+			I am Benjamin Salasek. For those of you who do not know, I am an Arduino enthusiest, a software developer and an artist. Please browse this site, and don't forget to check out all of my cool Arduino projects!
+			<br>
+			<br>
+			Thank you,
+			<br>
+			Benjamin Salasek
+		</p>
 	</div>
--->
+	<div id="profilePictureDiv">
+		<img src="assets/BenjaminSalasekProfilePicOrane.png">
+	</div>
+</div>
+<div id="arduino-home-div" class="clearfix">
+	<br>
+	<span>
+		Benjamin is an active member of the
+	</span>
+	<img id="arduinoCommunity" src="assets/ArduinoCommunityLogo.png">
+	<span id="arduinoCommunityTitle">
+		<span style="color: #00878F" >Arduino </span><span style="background-color: rgba(255,255,255,.9); color: ">Open Source </span><span style="background-color: rgba(255,255,255,.9); color: #E47128">Community</span>
+	</span>
+</div>
+<div id="homeProjectsDiv">
+	<br>
+	<br>
+	<span id="homeProjectsTitle">
+		<span style="color: #00878F">Projects </span><span>I have </span><span style="color: #E47128">Engineered</span>
+	</span>
+	<br>
+	<br>
+</div>
+<div id="contact-home-div">
+	<br>
+	<h2 style="text-align: center">Contact & Profiles</h2>
+	<div class="box">
+		<ul>
+			<li>Email: <a href="mailto:benjaminsalasek@icloud.com" >benjaminsalasek@icloud.com</a></li>
+			<li>LinkedIn: <a href="https://www.linkedin.com/in/benjaminsalasek/">Benjamin Salasek</a></li>
+			<li>GitHub: <a href="https://github.com/BenjaminC137">BenjaminC137</a></li>
+			<li>CodeWars: <a href="https://www.codewars.com/users/BenjaminC137">BenjaminC137</a></li>
+			<li>Youtube: <a href="https://www.youtube.com/channel/UCOTXE8pDT-_mEq53IJTQ7-A?view_as=subscriber">Arduino Project Videos</a></li>
+		</ul>
+	</div>
+</div>
+<div id="homeReference" class="">
+	<h6 style="color: lightgray">Reference</h6>
+	<span class="">
+		<span><img src="assets/PortalBenjaminDarkRes180.png" style="width: 50px"> Benjamin.Website &nbsp; &nbsp; &nbsp;</span>
+
+		<a href="http://codingtemple.com"><span style="color: white"><img src="assets/codingTempleLogo.png" style="display: inline; width: 100px">&nbsp; &nbsp; &nbsp;</span>
+		</a>
+
+		<a href="http://arduino.cc">
+			<span><img src="assets/2000px-Arduino_Logo.svg.png" style="	display: inline; width: 70px"></span>
+		</a>
+	</span>
+</div>
+
+<!--
 <div class="container">
 	<div class="row">
 	<div class="box col-sm" style="font-size: 1rem">
@@ -23,16 +77,6 @@
 		Benjamin Salasek
 	</div>
 	<br>
-<!--
-	<div style="text-align: center">
-					<span><button routerLink="/arduino" class="btn-primary shadow-box" style="width: 60%">Arduino</button></span>
-					<span><button routerLink="/professional" class="btn-primary shadow-box" style="min-width: 60%">Professional</button></span>
-					<span><button routerLink="/personal" class="btn-primary shadow-box" style="min-width: 60%">Personal</button></span>
-	</div>
--->
-
-
-
 	<div class="col" style="text-align: center; font-size: 0px">
 		<div class="shadow-box" style="display: inline-block">
 			<div class="carousel-div">
@@ -51,98 +95,8 @@
 				  </div>
 				</div>
 			</div>
-
 		</div>
 	</div>
-
 	</div>
 </div>
-
-
-<!--
-
-	<div style="text-align: center; font-size: 0px">
-		<div class="shadow-box" style="display: inline-block">
-
-			<div class="carousel-div">
-				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1" data-wrap="true" direction="left" data-pause="false">
-				  <div class="carousel-inner">
-					 <div class="carousel-item active">
-					 	<a href="/home"><img class="d-block w-100 carousel-image" src="assets/PortalVectorTeal.svg" alt="first slide"></a>
-						<a href="http://www.benjamin.website"><div class="carousel-caption" style="text-align: center; font-size: 18px">Benjamin Salasek</div></a>
-					</div>
-					<div class="carousel-item">
-					 <a href="assets/El-Horse-forweb1000.png"><img class="d-block w-100 carousel-image" src="assets/El-Horse-forweb1000.png"></a>
-						<div class="carousel-caption" style="text-align: center; font-size: 18px">
-							El Horse
-						</div>
-					</div>
-					<div class="carousel-item">
-					  <a href="assets/biker_boys.png"><img class="d-block w-100 carousel-image" src="assets/biker_boys.png"></a>
-						<div class="carousel-caption" style="text-align: center; font-size: 18px">
-							Biker Boys
-						</div>
-					</div>
-					<div *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}" class="carousel-item cursor-finger">
-					  <img class="d-block w-100 carousel-image" src="{{arduino.imagePath}}" alt="second slide">
-						<div class="carousel-caption" style="text-align: center; font-size: 18px">
-							{{arduino.title}}
-						</div>
-					</div>
-				  </div>
-				</div>
-			</div>
-
-			<div id="hide-carousel-one" class="carousel-div">
-				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1" data-wrap="true" direction="left" data-pause="false">
-				  <div class="carousel-inner">
-					 <div class="carousel-item active">
-						 <a href="/home"><img class="d-block w-100 carousel-image" src="assets/PortalVectorTeal.svg" alt="first slide"></a>
-						<a href="/home"><div class="carousel-caption" style="text-align: center; font-size: 18px">
-							Click to resume
-							</div></a>
-					</div>
-					<div class="carousel-item">
-					  <a href="assets/biker_boys.png"><img class="d-block w-100 carousel-image" src="assets/biker_boys.png"></a>						<div class="carousel-caption" style="text-align: center; font-size: 18px">
-							Biker Boys
-						</div>
-					</div>
-					<div *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}" class="carousel-item" cursor-finger>
-					  <img class="d-block w-100 carousel-image" src="{{arduino.imagePath}}" alt="second slide">
-						<div class="carousel-caption" style="text-align: center; font-size: 18px">
-							{{arduino.title}}
-						</div>
-					</div>
-				  </div>
-				</div>
-			</div>
-
-			<div id="hide-carousel-two" class="carousel-div">
-				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1" data-wrap="true" direction="left" data-pause="false">
-				  <div class="carousel-inner">
-					 <div class="carousel-item active">
-						 <a href="/home"><img class="d-block w-100 carousel-image" src="assets/PortalVectorTeal.svg" alt="first slide"></a>
-						<a href="/home"><div class="carousel-caption" style="text-align: center; font-size: 18px">
-							Benjamin Salasek
-							</div></a>
-					</div>
-					<div *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}" class="carousel-item cursor-finger">
-					  <img class="d-block w-100 carousel-image" src="{{arduino.imagePath}}" alt="second slide">
-						<div class="carousel-caption" style="text-align: center; font-size: 18px">
-							{{arduino.title}}
-						</div>
-					</div>
-					<div class="carousel-item">
-					  <a href="assets/biker_boys.png"><img class="d-block w-100 carousel-image" src="assets/biker_boys.png"></a>						<div class="carousel-caption" style="text-align: center; font-size: 18px">
-							Biker Boys
-						</div>
-					</div>
-				  </div>
-				</div>
-			</div>
-		</div>
-	</div>
 -->
-	<br>
-	<br>
-<!--</div>-->
