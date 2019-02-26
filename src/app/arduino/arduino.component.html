@@ -30,7 +30,6 @@
 
 	<!--{{searchText}}-->
 	<div class="card-deck" style="padding: 15px" >
-	<!--	<div class="card arduino-cards" *ngFor="let arduino of arduinoProjects" [class.selected]="arduino === selectedArduino" (click)="onSelect(arduino); toggle()">-->
 
 		<div class="card arduino-cards arduino-card-hover info-panel projects-filter" *ngFor="let arduino of arduinoProjects | filter:filterargs" routerLink="/arduino-detail/{{arduino.id}}">
 			<h5 class="card-title" style="font-size: 1em" >{{arduino.title}}</h5>

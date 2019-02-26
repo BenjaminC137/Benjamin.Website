@@ -58,7 +58,7 @@ a:active{
 }
 .a2{
 	text-decoration: none;
-    color: rgb(229, 173, 36);
+    color: #00878F;
 }
 /*
 .a2:hover{
@@ -436,8 +436,14 @@ h5{
 	z-index: -1000;
 }
 #homeProjectsDiv{
+	padding-right: 15px;
 	text-align: right;
+	color: dimgray;
 	background-image: linear-gradient(to right, rgb(225,225,225) , white);
+}
+#homeProjectsText{
+	width: 50vw;
+	float: right;
 }
 #homeProjectsTitle{
 	display: block;
@@ -448,6 +454,15 @@ h5{
 #homeReference{
 	padding: 20px;
 	background-color: black;
+}
+#honeycomb{
+	white-space: nowrap;
+	display: inline-block;
+	width: 40vw;
+	height: 100px;
+	background-color: gray;
+	border-radius: 28px;
+	float: left;
 }
 .img-scale{
 	max-width: 50vw;
@@ -551,7 +566,8 @@ p{
 /*	border-style: hidden;*/
 /*	border-radius: 3px;*/
 /*	box-shadow: 2px 2px 10px rgba(0,0,0, .04);*/
-	font-size: 14px;
+/*	font-size: 14px;*/
+	font-size: 1em;
 	color: #00878F;
 }
 .p-yellow{
@@ -559,6 +575,9 @@ p{
 	color: white;
 	border-radius: 10px;
 	margin: 0px;
+}
+.p-gray{
+	color: dimgray;
 }
 #profilePictureDiv{
 	display: inline-block;
@@ -568,13 +587,13 @@ p{
 	box-shadow: 2px 2px 10px rgba(0,0,0, .1);
 }
 .projects-filter{
-	filter: blur(1px) sepia(1) hue-rotate(125deg) saturate(.75);
+	filter: sepia(1) hue-rotate(125deg) saturate(.75);
 
 	transition: 250ms;
 	-webkit-transition: 250ms;
 }
 .projects-filter:hover{
-	filter: blur(0px) sepia(0) hue-rotate(0deg) saturate(1);
+	filter: sepia(0) hue-rotate(0deg) saturate(1);
 
 }
 /*
@@ -850,6 +869,9 @@ p{
 @media (max-width: 767.98px) {
 	#bioInfo{
 		max-width: 100%;
+	}
+	.projects-filter{
+		filter: sepia(0) hue-rotate(0deg) saturate(1);
 	}
 }
 /* Medium devices (tablets, 768px and up)*/
