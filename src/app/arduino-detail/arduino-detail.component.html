@@ -76,17 +76,18 @@
 			</div>
 -->
 			<div class="" (click)="ViewHiRes(i)" class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; let i = index" style="display: inline">
-
-<!--				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>-->
-				<div><button class="btn-primary close-button" *ngIf="show && selectedIdx === i">Close</button></div>
-				<img  [class.view-hi-res]="selectedIdx === i" src={{image}}>
-				<div class="hidden-div" >
-					<p style="margin-bottom: 0px"><span>{{arduino.imageCaption[i]}}</span></p>
+				<div id="card-content">
+	<!--				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>-->
+					<div><button class="btn-primary close-button" *ngIf="show && selectedIdx === i">Close</button></div>
+					<img  [class.view-hi-res]="selectedIdx === i" src={{image}}>
+					<div class="hidden-div" >
+						<p style="margin-bottom: 0px"><span>{{arduino.imageCaption[i]}}</span></p>
+					</div>
+					<div class="div-footer" [class.view-hi-caption]="selectedIdx === i">
+						<p style="margin-bottom: 0px" [class.no-background]="selectedIdx === i"><span [class.card-text]="selectedIdx === i">{{arduino.imageCaption[i]}}</span></p>
+					</div>
+	<!--				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(i)">View hi-res</button></div>-->
 				</div>
-				<div class="div-footer" [class.view-hi-caption]="selectedIdx === i">
-					<p style="margin-bottom: 0px" [class.no-background]="selectedIdx === i"><span [class.card-text]="selectedIdx === i">{{arduino.imageCaption[i]}}</span></p>
-				</div>
-<!--				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(i)">View hi-res</button></div>-->
 			</div>
 		</div>
 	</div>
