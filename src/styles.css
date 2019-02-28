@@ -210,6 +210,7 @@ a:active{
 /*	text-align: left;*/
 	padding: 20px;
 	margin: 25px;
+
 }
 .info-panel{
 	border-style: solid;
@@ -652,6 +653,45 @@ p{
 	background-size: cover;
 	color: rgb(56, 62, 75);
 }
+.projectInterdimensionalBox{
+
+}
+.thing-button{
+	background-color: rgb(137, 6, 58);
+	color: rgb(195, 228, 239);
+	padding: 5px;
+	border-radius: 5px;
+}
+.thing-card{
+    margin: 5px 0px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 2px;
+    border-width: 25px 3px;
+    border-style: solid;
+    background-color: rgba(195, 228, 239, .9);
+/*    width: 225px;*/
+    color: rgb(56,62, 77);
+    text-align: end;
+
+	transition-duration: 500ms;
+	transition-timing-function: ease-in-out;
+/*
+    animation-name: hovershadowreverse;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    animation-timing-function: ease-in-out;
+*/
+
+    box-shadow:none;
+
+}
+.thing-card:hover{
+    border-width: 3px 3px;
+	margin: 27px 0px;
+
+}
 /*
 .professional-title{
 	display: inline-block;
@@ -942,13 +982,13 @@ td{
 	}
 	.panel-mobile{
 		max-width: 100%;
-		min-width: 90%;
+		min-width: calc(100% - 50px);
 	}
 }
 @media (max-width: 767.98px) {
 	.panel-mobile{
 		max-width: 100%;
-		min-width: 90%;
+		min-width: calc(100% - 50px);
 
 	}
 	.projects-filter{
@@ -976,3 +1016,15 @@ td{
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {  }
+
+
+/*
+@keyframes hovershadowreverse {
+from {
+	border-width: 10px 1px;
+	}
+to {
+
+	border-width: 1px;
+	}
+}*/
