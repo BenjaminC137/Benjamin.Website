@@ -14,12 +14,5 @@ export const Photographs : PhotographyModel[] = [
 		description: "Water Tower",
 		date: '2011/05/19',
 		imagePath: "assets/Photography/water_tower-50percent-IMG_8202.png"
-	},
-	{
-		id: 3,
-		title: "Water Tower",
-		description: "Water Tower",
-		date: '2011/05/19',
-		imagePath: "/src/assets/p"
 	}
 ];

@@ -6,14 +6,10 @@
 		<div id="introArduinoImage">
 			<a class="cursor-finger" (click)="scroll(photos)"><img class="arduino-small-square shadow-box" src="{{arduino.moreImagesPath[0]}}" ></a>
 		</div>
-<!--		<h4>Introduction</h4>-->
-
-<!--		<h4 style="padding-left: 0px">Introduction </h4>-->
 		<div id="arduino-description">{{arduino.description}}</div>
 		<br>
 		<div class="row">
 			<div class="col"><br>
-
 				<button class="btn-primary button-spacing" (click)="scroll(photos)">Photos</button> &nbsp;
 				<button class="btn-primary" (click)="scroll(video)">Video</button>
 				<br>
@@ -23,45 +19,66 @@
 				Completed: {{arduino.dateCompleted | date}}
 			</div>
 		</div>
-
-		<!--
-		Duration: {{arduino.duration}}
-		<br>
--->
 	</div>
-	<div class="box">
-		<h4>Components</h4>
 
-<!--		<h4 style="padding-left: 0px">Components</h4>-->
-		These are the main components I used for the project. Obviously I haven't mentioned every resistor, wire, connector etc., but the relevant components are listed here.
-		<br>
-		<br>
-		<ul>
-			<li *ngFor="let component of arduino.components">{{component}}</li>
-		</ul>
+	<div id="componentsAndLibrariesContainer" class="clearfix">
+				<div id="componentsAndLibraries" class="">
+			<div id="arduinoDetailInfo" class="info-panel firstDiv panel-mobile">
+				<div class="row">
+					<div class="col-sm-6" style="padding: 0px 3px">
+						<h5 style="text-align: right; font-size: 1em">Components</h5>
+						<div id="yellowComponents" class="p-yellow">
+							<table id="componentsTable">
+								<tr *ngFor="let component of arduino.components">
+									<td style="padding: 2px 10px">{{component}}</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-sm-6" style="padding: 0px 3px">
+						<h5 style="text-align: right; font-size: 1em">Libraries</h5>
+						<div class="p-yellow">
+							<table id="componentsTable">
+								<tr *ngFor="let library of arduino.libraries">
+									<td style="padding: 2px 10px">{{library}}</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="color: white" >
+			Here are the main components I used for the project. Obviously I haven't mentioned every
+		</div>
+
+
+
+<!--		<img id="arduinoCommunity" src="assets/ArduinoCommunityLogo.png">-->
+		<span id="arduinoComponentTitle">
+			<span style="color: #00878F" >Resistor, </span><span style="">PCB <span style="color: #00878F">or </span></span><span style="color: #E47128">Terminal Block</span>
+		</span>
+		<p style="color: white" >
+			but the relevant components are listed here. Here, you will also see the code libraries that I've implemented in order to allow some advanced hardware components to communicate with my software.
+		</p>
 	</div>
-	<br>
 
-	<div class="box">
-		<h4>Code Libraries</h4>
 
-<!--		<h4 style="padding-left: 0px">Code Libraries</h4>-->
+
+
+
+<!--
+	<div class="box2" style="background-image: none; background-color: white">
+		<h4 class="p-gray">Code Libraries</h4>
 		These are the code libraries that I've implemented in order to allow some advanced hardware components to communicate with my software.
-		<br>
-		<br>
 		 <div #photos></div>
 		<ul>
 			<li *ngFor="let library of arduino.libraries">{{library}}</li>
 		</ul>
 	</div>
-	<br>
-<!--
-	<div class="box"><iframe class="box" width="560" height="315" src="{{arduino.videoUrl}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 -->
-
-<div class="box">
+<div class="box3">
 	<h4>Photos </h4>
-<!--	<h4 style="padding-left: 0px">Images </h4>-->
 	I believe that the images are not only informative but sometimes provide for beautiful photography and imagery. Please take a closer look by clicking/tapping on any photo. You may use the left and right arrow keys to browse.
 	<br>
 	<br>
@@ -94,39 +111,12 @@
 		</div>
 	</div>
 </div>
-	<br>
-
-<!--
-		<p>{{arduino.videoUrl}}</p>
-		<p [innerHtml]="arduino.videoUrl"></p>
--->
 	<div class="box">
 		<h4 #video >Video </h4>
-<!--		 <h4 style="padding-left: 0px">Video </h4>-->
 		I've recorded a quick video to show you my {{arduino.title}} in action.
 		<br>
 		<br>
-<!--
-		<b>Attention:</b> Please note that the Tank Project does not yet have a video yet.
-		 <br>
-		 <br>
--->
 		 <a *ngIf="arduino.id != 6" disabled class="btn-primary" [href]="goPlay">Play {{arduino.title}} Video</a>
 		 <a *ngIf="arduino.id === 6" disabled class="btn-primary" [href]="">{{arduino.title}} Video coming soon!</a>
 		 </div>
-	<br>
-<!--
-	<br>
-		<a [href]="safeUrl">Go to Video</a>
-
-	<div class="box col">
-		<iframe [src]="trustedDashboardUrl" class="box" width="560" height="315" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-		</iframe>
-	</div>
-
-	<div class="box col">
-		<iframe class="box" width="560" height="315" src="https://www.youtube.com/embed/lyI5C47GDH0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-		</iframe>
-	</div>
--->
 </div>

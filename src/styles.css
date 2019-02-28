@@ -111,11 +111,22 @@ a:active{
 	font-weight: bolder;
 /*	text-overflow: ellipsis;*/
 }
+#arduinoComponentTitle{
+	display: inline;
+	font-size: 3vw;
+	background-color: rgba(255,255,255,.9);
+/*	width: 40vw;*/
+	white-space: nowrap;
+	font-weight: bolder;
+/*	text-overflow: ellipsis;*/
+}
 #arduinoUno{
-	-webkit-filter: drop-shadow(5px 15px 2px black);
-    filter: drop-shadow(5px 15px 2px black);
 	width: 400px;
 	padding-bottom: 125px;
+}
+.pngShadow{
+	-webkit-filter: drop-shadow(5px 15px 2px black);
+    filter: drop-shadow(5px 15px 2px black);
 }
 .clearfix{
 	overflow: auto;
@@ -125,6 +136,9 @@ a:active{
 	margin-right: 5px;
 }
 */
+#arduinoDetailInfo{
+	min-width: 50vw;
+}
 #arduino-home-div{
 	color: dimgray;
 	padding: 15px;
@@ -212,7 +226,14 @@ a:active{
 	padding: 15px;
 }
 #whatsArduinoDiv{
-	background-image: url(assets/resistors.jpeg);
+	background-image:
+		linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+		url(assets/resistors.jpeg);
+/*	background-color: black;*/
+	background-blend-mode: color-burn;
 	text-align: right;
 }
 .firstDiv{
@@ -271,6 +292,9 @@ body{
 	box-shadow: 2px 2px 10px rgba(0,0,0, .04);
 	font-size: 14px;
 	margin: 0px
+}
+.box2DarkBack{
+	background-image: linear-gradient(to right, #181818 , gray);
 }
 .box3{
 	display: block;
@@ -411,6 +435,22 @@ cursor: pointer;
 	top: 63px;
 	left: 0px;
 	z-index: 100;
+}
+#componentsAndLibraries{
+	width: 50vw;
+	float: right;
+	margin-right: 15px;
+	display: inline-block;
+	text-align: center;
+}
+#componentsAndLibrariesContainer{
+	color: dimgray;
+	padding: 15px;
+	background-image: linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+		url(assets/ArduinomyFace/myFace-workspace-IMG_6071.jpeg)
 }
 #contactForm{
 	margin: 25px;
@@ -689,6 +729,25 @@ p{
 .p-gray{
 	color: dimgray;
 }
+#photographyTitleImage{
+	background-image: url("assets/Photography/Canadian_murals-50percent-IMG_9447.png");
+	height: 50vh;
+	background-size: cover;
+}
+#photographyTitle{
+/*
+	background-image: url("assets/Photography/Canadian_murals-50percent-IMG_9447.png");
+	height: 50vh;
+	background-size: cover;
+*/
+/*	text-align: center;*/
+	font-size: 10vw;
+	color: black;
+	text-shadow: 2px 2px 0px white, -6px 0px 0px beige, 6px 0px 0px white, -20px 20px 0px orange;
+	font-weight: bolder;
+	text-transform: uppercase;
+	mix-blend-mode:overlay;
+}
 #profilePictureDiv{
 	display: inline-block;
 /*	box-shadow: -10px 5px 5px black, 10px 15px 5px black;*/
@@ -775,6 +834,9 @@ p{
 }
 .shadow-text{
 	text-shadow: 2px 2px 5px black, 2px -2px 1px black, 2px 1px 0px black, 1px 1px 3px black;
+}
+.shadow-text-white{
+	text-shadow: 2px -2px 5px black, 2px 2px 1px white, 2px 1px 0px black, 1px 1px 3px black;
 }
 .shadow2{
 /*	box-shadow: -30px 15px 0px black, 50px 15px 100px black;*/
@@ -901,6 +963,9 @@ td{
 	width: inherit;
 */
 	margin: 0vh 1vw;
+}
+#yellowComponents{
+	margin-bottom: 0px;
 }
 /*
 .rounded-image{
@@ -1045,6 +1110,9 @@ td{
 		width: 100vw;
 		height: 100vw;
 	}
+	#yellowComponents{
+		margin-bottom: 20px;
+	}
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1060,6 +1128,14 @@ td{
 	.panel-mobile{
 		max-width: 100%;
 		min-width: calc(100% - 50px);
+	}
+	#arduinoDetailInfo{
+/*		min-width: calc(100vw - 50px);*/
+	}
+	#componentsAndLibraries{
+		float: none;
+		min-width: calc(100vw - 50px);
+
 	}
 /*
 	.arduino-cards-smallCover{
@@ -1080,6 +1156,9 @@ td{
 @media (max-width: 767.98px) {
 	.panel-mobile{
 		max-width: 100%;
+		min-width: calc(100% - 50px);
+	}
+	#arduinoDetailInfo{
 		min-width: calc(100% - 50px);
 	}
 	.projects-filter{
@@ -1103,6 +1182,14 @@ td{
 		font-size: 7vw;;
 		color: dimgray;
 		font-weight: bolder;
+	}
+	#componentsAndLibraries{
+		float: none;
+		min-width: calc(100vw - 50px);
+
+	}
+	#arduinoComponentTitle{
+		font-size: 5vw;
 	}
 }
 /* Medium devices (tablets, 768px and up)*/
