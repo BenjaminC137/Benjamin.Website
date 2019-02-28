@@ -174,6 +174,9 @@ a:active{
 	left: 0px;
 	z-index: 99;
 }
+#benjaminWebsite{
+	background-image: url(/assets/coding%20background%20reduced%201920.png);
+}
 #bioDiv{
 	background-image: url(/assets/coding%20background%20reduced%201920.png);
 /*	padding: 0px;*/
@@ -641,6 +644,14 @@ p{
 	filter: sepia(0) hue-rotate(0deg) saturate(1);
 
 }
+#projectInterdimensional{
+}
+.projectInterdimensional{
+	background-color: rgb(195, 228, 237);
+	background-image: url(/assets/PortalBenjaminDark%20old.png);
+	background-size: cover;
+	color: rgb(56, 62, 75);
+}
 /*
 .professional-title{
 	display: inline-block;
@@ -686,6 +697,14 @@ th{
 }
 td{
 	padding: 2px 5vw;
+}
+.texture-stripes{
+	/*	background-color: beige;*/
+	background-image: linear-gradient(98deg, rgba(255,255,255,.07) 50%, transparent 50%),
+	linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+	linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+	linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+	background-size: 13px, 29px, 37px, 53px;
 }
 /*
 .top{
