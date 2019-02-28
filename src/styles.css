@@ -182,6 +182,10 @@ a:active{
 /*	border-radius: 10px;*/
 	float: right;
 }
+#astoundingText{
+	float: right;
+	padding: 5px;
+}
 #introArduinoImage{
 	padding-bottom: 15px;
 }
@@ -411,6 +415,32 @@ cursor: pointer;
 #contactForm{
 	margin: 25px;
 }
+#contactAndProfiles  tr  td{
+	padding: 2px 5px;
+}
+table {
+  border-collapse: collapse;
+}
+#contactAndProfiles td {
+  border-left: 1px solid lightgray;
+}
+#contactAndProfiles th {
+	font-size: .8em;
+}
+#contactAndProfiles tr:first-child td {
+  border-top: 0;
+}
+#contactAndProfiles tr td:first-child {
+  border-left: 0;
+	padding-left: 0px;
+}
+#contactAndProfiles tr:last-child td {
+  border-bottom: 0;
+}
+#contactAndProfiles tr td:last-child {
+  border-right: 0;
+	padding-right: 0px;
+}
 .carousel-caption{
 	color: white;
 	background-color: #8f003f;
@@ -464,6 +494,8 @@ footer{
 	padding-left: 5px;
 	background-color: lightgray;
 	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .form-control{
 /*
@@ -540,7 +572,7 @@ h5{
 /*	height: 100px;*/
 /*	background-color: gray;*/
 /*	border-radius: 28px;*/
-	float: left;
+/*	float: left;*/
 }
 .img-scale{
 	max-width: 50vw;
@@ -1008,6 +1040,11 @@ td{
 		width: 100%;
 		margin: 5px 0px;
 	}
+	.arduino-cards-smallCover{
+		padding: 5px;
+		width: 100vw;
+		height: 100vw;
+	}
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1024,10 +1061,12 @@ td{
 		max-width: 100%;
 		min-width: calc(100% - 50px);
 	}
+/*
 	.arduino-cards-smallCover{
-		width: 15vw;
-		height: 15vw;
+		width: 80vw;
+		height: 80vw;
 	}
+*/
 	#honeycomb{
 		width: 100vw;
 	}
@@ -1046,16 +1085,24 @@ td{
 	.projects-filter{
 		filter: sepia(0) hue-rotate(0deg) saturate(1);
 	}
+/*
 	.arduino-cards-smallCover{
-		width: 15vw;
-		height: 15vw;
+		width: 80vw;
+		height: 80vw;
 	}
+*/
 	#honeycomb{
 		width: 100vw;
 	}
 	#arduinoUno{
 		width: 100%;
 		padding-bottom: 25px;
+	}
+	#homeProjectsTitle{
+		display: block;
+		font-size: 7vw;;
+		color: dimgray;
+		font-weight: bolder;
 	}
 }
 /* Medium devices (tablets, 768px and up)*/
