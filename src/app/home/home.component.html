@@ -1,4 +1,3 @@
-<!--<h1>Benjamin Salasek</h1>-->
 <div id="bioDiv">
 	<div id="bioInfo" class="info-panel firstDiv panel-mobile">
 		<h5>Introduction</h5>
@@ -33,9 +32,25 @@
 </div>
 
 <div id="homeProjectsDiv" class="clearfix">
-	<br>
-	<div id="honeycomb"></div>
-		Some pictures of astounding
+	<div id="honeycomb">
+		<div class="card-deck" style="padding: 0px; margin: 0px" >
+
+		<div class="arduino-cards-small arduino-card-hover projects-filter" *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}">
+<!--			<h5 class="card-title" style="font-size: 1em" >{{arduino.title}}</h5>-->
+			<img class="arduino-cards-smallCover" style="" src="{{arduino.moreImagesPath[0]}}">
+<!--
+			<div class="card-body">
+				<div class="card-text">
+				</div>
+			</div>
+			<footer class="card-footer" style="margin: 0px">
+			  <p class="p-yellow">Completion Date: {{arduino.dateCompleted}}</p>
+			</footer>
+-->
+		</div>
+	</div>
+	</div>
+		<div>Some pictures of astounding</div>
 		<span id="homeProjectsTitle">
 			<span style="color: #00878F">Projects </span><span>I have </span><span style="color: #E47128">Engineered</span>
 		</span>
@@ -49,14 +64,39 @@
 	<br>
 </div>
 <div id="contact-home-div">
+	<h2 style="text-align: center">Contact</h2>
+	<div id="contactForm">
+		<form>
+			<div class="row">
+				  <div class="form-group col-sm-6">
+			<!--		<label for="usersname">name</label>-->
+					  <input class="form-control" type="text" placeholder="name">
+				  </div>
+				  <div class="form-group col-sm-6">
+			<!--		<label for="exampleInputEmail1">Email address</label>-->
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				  </div>
+			</div>
+		  <div class="form-group">
+	<!--		<label for="message">Message</label>-->
+		<input class="form-control" type="text" placeholder="message" style="height: 5em">
+		  </div>
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+
+
+
+	<a class="a2" href="mailto:benjaminsalasek@icloud.com?&subject=Contact%20From%20Website&body=Here%20is%20what%20I%20have%20to%20say!">Email Me</a>
+<br>
 	<br>
-	<h2 style="text-align: center">Contact & Profiles</h2>
 	<div class="">
 		<ul style="color: dimgray">
 			<li>Email: <a class="a2" href="mailto:benjaminsalasek@icloud.com" >benjaminsalasek@icloud.com</a></li>
 			<li>LinkedIn: <a class="a2" href="https://www.linkedin.com/in/benjaminsalasek/">Benjamin Salasek</a></li>
 			<li>GitHub: <a class="a2" href="https://github.com/BenjaminC137">BenjaminC137</a></li>
-			<li>CodeWars: <a class="a2" href="https://www.codewars.com/users/BenjaminC137">BenjaminC137</a></li>
+<!--			<li>CodeWars: <a class="a2" href="https://www.codewars.com/users/BenjaminC137">BenjaminC137</a></li>-->
 			<li>Youtube: <a class="a2" href="https://www.youtube.com/channel/UCOTXE8pDT-_mEq53IJTQ7-A?view_as=subscriber">Arduino Project Videos</a></li>
 		</ul>
 	</div>

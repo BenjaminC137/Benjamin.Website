@@ -1,18 +1,20 @@
-<h2>Photography</h2>
-<div class="box">
+	<h4 class="p-gray" style="text-align: center">All photos are shot by and property of Benjamin Salasek</h4>
+
+<div class="box2">
+<!--	<h2>Photography</h2>-->
 	<img src="assets/Photography/Canadian_murals-50percent-IMG_9447.png">
-</div>
-<br>
-<div class="" (click)="ViewHiRes(i)" *ngFor="let photo of photographs; let i = index" style="	text-align: center">
-	<div class="img-frame arduino-card-hover">
-		<h4>{{photo.title}}</h4>
-		<img [class.view-hi-res]="selectedIdx === i" class="img-full" src="{{photo.imagePath}}">
 		<br>
-		<div style="text-align: left; padding: 15px;" >
-			{{photo.description}} |
-			{{photo.date}}
+	<div class="" (click)="ViewHiRes(i)" *ngFor="let photo of photographs; let i = index" style="	text-align: center">
+		<div class="img-frame arduino-card-hover">
+			<h4>{{photo.title}}</h4>
+			<img [class.view-hi-res]="selectedIdx === i" class="img-full" src="{{photo.imagePath}}">
+			<br>
+			<div style="text-align: left; padding: 15px;" >
+				{{photo.description}} |
+				{{photo.date}}
+			</div>
 		</div>
+		<br>
+		<br>
 	</div>
-	<br>
-	<br>
 </div>

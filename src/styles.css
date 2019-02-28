@@ -84,6 +84,19 @@ a:active{
 	box-shadow: 2px 2px 5px rgba(0,0,0,.1);
 	max-width: 330px;
 }
+.arduino-cards-small{
+	padding: 0px;
+	margin: 0px;
+/*	object-fit: cover;*/
+
+/*	box-shadow: 2px 2px 5px rgba(0,0,0,.1);*/
+/*	max-width: 330px;*/
+}
+.arduino-cards-smallCover{
+	width: 10vw;
+	height: 10vw;
+	object-fit: cover;
+}
 #arduinoCommunity{
 	width: 50vw;
 	float: right;
@@ -97,6 +110,12 @@ a:active{
 	white-space: nowrap;
 	font-weight: bolder;
 /*	text-overflow: ellipsis;*/
+}
+#arduinoUno{
+	-webkit-filter: drop-shadow(5px 15px 2px black);
+    filter: drop-shadow(5px 15px 2px black);
+	width: 400px;
+	padding-bottom: 125px;
 }
 .clearfix{
 	overflow: auto;
@@ -189,9 +208,8 @@ a:active{
 	padding: 15px;
 }
 #whatsArduinoDiv{
-	background-image: url(assets/ArduinoGeneral/Arduino-nano-complex-IMG_8173.png);
+	background-image: url(assets/resistors.jpeg);
 	text-align: right;
-
 }
 .firstDiv{
 	display: inline-block;
@@ -236,8 +254,6 @@ body{
 	background-color: #00878F;
 	color: white;
 	padding: 20px;
-/*	border-style: hidden;*/
-/*	border-radius: 2px;*/
 	box-shadow: 2px 2px 10px rgba(0,0,0, .04);
 	font-size: 14px;
 	margin: 0px
@@ -248,8 +264,16 @@ body{
 	background-image: linear-gradient(to right, rgb(225,225,225) , white);
 	color: dimgray;
 	padding: 20px;
-/*	border-style: hidden;*/
-/*	border-radius: 2px;*/
+	box-shadow: 2px 2px 10px rgba(0,0,0, .04);
+	font-size: 14px;
+	margin: 0px
+}
+.box3{
+	display: block;
+/*	box-sizing: border-box;*/
+	background-image: linear-gradient(to right, rgb(125,125,125) , black);
+	color: whitesmoke;
+	padding: 20px;
 	box-shadow: 2px 2px 10px rgba(0,0,0, .04);
 	font-size: 14px;
 	margin: 0px
@@ -384,6 +408,9 @@ cursor: pointer;
 	left: 0px;
 	z-index: 100;
 }
+#contactForm{
+	margin: 25px;
+}
 .carousel-caption{
 	color: white;
 	background-color: #8f003f;
@@ -439,10 +466,12 @@ footer{
 	text-align: center;
 }
 .form-control{
+/*
 	border: none;
 	margin: 0px;
 	padding: 7px;
 	border-radius: 0px;
+*/
 }
 html{
     background-color: dimgray;
@@ -508,9 +537,9 @@ h5{
 	white-space: nowrap;
 	display: inline-block;
 	width: 40vw;
-	height: 100px;
-	background-color: gray;
-	border-radius: 28px;
+/*	height: 100px;*/
+/*	background-color: gray;*/
+/*	border-radius: 28px;*/
 	float: left;
 }
 .img-scale{
@@ -521,7 +550,7 @@ h5{
 .img-frame{
 	display: inline-block;
 /*	box-sizing: border-box;*/
-	background-color: white;
+	background-color: black;
 /*
 	max-width: 90vw;
     max-height: 90vh;
@@ -630,7 +659,9 @@ p{
 }
 #profilePictureDiv{
 	display: inline-block;
+/*	box-shadow: -10px 5px 5px black, 10px 15px 5px black;*/
 }
+
 .project{
 	background-color: rgba(236, 241, 241, .2);
 	box-shadow: 2px 2px 10px rgba(0,0,0, .1);
@@ -709,6 +740,12 @@ p{
 }
 .shadow-box{
 	box-shadow: 5px 5px 15px rgba(0,0,0,.1);
+}
+.shadow-text{
+	text-shadow: 2px 2px 5px black, 2px -2px 1px black, 2px 1px 0px black, 1px 1px 3px black;
+}
+.shadow2{
+/*	box-shadow: -30px 15px 0px black, 50px 15px 100px black;*/
 }
 #skillsData{
 	float: left;
@@ -877,6 +914,9 @@ td{
 /*	 320.98px*/
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width:575.98px) {
+		#honeycomb{
+		width: 100vw;
+	}
 	.arduino-small-square{
 /*		height: 100%;*/
 /*		width: auto;*/
@@ -984,15 +1024,38 @@ td{
 		max-width: 100%;
 		min-width: calc(100% - 50px);
 	}
+	.arduino-cards-smallCover{
+		width: 15vw;
+		height: 15vw;
+	}
+	#honeycomb{
+		width: 100vw;
+	}
+/*
+	#arduinoUno{
+		width: 100%;
+		padding-bottom: 25px;
+	}
+*/
 }
 @media (max-width: 767.98px) {
 	.panel-mobile{
 		max-width: 100%;
 		min-width: calc(100% - 50px);
-
 	}
 	.projects-filter{
 		filter: sepia(0) hue-rotate(0deg) saturate(1);
+	}
+	.arduino-cards-smallCover{
+		width: 15vw;
+		height: 15vw;
+	}
+	#honeycomb{
+		width: 100vw;
+	}
+	#arduinoUno{
+		width: 100%;
+		padding-bottom: 25px;
 	}
 }
 /* Medium devices (tablets, 768px and up)*/
