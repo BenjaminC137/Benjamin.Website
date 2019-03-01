@@ -1,5 +1,5 @@
 <div id="bioDiv">
-	<div id="bioInfo" class="info-panel firstDiv panel-mobile">
+	<div id="bioInfo" class="info-panel firstDiv2 panel-mobile">
 		<h5>Introduction</h5>
 		<p class="p-yellow">
 			Greetings,
@@ -14,7 +14,7 @@
 		</p>
 	</div>
 	<div id="profilePictureDiv">
-		<img src="assets/BenjaminSalasekProfilePicOrane.png">
+		<img src="assets/BenjaminSalasekProfilePicOrane.png" style="max-width: 319px">
 	</div>
 </div>
 
@@ -33,8 +33,6 @@
 
 <div id="homeProjectsDiv" class="clearfix">
 	<div id="astoundingText">
-		<br>
-		<br>
 		<div>Some pictures of astounding</div>
 			<span id="homeProjectsTitle">
 				<span style="color: #00878F">Projects </span><span>I have </span><span style="color: #E47128">Engineered</span>
@@ -47,8 +45,7 @@
 		</div>
 	</div>
 	<div id="honeycomb">
-		<div class="card-deck" style="padding: 0px; margin: 0px align-self: left">
-
+		<div class="" style="">
 		<div class="arduino-cards-small arduino-card-hover projects-filter" *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}">
 <!--			<h5 class="card-title" style="font-size: 1em" >{{arduino.title}}</h5>-->
 			<img class="arduino-cards-smallCover" style="" src="{{arduino.moreImagesPath[0]}}">
@@ -91,19 +88,19 @@
 		<table id="contactAndProfiles" align="center" style="color: dimgray; margin-right: auto; margin-left: auto; margin-bottom: 10px; margin-top: 10px">
 			<tr>
 				<th>
-					Email
+					<a class="a2 p-gray" href="mailto:benjaminsalasek@icloud.com?&subject=Contact%20From%20Website&body=Here%20is%20what%20I%20have%20to%20say!" >Email</a>
 				</th>
 				<th>
-					LinkedIn
+					<a class="a2 p-gray" href="https://www.linkedin.com/in/benjaminsalasek/">LinkedIn</a>
 				</th>
 				<th>
-					GitHub
+					<a class="a2 p-gray" href="https://github.com/BenjaminC137">GitHub</a>
 				</th>
 				<th>
-					YouTube
+					<a class="a2 p-gray" href="https://www.youtube.com/channel/UCOTXE8pDT-_mEq53IJTQ7-A?view_as=subscriber">YouTube</a>
 				</th>
 			</tr>
-			<tr>
+			<tr id="contactTable">
 				<td><a class="a2" href="mailto:benjaminsalasek@icloud.com?&subject=Contact%20From%20Website&body=Here%20is%20what%20I%20have%20to%20say!" >benjaminsalasek@icloud.com</a></td>
 				<td> <a class="a2" href="https://www.linkedin.com/in/benjaminsalasek/">Benjamin Salasek</a></td>
 				<td><a class="a2" href="https://github.com/BenjaminC137">BenjaminC137</a></td>
@@ -124,16 +121,14 @@
 	</div>
 <div id="homeReference" class="">
 <!--	<h6 style="color: lightgray">Reference</h6>-->
-	<span class="">
-		<span><img src="assets/PortalBenjaminDarkRes180.png" style="width: 50px"> Benjamin.Website &nbsp; &nbsp; &nbsp;</span>
+		<span><img src="assets/PortalBenjaminDarkRes180.png" style="width: 50px; margin-bottom: 15px"> Benjamin.Website &nbsp; &nbsp; &nbsp;</span>
 
 		<a href="http://codingtemple.com"><span style="color: white"><img src="assets/codingTempleLogo.png" style="display: inline; width: 100px">&nbsp; &nbsp; &nbsp;</span>
 		</a>
 
 		<a href="http://arduino.cc">
-			<span><img src="assets/2000px-Arduino_Logo.svg.png" style="	display: inline; width: 70px"></span>
+			<span><img src="assets/2000px-Arduino_Logo.svg.png" style="	display: inline; width: 70px; margin-bottom: 15px"></span>
 		</a>
-	</span>
 </div>
 
 <!--

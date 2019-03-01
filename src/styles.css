@@ -87,10 +87,7 @@ a:active{
 .arduino-cards-small{
 	padding: 0px;
 	margin: 0px;
-/*	object-fit: cover;*/
-
-/*	box-shadow: 2px 2px 5px rgba(0,0,0,.1);*/
-/*	max-width: 330px;*/
+	display: inline-block;
 }
 .arduino-cards-smallCover{
 	width: 10vw;
@@ -199,6 +196,7 @@ a:active{
 #astoundingText{
 	float: right;
 	padding: 5px;
+	margin-top: 3em;
 }
 #introArduinoImage{
 	padding-bottom: 15px;
@@ -246,14 +244,11 @@ a:active{
 }
 .firstDiv2{
 	display: inline-block;
-/*
-	max-width: calc(100% - 502px);
+	max-width: calc(100% - 410px);
 	min-width: 250px;
-*/
-/*	text-align: left;*/
+	text-align: left;
 	padding: 20px;
 	margin: 25px;
-
 }
 .info-panel{
 	border-style: solid;
@@ -602,17 +597,16 @@ h5{
 	font-weight: bolder;
 }
 #homeReference{
-	padding: 20px;
+	padding: 15px;
+	padding-bottom: 0px;
 	background-color: black;
+	text-align: center;
 }
 #honeycomb{
-	white-space: nowrap;
 	display: inline-block;
 	width: 40vw;
-/*	height: 100px;*/
-/*	background-color: gray;*/
-/*	border-radius: 28px;*/
-/*	float: left;*/
+	text-align: center;
+	float: left;
 }
 .img-scale{
 	max-width: 50vw;
@@ -928,7 +922,7 @@ td{
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
-	background-color: rgba(0,0,0, .7);
+	background-color: black;
 	padding: 3px;
 	box-shadow: 2px 2px 10px rgba(0,0,0, .08);
 	z-index: 52;
@@ -1011,7 +1005,7 @@ td{
 /*	 320.98px*/
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width:575.98px) {
-		#honeycomb{
+	#honeycomb{
 		width: 100vw;
 	}
 	.arduino-small-square{
@@ -1106,12 +1100,34 @@ td{
 		margin: 5px 0px;
 	}
 	.arduino-cards-smallCover{
-		padding: 5px;
-		width: 100vw;
-		height: 100vw;
+		width: 33vw;
+		height: 33vw;
+	}
+	.arduino-cards-small{
+		width: 33vw;
 	}
 	#yellowComponents{
 		margin-bottom: 20px;
+	}
+	.card-deck{
+		flex: none;
+	}
+	#astoundingText{
+		float: right;
+		padding: 5px;
+		margin-top: 10px;
+	}
+	#contactAndProfiles{
+		width: 100%;
+	}
+	#contactTable td{
+		font-size: .1em;
+		width: 25%;
+		visibility: hidden;
+	}
+	.panel-mobile2{
+		max-width: 100%;
+		min-width: calc(100% - 50px);
 	}
 }
 /* Small devices (landscape phones, 576px and up)*/
@@ -1122,30 +1138,6 @@ td{
 	#hide-carousel-two{
 		display: none;
 	}
-	.image-big{
-		width: 100%;
-	}
-	.panel-mobile{
-		max-width: 100%;
-		min-width: calc(100% - 50px);
-	}
-	#arduinoDetailInfo{
-/*		min-width: calc(100vw - 50px);*/
-	}
-	#componentsAndLibraries{
-		float: none;
-		min-width: calc(100vw - 50px);
-
-	}
-/*
-	.arduino-cards-smallCover{
-		width: 80vw;
-		height: 80vw;
-	}
-*/
-	#honeycomb{
-		width: 100vw;
-	}
 /*
 	#arduinoUno{
 		width: 100%;
@@ -1154,6 +1146,34 @@ td{
 */
 }
 @media (max-width: 767.98px) {
+	.image-big{
+		width: 100%;
+	}
+	#arduinoDetailInfo{
+/*		min-width: calc(100vw - 50px);*/
+	}
+	#componentsAndLibraries{
+		float: none;
+		min-width: calc(100vw - 50px);
+	}
+	#honeycomb{
+		width: 100vw;
+	}
+	.card-deck{
+		flex: none;
+	}
+	.arduino-cards-smallCover{
+		width: 33vw;
+		height: 33vw;
+	}
+	.arduino-cards-small{
+		width: 33vw;
+	}
+	#astoundingText{
+		float: right;
+		padding: 5px;
+		margin-top: 10px;
+	}
 	.panel-mobile{
 		max-width: 100%;
 		min-width: calc(100% - 50px);
@@ -1164,12 +1184,6 @@ td{
 	.projects-filter{
 		filter: sepia(0) hue-rotate(0deg) saturate(1);
 	}
-/*
-	.arduino-cards-smallCover{
-		width: 80vw;
-		height: 80vw;
-	}
-*/
 	#honeycomb{
 		width: 100vw;
 	}
