@@ -597,6 +597,9 @@ h5{
 	border-radius: 10px;
 	padding: 5px;
 }
+.hide{
+	visibility: hidden;
+}
 .hidden-div{
 	position: relative;
 	z-index: -1000;
@@ -807,6 +810,7 @@ p{
 	color: rgb(195, 228, 239);
 	padding: 5px;
 	border-radius: 5px;
+	font-size: 1.5em;
 }
 .thing-card{
     margin: 5px 0px;
@@ -1043,7 +1047,7 @@ td{
 		font-size: 1.3rem !important;
 	}
 	#homeProjectsTitle{
-		font-size: 5.5vw;;
+		font-size: 5vw;;
 	}
 }
 /*	 320.98px*/
@@ -1269,6 +1273,9 @@ td{
 		width: 90vw;
 	/*	float: right;*/
 	}
+	.thing-button{
+		font-size: .75em;
+	}
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1303,3 +1310,91 @@ to {
 	border-width: 1px;
 	}
 }*/
+
+
+
+
+
+
+
+/**{ box-sizing: border-box; }*/
+/*html,body{ height: 100%; width: 100%; }*/
+/*body {background: #212121;}*/
+
+.hexbuttons {
+  margin-top: 50px;
+  padding: 50px 0 0 5px;
+/*  width: 345px;*/
+}
+.hexr {
+  height: 100px;
+  margin-top: -15px;
+}
+.hexr:nth-child(even) {
+  margin-left: 53px;
+/*  width: 220px;*/
+}
+.hexagon {
+  background: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  font-size: 36px;
+  height: 55px;
+  margin: 0 5px 0 0;
+  position: relative;
+	width: 100px;
+}
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid black;
+}
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid black;
+/*	z-index: 0;*/
+}
+.hexagon span {
+  display: block;
+  height: 100%;
+  padding-top: 8px;
+  text-align: center;
+  width: 100%;
+}
+.hexagon span::before {
+  content: attr(title);
+  background: #00878F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  font: 14px 'Ubuntu Mono', monospace;
+  opacity: 0;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  text-transform: uppercase;
+  transition: 0.1s all ease-in-out;
+  width: 100%;
+}
+.hexagon:hover span::before {
+  opacity: 1;
+  top: 5px;
+  transition: 0.1s all ease-in-out;
+	background-image: url(/src/assets/ArduinoNeechiFeeder/Neechi-hanging-closeup-IMG_5184.jpeg)
+}
