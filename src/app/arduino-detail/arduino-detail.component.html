@@ -82,7 +82,8 @@
 	I believe that the images are not only informative but sometimes provide for beautiful photography and imagery. Please take a closer look by clicking/tapping on any photo. You may use the left and right arrow keys to browse.
 	<br>
 	<br>
-	<div class="container">
+<!--	<div class="container">-->
+		<div class="">
 		<div class="row" style="text-align: center">
 <!--
 			<div class="col card arduino-images" style="display: inline">
@@ -94,7 +95,7 @@
 				</div>
 			</div>
 -->
-			<div class="" (click)="ViewHiRes(i)" class="col card arduino-images" *ngFor="let image of arduino.moreImagesPath; let i = index" style="display: inline">
+			<div id="arduinoImages" class="" (click)="ViewHiRes(i)" class="col card arduino-images no-border" *ngFor="let image of arduino.moreImagesPath; let i = index" style="display: inline">
 				<div id="card-content">
 	<!--				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>-->
 					<div><button class="btn-primary close-button" *ngIf="show && selectedIdx === i">Close</button></div>
