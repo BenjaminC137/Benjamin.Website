@@ -151,6 +151,11 @@ a not(tabindex){
 #card-content{
 	box-sizing: content-box;
 }
+.floatRight40{
+	display: inline-block;
+	width: 65vw;
+	float: right;
+}
 .arduino-images{
 	min-width: 14rem;
 	padding: 0px;
@@ -682,6 +687,7 @@ h5{
 .limitText {
     display:flow-root; text-overflow:ellipsis; white-space:nowrap; overflow: hidden;
 }
+
 .navbar{
 /*	padding: 3px 5px;*/
 }
@@ -738,6 +744,14 @@ p{
 }
 .p-gray{
 	color: dimgray;
+}
+.pdfButtons:disabled{
+	background-color: white;
+	color: #E47128;
+}
+.pdfButtons{
+	background-color: #E47128;
+	color: white;
 }
 #photographyTitleImage{
 	background-image: url("assets/Photography/Canadian_murals-50percent-IMG_9447.png");
@@ -856,7 +870,8 @@ p{
 	display: inline-block;
 }
 #professionalDescription{
-/*	display: inline;*/
+	display: inline-block;
+	width: 42vw;
 /*	float: right;*/
 }
 .sticky-nav{
@@ -966,6 +981,16 @@ td{
 	padding-right: auto;
 */
 
+}
+#websiteScreenshot{
+	font-size: 1.5em;
+	text-shadow: 1px 1px 10px black;
+	background-color: rgba(0,0,0,.5);
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin-top: 1em;
+	border: solid 2px white;
 }
 .width-100{
 /*
@@ -1159,6 +1184,10 @@ td{
 		max-width: 100%;
 		min-width: calc(100% - 50px);
 	}
+	#myFaceThumbnail{
+		padding-top: 4em;
+	}
+
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1234,6 +1263,11 @@ td{
 	}
 	#arduinoComponentTitle{
 		font-size: 5vw;
+	}
+	#professionalDescription{
+		display: inline-block;
+		width: 90vw;
+	/*	float: right;*/
 	}
 }
 /* Medium devices (tablets, 768px and up)*/

@@ -1,5 +1,23 @@
 <div id="professionalDiv" class="clearfix box2">
-		<div id="skillsData" class="info-panel firstDiv2 panel-mobile">
+	<span id="professionalDescription">
+		<h6 style="text-align: right; font-size: 2em; padding-top: .5em;">I am a</h6>
+		<span id="homeProjectsTitle">
+			<span style="color: #00878F">Front</span><span>-End </span><span style="color: #E47128">Developer</span>
+		</span>
+		<p class="p-gray">
+			proficient in HTML5, CSS3, JavaScript, jQuery and Bootstrap. I also have eperience designing responsive web-apps in Angular 6 including this site.
+			<br>
+			<br>
+			Over the last 5 years, I've been researching and taking online classes on Arduino (based on C/C++). Working with the Arduino prototyping platform has been my passion. You can view some of my favorite projects on this site. I've designed, coded and physically built electronics and machines. <a href="mailto:benjaminsalasek@icloud.com" class="a2">Ask me</a> about this if you're intrigued!
+			<br>
+			<br>
+			In the summer of 2018, I enrolled in and completed a twelve week intensive full time coding course in downtown Chicago, called Coding Temple, focusing on designing .Net Core web applications and related technologies. My website, Interdimensional Things (below) is my E-Commerce .Net Core C# MVC app created for my final project in Coding Temple.
+			<br>
+			<br>
+			Here, you will find a portfolio of projects that I've created. Apart from that, I have skills such as Graphic Design with Photoshop, Woodworking and becoming the Office Foosball Champion.
+		</p>
+	</span>
+	<div id="skillsData" class="info-panel firstDiv2 panel-mobile">
 		<h5>Skills</h5>
 		<div class="p-yellow" style="padding: 5px">
 			<table>
@@ -27,31 +45,6 @@
 			</table>
 		</div>
 	</div>
-	<span id="professionalDescription">
-		<br>
-		<h6 style="text-align: right; font-size: 2em">I am a</h6>
-		<span id="homeProjectsTitle">
-			<span style="color: #00878F">Front</span><span>-End </span><span style="color: #E47128">Developer</span>
-		</span>
-		<p class="p-gray">
-			proficient in HTML5, CSS3, JavaScript, jQuery and Bootstrap. I also have eperience designing responsive web-apps in Angular 6 including this site.
-			<br>
-			<br>
-			Over the last 5 years, I've been researching and taking online classes on Arduino (based on C/C++). Working with the Arduino prototyping platform has been my passion. You can view some of my favorite projects on this site. I've designed, coded and physically built electronics and machines. <a href="mailto:benjaminsalasek@icloud.com" class="a2">Ask me</a> about this if you're intrigued!
-			<br>
-			<br>
-			In the summer of 2018, I enrolled in and completed a twelve week intensive full time coding course in downtown Chicago, called Coding Temple, focusing on designing .Net Core web applications and related technologies. My website, Interdimensional Things (below) is my E-Commerce .Net Core C# MVC app created for my final project in Coding Temple.
-			<br>
-			<br>
-			Here, you will find a portfolio of projects that I've created. Apart from that, I have skills such as Graphic Design with Photoshop, Woodworking and becoming the Office Foosball Champion.
-		</p>
-	</span>
-
-<!--
-	<div id="profilePictureDiv">
-		<img src="assets/BenjaminSalasekProfilePicOrane.png">
-	</div>
--->
 </div>
 
 <!--
@@ -113,25 +106,24 @@
 				<a routerLink="/home" style="text-shadow: 1px 1px 10px black; font-size: 1.5em">Go to Home Page</a>
 			</div>
 			<div class="">
-				<a class="cursor-finger" href="assets/benjamindotwebsiteScreenShot20190214small.png" style="font-size: 1.5em; text-shadow: 1px 1px 10px black; background-color: rgba(0,0,0,.5); display: block; text-align: center;width: 100%"><img class="arduino-small-square shadow-box" src="assets/benjamindotwebsiteScreenShot20190214small.png"><br>Screenshot</a>
+				<a id="websiteScreenshot" class="cursor-finger" href="assets/benjamindotwebsiteScreenShot20190214small.png"><img class="arduino-small-square shadow-box" src="assets/benjamindotwebsiteScreenShot20190214small.png"><br>Screenshot</a>
 			</div>
 		</div>
 	</div>
 
 <div id="arduino-home-div" class="clearfix">
-<!--	<div class="box" style="white-space: pre-line">-->
-				<div class="" style="float: left">
-				<a class="cursor-finger a2" href="assets/ArduinomyFace/myFace-key_photo-IMG_6979.jpeg"><img class="arduino-small-square shadow-box" src="assets/ArduinomyFace/myFace-key_photo-IMG_6979.jpeg"><br>Screenshot</a>
+		<div class="floatRight40">
+			<h3 class="cursor-finger" routerLink="/arduino">Arduino <img src="assets/2000px-Arduino_Logo.svg.png" style="width: 2em"></h3>
+			Please check out my beloved Arduino projects! One of my passions is the Arduino prototyping platform. There are lots of cool things here. If you have not already browsed, definitely check it out!
+			<br>
+			<div style="text-align: right">
+				<a class="a2" style="font-size: 1.5em" routerLink="/arduino">Go to Arduino Projects</a>
 			</div>
-		<div class="row">
-			<div class="col">
-				<h3 class="cursor-finger" routerLink="/arduino">Arduino <img src="assets/2000px-Arduino_Logo.svg.png" style="width: 2em"></h3>
-				Please check out my beloved Arduino projects! One of my passions is the Arduino prototyping platform. There are lots of cool things here. If you have not already browsed, definitely check it out!
-				<br>
-				<br>
-			<a class="a2" style="font-size: 1.5em" routerLink="/arduino">Go to Arduino Projects</a>
-			</div>
+
 		</div>
+			<div id="myFaceThumbnail" class="" style="float: left; width: 25vw;">
+				<a class="cursor-finger a2" routerLink="/arduino"><img class="shadow-box" src="assets/ArduinomyFace/myFace-key_photo-IMG_6979.jpeg"></a>
+			</div>
 <!--	</div>-->
 </div>
 	<div class="box texture-stripes" style="white-space: pre-line; background-color: beige">
@@ -150,8 +142,8 @@
 				<br>
 				<a class="p-gray" style="font-size: 1.5em" href="https://benjaminc137.github.io/JavaScript_play/">Play Slider Banana© (beta)</a>
 			</div>
-			<div class="">
-				<a class="cursor-finger p-gray" href="assets/SliderBananaScreenshot20190214%20small%20IMG_9741.png"><img class="arduino-small-square shadow-box" src="assets/SliderBananaScreenshot20190214%20small%20IMG_9741.png"><br>Screenshot</a>
+			<div class="" style="border: solid black 3vh; border-radius: 10px">
+				<a class="cursor-finger p-gray" href="https://benjaminc137.github.io/JavaScript_play/"><img class="arduino-small-square shadow-box" src="assets/SliderBananaScreenshot20190214%20small%20IMG_9741.png"></a>
 			</div>
 		</div>
 	</div>
@@ -189,13 +181,14 @@
 		</div>
 	</div>
 -->
+<div class="box" style="text-align: center">
+	<div *ngIf="isLoaded" style="text-align: right;">
+			<h3 style="color: white">Resume</h3>
 
-<h3>Resume</h3>
-<div class="box">
-	<a href='assets/Benjamin%20Salasek%20Resume.pdf' download>Download</a>
-	<div *ngIf="isLoaded" style="text-align: center;">
-	  <button class="btn-primary" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
-	  <button class="btn-primary" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
+			<a href='assets/Benjamin%20Salasek%20Resume.pdf' download style="float: left">Download</a>
+
+	  <button class="btn-primary pdfButtons" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
+	  <button class="btn-primary pdfButtons" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
 	</div>
 	<pdf-viewer src="assets/Benjamin%20Salasek%20Resume.pdf"
 				[show-all]="false"
@@ -205,9 +198,9 @@
 				[original-size]="false"
 				[autoresize]="true">
 	</pdf-viewer>
-	<div *ngIf="isLoaded" style="text-align: center;">
-	  <button class="btn-primary" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
-	  <button class="btn-primary" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
+	<div *ngIf="isLoaded" style="text-align: center;margin-top: -10px">
+	  <button class="btn-primary pdfButtons" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
+	  <button class="btn-primary pdfButtons" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
 	</div>
 		<a href='assets/Benjamin%20Salasek%20Resume.pdf' download>Download</a>
 
