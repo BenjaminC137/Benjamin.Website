@@ -136,6 +136,12 @@ a:active{
 	width: 70px;
 	float: left;
 }
+/*
+#arduinoLogo1{ doesn't work! Why?
+	width: 150px;
+	padding: 20px;
+}
+*/
 .arduino-logo-details{
 	display: inline;
 	width: 70px;
@@ -157,7 +163,9 @@ a:active{
 }
 #arduinoUno{
 	width: 400px;
-	padding-bottom: 125px;
+/*	padding-bottom: 125px;*/
+	position: relative;
+	bottom: 75px;
 }
 #astoundingText{
 	float: right;
@@ -202,7 +210,6 @@ body{
 }
 .box2{
 	display: block;
-/*	box-sizing: border-box;*/
 	background-image: linear-gradient(to right, rgb(225,225,225) , white);
 	color: dimgray;
 	padding: 20px;
@@ -226,7 +233,6 @@ body{
 .boxBack{
 	background-color: black;
 }
-
 .btn{
 	color: rgb(229, 173, 36);
 	background: none;
@@ -275,7 +281,6 @@ cursor: pointer;
 .button-spacing{
 	margin-bottom: inherit;
 }
-
 .card{
 /*	filter: blur(1px) sepia(1) hue-rotate(125deg) saturate(.75);	*/
 /*	padding: 0px;*/
@@ -342,7 +347,6 @@ cursor: pointer;
 .carousel-item{
 	transition: transform 8s linear, opacity 8s ease-out;
 }
-
 .clearfix{
 	overflow: auto;
 }
@@ -545,7 +549,10 @@ h5{
 	border-radius: 15px;
 	border-width: 20px;
 	background: white;
-	box-shadow: 2px 2px 2px black;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+.inline-block{
+	display: inline-block;
 }
 #introArduinoImage{
 	padding-bottom: 15px;
@@ -674,8 +681,8 @@ p{
 	background-size: cover;
 }
 .pngShadow{
-	-webkit-filter: drop-shadow(5px 15px 2px black);
-    filter: drop-shadow(5px 15px 2px black);
+	-webkit-filter: drop-shadow(5px 5px 2px black);
+    filter: drop-shadow(5px 5px 2px black);
 }
 #photographyTitle{
 /*
@@ -693,7 +700,8 @@ p{
 }
 #profilePictureDiv{
 	display: inline-block;
-/*	box-shadow: -10px 5px 5px black, 10px 15px 5px black;*/
+/*	text-align: center;*/
+/*	background-image: linear-gradient(to right, gray, white);*/
 }
 .project{
 	background-color: rgba(236, 241, 241, .2);
@@ -736,6 +744,15 @@ p{
 }
 .shadow2{
 /*	box-shadow: -30px 15px 0px black, 50px 15px 100px black;*/
+}
+.shrinkH4{
+	padding-left: 25px;
+	padding-top: 25px;
+}
+.shrink-img-1{
+	width: 150px;
+	padding-top: 20px;
+	padding-right: 20px;
 }
 #skillsData{
 	float: left;
@@ -790,6 +807,14 @@ td{
     border-width: 3px 3px;
 	margin: 27px 0px;
 
+}
+.threeColorTitle{
+	display: block;
+	padding: 5px 25px;
+	background-color: rgba(255,255,255,.8);
+	font-size: 4.3vw;
+	color: dimgray;
+	font-weight: bolder;
 }
 .texture-stripes{
 	/*	background-color: beige;*/
@@ -854,14 +879,24 @@ td{
 	margin: 0vh 1vw;
 }
 #whatsArduinoDiv{
+/*
 	background-image:
 		linear-gradient(
           rgba(0, 0, 0, 0.5),
           rgba(0, 0, 0, 0.5)
         ),
 		url(assets/resistors.jpeg);
-/*	background-color: black;*/
-	background-blend-mode: color-burn;
+*/
+
+	background-image:
+		linear-gradient( to left,
+          rgba(255, 255, 255, 0.9),
+          rgba(255, 255, 255, 0.1)
+        ),
+		url(assets/ArduinoGeneral/simpleArduino.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: hard-light;
 	text-align: right;
 }
 #yellowComponents{
@@ -970,6 +1005,20 @@ td{
 		max-width: 100%;
 		min-width: calc(100% - 50px);
 	}
+	.shrinkH4{
+		font-size: .9em;
+		margin: 10px 5px;
+		padding-left: 5px;
+		padding-top: 5px;
+	}
+	.shrink-img-1{
+		width: 75px;
+		padding: 5px;
+	}
+	.threeColorTitle{
+		padding: 5px 10px;
+		font-size: 3.5vw;
+	}
 	.view-hi-res{
 /*	top: 40vw;*/
 	}
@@ -1031,6 +1080,7 @@ td{
 	#arduinoUno{
 		width: 100%;
 		padding-bottom: 25px;
+		bottom: 0px;
 	}
 	#homeProjectsTitle{
 		display: block;
@@ -1050,6 +1100,10 @@ td{
 		display: inline-block;
 		width: 90vw;
 	/*	float: right;*/
+	}
+	.shrink-img-1{
+		width: 100px;
+		padding: 5px;
 	}
 	.thing-button{
 		font-size: .75em;
