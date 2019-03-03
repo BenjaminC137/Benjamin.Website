@@ -849,6 +849,15 @@ td{
 	-webkit-transition: background-color 500ms;
 */
 }
+/*
+#viewHiResImage{
+	transition: background-color 500ms;
+	-webkit-transition: background-color 500ms;
+}
+*/
+.hardFade{
+	background-image: linear-gradient(to right, rgb(225,225,225),white,white,white)
+}
 .view-hi-caption{
 	position: fixed;
 	right: 0;

@@ -1,10 +1,10 @@
 <div class="back-button"><button class="btn-primary back-button" (click)="goBack()">Back</button></div>
 <div class="project">
-	<div class="box2 clearfix" style="white-space: pre-line">
+	<div class="box2 clearfix hardFade" style="white-space: pre-line;">
 
 		<h3>{{arduino.title | uppercase}} <img class="arduino-logo-details" src="assets/2000px-Arduino_Logo.svg.png"></h3>
 		<div id="introArduinoImage">
-			<a class="cursor-finger" (click)="scroll(photos)"><img class="arduino-small-square shadow-box" src="{{arduino.moreImagesPath[0]}}" ></a>
+			<a class="cursor-finger" (click)="scroll(photos)"><img class="arduino-small-square" style="padding: 5px" src="{{arduino.moreImagesPath[0]}}" ></a>
 		</div>
 		<div id="arduino-description">{{arduino.description}}</div>
 		<br>
@@ -80,7 +80,7 @@
 				<div id="card-content" style="box-sizing: content-box">
 	<!--				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>-->
 					<div><button class="btn-primary close-button" *ngIf="show && selectedIdx === i">Close</button></div>
-					<img  [class.view-hi-res]="selectedIdx === i" src={{image}}>
+					<img id="viewHiResImage" [class.view-hi-res]="selectedIdx === i" src={{image}}>
 					<div class="hidden-div" >
 						<p class="caption" style=""><span>{{arduino.imageCaption[i]}}</span></p>
 					</div>
