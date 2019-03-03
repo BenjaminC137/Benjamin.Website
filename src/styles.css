@@ -13,22 +13,6 @@ https://www.beautycolorcode.com/00878f
 #8f5000
 */
 
-
-/*
-h1 {
-	font-family: "Open Sans"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
-h3 {
-	font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
-p {
-	font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; }
-blockquote {
-	font-family: "Open Sans"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; }
-pre {
-	font-family: "Open Sans"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
-*/
-
-
-
 :focus{
 	outline-color: #b2dbdd;
 		outline-width: 3px;
@@ -37,9 +21,6 @@ pre {
 	border-color: aqua;
 	background-color: blueviolet;
 */
-}
-button:active{
-	background-color: #b2dbdd !important;
 }
 a{
     text-decoration: none;
@@ -56,23 +37,10 @@ a:active{
 	color: #b2dbdd !important;
 
 }
-/*
-a:disabled btn-primary{
-	background-color: black;
-}
-a not(tabindex){
-	background-color: black !important;
-}
-*/
 .a2{
 	text-decoration: none;
     color: #00878F;
 }
-/*
-.a2:hover{
-
-}
-*/
 .alert{
 	font-size: 8 px;
 	background-color: rgb(183, 48, 40);
@@ -81,9 +49,8 @@ a not(tabindex){
 	padding: 1px;
 	text-align: center;
 }
-.arduinoCarousel{
-	max-width: 50%;
-	height: 10%;
+.arduino-card-hover:hover{
+	cursor: pointer;
 }
 .arduino-cards{
 	min-width: 14rem;
@@ -103,6 +70,10 @@ a not(tabindex){
 	object-fit: cover;
 	border-radius: 25px;
 	padding: 5px;
+}
+.arduinoCarousel{
+	max-width: 50%;
+	height: 10%;
 }
 #arduinoCommunity{
 	width: 50vw;
@@ -127,36 +98,12 @@ a not(tabindex){
 	font-weight: bolder;
 /*	text-overflow: ellipsis;*/
 }
-#arduinoUno{
-	width: 400px;
-	padding-bottom: 125px;
-}
-.pngShadow{
-	-webkit-filter: drop-shadow(5px 15px 2px black);
-    filter: drop-shadow(5px 15px 2px black);
-}
-.clearfix{
-	overflow: auto;
-}
-/*
-#arduino-description{
-	margin-right: 5px;
-}
-*/
 #arduinoDetailInfo{
 	min-width: 50vw;
 }
 #arduino-home-div{
 	color: dimgray;
 	padding: 15px;
-}
-#card-content{
-	box-sizing: content-box;
-}
-.floatRight40{
-	display: inline-block;
-	width: 65vw;
-	float: right;
 }
 .arduino-images{
 	min-width: 14rem;
@@ -184,9 +131,6 @@ a not(tabindex){
 		box-shadow 2s;
 	-webkit-transition: padding 500ms ease-in-out, margin 500ms ease-in-out, background-size 10s ease-in-out, box-shadow 2s;
 }
-.no-border{
-	border: 0px;
-}
 .arduino-logo{
 	display: inline;
 	width: 70px;
@@ -201,9 +145,6 @@ a not(tabindex){
 	top:-5px;
 /*	margin-bottom: 2px;*/
 }
-.arduino-card-hover:hover{
-	cursor: pointer;
-}
 #arduino-projects{
 	background-image: url(/assets/coding%20background%20reduced%201920.png);
 }
@@ -214,15 +155,15 @@ a not(tabindex){
 /*	border-radius: 10px;*/
 	float: right;
 }
+#arduinoUno{
+	width: 400px;
+	padding-bottom: 125px;
+}
 #astoundingText{
 	float: right;
 	padding: 5px;
 	margin-top: 3em;
 }
-#introArduinoImage{
-	padding-bottom: 15px;
-}
-
 .back-button{
 	position: fixed;
 	top: 63px;
@@ -238,46 +179,6 @@ a not(tabindex){
 /*	padding: 0px;*/
 	text-align: right;
 /*	margin: 0px;*/
-}
-#professionalDiv{
-/*	text-align: right;*/
-/*	background-color: black;*/
-	padding: 15px;
-}
-#whatsArduinoDiv{
-	background-image:
-		linear-gradient(
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.5)
-        ),
-		url(assets/resistors.jpeg);
-/*	background-color: black;*/
-	background-blend-mode: color-burn;
-	text-align: right;
-}
-.firstDiv{
-	display: inline-block;
-	max-width: calc(100% - 502px);
-	min-width: 250px;
-	text-align: left;
-	padding: 20px;
-	margin: 25px;
-}
-.firstDiv2{
-	display: inline-block;
-	max-width: calc(100% - 410px);
-	min-width: 250px;
-	text-align: left;
-	padding: 20px;
-	margin: 25px;
-}
-.info-panel{
-	border-style: solid;
-	border-color: #00878F;
-	border-radius: 15px;
-	border-width: 20px;
-	background: white;
-	box-shadow: 2px 2px 2px black;
 }
 body{
 	background-color: #fff;
@@ -325,28 +226,7 @@ body{
 .boxBack{
 	background-color: black;
 }
-.button:hover:{
-cursor: pointer;
-}
-.button-spacing{
-	margin-bottom: inherit;
-}
-.btn-primary {
-	background-color: white;
-	color: #E47128;
-	font-size: 20px;
-	padding: 5px;
-	margin: 0px;
-	border: none;
-	font-weight:800;
-}
-.btn-primary:active {
-	background-color: black;
-}
-.btn-primary:disabled {
-	background-color: rgba(98,174,178, .4);
 
-}
 .btn{
 	color: rgb(229, 173, 36);
 	background: none;
@@ -358,35 +238,44 @@ cursor: pointer;
 .btn:hover{
 	color: rgb(229, 173, 36);
 }
+.btn-primary {
+	background-color: white;
+	color: #E47128;
+	font-size: 20px;
+	padding: 5px;
+	margin: 0px;
+	border: none;
+	font-weight:800;
+}
+.btn-primary:active {
+/*	background-color: black;*/
+	background-color: #b2dbdd;
+}
+.btn-primary:disabled {
+	background-color: rgba(98,174,178, .4);
+
+}
 .btn-primary:focus{
 	outline-color: #62AEB2;
-		outline-width: 3px;
+	outline-width: 3px;
 }
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
 	color: white;
 	background-color: #00878F;
 	cursor: pointer;
 }
-.btn-primary:active{
-	background-color: #b2dbdd;
+
+button:active{
+	background-color: #b2dbdd !important;
 }
-.btn-primary:focus{
-	outline-width: 3px;
-/*	outline-color: rgb(229, 173, 36);*/
+.button:hover:{
+cursor: pointer;
 }
-.carousel-image{
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
+.button-spacing{
+	margin-bottom: inherit;
 }
-.carousel-div{
-	width: 400px;
-	height: 400px;
-	display: inline-block;
-}
-.carousel-item{
-	transition: transform 8s linear, opacity 8s ease-out;
-}
+
 .card{
 /*	filter: blur(1px) sepia(1) hue-rotate(125deg) saturate(.75);	*/
 /*	padding: 0px;*/
@@ -406,19 +295,11 @@ cursor: pointer;
 	-webkit-transition: 250ms;
 */
 }
-.card:hover{
-/*
-	background-size: 500px;
-	transition: background-size 2s ease;
-*/
-/*	filter: blur(0px) sepia(0) hue-rotate(0deg) saturate(1);*/
-}
 .card-body{
 	padding: 0px;
-/*
-	background-image: url(assets/PortalVectorLight.svg);
-	background-size: 500px;
-*/
+}
+#card-content{
+	box-sizing: content-box;
 }
 .card-footer{
 	padding: 0px;
@@ -445,8 +326,25 @@ cursor: pointer;
 .card-title{
 	padding: 7px;
 }
+.carousel-div{
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+}
+.carousel-image{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
 .carousel-indicators{
 	margin-bottom: 0px;
+}
+.carousel-item{
+	transition: transform 8s linear, opacity 8s ease-out;
+}
+
+.clearfix{
+	overflow: auto;
 }
 .close-button{
 	position: fixed;
@@ -475,9 +373,6 @@ cursor: pointer;
 }
 #contactAndProfiles  tr  td{
 	padding: 2px 5px;
-}
-table {
-  border-collapse: collapse;
 }
 #contactAndProfiles td {
   border-left: 1px solid lightgray;
@@ -510,9 +405,6 @@ table {
 .custom-toggler.navbar-toggler {
     border-color: #00878F;
 }
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
 .container{
 /*	padding-right: 500px;*/
 }
@@ -536,14 +428,6 @@ table {
 	width: 100%;
 
 }
-/*
-.div-footer span{
-	position: absolute;
-	bottom: 0;
-   	right: 0;
-}
-*/
-
 div img{
     width: 100%;
     height: auto;
@@ -555,6 +439,22 @@ footer{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+.firstDiv{
+	display: inline-block;
+	max-width: calc(100% - 502px);
+	min-width: 250px;
+	text-align: left;
+	padding: 20px;
+	margin: 25px;
+}
+.firstDiv2{
+	display: inline-block;
+	max-width: calc(100% - 410px);
+	min-width: 250px;
+	text-align: left;
+	padding: 20px;
+	margin: 25px;
+}
 .form-control{
 /*
 	border: none;
@@ -562,6 +462,11 @@ footer{
 	padding: 7px;
 	border-radius: 0px;
 */
+}
+.floatRight40{
+	display: inline-block;
+	width: 65vw;
+	float: right;
 }
 html{
     background-color: dimgray;
@@ -634,6 +539,17 @@ h5{
 	text-align: center;
 	float: left;
 }
+.info-panel{
+	border-style: solid;
+	border-color: #00878F;
+	border-radius: 15px;
+	border-width: 20px;
+	background: white;
+	box-shadow: 2px 2px 2px black;
+}
+#introArduinoImage{
+	padding-bottom: 15px;
+}
 .img-scale{
 	max-width: 50vw;
     max-height: 50vh;
@@ -675,24 +591,9 @@ h5{
 	width: 35vw;
 	box-shadow: 5px 5px 25px rgba(0,0,0,.1);
 }
-/*
-.image-lock{
-	height: inherit; width: auto;
-	align-content: center;
-	align-items:center;
-}
-.image-lock-80{
-	display: inline-block;
-	align-content: center;
-	align-items:center;
-	max-width: 80vw;
-	text-align: center;
-}
-*/
 .limitText {
     display:flow-root; text-overflow:ellipsis; white-space:nowrap; overflow: hidden;
 }
-
 .navbar{
 /*	padding: 3px 5px;*/
 }
@@ -700,6 +601,9 @@ h5{
 	color: white;
 	background-color: #00878F;
 	box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+}
+.no-border{
+	border: 0px;
 }
 .navColors a:hover{
 	color: #b2dbdd !important;
@@ -717,6 +621,9 @@ h5{
 }
 .navbar-nav{
 	padding-left: 45px
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .nav-z{
 	z-index: 49;
@@ -750,6 +657,9 @@ p{
 .p-gray{
 	color: dimgray;
 }
+#professionalDiv{
+	padding: 15px;
+}
 .pdfButtons:disabled{
 	background-color: white;
 	color: #E47128;
@@ -762,6 +672,10 @@ p{
 	background-image: url("assets/Photography/Canadian_murals-50percent-IMG_9447.png");
 	height: 50vh;
 	background-size: cover;
+}
+.pngShadow{
+	-webkit-filter: drop-shadow(5px 15px 2px black);
+    filter: drop-shadow(5px 15px 2px black);
 }
 #photographyTitle{
 /*
@@ -781,7 +695,6 @@ p{
 	display: inline-block;
 /*	box-shadow: -10px 5px 5px black, 10px 15px 5px black;*/
 }
-
 .project{
 	background-color: rgba(236, 241, 241, .2);
 	box-shadow: 2px 2px 10px rgba(0,0,0, .1);
@@ -796,8 +709,6 @@ p{
 	filter: sepia(0) hue-rotate(0deg) saturate(1);
 
 }
-#projectInterdimensional{
-}
 .projectInterdimensional{
 	background-color: rgb(195, 228, 237);
 	background-image: url(/assets/PortalBenjaminDark%20old.png);
@@ -807,55 +718,10 @@ p{
 .projectInterdimensionalBox{
 
 }
-.thing-button{
-	background-color: rgb(137, 6, 58);
-	color: rgb(195, 228, 239);
-	padding: 5px;
-	border-radius: 5px;
-	font-size: 1.5em;
-}
-.thing-card{
-    margin: 5px 0px;
-    padding: 5px;
-    display: inline-block;
-    border-radius: 2px;
-    border-width: 25px 3px;
-    border-style: solid;
-    background-color: rgba(195, 228, 239, .9);
-/*    width: 225px;*/
-    color: rgb(56,62, 77);
-    text-align: end;
-
-	transition-duration: 500ms;
-	transition-timing-function: ease-in-out;
-/*
-    animation-name: hovershadowreverse;
-    animation-duration: .2s;
-    animation-iteration-count: 1;
-    animation-direction:normal;
-    animation-timing-function: ease-in-out;
-*/
-
-    box-shadow:none;
-
-}
-.thing-card:hover{
-    border-width: 3px 3px;
-	margin: 27px 0px;
-
-}
-/*
-.professional-title{
+#professionalDescription{
 	display: inline-block;
-	box-sizing: border-box;
-	background-color: rgba(255,255,255, .7);
-	padding: 5px;
-	margin: 0px;
-	border-style: hidden;
-	border-radius: 2px;
-	text-shadow: 2px 2px 10px rgba(0,0,0, .04);
+	width: 42vw;
 }
-*/
 .removePadding{
 	padding: 0;
 }
@@ -875,11 +741,6 @@ p{
 	float: left;
 	display: inline-block;
 }
-#professionalDescription{
-	display: inline-block;
-	width: 42vw;
-/*	float: right;*/
-}
 .sticky-nav{
 	position: sticky;
 	top: 10px;
@@ -889,6 +750,9 @@ p{
 	position: sticky;
 	top: 10px;
 	z-index: 51;
+}
+table {
+  border-collapse: collapse;
 }
 table, th, td {
 /*  border: 1px solid black;*/
@@ -900,6 +764,33 @@ th{
 td{
 	padding: 2px 5vw;
 }
+.thing-button{
+	background-color: rgb(137, 6, 58);
+	color: rgb(195, 228, 239);
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 1.5em;
+}
+.thing-card{
+    margin: 5px 0px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 2px;
+    border-width: 25px 3px;
+    border-style: solid;
+    background-color: rgba(195, 228, 239, .9);
+    color: rgb(56,62, 77);
+    text-align: end;
+
+	transition-duration: 500ms;
+	transition-timing-function: ease-in-out;
+    box-shadow:none;
+}
+.thing-card:hover{
+    border-width: 3px 3px;
+	margin: 27px 0px;
+
+}
 .texture-stripes{
 	/*	background-color: beige;*/
 	background-image: linear-gradient(98deg, rgba(255,255,255,.07) 50%, transparent 50%),
@@ -908,49 +799,6 @@ td{
 	linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
 	background-size: 13px, 29px, 37px, 53px;
 }
-/*
-.top{
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	border-style: hidden;
-	background-color: rgb(0, 135, 143);
-	border-radius: 22px;
-	font-size: 30px;
-	padding: 11px;
-	z-index: 20;
-}
-*/
-/*
-.top:hover{
-	color: #E47128;
-}
-#topButton{
-	position: fixed;
-	bottom: 5px;
-	right: 5px;
-}
-*/
-
-
-/*
-.resume{
-	display: inline-block;
-	width: 55vw;
-	height: 60vh;
-	border-style: hidden;
-	border-radius: 20px;
-	background-color: rgba(255,255,255, .5);
-	padding: 5px;
-	margin: 5px;
-	padding-bottom: 90px;
-}
-*/
-/*
-.user-card .header{
-	background-image: url(https://cdn-images-1.medium.com/max/2000/1*19LWzzJJDPqGq67Vyd0EjQ.jpeg);
-}
-*/
 .view-hi-res{
 	position: fixed;
 	top: 0px;
@@ -1005,58 +853,53 @@ td{
 */
 	margin: 0vh 1vw;
 }
+#whatsArduinoDiv{
+	background-image:
+		linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+		url(assets/resistors.jpeg);
+/*	background-color: black;*/
+	background-blend-mode: color-burn;
+	text-align: right;
+}
 #yellowComponents{
 	margin-bottom: 0px;
 }
-/*
-.rounded-image{
-	border-style: hidden;
-	border-radius: 0px;
-}
-*/
 
-@include media-breakpoint-up(sm) {
-
-}
-@include media-breakpoint-up(md) {
-
-}
-@include media-breakpoint-up(lg) {
-}
-@include media-breakpoint-up(xl) {
-}
-@media (min-width: 576px), screen and (orientation: portrait){
-
-/*
-	.top{
-		bottom: 10px;
-		right: 10px;
-		border-radius: 17px;
-		font-size: 20px;
-		padding: 7px;
-	}
-*/
-}
-
+/*iPhone 5 320*/
 @media (max-width: 320.98px){
-	body{
-/*		font-size: 8px;*/
+	h1, h2, h3, h4, h5, h6{
+		font-size: 1.3rem !important;
 	}
 	.navtitle{
 		font-size: 1.3rem;
 	}
-	h1, h2, h3, h4, h5, h6{
-		font-size: 1.3rem !important;
-	}
+}
+/* iPhone 6, 6s, 7, 8, X, Xs 375*/
+@media (max-width: 375.98px){
+}
+/* iPhone 6+, 6s+, 7+, 8+, XsMax 414*/
+@media (max-width: 414.98px){
 	#homeProjectsTitle{
 		font-size: 5vw;;
 	}
 }
-/*	 320.98px*/
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width:575.98px) {
-	#honeycomb{
-		width: 100vw;
+	.arduino-cards{
+		min-width: 14rem;
+		margin: 0px;
+		box-shadow: 2px 2px 5px rgba(0,0,0,.1);
+		max-width: 100%;
+	}
+	.arduino-cards-smallCover{
+		width: 33vw;
+		height: 33vw;
+	}
+	.arduino-cards-small{
+		width: 33vw;
 	}
 	.arduino-small-square{
 /*		height: 100%;*/
@@ -1065,19 +908,11 @@ td{
 		float: none;
 		width: 100%;
 	}
-/*
-	.arduino-images:hover {
-	padding: 15px;
-	margin: 5px;
-}
-*/
-/*
-.arduino-small-square{
-    height: 75px;
-	width: auto;
-	margin-right: 0px;
-}
-*/
+	#astoundingText{
+		float: right;
+		padding: 5px;
+		margin-top: 10px;
+	}
 	.back-button{
 /*		top: 52px;*/
 		top: inherit;
@@ -1087,11 +922,8 @@ td{
 	.button-spacing{
 		margin-bottom: 10px;
 	}
-	.close-button{
-/*		top: 52px;*/
-		top: inherit;
-		bottom: 0px;
-		height: 80px;
+	.card-deck{
+		flex: none;
 	}
 	.carousel-image{
 		width: 300px;
@@ -1103,81 +935,6 @@ td{
 		height: 300px;
 		display: inline-block;
 	}
-	#hide-carousel-one{
-		display: none;
-	}
-	#hide-carousel-two{
-		display: none;
-	}
-	h3{
-		font-size: 1.5em;
-	}
-	.image-big{
-		width: 100%;
-	}
-	.view-hi-res{
-/*	top: 40vw;*/
-	}
-	.view-hi-caption{
-		bottom: inherit;
-		top: 63px;
-	}
-	.arduino-cards{
-		min-width: 14rem;
-	/*	padding: 15px;*/
-		margin: 0px;
-		box-shadow: 2px 2px 5px rgba(0,0,0,.1);
-		max-width: 100%;
-	}
-	.arduino-images{
-/*
-		margin: 5px;
-		padding: 5px;
-*/
-/*
-		min-width: 14rem;
-		padding: 0px;
-		box-shadow: 2px 2px 5px rgba(0,0,0,.1);
-*/
-/*		max-width: calc(100% - 5px);*/
-/*
-		transition:none;
-		-webkit-transition: none;
-*/
-	}
-	.arduino-images:hover {
-/*
-		margin: 5px;
-		padding: 5px;
-*/
-		/*
-		transition: none;
-		-webkit-transition: none;
-*/
-	}
-	.width-100{
-		display: inline-block;
-		width: 100%;
-		margin: 5px 0px;
-	}
-	.arduino-cards-smallCover{
-		width: 33vw;
-		height: 33vw;
-	}
-	.arduino-cards-small{
-		width: 33vw;
-	}
-	#yellowComponents{
-		margin-bottom: 20px;
-	}
-	.card-deck{
-		flex: none;
-	}
-	#astoundingText{
-		float: right;
-		padding: 5px;
-		margin-top: 10px;
-	}
 	#contactAndProfiles{
 		width: 100%;
 	}
@@ -1186,29 +943,48 @@ td{
 		width: 25%;
 		visibility: hidden;
 	}
-	.panel-mobile2{
-		max-width: 100%;
-		min-width: calc(100% - 50px);
+	.close-button{
+		top: inherit;
+		bottom: 0px;
+		height: 80px;
 	}
-	#myFaceThumbnail{
-		padding-top: 4em;
+	h3{
+		font-size: 1.5em;
 	}
-
-}
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {
 	#hide-carousel-one{
 		display: none;
 	}
 	#hide-carousel-two{
 		display: none;
 	}
-/*
-	#arduinoUno{
-		width: 100%;
-		padding-bottom: 25px;
+	#honeycomb{
+		width: 100vw;
 	}
-*/
+	.image-big{
+		width: 100%;
+	}
+	#myFaceThumbnail{
+		padding-top: 4em;
+	}
+	.panel-mobile2{
+		max-width: 100%;
+		min-width: calc(100% - 50px);
+	}
+	.view-hi-res{
+/*	top: 40vw;*/
+	}
+	.view-hi-caption{
+		bottom: inherit;
+		top: 63px;
+	}
+	.width-100{
+		display: inline-block;
+		width: 100%;
+		margin: 5px 0px;
+	}
+	#yellowComponents{
+		margin-bottom: 20px;
+	}
 }
 @media (max-width: 767.98px) {
 	.image-big{
@@ -1279,49 +1055,32 @@ td{
 		font-size: .75em;
 	}
 }
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-/*
-	#hide-carousel-two{
+
+
+
+
+/*   ––––––––NOT CURRENTLY BEING USED––––––––   */
+/*carousel*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	#hide-carousel-one{
 		display: none;
 	}
-*/
 	#hide-carousel-two{
 		display: none;
 	}
 }
-
-/* Large devices (desktops, 992px and up)*/
+/*carousel*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#hide-carousel-two{
+		display: none;
+	}
+}
+/*carousel*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
 	#hide-carousel-two{
 		display: none;
 	}
 }
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }
-
-
-/*
-@keyframes hovershadowreverse {
-from {
-	border-width: 10px 1px;
-	}
-to {
-
-	border-width: 1px;
-	}
-}*/
-
-
-
-
-
-
-
-/**{ box-sizing: border-box; }*/
-/*html,body{ height: 100%; width: 100%; }*/
-/*body {background: #212121;}*/
 
 .hexbuttons {
   margin-top: 50px;
