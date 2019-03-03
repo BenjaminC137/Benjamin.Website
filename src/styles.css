@@ -281,6 +281,14 @@ cursor: pointer;
 .button-spacing{
 	margin-bottom: inherit;
 }
+.caption-arduino{
+	margin-bottom: 0px;
+	box-sizing: content-box;
+}
+.caption-arduino-sub{
+	color: dimgray;
+/*	background-color: black;*/
+}
 .card{
 /*	filter: blur(1px) sepia(1) hue-rotate(125deg) saturate(.75);	*/
 /*	padding: 0px;*/
@@ -318,7 +326,7 @@ cursor: pointer;
 	margin-bottom: 5px;
 	color: #00878F;
 	font-weight:bolder;
-/*	background-color: rgba(0,0,0,.5);*/
+	background-color: rgba(0,0,0,.5);
 	color: white;
 	border-radius: 2px;
 	padding: 3px;
@@ -850,6 +858,7 @@ td{
 	padding: 0px 5px;
 	margin-bottom: 0px;
 	width: 100vw;
+/*	background-color: black;*/
 
 /*
     margin-right: auto;

@@ -51,10 +51,6 @@
 		<div style="color: white" >
 			Here are the main components I used for the project. Obviously I haven't mentioned every
 		</div>
-
-
-
-<!--		<img id="arduinoCommunity" src="assets/ArduinoCommunityLogo.png">-->
 		<span id="arduinoComponentTitle">
 			<span style="color: #00878F" >Resistor, </span><span style="">PCB <span style="color: #00878F">or </span></span><span style="color: #E47128">Terminal Block</span>
 		</span>
@@ -62,21 +58,6 @@
 			but the relevant components are listed here. Here, you will also see the code libraries that I've implemented in order to allow some advanced hardware components to communicate with my software.
 		</p>
 	</div>
-
-
-
-
-
-<!--
-	<div class="box2" style="background-image: none; background-color: white">
-		<h4 class="p-gray">Code Libraries</h4>
-		These are the code libraries that I've implemented in order to allow some advanced hardware components to communicate with my software.
-		 <div #photos></div>
-		<ul>
-			<li *ngFor="let library of arduino.libraries">{{library}}</li>
-		</ul>
-	</div>
--->
 <div #photos class="box3">
 	<h4>Photos </h4>
 	I believe that the images are not only informative but sometimes provide for beautiful photography and imagery. Please take a closer look by clicking/tapping on any photo. You may use the left and right arrow keys to browse.
@@ -101,10 +82,10 @@
 					<div><button class="btn-primary close-button" *ngIf="show && selectedIdx === i">Close</button></div>
 					<img  [class.view-hi-res]="selectedIdx === i" src={{image}}>
 					<div class="hidden-div" >
-						<p style="margin-bottom: 0px; box-sizing: content-box"><span>{{arduino.imageCaption[i]}}</span></p>
+						<p class="caption" style=""><span>{{arduino.imageCaption[i]}}</span></p>
 					</div>
 					<div class="div-footer" [class.view-hi-caption]="selectedIdx === i">
-						<p style="margin-bottom: 0px; box-sizing: content-box" [class.no-background]="selectedIdx === i"><span [class.card-text]="selectedIdx === i">{{arduino.imageCaption[i]}}</span></p>
+						<p class="caption-arduino-sub" style="" [class.no-background]="selectedIdx === i"><span [class.card-text]="selectedIdx === i">{{arduino.imageCaption[i]}}</span></p>
 					</div>
 	<!--				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(i)">View hi-res</button></div>-->
 				</div>
