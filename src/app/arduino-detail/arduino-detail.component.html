@@ -93,9 +93,17 @@
 		</div>
 	</div>
 </div>
-	<div class="box">
-		<h4 #video >Video </h4>
+	<div #video class="box" style="background-image: linear-gradient(to right, #E47128,rgba(228, 113, 40,.9)">
 		I've recorded a quick video to show you my {{arduino.title}} in action.
+		<br>
+		<br>
+<!--		<div id="arduinoTitleImage" style="background-image: url({{arduino.moreImagesPath[0]}})">-->
+		<a [href]="goPlay">
+		<div id="arduinoVideoDiv" style="">
+			<img id="arduinoVideoImage" src="{{arduino.moreImagesPath[0]}}">
+			<div id="arduinoVideoTitle">Video Demo</div>
+		</div></a>
+
 		<br>
 		<br>
 		 <a *ngIf="arduino.id != 6" disabled class="btn-primary" [href]="goPlay">Play {{arduino.title}} Video</a>

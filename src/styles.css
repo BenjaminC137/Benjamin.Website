@@ -107,6 +107,7 @@ a:active{
 }
 .arduino-images{
 	min-width: 14rem;
+	max-width: 25vw;
 	padding: 0px;
 	margin: 15px;
 	box-shadow: 2px 2px 5px rgba(0,0,0,.1);
@@ -688,6 +689,27 @@ p{
 	height: 50vh;
 	background-size: cover;
 }
+#arduinoVideoDiv{
+/*	background-image: url("assets/Photography/Canadian_murals-50percent-IMG_9447.png");*/
+/*	background-image: url(assets/ArduinoCommunityLogo.png);*/
+	height: 50vw;
+/*	background-size: cover;*/
+	text-align: center;
+/*	display: inline-block;*/
+	position: relative;
+	width: 100%;
+	top: 0px;
+}
+#arduinoVideoImage{
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: inline-block;
+	border: solid 2vw black;
+	border-radius: 2vw;
+}
 .pngShadow{
 	-webkit-filter: drop-shadow(5px 5px 2px black);
     filter: drop-shadow(5px 5px 2px black);
@@ -705,6 +727,21 @@ p{
 	font-weight: bolder;
 	text-transform: uppercase;
 	mix-blend-mode:overlay;
+}
+#arduinoVideoTitle{
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	display: inline-block;
+	width: 100%;
+
+	font-size: 10vw;
+	color: #E47128;
+	text-shadow: 2px 2px 0px black, -1vw 0px 0px white, 0px -1vw 0px white, 0px 1vw 0px white, 1vw 0px 0px white, -2px 2px 0px white;
+/*	#00878F*/
+	font-weight: bolder;
+	text-transform: uppercase;
+/*	mix-blend-mode:luminosity;*/
 }
 #profilePictureDiv{
 	display: inline-block;
@@ -933,10 +970,16 @@ td{
 	#professionalDescription{
 		width: 48vw;
 	}
+	.arduino-images{
+		max-width: 50vw;
+	}
 }
 
 /*medium*/
 @media (max-width: 767.98px) {
+	.arduino-images{
+		max-width: none;
+	}
 	.image-big{
 		width: 100%;
 	}
@@ -1006,6 +1049,9 @@ td{
 	}
 	#professionalDescription{
 		width: 90vw;
+	}
+	#homeProjectsText{
+		width: 75vw;
 	}
 }
 
@@ -1105,7 +1151,7 @@ td{
 	}
 	.threeColorTitle{
 		padding: 5px 10px;
-		font-size: 3.5vw;
+		font-size: 4.3vw;
 	}
 	.view-hi-res{
 /*	top: 40vw;*/
@@ -1130,19 +1176,29 @@ td{
 /* iPhone 6+, 6s+, 7+, 8+, XsMax 414*/
 @media (max-width: 414.98px){
 	#homeProjectsTitle{
-		font-size: 5vw;;
+		font-size: 6.5vw;;
 	}
 }
 /* iPhone 6, 6s, 7, 8, X, Xs 375*/
 @media (max-width: 375.98px){
 }
-/*iPhone 5 320*/
+/*iPhone 5s 320*/
 @media (max-width: 320.98px){
 	h1, h2, h3, h4, h5, h6{
-		font-size: 1.3rem !important;
+		font-size: 1.3rem;
 	}
 	.navtitle{
 		font-size: 1.3rem;
+	}
+	.threeColorTitle{
+		padding: 5px 10px;
+		font-size: 3.8vw;
+	}
+	.navbar-brand{
+		font-size: 1rem;
+	}
+	.shrinkH4{
+		font-size: .8em;
 	}
 }
 
