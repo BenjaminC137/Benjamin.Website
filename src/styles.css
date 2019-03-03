@@ -903,24 +903,84 @@ td{
 	margin-bottom: 0px;
 }
 
-/*iPhone 5 320*/
-@media (max-width: 320.98px){
-	h1, h2, h3, h4, h5, h6{
-		font-size: 1.3rem !important;
+
+
+/*medium*/
+@media (max-width: 767.98px) {
+	.image-big{
+		width: 100%;
 	}
-	.navtitle{
-		font-size: 1.3rem;
+	#arduinoDetailInfo{
+/*		min-width: calc(100vw - 50px);*/
 	}
-}
-/* iPhone 6, 6s, 7, 8, X, Xs 375*/
-@media (max-width: 375.98px){
-}
-/* iPhone 6+, 6s+, 7+, 8+, XsMax 414*/
-@media (max-width: 414.98px){
+	#componentsAndLibraries{
+		float: none;
+		min-width: calc(100vw - 50px);
+	}
+	#honeycomb{
+		width: 100vw;
+	}
+	.card-deck{
+		flex: none;
+	}
+	.arduino-cards-smallCover{
+		width: 33vw;
+		height: 33vw;
+	}
+	.arduino-cards-small{
+		width: 33vw;
+	}
+	#astoundingText{
+		float: right;
+		padding: 5px;
+		margin-top: 10px;
+	}
+	.panel-mobile{
+		max-width: 100%;
+		min-width: calc(100% - 50px);
+	}
+	#arduinoDetailInfo{
+		min-width: calc(100% - 50px);
+	}
+	.projects-filter{
+		filter: sepia(0) hue-rotate(0deg) saturate(1);
+	}
+	#honeycomb{
+		width: 100vw;
+	}
+	#arduinoUno{
+		width: 100%;
+		padding-bottom: 25px;
+		bottom: 0px;
+	}
 	#homeProjectsTitle{
-		font-size: 5vw;;
+		display: block;
+		font-size: 7vw;;
+		color: dimgray;
+		font-weight: bolder;
+	}
+	#componentsAndLibraries{
+		float: none;
+		min-width: calc(100vw - 50px);
+
+	}
+	#arduinoComponentTitle{
+		font-size: 5vw;
+	}
+	#professionalDescription{
+		display: inline-block;
+		width: 90vw;
+	/*	float: right;*/
+	}
+	.shrink-img-1{
+		width: 100px;
+		padding: 5px;
+	}
+	.thing-button{
+		font-size: .75em;
 	}
 }
+
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width:575.98px) {
 	.arduino-cards{
@@ -1035,83 +1095,25 @@ td{
 		margin-bottom: 20px;
 	}
 }
-@media (max-width: 767.98px) {
-	.image-big{
-		width: 100%;
-	}
-	#arduinoDetailInfo{
-/*		min-width: calc(100vw - 50px);*/
-	}
-	#componentsAndLibraries{
-		float: none;
-		min-width: calc(100vw - 50px);
-	}
-	#honeycomb{
-		width: 100vw;
-	}
-	.card-deck{
-		flex: none;
-	}
-	.arduino-cards-smallCover{
-		width: 33vw;
-		height: 33vw;
-	}
-	.arduino-cards-small{
-		width: 33vw;
-	}
-	#astoundingText{
-		float: right;
-		padding: 5px;
-		margin-top: 10px;
-	}
-	.panel-mobile{
-		max-width: 100%;
-		min-width: calc(100% - 50px);
-	}
-	#arduinoDetailInfo{
-		min-width: calc(100% - 50px);
-	}
-	.projects-filter{
-		filter: sepia(0) hue-rotate(0deg) saturate(1);
-	}
-	#honeycomb{
-		width: 100vw;
-	}
-	#arduinoUno{
-		width: 100%;
-		padding-bottom: 25px;
-		bottom: 0px;
-	}
-	#homeProjectsTitle{
-		display: block;
-		font-size: 7vw;;
-		color: dimgray;
-		font-weight: bolder;
-	}
-	#componentsAndLibraries{
-		float: none;
-		min-width: calc(100vw - 50px);
 
-	}
-	#arduinoComponentTitle{
-		font-size: 5vw;
-	}
-	#professionalDescription{
-		display: inline-block;
-		width: 90vw;
-	/*	float: right;*/
-	}
-	.shrink-img-1{
-		width: 100px;
-		padding: 5px;
-	}
-	.thing-button{
-		font-size: .75em;
+/* iPhone 6+, 6s+, 7+, 8+, XsMax 414*/
+@media (max-width: 414.98px){
+	#homeProjectsTitle{
+		font-size: 5vw;;
 	}
 }
-
-
-
+/* iPhone 6, 6s, 7, 8, X, Xs 375*/
+@media (max-width: 375.98px){
+}
+/*iPhone 5 320*/
+@media (max-width: 320.98px){
+	h1, h2, h3, h4, h5, h6{
+		font-size: 1.3rem !important;
+	}
+	.navtitle{
+		font-size: 1.3rem;
+	}
+}
 
 /*   ––––––––NOT CURRENTLY BEING USED––––––––   */
 /*carousel*/
