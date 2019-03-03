@@ -728,7 +728,7 @@ p{
 }
 #professionalDescription{
 	display: inline-block;
-	width: 42vw;
+	width: 52vw;
 }
 .removePadding{
 	padding: 0;
@@ -904,6 +904,18 @@ td{
 }
 
 
+/*desktop*/
+@media (max-width: 1199.98px){
+	#professionalDescription{
+		width: 52vw;
+	}
+}
+/*large*/
+@media (max-width: 991.98px){
+	#professionalDescription{
+		width: 48vw;
+	}
+}
 
 /*medium*/
 @media (max-width: 767.98px) {
@@ -967,17 +979,15 @@ td{
 	#arduinoComponentTitle{
 		font-size: 5vw;
 	}
-	#professionalDescription{
-		display: inline-block;
-		width: 90vw;
-	/*	float: right;*/
-	}
 	.shrink-img-1{
 		width: 100px;
 		padding: 5px;
 	}
 	.thing-button{
 		font-size: .75em;
+	}
+	#professionalDescription{
+		width: 90vw;
 	}
 }
 
@@ -1093,6 +1103,9 @@ td{
 	}
 	#yellowComponents{
 		margin-bottom: 20px;
+	}
+	#professionalDescription{
+		width: 90vw;
 	}
 }
 
