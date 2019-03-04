@@ -12,7 +12,11 @@ https://www.beautycolorcode.com/00878f
 
 #8f5000
 */
-
+/*
+h1, h2, h4, h6::first-letter{
+	font-size: 1.5em;
+}
+*/
 :focus{
 	outline-color: #b2dbdd;
 		outline-width: 3px;
@@ -21,6 +25,14 @@ https://www.beautycolorcode.com/00878f
 	border-color: aqua;
 	background-color: blueviolet;
 */
+}
+::selection{
+	color: white;
+	background-color: #E47128;
+}
+::-moz-selection { /* Code for Firefox */
+	color: white;
+	background-color: #E47128;
 }
 a{
     text-decoration: none;
@@ -63,6 +75,7 @@ a:active{
 	padding: 0px;
 	margin: 0px;
 	display: inline-block;
+	position: relative;
 }
 .arduino-cards-smallCover{
 	width: 10vw;
@@ -70,6 +83,67 @@ a:active{
 	object-fit: cover;
 	border-radius: 25px;
 	padding: 5px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.drop{
+	line-height: 6vw;
+	text-align: center;
+	border-radius: 25px;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: calc(10vw - 10px);
+	height: 0vw;
+	content: "";
+	z-index: 1;
+	transition-duration: 200ms;
+	transition-timing-function: ease-in-out;
+	margin-top: 0vw;
+	margin-left: 5px;
+	font-size: .8em;
+	color: transparent;
+}
+.arduino-cards-small:hover .drop {
+	height: 6vw;
+	margin-top: 2vw;
+	display: inline-block;
+	top:0px;
+	border-radius: 0px;
+	color: white;
+}
+.arduino-cards-small::before{
+	border-radius: 25px;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: calc(10vw - 10px);
+	height: 0vw;
+	content: "";
+	z-index: 1;
+	transition-duration: 200ms;
+	transition-timing-function: ease-in-out;
+	margin-top: 0vw;
+	margin-left: 5px;
+}
+.arduino-cards-small:hover::before {
+	height: 6vw;
+	margin-top: 2vw;
+	display: inline-block;
+	top:0px;
+	border-radius: 0px;
+}
+.arduino-cards-small:nth-child(3n+0)::before {
+ 	background-color: #00878F;
+}
+.arduino-cards-small:nth-child(3n+1)::before {
+ 	background-color: #E47128;
+}
+.arduino-cards-small:nth-child(3n+2)::before {
+ 	background-color: #e5ad24;
 }
 .arduinoCarousel{
 	max-width: 50%;
@@ -973,6 +1047,12 @@ td{
 	.arduino-images{
 		max-width: 50vw;
 	}
+	.drop{
+		font-size: .6em;
+	}
+	.arduino-cards-small:hover::before{
+		border-radius: 8px;
+	}
 }
 
 /*medium*/
@@ -1053,8 +1133,24 @@ td{
 	#homeProjectsText{
 		width: 75vw;
 	}
+	.arduino-cards-small:hover .drop {
+		height: 13vw;
+		margin-top: 10vw;
+	}
+	.drop{
+		width: calc(33vw - 10px);
+		line-height: 13vw;
+		font-size: .9em;
+	}
+	.arduino-cards-small::before{
+		width: calc(33vw - 10px);
+	}
+	.arduino-cards-small:hover::before {
+		height: 13vw;
+		margin-top: 10vw;
+		border-radius: 0px;
+	}
 }
-
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width:575.98px) {
 	.arduino-cards{

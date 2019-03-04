@@ -49,10 +49,11 @@
 	</div>
 	<div id="honeycomb">
 		<div class="" style="">
-		<div class="arduino-cards-small arduino-card-hover" *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}">
-			<img class="arduino-cards-smallCover" style="" src="{{arduino.moreImagesPath[0]}}">
+			<div class="arduino-cards-small arduino-card-hover" *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}">
+				<div class="drop" style=""><span style="display: inline-block; vertical-align: middle; line-height: normal;">{{arduino.title}}</span></div>
+				<img class="arduino-cards-smallCover" style="" src="{{arduino.moreImagesPath[0]}}">
+			</div>
 		</div>
-	</div>
 	</div>
 </div>
 <div id="contact-home-div">
@@ -167,6 +168,7 @@
 
 <!--https://codepen.io/hjools/pen/NpJjPE-->
 <!--
+
 <div class='hexbuttons'>
   <div class='hexr'>
     <div class='hexagon hide' style="z-index: 10"><span title='account'><i class=''></i></span></div>
@@ -192,4 +194,5 @@
 		<div class='hexagon'><span title='liked'><i class=''></i></span></div>
 		<div class='hexagon'><span title='liked'><i class=''></i></span></div>
   </div>
-</div>-->
+</div>
+-->
