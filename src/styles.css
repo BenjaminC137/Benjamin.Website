@@ -695,6 +695,10 @@ h5{
 .no-border{
 	border: 0px;
 }
+.no-highlight:hover{
+	background-color: none;
+	border-color: inherit;
+}
 .navColors a:hover{
 	color: #b2dbdd !important;
 	cursor: pointer;

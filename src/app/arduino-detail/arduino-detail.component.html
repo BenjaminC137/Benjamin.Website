@@ -65,7 +65,7 @@
 	<br>
 <!--	<div class="container">-->
 		<div class="" style="box-sizing: content-box">
-		<div class="row" style="text-align: center; box-sizing: content-box">
+		<div class="row justify-content-around" style="text-align: center; box-sizing: content-box">
 <!--
 			<div class="col card arduino-images" style="display: inline">
 				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === 100">Close</button></div>
@@ -98,15 +98,15 @@
 		<br>
 		<br>
 <!--		<div id="arduinoTitleImage" style="background-image: url({{arduino.moreImagesPath[0]}})">-->
-		<a [href]="goPlay">
+
 		<div id="arduinoVideoDiv" style="">
 			<img id="arduinoVideoImage" src="{{arduino.moreImagesPath[0]}}">
-			<div id="arduinoVideoTitle">Video Demo</div>
-		</div></a>
+			<a [href]="goPlay"><div id="arduinoVideoTitle">Video Demo</div></a>
+		</div>
 
 		<br>
 		<br>
 		 <a *ngIf="arduino.id != 6" disabled class="btn-primary" [href]="goPlay">Play {{arduino.title}} Video</a>
-		 <a *ngIf="arduino.id === 6" disabled class="btn-primary" [href]="">{{arduino.title}} Video coming soon!</a>
+		 <a *ngIf="arduino.id === 6" disabled class="btn-primary" style="background-color: gray" [href]="">{{arduino.title}} Video coming soon!</a>
 		 </div>
 </div>
