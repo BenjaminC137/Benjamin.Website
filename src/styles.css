@@ -254,8 +254,11 @@ a:active{
 	left: 0px;
 	z-index: 99;
 }
+#bananaDescription{
+	font-size: 1.5em;
+}
 #benjaminWebsite{
-	background-image: url(/assets/coding%20background%20reduced%201920.png);
+/*	background-image: url(/assets/coding%20background%20reduced%201920.png);*/
 }
 #bioDiv{
 	background-image: url(/assets/coding%20background%20reduced%201920.png);
@@ -1032,6 +1035,18 @@ td{
 	background-blend-mode: hard-light;
 	text-align: right;
 }
+#whatsArduinoDivMini{
+	background-image:
+		linear-gradient( to right,
+          rgba(255, 255, 255, 0.9),
+          rgba(255, 255, 255, 0.9)
+        ),
+		url(assets/ArduinoGeneral/simpleArduino.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: hard-light;
+	text-align: right;
+}
 #yellowComponents{
 	margin-bottom: 0px;
 }
@@ -1057,6 +1072,9 @@ td{
 	.arduino-cards-small:hover::before{
 		border-radius: 8px;
 	}
+	#bananaDescription{
+		font-size: 1em;
+	}
 }
 
 /*medium*/
@@ -1069,6 +1087,9 @@ td{
 	}
 	#arduinoDetailInfo{
 /*		min-width: calc(100vw - 50px);*/
+	}
+	#bananaDescription{
+		font-size: .8em;
 	}
 	#componentsAndLibraries{
 		float: none;
