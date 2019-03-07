@@ -384,8 +384,7 @@ cursor: pointer;
 }
 .buttonImageNav{
 	position: fixed;
-	bottom: 50vh;
-/*	right: 0px;	*/
+	bottom: 7vh;
 	display: block;
 	width: 20px;
 	height: 20px;
@@ -401,10 +400,10 @@ cursor: pointer;
 	z-index: 99;
 }
 #buttonLeft{
-	left: 1em;
+	left: 10px;
 }
 #buttonRight{
-	right: 1em;
+	right: 10px;
 }
 .button-spacing{
 	margin-bottom: inherit;
@@ -1110,8 +1109,8 @@ td{
 }
 .x-button{
 	position: fixed;
-	top: 63px;
-	right: 0px;
+	top: 65px;
+	right: 2px;
 	display: block;
 	width: 20px;
 	height: 20px;
@@ -1169,6 +1168,13 @@ td{
 	}
 	#bananaDescription{
 		font-size: .8em;
+	}
+	.buttonImageNav{
+		bottom: 10vh;
+		width: 50px;
+		height: 50px;
+		line-height: 1em;
+		font-size: 2em;
 	}
 	#componentsAndLibraries{
 		float: none;
