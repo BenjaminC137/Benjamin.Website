@@ -1,4 +1,4 @@
-<div class="back-button"><button class="btn-primary back-button" (click)="goBack()">Back</button></div>
+<!--<div class=""><button class="x-button" (click)="goBack()">X</button></div>-->
 <!--<div class="project">-->
 	<div class="box2 clearfix hardFade" style="white-space: pre-line;">
 		<h3>{{arduino.title | uppercase}} <img class="arduino-logo-details" src="assets/2000px-Arduino_Logo.svg.png"></h3>
@@ -75,11 +75,31 @@
 					</div>
 				</div>
 	-->
-				<div id="arduinoImages" class="" (click)="ViewHiRes(i)" class="col card arduino-images no-border" *ngFor="let image of arduino.moreImagesPath; let i = index" style="display: inline; box-sizing: content-box">
+<!--
+					<div *ngIf="show && selectedIdx === i">
+							<button class="x-button">X</button>
+							<button id="buttonLeft" (click)="NavigateImage('left')" class="buttonImageNav">&larr;</button>
+							<button id="buttonRight" (click)="NavigateImage('right')" class="buttonImageNav">&rarr;</button>
+						</div>
+-->
+				<div id="arduinoImages" class="col card arduino-images no-border" *ngFor="let image of arduino.moreImagesPath; let i = index" style="display: inline; box-sizing: content-box">
+						<div *ngIf="show && selectedIdx === i">
+							<button class="x-button" (click)="ViewHiRes(i)">X</button>
+							<button id="buttonLeft" (click)="NavigateImage('left')" class="buttonImageNav">&larr;</button>
+<!--							<button id="buttonLeft" (click)="ViewHiRes(i - 1)" class="buttonImageNav">&larr;</button>-->
+							<button id="buttonRight" (click)="NavigateImage('right')" class="buttonImageNav">&rarr;</button>
+<!--							<button id="buttonRight" (click)="ViewHiRes(i + 1)" class="buttonImageNav">&rarr;</button>-->
+						</div>
 					<div id="card-content" style="box-sizing: content-box">
 		<!--				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>-->
-						<div><button class="btn-primary close-button" *ngIf="show && selectedIdx === i">Close</button></div>
-						<img id="viewHiResImage" [class.view-hi-res]="selectedIdx === i" src={{image}}>
+<!--
+						<div *ngIf="show && selectedIdx === i">
+							<button class="x-button">X</button>
+							<button id="buttonLeft" (click)="NavigateImage('left')" class="buttonImageNav">&larr;</button>
+							<button id="buttonRight" (click)="NavigateImage('right')" class="buttonImageNav">&rarr;</button>
+						</div>
+-->
+						<img id="viewHiResImage" (click)="ViewHiRes(i)" [class.view-hi-res]="selectedIdx === i" src={{image}}>
 						<div class="hidden-div" >
 							<p class="caption" style=""><span>{{arduino.imageCaption[i]}}</span></p>
 						</div>
@@ -105,7 +125,7 @@
 
 		<br>
 		<br>
-		 <a *ngIf="arduino.id != 6" disabled class="btn-primary" [href]="goPlay">Play {{arduino.title}} Video</a>
+		 <a *ngIf="arduino.id != 6" disabled class="btn-primary btn-primary-alt" [href]="goPlay">Play {{arduino.title}} Video</a>
 		 <a *ngIf="arduino.id === 6" disabled class="btn-primary" style="background-color: gray" [href]="">{{arduino.title}} Video coming soon!</a>
 		<br>
 		<br>

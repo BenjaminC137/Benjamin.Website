@@ -250,7 +250,6 @@ a:active{
 .back-button{
 	position: fixed;
 	top: 63px;
-/*	left: 15px;*/
 	left: 0px;
 	z-index: 99;
 }
@@ -338,13 +337,18 @@ body{
 	color: rgb(229, 173, 36);
 }
 .btn-primary {
-	background-color: white;
-	color: #E47128;
+	background-color: #00878F;
+	color: white;
 	font-size: 20px;
 	padding: 5px;
 	margin: 0px;
 	border: none;
 	font-weight:800;
+	border-radius: 100px;
+}
+.btn-primary-alt{
+	background-color: white;
+	color: #E47128;
 }
 .btn-primary:active {
 /*	background-color: black;*/
@@ -360,16 +364,42 @@ body{
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
-	color: white;
-	background-color: #00878F;
+	background-color: #E47128;
 	cursor: pointer;
 }
-
+.btn-primary-alt:hover{
+	color: white;
+	background-color: #00878F;
+}
 button:active{
 	background-color: #b2dbdd !important;
 }
 .button:hover:{
 cursor: pointer;
+}
+.buttonImageNav{
+	position: fixed;
+	bottom: 1em;
+/*	right: 0px;	*/
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: thin solid white;
+	vertical-align: middle;
+	line-height: 1em;
+	font-size: 1em;
+	border-radius: 100px;
+	background-color: black;
+	color: white;
+	box-sizing: content-box;
+	padding: 2px;
+	z-index: 99;
+}
+#buttonLeft{
+	left: 1em;
+}
+#buttonRight{
+	right: 1em;
 }
 .button-spacing{
 	margin-bottom: inherit;
@@ -1073,6 +1103,24 @@ td{
 	text-align: right;
 	padding: 1vw;
 }
+.x-button{
+	position: fixed;
+	top: 63px;
+	right: 0px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: thin solid white;
+	vertical-align: middle;
+	line-height: 1em;
+	font-size: 1em;
+	border-radius: 100px;
+	background-color: black;
+	color: white;
+	box-sizing: content-box;
+	padding: 2px;
+	z-index: 99;
+}
 #yellowComponents{
 	margin-bottom: 0px;
 }
@@ -1227,9 +1275,11 @@ td{
 		margin-top: 10px;
 	}
 	.back-button{
+/*
 		top: inherit;
 		bottom: 0px;
 		height: 80px;
+*/
 	}
 	#benjaminWebsiteAd{
 		font-size: 1.5em;
@@ -1271,8 +1321,10 @@ td{
 	}
 	.close-button{
 		top: inherit;
+/*
 		bottom: 0px;
 		height: 80px;
+*/
 	}
 	h3{
 		font-size: 1.5em;

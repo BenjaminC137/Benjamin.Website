@@ -27,18 +27,18 @@ export class ArduinoDetailComponent implements OnInit{
 			if(this.selectedIdx < (this.arduino.moreImagesPath.length - 1)){
 			this.selectedIdx ++;
 			}
-			console.log("right");
+//			console.log("right");
 		}
 		if(this.key === 'ArrowLeft'){
 			if(this.selectedIdx >0){
 			this.selectedIdx --;
 			}
-			console.log("left");
+//			console.log("left");
 		}
 		if(this.key === 'Escape'){
 			this.show = !this.show
 			this.selectedIdx = null;
-			console.log("escape");
+//			console.log("escape");
 		}
   }
 	arduino: ArduinoProjectModel;
@@ -96,16 +96,18 @@ export class ArduinoDetailComponent implements OnInit{
 		el.scrollIntoView();
 	}
 	ViewHiRes(index: number){
+		console.log("immediate: ", index);
 		if(this.show == true){
 		this.show = !this.show
 		this.selectedIdx = null;
-				console.log(this.arduino.dateCompleted);
-
+//		console.log(this.arduino.dateCompleted);
+//		console.log('show == true');
 		}
 		else if (this.show == false){
 			this.selectedIdx = index;
-			console.log(index);
+//			console.log("index: ", index);
 			this.show = !this.show
+//			console.log('show == false');
 		}
 //			this.zoomState[i] = !this.zoomState[i];
 //			if(this.zoom == false){
@@ -115,6 +117,26 @@ export class ArduinoDetailComponent implements OnInit{
 //				this.i.zoomState = "view-hi-res"
 //			}
 	}
+
+	NavigateImage(a) {
+//		console.log("got to NavigateImage: ", a, " | ", this.selectedIdx);
+		var arrow = a;
+		if(arrow == 'right'){
+			if(this.selectedIdx < (this.arduino.moreImagesPath.length - 1)){
+			this.selectedIdx ++;
+			}
+//			console.log("right");
+		}
+		if(arrow == 'left'){
+			if(this.selectedIdx >0){
+			this.selectedIdx --;
+			}
+//			console.log("left");
+		}
+		this.show = !this.show;
+		console.log("Idx after navImg: ", this.selectedIdx);
+		this.ViewHiRes(this.selectedIdx);
+  }
 //    }
 
 }
