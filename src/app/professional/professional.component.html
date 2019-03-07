@@ -58,7 +58,7 @@
 		</div>
 	</div>
 	<div style="width: 70vw; padding: 5vw">
-		<a routerLink="/home" style="font-size: 1.5em">Go to Home Page</a>
+		<a routerLink="/home" class="btn-primary" style="">Go to Home Page</a>
 	</div>
 </div>
 <div id="whatsArduinoDivMini" class="clearfix">
@@ -67,8 +67,8 @@
 			Please check out my beloved Arduino projects! One of my passions is the Arduino prototyping platform. There are lots of cool things here. If you have not already browsed, definitely check it out!
 			<br>
 			<br>
-			<div style="text-align: right">
-				<a class="a2" style="font-size: 1.5em; padding-top: 5em" routerLink="/arduino">Go to Arduino Projects</a>
+			<div style="text-align: right; padding: 1em;">
+				<a class="btn-primary" style="" routerLink="/arduino">Go to Arduino Projects</a>
 			</div>
 
 		</div>
@@ -94,7 +94,7 @@
 		</div>
 	</div>
 	<div style="width: 70vw; padding: 5vw">
-		<a class="p-gray" style="font-size: 1.5em" href="https://benjaminc137.github.io/JavaScript_play/">Play Slider Banana© (beta)</a>
+		<a class="btn-primary" style="" href="https://benjaminc137.github.io/JavaScript_play/">Play Slider Banana© (beta)</a>
 	</div>
 <!--
 	 <div class="" style="border: solid black 3vh; border-radius: 10px">
@@ -138,13 +138,12 @@
 	</div>
 -->
 <div class="box" style="text-align: center">
+	<br>
+	<div><a class="btn-primary btn-primary-alt" style="" href='assets/Benjamin%20Salasek%20Resume.pdf' download>Download Resume</a></div>
 	<div *ngIf="isLoaded" style="text-align: right;">
-			<h3 style="color: white">Resume</h3>
-
-			<a href='assets/Benjamin%20Salasek%20Resume.pdf' download style="float: left">Download</a>
-
-	  <button class="btn-primary pdfButtons" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
-	  <button class="btn-primary pdfButtons" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
+<!--		<h3 style="color: white">Resume</h3>-->
+		<button class="btn-primary pdfButtons" style="border-radius: 0px" (click)="prevPage()" [disabled]="page === 1">Page 1</button>
+		<button class="btn-primary pdfButtons" style="border-radius: 0px" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
 	</div>
 	<pdf-viewer src="assets/Benjamin%20Salasek%20Resume.pdf"
 				[show-all]="false"
@@ -160,6 +159,6 @@
 	  <button class="btn-primary pdfButtons" (click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
 	</div>
 -->
-		<a href='assets/Benjamin%20Salasek%20Resume.pdf' download>Download</a>
+<!--		<a href='assets/Benjamin%20Salasek%20Resume.pdf' download>Download</a>-->
 
 </div>

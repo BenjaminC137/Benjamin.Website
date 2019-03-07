@@ -170,6 +170,7 @@ a:active{
 /*	width: 40vw;*/
 	white-space: nowrap;
 	font-weight: bolder;
+	padding-right: 2px;
 /*	text-overflow: ellipsis;*/
 }
 #arduinoDetailInfo{
@@ -220,7 +221,7 @@ a:active{
 .arduino-logo-details{
 	display: inline;
 	width: 70px;
-	float: right;
+/*	float: right;*/
 	padding: 5px;
 	position: relative;
 	top:-5px;
@@ -302,7 +303,7 @@ body{
 	display: block;
 	background-image: linear-gradient(to right, rgb(225,225,225) , white);
 	color: dimgray;
-	padding: 20px;
+/*	padding: 20px;*/
 /*	box-shadow: 2px 2px 10px rgba(0,0,0, .04);*/
 	font-size: 14px;
 	margin: 0px;
@@ -350,6 +351,10 @@ body{
 	background-color: white;
 	color: #E47128;
 }
+.btn-primary-alt-black{
+	background-color: black;
+	color: white;
+}
 .btn-primary:active {
 /*	background-color: black;*/
 	background-color: #b2dbdd;
@@ -379,7 +384,7 @@ cursor: pointer;
 }
 .buttonImageNav{
 	position: fixed;
-	bottom: 1em;
+	bottom: 50vh;
 /*	right: 0px;	*/
 	display: block;
 	width: 20px;
