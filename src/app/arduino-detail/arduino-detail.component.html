@@ -1,6 +1,6 @@
 <!--<div class=""><button class="x-button" (click)="goBack()">X</button></div>-->
 <!--<div class="project">-->
-	<div class="box2 clearfix hardFade" style="">
+	<div class="box2 clearfix hardFade" style="overflow-x: hidden">
 		<h3 style="margin: 0px">{{arduino.title | uppercase}} <img class="arduino-logo-details" src="assets/2000px-Arduino_Logo.svg.png"></h3>
 		<div id="introArduinoImage" style="text-align: center">
 			<a class="cursor-finger" (click)="scroll(photos)"><img class="arduino-small-square" style="padding: 5px; border-radius: 25px;" src="{{arduino.moreImagesPath[0]}}" ></a>
@@ -13,6 +13,7 @@
 					<button class="btn-primary button-spacing" (click)="scroll(photos)">Photos</button> &nbsp;
 					<button class="btn-primary" (click)="scroll(video)">Video</button>
 					<br>
+					<br>
 					Created: {{arduino.dateCreated | date}}
 					<br>
 					Completed: {{arduino.dateCompleted | date}}
@@ -20,7 +21,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="componentsAndLibrariesContainer" class="clearfix">
+	<div id="componentsAndLibrariesContainer" class="clearfix" style="overflow-x: hidden">
 		<div id="componentsAndLibraries" class="">
 			<div id="arduinoDetailInfo" class="info-panel firstDiv panel-mobile">
 				<div class="row">
@@ -57,7 +58,7 @@
 			but the relevant components are listed here. Here, you will also see the code libraries that I've implemented in order to allow some advanced hardware components to communicate with my software.
 		</p>
 	</div>
-	<div #photos class="box3">
+	<div #photos class="box3" style="overflow-x: hidden">
 		<h4>Photos </h4>
 		I believe that the images are not only informative but sometimes provide for beautiful photography and imagery. Please take a closer look by clicking/tapping on any photo. You may use the left and right arrow keys to browse.
 		<br>
@@ -113,7 +114,7 @@
 		</div>
 	</div>
 	<div #video class="box" style="background-image: linear-gradient(to right, #E47128,rgba(228, 113, 40,.9)">
-		I've recorded a quick video to show you my {{arduino.title}} in action.
+<!--		I've recorded a quick video to show you my {{arduino.title}} in action.-->
 		<br>
 		<br>
 <!--		<div id="arduinoTitleImage" style="background-image: url({{arduino.moreImagesPath[0]}})">-->
@@ -125,8 +126,10 @@
 
 		<br>
 		<br>
-		 <a *ngIf="arduino.id != 6" disabled class="btn-primary btn-primary-alt" [href]="goPlay">Play {{arduino.title}} Video</a>
-		 <a *ngIf="arduino.id === 6" disabled class="btn-primary" style="background-color: gray" [href]="">{{arduino.title}} Video coming soon!</a>
+		<div style="text-align: center">
+			<a *ngIf="arduino.id != 6" disabled class="btn-primary btn-primary-alt" [href]="goPlay">Play {{arduino.title}} Video</a>
+			<a *ngIf="arduino.id === 6" disabled class="btn-primary" style="background-color: gray" [href]="">{{arduino.title}} Video coming soon!</a>
+		</div>
 		<br>
 		<br>
 	</div>
