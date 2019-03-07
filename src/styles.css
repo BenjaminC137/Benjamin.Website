@@ -240,10 +240,11 @@ a:active{
 /*	padding-bottom: 125px;*/
 	position: relative;
 	bottom: 75px;
+	padding: 25px;
 }
 #astoundingText{
 	float: right;
-	padding: 5px;
+	padding-right: 10px;
 	margin-top: 3em;
 }
 .back-button{
@@ -286,6 +287,7 @@ body{
 	font-style: normal;
 	font-weight: 500;
 	min-height: 100vh;
+	overflow-x: hidden;
 }
 .box{
 	box-sizing: border-box;
@@ -404,6 +406,9 @@ cursor: pointer;
 }
 #card-content{
 	box-sizing: content-box;
+}
+.card-deck{
+/*	overflow: hidden;*/
 }
 .card-footer{
 	padding: 0px;
@@ -536,11 +541,10 @@ div img{
     height: auto;
 }
 footer{
-	padding-left: 5px;
+	padding: 10px;
 	background-color: lightgray;
 	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 25px;
 }
 .firstDiv{
 	display: inline-block;
@@ -548,7 +552,7 @@ footer{
 	min-width: 250px;
 	text-align: left;
 	padding: 20px;
-	margin: 25px;
+/*	margin: 25px;*/
 }
 .firstDiv2{
 	display: inline-block;
@@ -615,11 +619,11 @@ h5{
 	z-index: -1000;
 }
 #homeProjectsDiv{
-	padding-right: 15px;
+/*	padding-right: 15px;*/
 	text-align: right;
 	color: dimgray;
 	background-image: linear-gradient(to right, rgb(225,225,225) , white);
-	padding-left: 1vw;
+/*	padding-left: 1vw;*/
 }
 #homeProjectsText{
 	width: 50vw;
@@ -642,7 +646,7 @@ h5{
 	width: 40vw;
 	text-align: center;
 	float: left;
-	margin: 1vw;
+/*	margin: 1vw;*/
 }
 .info-panel{
 	border-style: solid;
@@ -845,8 +849,8 @@ p{
 /*	background-image: linear-gradient(to right, gray, white);*/
 }
 .project{
-	background-color: rgba(236, 241, 241, .2);
-	box-shadow: 2px 2px 10px rgba(0,0,0, .1);
+/*	background-color: rgba(236, 241, 241, .2);*/
+/*	box-shadow: 2px 2px 10px rgba(0,0,0, .1);*/
 }
 .projects-filter{
 	filter: sepia(1) hue-rotate(125deg) saturate(.75);
@@ -891,7 +895,7 @@ p{
 	padding-top: 25px;
 }
 .shrink-img-1{
-	width: 150px;
+	width: 125px;
 	padding-top: 20px;
 	padding-right: 20px;
 }
