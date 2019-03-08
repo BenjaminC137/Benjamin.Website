@@ -1110,6 +1110,7 @@ td{
 .x-button{
 	position: fixed;
 	top: 65px;
+	bottom: auto;
 	right: 2px;
 	display: block;
 	width: 20px;
@@ -1260,6 +1261,22 @@ td{
 		margin-top: 10vw;
 		border-radius: 0px;
 	}
+	.view-hi-caption{
+		bottom: inherit;
+		top: 63px;
+	}
+	.x-button{
+/*		top: calc(90vh - 54px);*/
+		top: auto;
+		bottom: 10vh;
+		right: calc(50vw - 25px);
+		width: 50px;
+		height: 50px;
+		font-size: 1em;
+		padding: 2px;
+		z-index: 99;
+	}
+
 }
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width:575.98px) {
@@ -1305,6 +1322,9 @@ td{
 		display: inline-block;
 		width: 100vw;
 		padding: 2vw;
+	}
+	.btn-primary{
+		font-size: .8rem;
 	}
 	.button-spacing{
 		margin-bottom: 10px;
@@ -1376,10 +1396,7 @@ td{
 	.view-hi-res{
 /*	top: 40vw;*/
 	}
-	.view-hi-caption{
-		bottom: inherit;
-		top: 63px;
-	}
+
 	.width-100{
 		display: inline-block;
 		width: 100%;
@@ -1391,21 +1408,16 @@ td{
 	#professionalDescription{
 		width: 90vw;
 	}
-	.x-button{
-		top: calc(90vh - 54px);
-		right: calc(50vw - 25px);
-		width: 50px;
-		height: 50px;
-		font-size: 1em;
-		padding: 2px;
-		z-index: 99;
-	}
+
 }
 
 /* iPhone 6+, 6s+, 7+, 8+, XsMax 414*/
 @media (max-width: 414.98px){
 	#homeProjectsTitle{
 		font-size: 6.5vw;;
+	}
+	.btn-primary{
+		font-size: .7rem;
 	}
 }
 /* iPhone 6, 6s, 7, 8, X, Xs 375*/
