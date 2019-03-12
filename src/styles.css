@@ -174,7 +174,8 @@ a:active{
 /*	text-overflow: ellipsis;*/
 }
 #arduinoDetailInfo{
-	min-width: 50vw;
+/*	width: 46vw;*/
+	margin: 2vw;
 }
 #arduino-home-div{
 	color: dimgray;
@@ -233,10 +234,15 @@ a:active{
 .arduino-small-square{
 	width: 25vw;
 	max-width: 300px;
-/*	margin-right: 15px;*/
-/*	border-radius: 10px;*/
 	float: right;
-	margin: 5px;
+	margin: 15px;
+}
+.arduino-small-square2{
+	width: 25vw;
+	max-width: 300px;
+	float: right;
+	margin: 2vw;
+	display: inline-block;
 }
 #arduinoUno{
 	width: 400px;
@@ -270,7 +276,7 @@ a:active{
 	font-size: 1.5em;
 	float: left;
 	display: inline-block;
-	width: 60%;
+	width: calc(100% - 29vw);
 	padding: 2vw;
 }
 #bioDiv{
@@ -310,7 +316,7 @@ body{
 /*	box-shadow: 2px 2px 10px rgba(0,0,0, .04);*/
 	font-size: 14px;
 	margin: 0px;
-	padding: 1vw;
+/*	padding: 1vw;*/
 }
 .box2DarkBack{
 	background-image: linear-gradient(to right, #181818 , gray);
@@ -320,11 +326,11 @@ body{
 /*	box-sizing: border-box;*/
 	background-image: linear-gradient(to right, rgb(125,125,125) , black);
 	color: whitesmoke;
-	padding: 20px;
+/*	padding: 20px;*/
 /*	box-shadow: 2px 2px 10px rgba(0,0,0, .04);*/
 	font-size: 14px;
 	margin: 0px;
-	padding: 1vw;
+/*	padding: 1vw;*/
 }
 .boxBack{
 	background-color: black;
@@ -500,13 +506,12 @@ cursor: pointer;
 #componentsAndLibraries{
 	width: 50vw;
 	float: right;
-	margin-right: 15px;
 	display: inline-block;
 	text-align: center;
 }
 #componentsAndLibrariesContainer{
 	color: dimgray;
-	padding: 15px;
+	padding: 2vw;
 	background-image: linear-gradient(
           rgba(0, 0, 0, 0.5),
           rgba(0, 0, 0, 0.5)
@@ -589,15 +594,21 @@ footer{
 	min-width: 250px;
 	text-align: left;
 	padding: 20px;
-/*	margin: 25px;*/
 }
 .firstDiv2{
 	display: inline-block;
-	max-width: calc(100% - 410px);
-	min-width: 250px;
+	width: calc(50vw - 50px);
 	text-align: left;
 	padding: 20px;
 	margin: 25px;
+}
+.firstDiv3{
+	display: inline-block;
+/*	max-width: calc(100% - 502px);*/
+	min-width: 250px;
+	text-align: left;
+	padding: 20px;
+	margin: 2vw;
 }
 .form-control{
 /*
@@ -696,7 +707,7 @@ h5{
 	border-radius: 15px;
 	border-width: 20px;
 	background: white;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+	box-shadow: 2px 2px 2px rgba(0,0,0,.1);
 }
 .inline-block{
 	display: inline-block;
@@ -773,7 +784,7 @@ h5{
 }
 #myFaceThumbnail{
 	display: inline-block;
-	padding-bottom: 5px;
+	margin: 10px;
 	text-align: center;
 	width: 25vw;
 	max-width: 200px;
@@ -948,7 +959,9 @@ p{
 }
 #professionalDescription{
 	display: inline-block;
-	width: 52vw;
+	width: 48vw;
+	float: right;
+	margin-right: 2vw;
 }
 .removePadding{
 	padding: 0;
@@ -977,6 +990,8 @@ p{
 #skillsData{
 	float: left;
 	display: inline-block;
+	margin-top: calc(2em + 23px);
+/*	max-width: 40vw;*/
 }
 .sticky-nav{
 	position: sticky;
@@ -1150,7 +1165,7 @@ td{
 	background-repeat: no-repeat;
 	background-blend-mode: hard-light;
 /*	text-align: right;*/
-	padding: 1vw;
+/*	padding: 1vw;*/
 }
 .x-button{
 	position: fixed;
@@ -1178,15 +1193,10 @@ td{
 
 /*desktop*/
 @media (max-width: 1199.98px){
-	#professionalDescription{
-		width: 52vw;
-	}
+
 }
 /*large*/
 @media (max-width: 991.98px){
-	#professionalDescription{
-		width: 48vw;
-	}
 	.arduino-images{
 		max-width: 50vw;
 	}
@@ -1203,14 +1213,14 @@ td{
 
 /*medium*/
 @media (max-width: 767.98px) {
+	#arduinoDetailInfo{
+		width: 92vw;
+	}
 	.arduino-images{
 		max-width: none;
 	}
 	.image-big{
 		width: 100%;
-	}
-	#arduinoDetailInfo{
-/*		min-width: calc(100vw - 50px);*/
 	}
 	#bananaDescription{
 		font-size: .8em;
@@ -1221,10 +1231,6 @@ td{
 		height: 50px;
 		line-height: 1em;
 		font-size: 2em;
-	}
-	#componentsAndLibraries{
-		float: none;
-		min-width: calc(100vw - 50px);
 	}
 	#honeycomb{
 		width: 100vw;
@@ -1246,9 +1252,6 @@ td{
 	}
 	.panel-mobile{
 		max-width: 100%;
-		min-width: calc(100% - 50px);
-	}
-	#arduinoDetailInfo{
 		min-width: calc(100% - 50px);
 	}
 	.projects-filter{
@@ -1275,8 +1278,8 @@ td{
 	}
 	#componentsAndLibraries{
 		float: none;
-		min-width: calc(100vw - 50px);
-
+		width: 96vw;
+		margin: 0px;
 	}
 	#arduinoComponentTitle{
 		font-size: 5vw;
@@ -1289,7 +1292,9 @@ td{
 		font-size: .75em;
 	}
 	#professionalDescription{
-		width: 90vw;
+		width: 96vw;
+		padding: 0vw;
+		margin: 2vw;
 	}
 	#homeProjectsText{
 		width: 75vw;
@@ -1310,6 +1315,9 @@ td{
 		height: 13vw;
 		margin-top: 10vw;
 		border-radius: 0px;
+	}
+	#skillsData{
+		margin-top: inherit;
 	}
 	.view-hi-caption{
 		bottom: inherit;
@@ -1347,6 +1355,11 @@ td{
 		float: none;
 		width: 60vw;
 	}
+	.arduino-small-square2{
+		width: 15vw;
+		float: none;
+		margin: 25px;
+	}
 	.floatRight40{
 		float: none;
 		width: 100vw;
@@ -1367,7 +1380,7 @@ td{
 		font-size: 1.5em;
 		float: left;
 		display: inline-block;
-		width: 100vw;
+		width: 100%;
 		padding: 2vw;
 	}
 	#bananaDescription{
@@ -1434,6 +1447,7 @@ td{
 	}
 	#myFaceThumbnail{
 		width: 65vw;
+		margin-top: 5px;
 	}
 	.panel-mobile2{
 		max-width: 100%;
@@ -1456,7 +1470,6 @@ td{
 	.view-hi-res{
 /*	top: 40vw;*/
 	}
-
 	.width-100{
 		display: inline-block;
 		width: 100%;
@@ -1465,10 +1478,6 @@ td{
 	#yellowComponents{
 		margin-bottom: 20px;
 	}
-	#professionalDescription{
-		width: 90vw;
-	}
-
 }
 
 /* iPhone 6+, 6s+, 7+, 8+, XsMax 414*/
