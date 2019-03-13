@@ -783,6 +783,7 @@ h5{
 	text-align: center;
 }
 #myFaceThumbnail{
+	padding: 10px 0px;
 	display: inline-block;
 	margin: 10px;
 	text-align: center;
