@@ -905,6 +905,8 @@ p{
 #arduinoVideoImage{
 	height: 50vw;
 	width: 80vw;
+	max-width: 750px;
+	max-height: 468px;
 	object-fit: cover;
 /*
 	position: absolute;
@@ -939,8 +941,7 @@ p{
 	left: 0px;
 	display: inline-block;
 	width: 100%;
-
-	font-size: 10vw;
+	font-size: 100px;
 	color: #E47128;
 	text-shadow: 2px 2px 0px black, -1vw 0px 0px white, 0px -1vw 0px white, 0px 1vw 0px white, 1vw 0px 0px white, -2px 2px 0px white;
 /*	#00878F*/
@@ -1216,6 +1217,9 @@ td{
 @media (max-width: 991.98px){
 	.arduino-images{
 		max-width: 50vw;
+	}
+	#arduinoVideoTitle{
+		font-size: 10vw;
 	}
 	.drop{
 		font-size: .6em;
