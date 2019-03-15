@@ -281,9 +281,16 @@ a:active{
 }
 #bioDiv{
 	background-image: url(/assets/coding%20background%20reduced%201920.png);
-/*	padding: 0px;*/
 	text-align: right;
-/*	margin: 0px;*/
+}
+#bioInfo{
+	max-width: 750px;
+}
+#bioInfoWrapper{
+	display: inline-block;
+	width: calc(100% - 350px);
+	text-align: center;
+/*	min-width: calc(100% - 50px);*/
 }
 body{
 	background-color: #fff;
@@ -606,7 +613,7 @@ footer{
 }
 .firstDiv2{
 	display: inline-block;
-	width: calc(50vw - 50px);
+/*	width: calc(50vw - 50px);*/
 	text-align: left;
 	padding: 20px;
 	margin: 25px;
@@ -943,8 +950,6 @@ p{
 }
 #profilePictureDiv{
 	display: inline-block;
-/*	text-align: center;*/
-/*	background-image: linear-gradient(to right, gray, white);*/
 }
 .project{
 /*	background-color: rgba(236, 241, 241, .2);*/
@@ -1265,6 +1270,11 @@ td{
 	.panel-mobile{
 		max-width: 100%;
 		min-width: calc(100% - 50px);
+	}
+	#bioInfoWrapper{
+		width: 100%;
+		min-width: calc(100% - 50px);
+		max-width: 100%;
 	}
 	.projects-filter{
 		filter: sepia(0) hue-rotate(0deg) saturate(1);
