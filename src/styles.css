@@ -17,9 +17,7 @@ h1, h2, h4, h6::first-letter{
 	font-size: 1.5em;
 }
 */
-test{
-	font-size: 1px;
-}
+
 :focus{
 	outline-color: #b2dbdd;
 		outline-width: 3px;
