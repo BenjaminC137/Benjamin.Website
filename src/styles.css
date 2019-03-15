@@ -688,7 +688,7 @@ h5{
 	z-index: -1000;
 }
 #homeProjectsDiv{
-/*	padding-right: 15px;*/
+	padding-right: 15px;
 	text-align: right;
 	color: dimgray;
 	background-image: linear-gradient(to right, rgb(225,225,225) , white);
@@ -699,6 +699,12 @@ h5{
 	float: right;
 }
 #homeProjectsTitle{
+	display: block;
+	font-size: 2.5em;
+	color: dimgray;
+	font-weight: bolder;
+}
+proDescTitle{
 	display: block;
 	font-size: 2.75em;
 	color: dimgray;
@@ -715,6 +721,7 @@ h5{
 	width: 40vw;
 	text-align: center;
 	float: left;
+	margin: 5px;
 /*	margin: 1vw;*/
 }
 #iAma{
@@ -1248,6 +1255,12 @@ td{
 	td{
 		font-size: .8em;
 	}
+	#homeProjectsTitle{
+		display: block;
+		font-size: 3.5vw;;
+		color: dimgray;
+		font-weight: bolder;
+	}
 }
 
 /*medium*/
@@ -1285,7 +1298,6 @@ td{
 		width: 33vw;
 	}
 	#astoundingText{
-		float: right;
 		padding: 5px;
 		margin-top: 10px;
 	}
@@ -1310,6 +1322,12 @@ td{
 		bottom: 0px;
 	}
 	#homeProjectsTitle{
+		display: block;
+		font-size: 7vw;;
+		color: dimgray;
+		font-weight: bolder;
+	}
+	#proDescsTitle{
 		display: block;
 		font-size: 7vw;;
 		color: dimgray;
@@ -1424,9 +1442,6 @@ td{
 		width: 100vw;
 	}
 	#astoundingText{
-		float: right;
-		padding: 5px;
-		margin-top: 10px;
 	}
 	.back-button{
 /*
@@ -1562,6 +1577,9 @@ td{
 /* iPhone 6+, 6s+, 7+, 8+, XsMax 414*/
 @media (max-width: 414.98px){
 	#homeProjectsTitle{
+		font-size: 6.5vw;;
+	}
+	#proDescTitle{
 		font-size: 6.5vw;;
 	}
 	.btn-primary{
