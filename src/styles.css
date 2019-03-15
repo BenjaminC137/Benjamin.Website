@@ -385,6 +385,15 @@ body{
 	color: white;
 	background-color: #00878F;
 }
+button{
+	touch-action: manipulation;
+	touch-action: pan-x;
+	touch-action: pan-left;
+	touch-action: pan-right;
+	touch-action: pan-y;
+	touch-action: pan-up;
+	touch-action: pan-down;
+}
 button:active{
 	background-color: #b2dbdd !important;
 }
