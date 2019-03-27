@@ -1287,6 +1287,7 @@ td{
 	}
 	#honeycomb{
 		width: 100vw;
+		margin: 0px;
 	}
 	.card-deck{
 		flex: none;
