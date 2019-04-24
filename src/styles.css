@@ -950,6 +950,9 @@ p{
 	text-transform: uppercase;
 	mix-blend-mode:overlay;
 }
+#photographyText{
+	padding-left: 75px;
+}
 #arduinoVideoTitle{
 	position: absolute;
 	bottom: 5px;
@@ -1573,6 +1576,9 @@ td{
 		width: 90%;
 /*		padding: 25px;*/
 		margin: 10px;
+	}
+	#photographyText{
+		padding-left: 15px;
 	}
 }
 
