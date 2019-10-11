@@ -22,6 +22,7 @@ const routes: Routes = [
 	//	{ path: 'fireball', component: FireballComponent },
 	{ path: 'neechifeeder', redirectTo: '/arduino-detail/1', pathMatch: 'full' },
 	{ path: 'interdimensionalthings', redirectTo: '/professional#interdimensionalthings', pathMatch: 'full' },
+	{ path: 'sliderbanana', redirectTo: '/professional#sliderbanana', pathMatch: 'full' },
 	{ path: '**', component: NotFoundComponent }
 ]
 
