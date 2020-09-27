@@ -151,15 +151,15 @@ a:active{
 	height: 10%;
 }
 #arduinoCommunity{
-	width: 50vw;
+	width: 50%;
 	float: right;
 	margin-right: 15px;
 }
 #arduinoCommunityTitle{
 	display: block;
-	font-size: 4.5vw;
+	font-size: 3vw;
 	background-color: rgba(255,255,255,.9);
-	width: 40vw;
+	width: 40%;
 	white-space: nowrap;
 	font-weight: bolder;
 /*	text-overflow: ellipsis;*/
@@ -182,6 +182,12 @@ a:active{
 	color: dimgray;
 	padding: 25px;
 }
+
+.row-white{
+	color: dimgray;
+/*	padding: 25px;*/
+}
+
 .arduino-images{
 	min-width: 14rem;
 	max-width: 25vw;
@@ -253,15 +259,15 @@ a:active{
 	padding: 25px;
 }
 #astoundingText{
-	float: right;
-	padding-right: 10px;
-	margin-top: 3em;
+/*	float: right;*/
+/*	padding-right: 10px;*/
+/*	margin-top: 3em;*/
 }
 .back-button{
 	position: fixed;
 	top: 63px;
 	left: 0px;
-	z-index: 99;
+	z-index: 1032;
 }
 #bananaDescription{
 	font-size: 1.5em;
@@ -282,7 +288,7 @@ a:active{
 }
 #bioDiv{
 	background-image: url(/assets/coding%20background%20reduced%201920.png);
-	text-align: right;
+/*	text-align: right;*/
 }
 #bioInfo{
 	max-width: 750px;
@@ -310,35 +316,26 @@ body{
 	box-sizing: border-box;
 	background-color: #00878F;
 	color: white;
-/*	box-shadow: 2px 2px 10px rgba(0,0,0, .04);*/
-/*	font-size: 14px;*/
 	margin: 0px;
-/*	padding: 1vw;*/
-/*	width: 100%;*/
+	padding: 15px;
 }
 .box2{
-	display: block;
+/*	display: block;*/
 	background-image: linear-gradient(to right, rgb(225,225,225) , white);
 	color: dimgray;
-/*	padding: 20px;*/
-/*	box-shadow: 2px 2px 10px rgba(0,0,0, .04);*/
-	font-size: 14px;
-	margin: 0px;
-/*	padding: 1vw;*/
+/*	font-size: 14px;*/
+/*	padding: 15px;*/
 }
 .box2DarkBack{
 	background-image: linear-gradient(to right, #181818 , gray);
 }
 .box3{
-	display: block;
-/*	box-sizing: border-box;*/
+/*	display: block;*/
 	background-image: linear-gradient(to right, rgb(125,125,125) , black);
 	color: whitesmoke;
-/*	padding: 20px;*/
-/*	box-shadow: 2px 2px 10px rgba(0,0,0, .04);*/
-	font-size: 14px;
-	margin: 0px;
-/*	padding: 1vw;*/
+/*	font-size: 14px;*/
+/*	margin: 0px;*/
+/*	padding: 15px;*/
 }
 .boxBack{
 	background-color: black;
@@ -346,7 +343,7 @@ body{
 .btn{
 	color: rgb(229, 173, 36);
 	background: none;
-	font-size: 20px;
+	font-size: 13px;
 	padding: 0px;
 	margin: 0px;
 	border: none;
@@ -357,8 +354,8 @@ body{
 .btn-primary {
 	background-color: #00878F;
 	color: white;
-	font-size: 20px;
-	padding: 5px;
+	font-size: 13px;
+	padding: 10px;
 	margin: 0px;
 	border: none;
 	font-weight:800;
@@ -423,7 +420,7 @@ cursor: pointer;
 	color: white;
 	box-sizing: content-box;
 	padding: 2px;
-	z-index: 99;
+	z-index: 1032;
 }
 #buttonLeft{
 	left: 10px;
@@ -518,7 +515,7 @@ cursor: pointer;
 	position: fixed;
 	top: 63px;
 	left: 0px;
-	z-index: 100;
+	z-index: 1032;
 }
 #componentsAndLibraries{
 	width: 50vw;
@@ -642,7 +639,7 @@ footer{
 }
 .floatRight35{
 	display: inline-block;
-	width: calc(63vw - 50px);
+	width: calc(63% - 50px);
 	float: right;
 }
 html{
@@ -688,26 +685,29 @@ h5{
 	position: relative;
 	z-index: -1000;
 }
+/*
 #homeProjectsDiv{
 	padding-right: 15px;
 	text-align: right;
 	color: dimgray;
 	background-image: linear-gradient(to right, rgb(225,225,225) , white);
-/*	padding-left: 1vw;*/
 }
+*/
+/*
 #homeProjectsText{
 	width: 50vw;
 	float: right;
 }
+*/
 #homeProjectsTitle{
 	display: block;
-	font-size: 2.4em;
+	font-size: 1.75em;
 	color: dimgray;
 	font-weight: bolder;
 }
 #proDescTitle{
 	display: block;
-	font-size: 2.75em;
+	font-size: 1.75em;
 	color: dimgray;
 	font-weight: bolder;
 }
@@ -719,12 +719,13 @@ h5{
 }
 #honeycomb{
 	display: inline-block;
-	width: 40vw;
+/*	width: 40vw;*/
 	text-align: center;
-	float: left;
+/*	float: left;*/
 	margin: 5px;
 /*	margin: 1vw;*/
 }
+/*
 #iAma{
 	text-align: right;
 	font-size: 2em;
@@ -732,6 +733,7 @@ h5{
 	padding-right: 20px;
 	margin: 0px;
 }
+*/
 .info-panel{
 	border-style: solid;
 	border-color: #00878F;
@@ -764,29 +766,38 @@ h5{
 	margin: 15px;
 	box-shadow: 2px 2px 5px rgba(0,0,0,.1);
 	max-width: 60vw;
-/*    max-height: 65vh;*/
-/*	max-width: 90%;*/
 }
 .img-full{
-/*
-	display: block;
-	max-width: 90vw;
-    max-height: 90vh;
-	object-fit:scale-down;
-	padding: 0px;
-	margin: 0px;
-*/
 	padding: 25px;
-/*
-	margin-left: auto;
-	overflow-x: auto;
-  	white-space: nowrap;
-*/
 }
+
 .image-big{
 	width: 35vw;
-	box-shadow: 5px 5px 25px rgba(0,0,0,.1);
+/*	box-shadow: 5px 5px 25px rgba(0,0,0,.1);*/
 }
+
+
+
+
+.image-big2{
+	width: 35%;
+}
+.pad20{
+    padding: 20px;
+}
+.image-round{
+    border-radius: 25px;
+}
+
+.middle{
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+}
+.center{
+    text-align: center;
+}
+
 .limitText {
     display:flow-root; text-overflow:ellipsis; white-space:nowrap; overflow: hidden;
 }
@@ -811,7 +822,7 @@ h5{
 .max{
 	display: inline-block;
 	max-width: 1000px;
-	text-align: center;
+/*	text-align: center;*/
 }
 #myFaceThumbnail{
 	padding: 10px 0px;
@@ -1004,6 +1015,9 @@ p{
 .removePadding{
 	padding: 0;
 }
+.row-container{
+    margin: 15px;
+}
 .shadow-box{
 	box-shadow: 5px 5px 15px rgba(0,0,0,.1);
 }
@@ -1115,7 +1129,7 @@ td{
 	background-color: black;
 	padding: 3px;
 	box-shadow: 2px 2px 10px rgba(0,0,0, .08);
-	z-index: 52;
+	z-index: 1031;
 /*
 	transition: background-color 500ms;
 	-webkit-transition: background-color 500ms;
@@ -1135,7 +1149,7 @@ td{
 	right: 0;
     left: 0;
 	bottom: 0px;
-	z-index: 53;
+	z-index: 1032;
 	padding: 0px 5px;
 	margin-bottom: 0px;
 	width: 100vw;
@@ -1210,7 +1224,7 @@ td{
 }
 .x-button{
 	position: fixed;
-	top: 65px;
+	top: 2px;
 	bottom: auto;
 	right: 2px;
 	display: block;
@@ -1225,7 +1239,7 @@ td{
 	color: white;
 	box-sizing: content-box;
 	padding: 2px;
-	z-index: 99;
+	z-index: 1032;
 }
 #yellowComponents{
 	margin-bottom: 0px;
@@ -1303,8 +1317,10 @@ td{
 		width: 33vw;
 	}
 	#astoundingText{
+/*
 		padding: 5px;
 		margin-top: 10px;
+*/
 	}
 	.panel-mobile{
 		max-width: 100%;
@@ -1328,7 +1344,7 @@ td{
 	}
 	#homeProjectsTitle{
 		display: block;
-		font-size: 7vw;;
+		font-size: 4.5vw;;
 		color: dimgray;
 		font-weight: bolder;
 	}
@@ -1364,13 +1380,17 @@ td{
 /*		padding: 25px;*/
 		margin: 25px;
 	}
+/*
 	#iAma{
 		padding: 0px;
 		margin-right: 1vw;
 	}
+*/
+/*
 	#homeProjectsText{
 		width: 75vw;
 	}
+*/
 	.arduino-cards-small:hover .drop {
 		height: 13vw;
 		margin-top: 10vw;
@@ -1408,7 +1428,7 @@ td{
 		height: 50px;
 		font-size: 1em;
 		padding: 2px;
-		z-index: 99;
+		z-index: 1032;
 	}
 	th{
 	font-size: 1.3em;
@@ -1470,7 +1490,7 @@ td{
 		padding: 2vw;
 	}
 	.btn-primary{
-		font-size: .8rem;
+/*		font-size: .8rem;*/
 	}
 	.button-spacing{
 		margin-bottom: 10px;
@@ -1588,10 +1608,10 @@ td{
 		font-size: 6.5vw;;
 	}
 	#proDescTitle{
-		font-size: 6.5vw;;
+		font-size: 5.5vw;;
 	}
 	.btn-primary{
-		font-size: .7rem;
+/*		font-size: .7rem;*/
 	}
 }
 /* iPhone 6, 6s, 7, 8, X, Xs 375*/

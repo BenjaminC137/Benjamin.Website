@@ -1,33 +1,54 @@
+<div style="text-align: center">
 <div id="bioDiv">
-	<div id="bioInfoWrapper">
-		<div id="bioInfo" class="info-panel firstDiv2 panel-mobile">
-			<h5>Benjamin Salasek</h5>
-			<p class="p-yellow">
-				Greetings,
-				<br>
-				<br>
-				I am a <b>Front-end Web Application Developer</b>, an Arduino Open-Source Community member and an artist. Primarily using CSS & JavaScript, I make websites 100% responsive for any device.
-				<br>
-				<br>
-				I utilize tools such as Bootstrap and jQuery to create & format pages to spec & preference and to animate elements for a great UI and user experience. For single-page apps, I use Angular 6.
-				<br>
-				<br>
-				Thank you,
-				<br>
-				Benjamin Salasek
-			</p>
-		</div>
-	</div>
-	<div id="profilePictureDiv" style="">
-		<img src="assets/ArduinomyFace/myFace-key_photo-IMG_6979.jpeg" style="max-width: 294px; border-radius: 15px; margin: 25px;">
-	</div>
+    <div class="max" style="text-align: right;">
+        <div id="bioInfoWrapper">
+            <div id="bioInfo" class="info-panel firstDiv2 panel-mobile">
+                <h5>Benjamin Salasek</h5>
+                <p class="p-yellow">
+                    Greetings,
+                    <br>
+                    <br>
+                    I am a Front-end Web Application Developer, an inventor, an Arduino Open-Source Community member, an artist and a proud father.
+                    <br>
+                    <br>
+                    Using JavaScript & CSS, I make websites 100% responsive for any device. I utilize tools such as Bootstrap and jQuery to create & format pages to spec & preference and to animate elements for a great UI and user experience. For single-page apps, I use Angular 6+.
+                    <br>
+                    <br>
+                    Thank you,
+                    <br>
+                    Benjamin Salasek
+                </p>
+            </div>
+        </div>
+        <div id="profilePictureDiv" style="">
+            <img src="assets/ArduinomyFace/myFace-key_photo-IMG_6979.jpeg" style="max-width: 294px; border-radius: 15px; margin: 25px;">
+        </div>
+    </div>
+</div>
+<div class="clearfix pad20">
+    <div class="max">
+        <span>
+            Benjamin is an active member of the
+        </span>
+        <img id="arduinoCommunity" src="assets/ArduinoGeneral/ArduinoChicagoCollaboration.svg">
+
+        <span id="arduinoCommunityTitle">
+            <span style="color: #00878F" >Arduino </span><span style="background-color: rgba(255,255,255,.9); color: ">Open-Source </span><span style="background-color: rgba(255,255,255,.9); color: #E47128">Community</span>
+        </span>
+        <p class="p-gray" >
+             I created and am the organizer of the Arduino Chicago Collaboration meetup group. If you are like most people, you don't know much about the <a href="https://www.arduino.cc" class="a2">Arduino open-source electronics platform</a>. It is one of my passions and has inspired me in many aspects of life including leading me down my career path. Essentially, it is a platform that allows me to design & create electronics and robotics from scratch.
+        </p>
+    </div>
 </div>
 
+
+
+
+<!--
 <div id="arduino-home-div" class="clearfix">
 	<span>
 		Benjamin is an active member of the
 	</span>
-<!--	<img id="arduinoCommunity" src="assets/ArduinoCommunityLogo.png">-->
 	<img id="arduinoCommunity" src="assets/ArduinoGeneral/ArduinoChicagoCollaboration.svg">
 
 	<span id="arduinoCommunityTitle">
@@ -37,32 +58,50 @@
 		 I created and am the organizer of the Arduino Chicago Collaboration meetup group. If you are like most people, you don't know much about the <a href="https://www.arduino.cc" class="a2">Arduino open-source electronics platform</a>. It is one of my passions and has inspired me in many aspects of life including leading me down my career path. Essentially, it is a platform that allows me to design & create electronics and robotics from scratch.
 	</p>
 </div>
-<div id="homeProjectsDiv" class="clearfix">
-	<div id="astoundingText">
-		<div>Some pictures of fascinating</div>
-			<span id="homeProjectsTitle">
-				<span style="color: #00878F">Projects </span><span>I have </span><span style="color: #E47128">Engineered</span>
-			</span>
-			<div id="homeProjectsText">
+-->
 
-			<p class="p-gray">
-				Click or tap to explore! These are some of my Arduino projects that I've worked on for the last few years. They include home robotics and electronics that I designed, coded and built from scratch!
-				<br>
-				<br>
-				<a class="btn-primary" routerLink="/arduino">Let me see!</a>
-			</p>
-		</div>
-	</div>
-	<div id="honeycomb">
-		<div class="" style="">
-			<div class="arduino-cards-small arduino-card-hover" *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}">
-				<div class="drop" style=""><span style="display: inline-block; vertical-align: middle; line-height: normal;">{{arduino.title}}</span></div>
-				<img class="arduino-cards-smallCover" style="" src="{{arduino.moreImagesPath[0]}}">
-			</div>
-		</div>
-	</div>
+
+
+
+
+
+
+
+
+<div class="clearfix box2">
+    <div class="max ">
+<!--        <div class="row">-->
+<!--            <div class="col-md-6 pad20">-->
+
+<!--            </div>-->
+<!--            <div class="col-md-6 pad20">-->
+                <div id="astoundingText" class="pad20">
+                    <div>Check out these</div>
+                    <span id="homeProjectsTitle">
+                    <span style="color: #00878F">Inventions </span><span>I have </span><span style="color: #E47128">Engineered</span>
+                    </span>
+                    <div id="homeProjectsText">
+                        <p class="p-gray">
+                            Click/tap to explore! These are some of my Arduino prototypes that I love and am proud of. They include home robotics and electronics that I designed, coded and built from scratch!
+                            <br>
+                            <br>
+                            <a class="btn-primary" routerLink="/arduino">Let me see!</a>
+                        </p>
+                    </div>
+                </div>
+                <div id="honeycomb" class="">
+                    <div class="arduino-cards-small arduino-card-hover" *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}">
+                        <div class="drop" style=""><span style="display: inline-block; vertical-align: middle; line-height: normal;">{{arduino.title}}</span></div>
+                        <img class="arduino-cards-smallCover" style="" src="{{arduino.moreImagesPath[0]}}">
+                    </div>
+                </div>
+<!--            </div>            -->
+<!--        </div>-->
+    </div>
+    <br>
+<br>
+
 </div>
-
 <div id="homeReference" class="p-white">
 <!--	<h6 style="color: lightgray">Reference</h6>-->
 		<span><img src="assets/Logo/BenjaminDotWebsiteLogo-full.svg" style="width: 50px; margin-bottom: 15px"> <span class="stroke logoB"> B</span>enjamin<span class="stroke logoDot">.</span><span class="stroke logoW">W</span>ebsite &nbsp; &nbsp; &nbsp;</span>
@@ -147,3 +186,4 @@
   </div>
 </div>
 -->
+</div>
