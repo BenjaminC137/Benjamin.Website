@@ -317,7 +317,7 @@ body{
 	background-color: #00878F;
 	color: white;
 	margin: 0px;
-	padding: 15px;
+/*	padding: 15px;*/
 }
 .box2{
 /*	display: block;*/
@@ -725,15 +725,9 @@ h5{
 	margin: 5px;
 /*	margin: 1vw;*/
 }
-/*
 #iAma{
-	text-align: right;
-	font-size: 2em;
-	padding-top: .5em;
-	padding-right: 20px;
-	margin: 0px;
+    margin-top: 6em;
 }
-*/
 .info-panel{
 	border-style: solid;
 	border-color: #00878F;
@@ -785,6 +779,9 @@ h5{
 .pad20{
     padding: 20px;
 }
+.pad10{
+    padding: 10px;
+}
 .image-round{
     border-radius: 25px;
 }
@@ -797,7 +794,9 @@ h5{
 .center{
     text-align: center;
 }
-
+.right{
+    text-align: right;
+}
 .limitText {
     display:flow-root; text-overflow:ellipsis; white-space:nowrap; overflow: hidden;
 }
@@ -1042,7 +1041,7 @@ p{
 #skillsData{
 /*	float: left;*/
 	display: inline-block;
-	margin-top: calc(2em + 23px);
+	margin-top: calc(2em + 5px);
 	width: calc(50% - 50px);
 /*	max-width: 40vw;*/
 }
@@ -1283,6 +1282,11 @@ td{
 
 /*medium*/
 @media (max-width: 767.98px) {
+/*
+    #iAma{
+        margin-top: 650px;
+    }
+*/
 	#arduinoDetailInfo{
 		width: 92vw;
 	}
@@ -1379,6 +1383,7 @@ td{
 		width: 90%;
 /*		padding: 25px;*/
 		margin: 25px;
+/*        margin-top: 10px;*/
 	}
 /*
 	#iAma{
@@ -1386,6 +1391,16 @@ td{
 		margin-right: 1vw;
 	}
 */
+    #iAma{
+    margin-top: 20px;
+/*
+	text-align: right;
+	font-size: 2em;
+	padding-top: .5em;
+	padding-right: 20px;
+	margin: 0px;
+*/
+    }
 /*
 	#homeProjectsText{
 		width: 75vw;
@@ -1487,7 +1502,7 @@ td{
 		float: left;
 		display: inline-block;
 		width: 100vw;
-		padding: 2vw;
+/*		padding: 2vw;*/
 	}
 	.btn-primary{
 /*		font-size: .8rem;*/
