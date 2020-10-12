@@ -105,7 +105,7 @@ export const Photographs : PhotographyModel[] = [
 	},	{
 		id: 17,
 		title: "Lonely Evolution",
-		description: "The destructin of our planet. Innocent. Naive. Beautiful. Inevitable. Acceptable.",
+		description: "The destruction of our planet. Innocent. Naive. Beautiful. Inevitable. Acceptable.",
 		date: '2012/11/02',
 		imagePath: "assets/Photography/LonelyEvolution.jpg"
 	},	{
