@@ -251,6 +251,9 @@ a:active{
 	margin: 2vw;
 	display: inline-block;
 }
+#arduinoTutorBanner{
+    max-width:500px;
+}
 #arduinoUno{
 	width: 400px;
 /*	padding-bottom: 125px;*/
