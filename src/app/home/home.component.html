@@ -8,10 +8,13 @@
                     Greetings,
                     <br>
                     <br>
-                    I am a Front-end Web Application Developer, an inventor, an Arduino Open-Source Community member, an artist and a proud father.
+                    I am an artist, an inventor, a developer, a proud father and an Arduino Open-Source Community member.
                     <br>
                     <br>
-                    Using JavaScript & CSS, I make websites 100% responsive for any device. I utilize tools such as Bootstrap and jQuery to create & format pages to spec & preference and to animate elements for a great UI and user experience. For single-page apps, I use Angular 6+.
+                    Personally, I enjoy building electronics, robotics and art using a combination of Arduino prototyping platform, woodworking and 3D printing. In the summer, you'll find that I camp, backpack, kayak and explore frequently. I enjoy dry and dark humor and try to integrate it into every aspect of my life. I love videogames and sci-fi. My two boys provide me with great joy and pride.
+                    <br>
+                    <br>
+                    Professionally, I am an Analytics Engineer. I have worked with Google Tag Manager, Adobe Launch and Tealium. I write custom extension code in JavaScript and TypeScript using Node.js.
                     <br>
                     <br>
                     Thank you,
@@ -20,7 +23,7 @@
                 </p>
             </div>
         </div>
-        <div id="profilePictureDiv" style="">
+        <div id="profilePictureDiv">
             <img src="assets/ArduinomyFace/myFace-key_photo-IMG_6979.jpeg" style="max-width: 294px; border-radius: 15px; margin: 25px;">
         </div>
     </div>
@@ -49,7 +52,7 @@
         <img id="arduinoCommunity" src="assets/ArduinoGeneral/ArduinoChicagoCollaboration.svg">
 
         <span id="arduinoCommunityTitle">
-            <span style="color: #00878F" >Arduino </span><span style="background-color: rgba(255,255,255,.9); color: ">Open-Source </span><span style="background-color: rgba(255,255,255,.9); color: #E47128">Community</span>
+            <span style="color: #00878F" >Arduino </span><span style="background-color: rgba(255,255,255,.9);">Open-Source </span><span style="background-color: rgba(255,255,255,.9); color: #E47128">Community</span>
         </span>
         <p class="p-gray" >
              I created and am the organizer of the Arduino Chicago Collaboration meetup group. If you are like most people, you don't know much about the <a href="https://www.arduino.cc" class="a2">Arduino open-source electronics platform</a>. It is one of my passions and has inspired me in many aspects of life including leading me down my career path. Essentially, it is a platform that allows me to design & create electronics and robotics from scratch.
@@ -107,8 +110,8 @@
                 </div>
                 <div id="honeycomb" class="">
                     <div class="arduino-cards-small arduino-card-hover" *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}">
-                        <div class="drop" style=""><span style="display: inline-block; vertical-align: middle; line-height: normal;">{{arduino.title}}</span></div>
-                        <img class="arduino-cards-smallCover" style="" src="{{arduino.moreImagesPath[0]}}">
+                        <div class="drop"><span style="display: inline-block; vertical-align: middle; line-height: normal;">{{arduino.title}}</span></div>
+                        <img class="arduino-cards-smallCover" src="{{arduino.moreImagesPath[0]}}">
                     </div>
                 </div>
 <!--            </div>            -->
