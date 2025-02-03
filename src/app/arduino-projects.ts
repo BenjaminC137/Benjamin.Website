@@ -3,6 +3,65 @@ import { ArduinoProjectModel } from './arduino-project-model';
 export const ArduinoProjects : ArduinoProjectModel[] = [
 	{
 		id: 1,
+		title: 'FerrofArt (Ferrofluid Art)',
+		description: 'This is a project that I intend to be an art piece. It is ferrofluid in a glass tank of brine, with electromagnets moving the ferrofluid gracefully horizontally and vertically.',
+		dateCreated: '2023-04-23',
+		dateCompleted: '0000-00-00',
+		imagePath: "assets/ArduinoNeechiFeeder/Neechi-hanging-closeup-IMG_5184.jpeg",
+		moreImagesPath: [
+			"assets/ArduinoNeechiFeeder/Neechi-hanging-closeup-IMG_5184.jpeg", //0
+			"assets/ArduinoNeechiFeeder/Neechi-agitator-assembly-IMG_8224.png", //1
+		],
+		imageCaption: [
+			"Neechi Feeder electronics enclosure", //0
+			"Agitator assembly including agitator rod, stepper motor and motor housing", //1
+		],
+		videoUrl: "https://www.youtube.com/embed/cQlMx21N6_M",
+
+		components: [
+			"120 Volt outlet plug",
+			"5 Volt 1 amp power adapter",
+			"5 Volt 55g servo motor",
+			"5 Volt relay module",
+			"9 Volt 1 amp power adapter",
+			"12 Volt 3 amp power adapter",
+			"agitator",
+			"acryllic hatch door",
+			"aluminum c-channel",
+			"Arduino Nano",
+			"button",
+			"chain",
+			"IIC/I2C/TWI 1602 Serial LCD Display",
+			"IIC/I2C/TWI 1602 Serial Interface module",
+			"L298 motor driver",
+			"Nema 17 stepper motor",
+			"power switch",
+			"project box",
+			"project box -metal",
+			"PCB",
+			"terminal block",
+			"PVC pipe",
+			"power strip",
+			"power port",
+			"stepper motor mount",
+			"servo motor mount",
+			"steel sheet",
+			"storage compartment",
+			"tripod",
+			"universal mounting hub"
+		],
+		libraries: [
+			"DS1302RTC.h",
+			"Time.h",
+			"Wire.h",
+			"Servo.h",
+			"LCD.h",
+			"LiquidCrystal_I2C.h",
+			"Stepper.h"
+		]
+	},
+	{
+		id: 1,
 		title: 'Neechi (dog) Feeder',
 		description: 'I designed an automatic dog feeder and built the entire contraption. It automatically releases a designated amount of food twice per day based on a predetermined feeding schedule. An LCD display shows the current time, the quantity of times fed per day and the time in which the last feeding was released including manual feedings. A button allows for manual feeding. This is my favorite project as it is the most useful, most advanced and most fun to develop and build.',
 		dateCreated: '2018/03/21',
