@@ -1,0 +1,16 @@
+/* Ensures tables are responsive and text wraps */
+table {
+    width: 100%;
+    table-layout: fixed; /* Prevents expansion */
+    border-collapse: collapse;
+}
+
+/* Ensure proper text wrapping inside table cells */
+.table-cell {
+    padding: 2px 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    display: block;
+}

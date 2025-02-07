@@ -1,74 +1,83 @@
 <!--<div class=""><button class="x-button" (click)="goBack()">X</button></div>-->
 <!--<div class="project">-->
-	<div class="box2 clearfix hardFade" style="overflow-x: hidden">
-		<h3 style="margin: 0px">{{arduino.title | uppercase}} <img class="arduino-logo-details" src="assets/2000px-Arduino_Logo.svg.png"></h3>
-		<div id="introArduinoImage" style="text-align: center">
-			<a class="cursor-finger" (click)="scroll(photos)"><img class="arduino-small-square" style="padding: 5px; border-radius: 25px;" src="{{arduino.moreImagesPath[0]}}" ></a>
-		</div>
-		<div style="padding: 15px" id="arduino-description">{{arduino.description}}
-			<br>
+<div class="box2 clearfix hardFade" style="overflow-x: hidden">
+	<h3 style="margin: 0px">{{arduino.title | uppercase}} <img class="arduino-logo-details"
+			src="assets/2000px-Arduino_Logo.svg.png"></h3>
+	<div id="introArduinoImage" style="text-align: center">
+		<a class="cursor-finger" (click)="scroll(photos)"><img class="arduino-small-square"
+				style="padding: 5px; border-radius: 25px;" src="{{arduino.moreImagesPath[0]}}"></a>
+	</div>
+	<div style="padding: 15px" id="arduino-description">{{arduino.description}}
+		<br>
+		<div class="">
 			<div class="">
-				<div class="">
-					<br>
-					<button class="btn-primary button-spacing" (click)="scroll(photos)">Photos</button> &nbsp;
-					<button class="btn-primary" (click)="scroll(video)">Video</button>
-					<br>
-					<br>
-					Created: {{arduino.dateCreated | date}}
-					<br>
-					Completed: {{arduino.dateCompleted | date}}
-				</div>
+				<br>
+				<button class="btn-primary button-spacing" (click)="scroll(photos)">Photos</button> &nbsp;
+				<button class="btn-primary" (click)="scroll(video)">Video</button>
+				<br>
+				<br>
+				Created: {{arduino.dateCreated | date}}
+				<br>
+				Completed: {{arduino.dateCompleted | date}}
 			</div>
 		</div>
 	</div>
-	<div id="componentsAndLibrariesContainer" class="clearfix" style="overflow-x: hidden">
-		<div id="componentsAndLibraries" class="">
-			<div id="arduinoDetailInfo" class="info-panel firstDiv3">
-				<div class="row">
-					<div class="col-sm-6" style="padding: 0px 3px">
-						<h5 style="font-size: 1em">Components</h5>
-						<div id="yellowComponents" class="p-yellow">
-							<table id="componentsTable">
-								<tr *ngFor="let component of arduino.components">
-									<td style="padding: 2px 10px">{{component}}</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-					<div class="col-sm-6" style="padding: 0px 3px">
-						<h5 style="font-size: 1em">Code Libraries</h5>
-						<div class="p-yellow">
-							<table id="componentsTable">
-								<tr *ngFor="let library of arduino.libraries">
-									<td style="padding: 2px 10px">{{library}}</td>
-								</tr>
-							</table>
-						</div>
+</div>
+<div id="componentsAndLibrariesContainer" class="clearfix" style="overflow-x: hidden">
+	<div id="componentsAndLibraries">
+		<div id="arduinoDetailInfo" class="info-panel firstDiv3">
+			<div class="row">
+				<!-- Components Table -->
+				<div class="col-sm-6" style="padding: 0px 3px">
+					<h5 style="font-size: 1em">Components</h5>
+					<div id="yellowComponents" class="p-yellow">
+						<table id="componentsTable">
+							<tr *ngFor="let component of arduino.components">
+								<td class="table-cell">{{ component }}</td>
+							</tr>
+						</table>
 					</div>
 				</div>
+				
+				<!-- Code Libraries Table -->
+				<div class="col-sm-6" style="padding: 0px 3px">
+					<h5 style="font-size: 1em">Code Libraries</h5>
+					<div class="p-yellow">
+						<table id="codeLibrariesTable">
+							<tr *ngFor="let library of arduino.libraries">
+								<td class="table-cell">{{ library }}</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
 			</div>
 		</div>
-		<div style="color: white; padding: 2vw" >
-			Here are the main components I used for the project. Obviously I haven't mentioned every
-		</div>
-		<span id="arduinoComponentTitle" style="margin-left: 2vw">
-			<span style="color: #00878F" >Resistor, </span><span style="">PCB <span style="color: #00878F">or </span></span><span style="color: #E47128">Terminal Block</span>
-		</span>
-		<p style="color: white; padding: 2vw" >
-			but the relevant components are listed here. Here, you will also see the code libraries that I've implemented in order to allow some advanced hardware components to communicate with my software.
+	</div>
+	<div style="color: white; padding: 2vw">
+		Here are the main components I used for the project. Obviously I haven't mentioned every
+	</div>
+	<span id="arduinoComponentTitle" style="margin-left: 2vw">
+		<span style="color: #00878F">Resistor, </span><span style="">PCB <span style="color: #00878F">or
+			</span></span><span style="color: #E47128">Terminal Block</span>
+	</span>
+	<p style="color: white; padding: 2vw">
+		but the relevant components are listed here. Here, you will also see the code libraries that I've implemented in
+		order to allow some advanced hardware components to communicate with my software.
+	</p>
+</div>
+<div #photos class="box3" style="overflow-x: hidden">
+	<div style="text-align: center">
+		<h4 style="text-align: center; margin: 10px;">Photos </h4>
+		<p style="color: white; padding: 5px; width: 60vw; display: inline-block;margin-bottom: 0px">
+			I believe that the images are not only informative but sometimes provide for beautiful photography and
+			imagery. Please take a closer look by clicking/tapping on any photo.
 		</p>
 	</div>
-	<div #photos class="box3" style="overflow-x: hidden">
-		<div style="text-align: center">
-			<h4 style="text-align: center; margin: 10px;">Photos </h4>
-			<p style="color: white; padding: 5px; width: 60vw; display: inline-block;margin-bottom: 0px">
-				I believe that the images are not only informative but sometimes provide for beautiful photography and imagery. Please take a closer look by clicking/tapping on any photo.
-			</p>
-		</div>
 	<!--	<div class="container">-->
-		<div class="" style="box-sizing: content-box">
-			<div class="row justify-content-around" style="text-align: center; box-sizing: content-box; padding: 20px">
-	<!--
+	<div class="" style="box-sizing: content-box">
+		<div class="row justify-content-around" style="text-align: center; box-sizing: content-box; padding: 20px">
+			<!--
 				<div class="col card arduino-images" style="display: inline">
 					<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === 100">Close</button></div>
 
@@ -78,59 +87,67 @@
 					</div>
 				</div>
 	-->
-<!--
+			<!--
 					<div *ngIf="show && selectedIdx === i">
 							<button class="x-button">X</button>
 							<button id="buttonLeft" (click)="NavigateImage('left')" class="buttonImageNav">&larr;</button>
 							<button id="buttonRight" (click)="NavigateImage('right')" class="buttonImageNav">&rarr;</button>
 						</div>
 -->
-				<div id="arduinoImages" class="col card arduino-images no-border" *ngFor="let image of arduino.moreImagesPath; let i = index" style="display: inline; box-sizing: content-box;">
-						<div *ngIf="show && selectedIdx === i">
-							<button class="x-button" (click)="ViewHiRes(i)">X</button>
-							<button id="buttonLeft" (click)="NavigateImage('left')" class="buttonImageNav">&larr;</button>
-<!--							<button id="buttonLeft" (click)="ViewHiRes(i - 1)" class="buttonImageNav">&larr;</button>-->
-							<button id="buttonRight" (click)="NavigateImage('right')" class="buttonImageNav">&rarr;</button>
-<!--							<button id="buttonRight" (click)="ViewHiRes(i + 1)" class="buttonImageNav">&rarr;</button>-->
-						</div>
-					<div id="card-content" style="box-sizing: content-box;">
-		<!--				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>-->
-<!--
+			<div id="arduinoImages" class="col card arduino-images no-border"
+				*ngFor="let image of arduino.moreImagesPath; let i = index"
+				style="display: inline; box-sizing: content-box;">
+				<div *ngIf="show && selectedIdx === i">
+					<button class="x-button" (click)="ViewHiRes(i)">X</button>
+					<button id="buttonLeft" (click)="NavigateImage('left')" class="buttonImageNav">&larr;</button>
+					<!--							<button id="buttonLeft" (click)="ViewHiRes(i - 1)" class="buttonImageNav">&larr;</button>-->
+					<button id="buttonRight" (click)="NavigateImage('right')" class="buttonImageNav">&rarr;</button>
+					<!--							<button id="buttonRight" (click)="ViewHiRes(i + 1)" class="buttonImageNav">&rarr;</button>-->
+				</div>
+				<div id="card-content" style="box-sizing: content-box;">
+					<!--				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>-->
+					<!--
 						<div *ngIf="show && selectedIdx === i">
 							<button class="x-button">X</button>
 							<button id="buttonLeft" (click)="NavigateImage('left')" class="buttonImageNav">&larr;</button>
 							<button id="buttonRight" (click)="NavigateImage('right')" class="buttonImageNav">&rarr;</button>
 						</div>
 -->
-						<img id="viewHiResImage" (click)="ViewHiRes(i)" [class.view-hi-res]="selectedIdx === i" src={{image}}>
-						<div class="hidden-div" >
-							<p class="caption" style=""><span>{{arduino.imageCaption[i]}}</span></p>
-						</div>
-						<div class="div-footer" [class.view-hi-caption]="selectedIdx === i">
-							<p class="caption-arduino-sub" style="" [class.no-background]="selectedIdx === i"><span [class.card-text]="selectedIdx === i">{{arduino.imageCaption[i]}}</span></p>
-						</div>
-		<!--				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(i)">View hi-res</button></div>-->
+					<img id="viewHiResImage" (click)="ViewHiRes(i)" [class.view-hi-res]="selectedIdx === i"
+						src={{image}}>
+					<div class="hidden-div">
+						<p class="caption" style=""><span>{{arduino.imageCaption[i]}}</span></p>
 					</div>
+					<div class="div-footer" [class.view-hi-caption]="selectedIdx === i">
+						<p class="caption-arduino-sub" style="" [class.no-background]="selectedIdx === i"><span
+								[class.card-text]="selectedIdx === i">{{arduino.imageCaption[i]}}</span></p>
+					</div>
+					<!--				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(i)">View hi-res</button></div>-->
 				</div>
 			</div>
 		</div>
 	</div>
-	<div #video class="box" style="background-image: linear-gradient(to right, #E47128,#e0600b)">
-<!--		I've recorded a quick video to show you my {{arduino.title}} in action.-->
-		<br>
-		<br>
-<!--		<div id="arduinoTitleImage" style="background-image: url({{arduino.moreImagesPath[0]}})">-->
+</div>
+<div #video class="box" style="background-image: linear-gradient(to right, #E47128,#e0600b)">
+	<!--		I've recorded a quick video to show you my {{arduino.title}} in action.-->
+	<br>
+	<br>
+	<!--		<div id="arduinoTitleImage" style="background-image: url({{arduino.moreImagesPath[0]}})">-->
 
-		<div id="arduinoVideoDiv" style="">
-			<img id="arduinoVideoImage" src="{{arduino.moreImagesPath[0]}}">
-			<a [href]="goPlay"><div id="arduinoVideoTitle">Video Demo</div></a>
-		</div>
-		<br>
-		<div style="text-align: center">
-			<a *ngIf="arduino.id != 6" disabled class="btn-primary btn-primary-alt" [href]="goPlay">Play {{arduino.title}} Video</a>
-			<a *ngIf="arduino.id === 6" disabled class="btn-primary" style="background-color: gray" [href]="">{{arduino.title}} Video coming soon!</a>
-		</div>
-		<br>
-		<br>
+	<div id="arduinoVideoDiv" style="">
+		<img id="arduinoVideoImage" src="{{arduino.moreImagesPath[0]}}">
+		<a [href]="goPlay">
+			<div id="arduinoVideoTitle">Video Demo</div>
+		</a>
 	</div>
+	<br>
+	<div style="text-align: center">
+		<a *ngIf="arduino.id != 6 || arduino.id === 12" disabled class="btn-primary btn-primary-alt" [href]="goPlay">Play {{arduino.title}}
+			Video</a>
+		<a *ngIf="arduino.id === 6 || arduino.id === 12" disabled class="btn-primary" style="background-color: gray"
+			[href]="">{{arduino.title}} Video coming soon!</a>
+	</div>
+	<br>
+	<br>
+</div>
 <!--</div>-->
