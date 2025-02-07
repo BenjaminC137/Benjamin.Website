@@ -1,5 +1,3 @@
-<!--<div class=""><button class="x-button" (click)="goBack()">X</button></div>-->
-<!--<div class="project">-->
 <div class="box2 clearfix hardFade" style="overflow-x: hidden">
 	<h3 style="margin: 0px">{{arduino.title | uppercase}} <img class="arduino-logo-details"
 			src="assets/2000px-Arduino_Logo.svg.png"></h3>
@@ -74,67 +72,37 @@
 			imagery. Please take a closer look by clicking/tapping on any photo.
 		</p>
 	</div>
-	<!--	<div class="container">-->
 	<div class="" style="box-sizing: content-box">
 		<div class="row justify-content-around" style="text-align: center; box-sizing: content-box; padding: 20px">
-			<!--
-				<div class="col card arduino-images" style="display: inline">
-					<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === 100">Close</button></div>
-
-					<img (click)="ViewHiRes(100)" [class.view-hi-res]="selectedIdx === 100" src="{{arduino.imagePath}}">
-					<div class="card-body">
-						<p class="card-text">Project photo</p>
-					</div>
-				</div>
-	-->
-			<!--
-					<div *ngIf="show && selectedIdx === i">
-							<button class="x-button">X</button>
-							<button id="buttonLeft" (click)="NavigateImage('left')" class="buttonImageNav">&larr;</button>
-							<button id="buttonRight" (click)="NavigateImage('right')" class="buttonImageNav">&rarr;</button>
-						</div>
--->
 			<div id="arduinoImages" class="col card arduino-images no-border"
 				*ngFor="let image of arduino.moreImagesPath; let i = index"
 				style="display: inline; box-sizing: content-box;">
 				<div *ngIf="show && selectedIdx === i">
 					<button class="x-button" (click)="ViewHiRes(i)">X</button>
 					<button id="buttonLeft" (click)="NavigateImage('left')" class="buttonImageNav">&larr;</button>
-					<!--							<button id="buttonLeft" (click)="ViewHiRes(i - 1)" class="buttonImageNav">&larr;</button>-->
 					<button id="buttonRight" (click)="NavigateImage('right')" class="buttonImageNav">&rarr;</button>
-					<!--							<button id="buttonRight" (click)="ViewHiRes(i + 1)" class="buttonImageNav">&rarr;</button>-->
 				</div>
 				<div id="card-content" style="box-sizing: content-box;">
-					<!--				<div><button class="btn-primary close-button" (click)="ViewHiRes(100)" *ngIf="show && selectedIdx === i">Close</button></div>-->
-					<!--
-						<div *ngIf="show && selectedIdx === i">
-							<button class="x-button">X</button>
-							<button id="buttonLeft" (click)="NavigateImage('left')" class="buttonImageNav">&larr;</button>
-							<button id="buttonRight" (click)="NavigateImage('right')" class="buttonImageNav">&rarr;</button>
-						</div>
--->
+
 					<img id="viewHiResImage" (click)="ViewHiRes(i)" [class.view-hi-res]="selectedIdx === i"
 						src={{image}}>
 					<div class="hidden-div">
-						<p class="caption" style=""><span>{{arduino.imageCaption[i]}}</span></p>
+						<p class="caption"><span>{{arduino.imageCaption[i]}}</span></p>
 					</div>
 					<div class="div-footer" [class.view-hi-caption]="selectedIdx === i">
-						<p class="caption-arduino-sub" style="" [class.no-background]="selectedIdx === i"><span
+						<p class="caption-arduino-sub"[class.no-background]="selectedIdx === i"><span
 								[class.card-text]="selectedIdx === i">{{arduino.imageCaption[i]}}</span></p>
 					</div>
-					<!--				<div class="card-footer" ><button class="btn-primary" (click)="ViewHiRes(i)">View hi-res</button></div>-->
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <div #video class="box" style="background-image: linear-gradient(to right, #E47128,#e0600b)">
-	<!--		I've recorded a quick video to show you my {{arduino.title}} in action.-->
 	<br>
 	<br>
-	<!--		<div id="arduinoTitleImage" style="background-image: url({{arduino.moreImagesPath[0]}})">-->
 
-	<div id="arduinoVideoDiv" style="">
+	<div id="arduinoVideoDiv">
 		<img id="arduinoVideoImage" src="{{arduino.moreImagesPath[0]}}">
 		<a [href]="goPlay">
 			<div id="arduinoVideoTitle">Video Demo</div>
@@ -142,7 +110,7 @@
 	</div>
 	<br>
 	<div style="text-align: center">
-		<a *ngIf="arduino.id != 6 || arduino.id === 12" disabled class="btn-primary btn-primary-alt" [href]="goPlay">Play {{arduino.title}}
+		<a *ngIf="arduino.id != 6 && arduino.id != 12" disabled class="btn-primary btn-primary-alt" [href]="goPlay">Play {{arduino.title}}
 			Video</a>
 		<a *ngIf="arduino.id === 6 || arduino.id === 12" disabled class="btn-primary" style="background-color: gray"
 			[href]="">{{arduino.title}} Video coming soon!</a>
@@ -150,4 +118,3 @@
 	<br>
 	<br>
 </div>
-<!--</div>-->
