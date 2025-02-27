@@ -405,7 +405,7 @@ button{
 button:active{
 	background-color: #b2dbdd !important;
 }
-.button:hover:{
+.button:hover{
 cursor: pointer;
 }
 .buttonImageNav{
