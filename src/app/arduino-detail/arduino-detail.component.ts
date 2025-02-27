@@ -1,17 +1,10 @@
-import { Component, OnInit, Input, ViewChild, ElementRef, AfterViewInit, NgModule, HostListener } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef, AfterViewInit, HostListener } from '@angular/core';
 import { ArduinoProjectModel } from '../arduino-project-model';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { ArduinoService } from '../arduino.service';
 import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
 import { ArduinoProjects } from '../arduino-projects';
-
-@NgModule({
-//  declarations: [SomeComponent, SomeDirective, SomePipe],
-//  providers: [arduinoService],
-//  exports: [CommonModule],
-//  imports: [CommonModule]
-})
 
 @Component({
   selector: 'app-arduino-detail',
