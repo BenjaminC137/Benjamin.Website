@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA  } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -34,9 +34,9 @@ import { FilterComponentsPipe } from './filter-components.pipe';
   ],
   imports: [
     BrowserModule,
-	FormsModule,
-	AppRoutingModule,
-	PdfViewerModule
+    FormsModule,
+    AppRoutingModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent],

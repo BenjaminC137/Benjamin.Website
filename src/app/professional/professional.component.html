@@ -222,7 +222,7 @@
 					<button class="btn-primary pdfButtons" style="border-radius: 0px; margin-right: 5px"
 						(click)="nextPage()" [disabled]="page === totalPages">Page 2</button>
 				</div>
-				<pdf-viewer src="assets/BenjaminSalasekResume2025.pdf" [show-all]="false" [page]="page"
+				<pdf-viewer [src]="'assets/BenjaminSalasekResume2025.pdf'" [show-all]="false" [page]="page"
 					(after-load-complete)="afterLoadComplete($event)"
 					style="display: block; border-style: solid; border-color: #00878F; border-width: 0px 5px;"
 					[original-size]="false" [autoresize]="true">

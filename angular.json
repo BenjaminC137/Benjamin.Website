@@ -20,26 +20,26 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-				"src/favicon.ico",
-				"src/apple-touch-icon.png",
-				"src/assets",
-				"src/.nojekyll",
-				"src/CNAME",
-				"src/fireball.js",
-				"src/apple-icon-57x57.png",
-				"src/apple-icon-60x60.png",
-				"src/apple-icon-72x72.png",
-				"src/apple-icon-76x76.png",
-				"src/apple-icon-114x114.png",
-				"src/apple-icon-120x120.png",
-				"src/apple-icon-144x144.png",
-				"src/apple-icon-152x152.png",
-				"src/apple-icon-180x180.png",
-				"src/android-icon-192x192.png",
-				"src/favicon-32x32.png",
-				"src/favicon-96x96.png",
-				"src/favicon-16x16.png",
-				"src/manifest.json"
+              "src/favicon.ico",
+              "src/apple-touch-icon.png",
+              "src/assets",
+              "src/.nojekyll",
+              "src/CNAME",
+              "src/fireball.js",
+              "src/apple-icon-57x57.png",
+              "src/apple-icon-60x60.png",
+              "src/apple-icon-72x72.png",
+              "src/apple-icon-76x76.png",
+              "src/apple-icon-114x114.png",
+              "src/apple-icon-120x120.png",
+              "src/apple-icon-144x144.png",
+              "src/apple-icon-152x152.png",
+              "src/apple-icon-180x180.png",
+              "src/android-icon-192x192.png",
+              "src/favicon-32x32.png",
+              "src/favicon-96x96.png",
+              "src/favicon-16x16.png",
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.css"
@@ -63,7 +63,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -102,19 +101,17 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
-            ]
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/pdfjs-dist/cmaps",
+                "output": "/assets/cmaps/"
+              },
+              {
+                "glob": "pdf.worker.min.js",
+                "input": "node_modules/pdfjs-dist/build",
+                "output": "/assets/"
+              }
             ]
           }
         }
@@ -134,15 +131,6 @@
             "production": {
               "devServerTarget": "benjamin:serve:production"
             }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         }
       }
