@@ -22,7 +22,7 @@
     "@angular/router": "^13.4.0",
     "core-js": "^2.5.4",
     "ng2-pdf-viewer": "^8.0.1",
-    "pdfjs-dist": "^3.11.174",
+    "pdfjs-dist": "^4.8.69",
     "rxjs": "^6.6.7",
     "rxjs-compat": "^6.6.7",
     "tslib": "^2.0.0",
